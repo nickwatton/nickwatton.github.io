@@ -1,0 +1,276 @@
+    /* RESET */
+
+html, body, div, span, p,
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	font-size: 62.5%;	/* Reset font to 10px to make ems easier */
+	line-height: 1;
+	color: #fff;
+}
+/* RESET END */
+
+html, body { background: #EEEEEE; }
+body{ cursor:pointer;  -webkit-transform: translate3d(0, 0, 0); }
+a, a:link, a:visited, a:hover, a:active {}
+p{
+	line-height: 1.2em;
+	font-family: Arial, sans-serif;
+}
+#container {
+	border: 1px solid #666;
+	display: block;
+	background: #FFFFFF;
+	/*opacity: 0;*/
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+}
+#innerClick,
+p,
+.item {
+	position: absolute;
+}
+#info,
+.mainCopy p{
+	opacity:0; display:none;
+}
+
+/* ANIMATION */
+#anim{
+	width: 779px;
+	overflow: hidden;
+	/*background-color: #df00a0;*/
+}
+.sp {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: none;
+    position: absolute;
+}
+
+#businesscards {
+    width: 56px;
+    height: 77px;
+    background-position: -4px -4px;
+    left: 99px;
+    top: 192px;
+}
+
+#chopstick1 {
+    width: 13px;
+    height: 240px;
+    background-position: -645px -4px;
+    top: 150px;
+    left: 380px;
+}
+
+#chopstick2 {
+    width: 9px;
+    height: 240px;
+    background-position: -675px -4px;
+    top: 150px;
+    left: 390px;
+
+}
+
+#compass {
+    width: 90px;
+    height: 85px;
+    background-position: -106px -4px;
+    top: 92px;
+    left: 400px;
+
+}
+
+#football {
+    width: 152px;
+    height: 127px;
+    background-position: -204px -4px;
+    top:0
+    left:0;
+
+}
+
+#cookie {
+    width: 50px;
+    height: 49px;
+    background-position: -4px -139px;
+    top: 118px;
+    left: 104px;
+}
+
+#glasses {
+    width: 46px;
+    height: 148px;
+    background-position: -62px -139px;
+    top: 80px;
+    left: 170px;
+}
+
+#journal {
+    width: 151px;
+    height: 169px;
+    background-position: -116px -139px;
+    top: 79px;
+    left: 225px;
+}
+
+#phone {
+    width: 76px;
+    height: 135px;
+    background-position: -275px -139px;
+    top: 160px;
+    left: 238px;
+}
+
+#photos {
+    width: 193px;
+    height: 82px;
+    background-position: -4px -316px;
+    top: 0px;
+    left: 385px;
+
+}
+
+#sim {
+    width: 20px;
+    height: 31px;
+    background-position: -364px -4px;
+    top: 161px;
+    left: 319px;
+}
+
+#plate {
+    width: 212px;
+    height: 74px;
+    background-position: -392px -4px;
+    top:0;
+    left: 165px;
+}
+
+#ipad {
+    width: 79px;
+    height: 130px;
+    background-position: -364px -86px;
+    left: 0px;
+    top: 120px;
+
+}
+
+#teaCup {
+    width: 170px;
+    height: 148px;
+    background-position: -451px -86px;
+    bottom:0;
+    left: 490px;
+}
+
+/* COPY */
+#textContent{
+	width: 194px;
+	background-color: #00a0df;
+	overflow: hidden;
+	right: 190px;
+}
+.mainCopy p{
+	left: 16px;
+    width: 163px;
+	font-size: 1.7em;
+}
+	p#c1{
+		top:64px;
+		font-size: 3.5em;
+        line-height: 1em;
+		letter-spacing: -.03em;
+	}
+	p#c2{
+		width: 163px;
+         top: 75px;
+	}
+	p#c3{
+		top: 54px;
+	}
+	p#c4{
+		top:159px;
+		font-weight: bold;
+	}
+
+/* FOOTER */
+#footer{
+	display: block;
+	background-color: #003479;
+	width: 190px;
+	right: 0;
+}
+.fTxt{
+	top:50%;
+	left: 16px;
+	width: 100%;
+	height: 50%;
+	font-size: .9em;
+}
+	#f1{
+		top:26px;
+		font-size: 1.7em;
+	}
+	#f2{
+		top:76px;
+	}
+	#f3{
+		top:89px;
+	}
+#logo {
+	display: block;
+	height: 50%;
+	width: 100%;
+	background: #fff url(logo.png) no-repeat 54px 12px;
+     background-image: url('logo.svg');
+    background-size: 83px 95px;
+}
+#infoClick{
+    background-color: rgba(0,52,121,.01);
+    height: 28px;
+    width: 134px;
+    top: 199px;
+    left: 793px;
+    z-index: 999;
+    position: absolute;
+}
+#disclaimer{
+	background-color: #003479;
+	display: none;
+    width: 778px;
+}
+#disclaimer p{
+	top:42px;
+	left:20px;
+	width: 720px;
+    font-size: 1.1em;
+}
+p#x{
+	top:15px;
+	left: 730px;
+    width: 48px;
+}
+p#d2{
+	top:64px;
+}
+p#d3{
+	top:99px;
+}
+p#d4{
+	top:137px;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#bg { background: url('bg.jpg'); background-repeat: no-repeat; }
+
+.banner_size #container  { width: 968px; height: 248px; }
+.banner_size .fullWidth  { width: 968px; }
+.banner_size .fullHeight { height: 248px; }

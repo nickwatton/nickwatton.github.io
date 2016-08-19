@@ -1,0 +1,121 @@
+/*	RESET  */
+html, body, div, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size:100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  font-size:10px;
+}
+/* RESET END */
+
+@font-face {
+  font-family: 'StagSans-Medium';
+  src: url('StagSans-Medium.eot');
+  src: url('StagSans-Medium.eot?#iefix') format('embedded-opentype'),
+       url('StagSans-Medium.woff2') format('woff2'),
+       url('StagSans-Medium.woff') format('woff'),
+       url('StagSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'StagSans-Light';
+  src: url('StagSans-Light.eot');
+  src: url('StagSans-Light.eot?#iefix') format('embedded-opentype'),
+       url('StagSans-Light.woff2') format('woff2'),
+       url('StagSans-Light.woff') format('woff'),
+       url('StagSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body { background: #EEE; }
+body{ cursor:pointer; }
+p{
+	font-family: 'StagSans-Light', Helvetica, Arial, sans-serif;
+}
+
+#container {
+	border: 1px solid #CCC;
+	display: block;
+	background: #FFF;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+}
+
+#logo,
+#ctaCopy,
+.mainCopy p,
+.item {
+	position: absolute;
+}
+.grfx,
+.mainCopy p{
+	opacity:0;
+}
+
+/* Hide stuff from IE8 (no-opacity fix) */
+#copy_1,#copy_2,#copy_3,#copy_4,#copy_5,
+#bgF1,#bgF2,#bgF3,#ctaCopy{ opacity:0; display:none; }
+
+#logo {
+    height: auto;
+    width: 111px;
+    margin: 17px auto 0 -56px;
+    left: 50%;
+}
+
+/* COPY */
+.mainCopy {
+	color: #333;
+	text-align: center;
+	left:10%;
+}
+.mainCopy p{
+    font-size: 2em;
+    line-height: 1.3em;
+    width: 280px;
+    left: 10px;
+    top: 74px;
+}
+#copy_1{
+    width: 200px;
+    left: 50px;
+    top: 86px;
+}
+#copy_4{
+    font-size: 2.2em;
+    top: 66px;
+    width: 127px;
+    left: 19px;
+    text-align: left;
+}
+
+#ctaCopy{
+    background: #482972;
+    border-radius: 15px;
+    height: 29px;
+    width: 154px;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 29px;
+    text-align: center;
+    font-family: 'StagSans-Medium', Helvetica, Arial, sans-serif;
+    left: 17px;
+    top: 192px;
+}
+
+/* BACKGROUNDS */
+#bgF1 { background: url('fr1.jpg'); }
+#bgF2 { background: url('fr2.jpg'); }
+#bgF3 { background: url('fr3.jpg'); }
+
+.banner_size #container  { width: 298px; height: 248px; }
+.banner_size .fullWidth  { width: 298px; }
+.banner_size .fullHeight { height: 248px; }

@@ -1,0 +1,174 @@
+@font-face {
+	font-family:'Frutiger-Bold';
+	src: url('FrutigerLTPro-Bold.woff2') format('woff2'),
+	   url('FrutigerLTPro-Bold.woff') format('woff'),
+	   url('FrutigerLTPro-Bold.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+	unicode-range: U+0-10FFFF;
+}
+
+html,
+body,
+div,
+p {
+    font-family: 'Frutiger-Bold', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+body {
+    cursor: pointer;
+    font-size: 10px;
+    color: #fff;
+}
+
+#container {
+    display: block;
+    position: relative;
+    background: #FFF;
+    overflow: hidden;
+    z-index: 100
+}
+#videoFallback{
+    background-image: url("videoFallback.jpg");
+}
+#video_container video,
+#videoFallback,
+#dynamicContent,
+#logo_1,
+#logo_1 img,
+#logo_2,
+#logo_2 img,
+#travellers_logo,
+#purple_background,
+#terms,
+#terms_txt,
+#divider,
+#cta_btn,
+.mainCopy p {
+    position: absolute
+}
+#bgVideo,
+#videoFallback,
+#copy_1,
+#quote,
+#copy_2,
+#copy_3,
+#copy_4,
+#copy_5,
+#logo_1,
+#logo_2,
+#travellers_logo,
+#purple_background,
+#terms,
+#divider,
+#cta_btn {
+    display: none;
+    opacity: 0
+}
+#logo_1 {
+    top: 5px;
+    left: 268px;
+}
+#logo_1 img{
+	width: 191px;
+    height: 50px;
+}
+#logo_2 {
+    top: 24px;
+    left: 24px;
+}
+#logo_2 img{
+	width: 156px;
+    height: 42px;
+}
+
+.mainCopy p {
+    opacity: 0;
+    text-align: center;
+    font-size: 2.95em;
+	text-shadow: 1px 1px 10px #000;
+    line-height: 1.1em;
+    width: 728px;
+    left: 0;
+}
+#copy_1 {
+    top: 50px;
+}
+#copy_2,
+#copy_3 {
+    top: 15px;
+    line-height: 1em;
+    width: 435px;
+    left: 181px;
+}
+#copy_3 {
+    width: 458px;
+    left: 135px;
+}
+#copy_4 {
+	text-shadow: 0 0 0 #000;
+    font-size: 2.5em;
+    top: 17px;
+    left: 238px;
+    text-align: left;
+    width: 265px;
+}
+
+#travellers_logo {
+    width: 124px;
+    height:80px;
+    top: 5px;
+    left: 302px;
+}
+
+#purple_background{
+	background-color:#46216f;
+}
+#divider {
+    background: #FFF;
+    width: 1px;
+    height: 52px;
+    left: 208px;
+    top: 19px;
+}
+#quote,
+#terms{
+	top: 65px;
+    right: 15px;
+}
+#quote,
+#terms_txt{
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 6px #000;
+    text-align: right;
+    font-size: 14px;
+}
+#quote{
+    width: 724px;
+    top: 72px;
+}
+
+#cta_btn{
+    background: #7e5da6;
+    text-align: center;
+    line-height: 39px;
+    color: #FFF;
+    font-size: 1.35em;
+    height: 37px;
+    width: 165px;
+    top: 27px;
+    left: 543px;
+}
+
+.banner_size #container,
+.banner_size .fullWidth {
+    width: 728px
+}
+.banner_size #container,
+.banner_size .fullHeight {
+    height: 90px
+}

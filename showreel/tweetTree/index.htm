@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FP Creative Christmas TweetTree</title>
+    <meta name="Description" content="Join FP Creative in celebraing Christmas 2011, on their Christmas Tweet Tree."/>
+    <meta name="keywords" content="FP Creative, Christmas, Xmas, Twitter, HTML5, Tree, Celebtration, design, digital, agency, card, london, borough, se1"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="image_src" href="http://www.xmas.fpcreative.com/mailer/mailer.jpg" />
+    <script type="text/javascript" src="polyfill/modernizr.min.js"></script>
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" media="screen,projection" />
+    <script type="text/javascript" src="jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="js/extendString.min.js"></script>
+    <script type="text/javascript" src="js/tweetTree.min.js"></script>
+    <base target="_myPop">
+      
+    <!-- Google Analytics includes -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31746588-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+   
+  </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="canvasWrapper">
+        <canvas id="tweets" width="1024" height="672"></canvas>
+        <canvas id="snow" width="1024" height="672"></canvas>
+      </div>
+      <div id='about'>
+        'Twas the week before Christmas, when all through the house,
+        <br />
+        Not a sound could be heard, ’cept the click of a mouse.
+        <br />
+        For the tree was not decorated with glitter and star,
+        <br />
+        But Season’s Greetings from Twitter, both near and afar.
+        <br />
+        <br />
+        To get in the spirit and see what’s been done,
+        <br />
+        Click on the baubles and join in the fun…
+      </div>
+      <div id="tweetBox">
+        <div id='pic'><img id='tweetPic' src="" width="49px" height="49px"/>
+        </div>
+        <div id='tweetID'></div>
+        <div id='tweetCopy'></div>
+      </div>
+      <div id="filterWarning"></div>
+      <div id="form">
+        <input type="text" id="user"/>
+        <a class="button" id="DoSearch" href="#"><span>Filter Search</span></a>
+        <a class="button" id="ResetSearch" href="#"><span>Reset Search</span></a>
+      </div>
+      <div id="disclaimer">
+        These messages are streamed live from Twitter. Any views expressed are not necessarily endorsed by <a href="http://fpcreative.com">FP Creative</a>. Particularly our own...
+      </div>
+    </div>
+    <div id="altcontent">
+      <img src="images/noCanvas.png" />
+      <div id='alt-about'>
+        Sleigh bells ring, but something’s missing
+        <br />
+        To see our tree just get clicking
+        <br />
+        It’s a wonderful sight
+        <br />
+        So to be happy tonight
+        <br />
+        You need <a href="https://www.google.com/chrome/" title="Download Chrome" target="_blank">Chrome</a>, <a href="http://www.mozilla.org/en-US/firefox/new/" title="Download Firefox" target="_blank">Firefox</a>, <a href="http://www.apple.com/safari/download/" title="Download Safari" target="_blank">Safari</a>
+        or <a href="http://internet-explorer.uk.msn.com/" title="Download IE" target="_blank">IE(9 and above)</a>
+      </div>
+    </div>
+  </body>
+</html>

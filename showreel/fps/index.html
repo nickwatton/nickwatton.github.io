@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+		<title>Controlled FPS</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+			body{
+				font-size:62.5%;
+				font-family: Arial, Helvetica, sans-serif;
+				max-width: 600px;
+				color: darkslategrey;
+			}
+			p, li{
+				font-size: 1.2em;
+			}
+			h3{
+				margin-top: 3em;
+			}
+
+			span{
+				margin-left:50px;
+			}
+			#animationWrapper{
+				position: relative;
+				height: 180px;
+				max-width: 600px;
+				border: grey 1px dashed;
+			}
+			.dot{
+				position: absolute;
+				top:50px;
+				left:0;
+				height: 20px;
+				width: 20px;
+				border-radius: 10px;
+				background-color: darkorange;
+			}
+			#d2{
+				top:100px;
+				background-color: deeppink;
+			}
+		</style>
+
+</head>
+
+<body >
+
+	<div id="animationWrapper">
+
+		<div class="dot" id="d1"></div>
+		<div class="dot" id="d2"></div>
+
+	</div>
+
+	<div id="text">
+		<h2>Throttled animation speed</h2>
+		<p>Request animation frame (<a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">RAF</a>), is currently the best way to control animation. It respects the browser's resources and everything stops when a tab is in the background. Great news for mobile batteries!</p>
+
+		<p>But...<br />
+		You can't set the frames per second (fps), which defaults to about 60fps. </p>
+
+		<p>However...<br />
+		A check for elapsed time within the RAF loop allows finer control, which is what we see above.</p>
+		<ul>
+			<li>The top dot is animated with a (<a href="http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/">polyfilled</a>) RAF.</li>
+			<li>The bottom dot animation is throttled down to 30 fps.</li>
+		</ul>
+
+		<p>Tested down to IE7.</p>
+
+
+		<h3>Need higher resolution timing?</h3>
+		<p>A high resolution timing method is possible for <a href="http://caniuse.com/#search=performance.now()" target="_blank">recent browsers</a> only using performance.now().</p>
+		<p>Interesting explaination of this method can be found here:<br />
+		<span><a href="https://developers.google.com/web/updates/2012/08/When-milliseconds-are-not-enough-performance-now" target="_blank">When milliseconds are not enough: performance.now</a></span></p>
+		<p>And <a href="http://jsfiddle.net/nRpVD/79/">this</a> is a demo of throttling using performance.now().</p>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

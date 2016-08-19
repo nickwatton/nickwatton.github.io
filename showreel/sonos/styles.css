@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+/* For modern browsers
+.clearbar:before,
+.clearbar:after {
+    content:"";
+    display:table;
+}
+.clearbar:after {
+    clear:both;
+} */
+/* For IE 6/7 (trigger hasLayout)
+.clearbar {
+    zoom:1;
+} */
+
+html{
+    background-color: #FFF;
+}
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-weight:400;
+    font-size: 1em;
+    color:#444;
+}
+a {
+	text-decoration:none;
+	color: #F0498E;
+}
+a:hover {
+	text-decoration:underline;
+	color: #555;
+}
+#wrapper{
+    display:block;
+    width: 820px;
+    margin:0 auto;
+}
+#head{
+    font-weight:700;
+}
+#credit{
+    color:#777;
+    font-size: 0.9em;
+    text-align:right;
+    position:inherit;
+}
+#return{
+    color:#777;
+    font-size: 0.9em;
+    text-align:right;
+}
+#altContent,
+#flashContent { 
+/*	background-image:url(../../images/project_papper.png);*/
+/*    width:100%;*/
+/*    height:100%;*/
+    padding:10px;
+}

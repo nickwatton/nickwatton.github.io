@@ -1,0 +1,11 @@
+/* CSS Document */
+
+#map {
+    position:relative;
+    top:50px;
+    right:50px;
+    border:1px solid white;
+}
+body{
+	position:relative;
+}

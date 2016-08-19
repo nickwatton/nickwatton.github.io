@@ -1,0 +1,192 @@
+/* RESET */
+
+html, body, div, span, p,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 62.5%; /* Reset font to 10px to make ems easier */
+    line-height: 1;
+    color: #fff;
+}
+/* RESET END */
+
+html, body {
+    background: #EEEEEE;
+}
+
+body {
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+}
+
+p {
+    line-height: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    border: 1px solid #666;
+    display: block;
+    background: #FFFFFF;
+    /*opacity: 0;*/
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+#clickArea{
+	background: #FFFFFF;
+	/*opacity: .5;*/
+}
+/*#innerClick,
+#ctaCopy,*/
+p,
+.item {
+    position: absolute;
+}
+
+#ctaCopy,
+#info,
+#textContent,
+.mainCopy p{
+	opacity:0; display:none;
+}
+
+/* ANIMATION */
+#anim{
+	height: 170px;
+	overflow: hidden;
+}
+
+/*#__bs_notify__{opacity: 0}*/
+
+.sp { background-image: url(spritesheet.png); background-repeat: no-repeat; position: absolute; display: none; }
+#sp-bag { width: 68px; height: 120px; background-position: -2px -2px; left:0px; top:51px; }
+#sp-battery { width: 46px; height: 18px; background-position: -74px -2px; left:184px; top:147px; }
+#sp-camera { width: 112px; height: 79px; background-position: -124px -2px; left:147px; top:61px; }
+#sp-cards { width: 39px; height: 46px; background-position: -74px -85px; left:261px; top:65px; }
+#sp-coin1 { width: 38px; height: 30px; background-position: -117px -85px; left:135px; top:0px; }
+#sp-coin2 { width: 34px; height: 35px; background-position: -159px -85px; left:138px; top:22px; }
+#sp-coin3 { width: 38px; height: 30px; background-position: -197px -85px; left:164px; top:0px; }
+#sp-coin4 { width: 37px; height: 37px; background-position: -117px -119px; left:165px; top:23px; }
+#sp-cookie { width: 36px; height: 36px; background-position: -197px -119px; left:92px; top:54px; }
+#sp-diary { width: 104px; height: 82px; background-position: -2px -159px; left:49px; top:89px; }
+#sp-glasses { width: 48px; height: 103px; background-position: -160px -159px; left:252px; top:109px; }
+#sp-pen { width: 109px; height: 48px; background-position: -240px -2px; left:0px; top:35px; }
+#sp-phone { width: 55px; height: 102px; background-position: -105px -161px; left:62px; top:126px; }
+#sp-photos { width: 95px; height: 57px; background-position: -239px -103px; left:205px; top:0px; }
+#sp-plane { width: 78px; height: 49px; background-position: -210px -164px; left:130px; top:0px; }
+#sp-prints { width: 125px; height: 54px; background-position: -210px -217px; left:0px; top:0px; }
+#sp-sim { width: 19px; height: 26px; background-position: -353px -2px; left:114px; top:129px; }
+
+/* COPY */
+#textContent{
+	height: 170px;
+	background-color: #00a0df;
+	overflow: hidden;
+}
+.mainCopy p{
+	width: 280px;
+	left:10px;
+	font-size: 1.55em;
+}
+
+    p#c1{
+        top:21px;
+        font-size: 2.6em;
+        letter-spacing: -.03em;
+        line-height:1.1em;
+    }
+
+    p#c2,p#c3{
+        top:85px;
+        line-height:1.1em;
+    }
+    p#c4{
+        top:135px;
+        font-weight: bold;
+    }
+
+/* FOOTER */
+#footer{
+	display: block;
+	height: 80px;
+	top:170px;
+	background-color: #f07f33;
+}
+.fTxt{
+	left: 9px;
+	width: 50%;
+	font-size: .9em;
+}
+	#f1{
+		top:12px;
+		font-size: 1.5em;
+	}
+	#f2{
+		top:48px;
+	}
+	#f3{
+		top:60px;
+		/*z-index: 999;*/
+	}
+#logo {
+	top:0;
+	display: block;
+	height: 80px;
+	width: 50%;
+	left:50%;
+	background: #fff url(logo.png) no-repeat 48px 7px;
+    background-image: url(logo.svg);
+    background-size: 55px 63px;
+}
+#infoClick{
+    background-color: rgba(0,52,121,.01);
+    height: 20px;
+    width: 105px;
+    top: 223px;
+    left: 5px;
+    z-index: 999;
+    position: absolute;
+    cursor: pointer;
+}
+#disclaimer{
+	background-color: #003479;
+	display: none;
+}
+#disclaimer p{
+	top:19px;
+	left:20px;
+	width: 260px;
+}
+p#x{
+	top:5px;
+	left: 263px;
+}
+p#d2{
+	top:60px;
+}
+p#d3{
+	top:103px;
+}
+p#d4{
+	top:158px;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#bg {
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner_size #container  { width: 298px; height: 248px; }
+.banner_size .fullWidth  { width: 298px; }
+.banner_size .fullHeight { height: 248px; }

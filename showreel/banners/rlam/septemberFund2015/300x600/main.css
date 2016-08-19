@@ -1,0 +1,362 @@
+/*	RESET
+	http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* RESET END */
+
+@font-face {
+  font-family: Georgia, sans-serif;
+  src: url('Georgia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body { background: #FFF; }
+body{ cursor:pointer; }
+a, a:link, a:visited, a:hover, a:active {}
+p{
+	line-height: 1em;s
+	font-family: Georgia,serif;
+}
+
+#container {
+	border: 1px solid #CCC;
+	display: block;
+	background: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+}
+#logo,
+#ctaCopy,
+.mainCopy,
+.mainCopy p,
+.item {
+	position: absolute;
+}
+.grfx,
+/*#ctaCopy,*/
+.mainCopy p,
+#p1,
+#p2{
+	opacity:0;
+	display:none;
+}
+#disclaimer,
+#screen_1,
+#screen_2{
+	display:none;
+}
+#disclaimer p,
+#copy_3{
+	opacity:1;
+	display:block;
+}
+
+#copy_3 {
+	font-size: 2.45em;
+	margin: 0 0 5px;
+}
+
+.under_bar {
+	display: block;
+	width: 61px;
+	margin: 5px auto 0;
+	border-bottom: 1px solid #fff;
+}
+
+/* ANIMATION ELEMENTS */
+#magAnimWrapper{
+	position:absolute;
+	overflow:hidden;
+	height: 188px;
+	border-bottom: solid 1px #000;
+	    width: 260px;
+    left: 20px;
+}
+#incomeText,
+#magGlass{
+	opacity:0;
+}
+#magGlass {
+	background:url(mag_glass.svg) no-repeat ;
+	width:405px;
+	height:215px;
+	float:left;
+	position:absolute;
+	z-index:-10;
+}
+#incomeText {
+	background:url(income_activists_text.svg) no-repeat;
+	width:80px;
+	height:45px;
+	position:absolute;
+	top:75px;
+	left:280px;
+	z-index:-11;
+}
+
+
+/* COPY */
+.mainCopy {
+	color: #6d3583;
+    font-size: 23px;
+    position: absolute;
+    top: 93px;
+}
+.mainCopy p {
+	width: 240px;
+	font-size: 180%;
+	line-height: 1.5em;
+	text-align: center;
+	padding: 0 30px;
+}
+
+#screen_1.mainCopy p#copy_1 {
+  top: 135px;
+}
+
+#screen_1.mainCopy p#copy_2 {
+	width: 235px;
+	top: 125px;
+	font-size: 1.723m;
+	line-height: 1.5;
+	padding: 0 34px;
+}
+
+#screen_2 #p0{
+	display: none;
+    opacity:0;
+}
+#screen_2 #p0 h2{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: Georgia,serif;
+	color: #6d3583;
+    font-size: 192%;
+    font-weight:normal;
+    width: 146px;
+    border-top: 1px solid;
+    padding-top: 14px;
+    left: 49px;
+    top: -55px;
+}
+
+#footer{
+	position: absolute;
+    top: inherit;
+    bottom:29px;
+}
+
+#footerHR {
+	position: inherit;
+	left: 29px;
+	width: 239px;
+	margin-top: -20px;
+	opacity: 0;
+}
+
+#disclaimerLink{
+	top: -7px;
+	font-family: arial, sans-serif;
+	display: block;
+	opacity: 1;
+	font-size: 38%;
+}
+
+.purplePanel{
+	font-family: arial, sans-serif;
+    font-size: 39%;
+    background-color: #6d3583;
+    color: #fff;
+    height: 410px;
+    width: 239px;
+    left: 29px;
+    top: 188px;
+}
+
+.purplePanel h2 {
+	color: #ef7669;
+	font-size: 2.8em;
+	font-weight: bold;
+	text-align: center;
+	padding: 45px 0 25px;
+}
+
+	.purplePanel p{
+		padding: 0 10px 3px 10px;
+	    width: 215px;
+	    position: relative;
+	    opacity: 1;
+	    display: block;
+	}
+	.purplePanel #micrositeLink p{
+	    top: 3px;
+	    color: #ee6c5d;
+	    text-decoration: underline;
+	    padding-bottom: 4px;
+	}
+		.purplePanel #micrositeLink p:first-of-type{
+    		margin-left: 13px;
+		}
+
+#disclaimer{
+	top: 0;
+	background-color:#6d3583;
+	color: #fff;
+	font-family: arial, sans-serif;
+	font-size:75%;
+	position: relative;
+	max-width: 100%;
+    overflow: hidden;
+}
+	.scrollContent{
+		/*overflow: scroll;
+	    overflow-x: hidden;*/
+	    max-width: 100%;
+	    padding: 0 15px;
+	    height: 210px;
+	    margin-right: 15px;
+	    margin-top: 20px;
+	}
+	.scrollContent p:last-child{
+		padding-bottom: 10px;
+	}
+	#closer{
+		text-align: right;
+		padding: 100px 17px 7px 6px;
+	}
+
+#ctaCopy {
+	left: 12px;
+	width: 82%;
+	height: 32px;
+	color: #FFF;
+	font-family: Arial, sans-serif;
+	font-size: 12.5px;
+	font-weight: bold;
+	line-height: 34px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #be5844;
+	border-radius: 15px;
+	padding: 0 2% 0 7%;
+}
+
+/* scrollbar styling */
+#disclaimer {
+	scrollbar-arrow-color: #b35c45;
+	scrollbar-highlight-color: #7a3e2e;
+	-ms-scrollbar-3dlight-color: #7a3e2e;
+	-ms-scrollbar-darkshadow-color: #7a3e2e;
+	scrollbar-highlight-color: #7a3e2e;
+	scrollbar-face-color:#b35c45;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b35c45;
+}
+
+::-webkit-scrollbar-track  {
+	background-color: #471959;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#gilbert{
+	background: url('gilbert_tightrope.png');
+	width: 430px;
+	height:230px;
+	top: -63px;
+    left: -96px;
+}
+
+.banner_size #container  { width: 298px; height: 598px; }
+.banner_size .fullWidth  { width: 298px; }
+.banner_size .fullHeight { height: 598px; }
+
+.circle-arrow {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 2em;
+	height: 2em;
+	top: 28px;
+	left: 35px;
+	font-size: 1.75em;
+	border-radius: 1em;
+	border: .26em solid white;
+	z-index: 2;
+}
+
+.circle-arrow:before {
+	box-sizing: border-box;
+	content: "";
+	position: absolute;
+	top: .4em;
+	left: .6em;
+	border-top: .4em solid transparent;
+	border-left: .6em solid #fff;
+	border-bottom: .4em solid transparent;
+}
+
+#cta_btn {
+	position: relative;
+}
+
+/* IE <=9 */
+    .IE .purplePanel #micrositeLink p{
+	    top: -15px;
+	}
+	.IE .circle-arrow {
+	    top: 5px;
+	    left: 65px;
+	}

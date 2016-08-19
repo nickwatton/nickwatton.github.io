@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 564.5 182.5" style="enable-background:new 0 0 564.5 182.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#XMLID_115_);fill:url(#XMLID_116_);}
+	.st1{clip-path:url(#XMLID_117_);fill:url(#XMLID_118_);}
+	.st2{clip-path:url(#XMLID_119_);fill:url(#XMLID_120_);}
+	.st3{clip-path:url(#XMLID_121_);fill:url(#XMLID_122_);}
+	.st4{clip-path:url(#XMLID_123_);fill:url(#XMLID_124_);}
+	.st5{clip-path:url(#XMLID_125_);fill:url(#XMLID_126_);}
+	.st6{clip-path:url(#XMLID_127_);fill:url(#XMLID_128_);}
+	.st7{clip-path:url(#XMLID_130_);fill:url(#XMLID_131_);}
+	.st8{clip-path:url(#XMLID_133_);fill:url(#XMLID_134_);}
+	.st9{clip-path:url(#XMLID_136_);fill:url(#XMLID_137_);}
+	.st10{clip-path:url(#XMLID_139_);fill:url(#XMLID_140_);}
+	.st11{clip-path:url(#XMLID_142_);fill:url(#XMLID_143_);}
+	.st12{clip-path:url(#XMLID_145_);fill:url(#XMLID_146_);}
+	.st13{clip-path:url(#XMLID_148_);fill:url(#XMLID_149_);}
+	.st14{clip-path:url(#XMLID_151_);fill:url(#XMLID_152_);}
+	.st15{clip-path:url(#XMLID_154_);fill:url(#XMLID_155_);}
+	.st16{fill:#7D5DA3;}
+</style>
+<g id="XMLID_1_">
+	<g id="XMLID_54_">
+		<g id="XMLID_108_">
+			<defs>
+				<path id="XMLID_109_" d="M518.2,93.1L518.2,93.1C518.2,93.1,518.2,93.1,518.2,93.1 M518.2,93.1
+					C518.2,93.1,518.2,93.1,518.2,93.1l2.9,9.5h19.4l0.1-0.3l1.4-4c-8.1-3.4-16.5-6.5-25-9.3L518.2,93.1z"/>
+			</defs>
+			<radialGradient id="XMLID_114_" cx="529.4399" cy="95.7138" r="10.0935" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#110F18"/>
+				<stop  offset="0.6842" style="stop-color:#110F18"/>
+				<stop  offset="0.7389" style="stop-color:#14101C"/>
+				<stop  offset="0.7991" style="stop-color:#1E152A"/>
+				<stop  offset="0.862" style="stop-color:#2D1C40"/>
+				<stop  offset="0.9268" style="stop-color:#43265F"/>
+				<stop  offset="0.9923" style="stop-color:#5F3386"/>
+				<stop  offset="1" style="stop-color:#63358B"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_109_"  style="overflow:visible;fill:url(#XMLID_114_);"/>
+			<clipPath id="XMLID_115_">
+				<use xlink:href="#XMLID_109_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_116_" cx="-113.4689" cy="701.4634" r="1.0108" gradientTransform="matrix(0 -462.6779 -462.6779 0 324941.75 -51960.1875)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#100F17"/>
+				<stop  offset="0.6842" style="stop-color:#100F17"/>
+				<stop  offset="0.7392" style="stop-color:#13111B"/>
+				<stop  offset="0.7997" style="stop-color:#1D1629"/>
+				<stop  offset="0.8629" style="stop-color:#2D1E3F"/>
+				<stop  offset="0.9279" style="stop-color:#43295E"/>
+				<stop  offset="0.9937" style="stop-color:#603785"/>
+				<stop  offset="1" style="stop-color:#633989"/>
+			</radialGradient>
+			<rect id="XMLID_112_" x="516.9" y="88.9" class="st0" width="25" height="13.7"/>
+		</g>
+		<g id="XMLID_105_">
+			<defs>
+				<path id="XMLID_106_" d="M465.5,79.1C465.5,79.1,465.5,79.1,465.5,79.1l8.4,23.5H493l4.4-15l1.3-4.2
+					c-11.2-3.1-22.8-5.8-34.6-7.9L465.5,79.1z"/>
+			</defs>
+			<clipPath id="XMLID_117_">
+				<use xlink:href="#XMLID_106_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_118_" cx="-113.4735" cy="701.4646" r="0.9939" gradientTransform="matrix(0 -462.6876 -462.6876 0 324948.5 -51971.4844)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#110F18"/>
+				<stop  offset="0.6842" style="stop-color:#110F18"/>
+				<stop  offset="0.7389" style="stop-color:#14101C"/>
+				<stop  offset="0.7991" style="stop-color:#1E152A"/>
+				<stop  offset="0.862" style="stop-color:#2D1C40"/>
+				<stop  offset="0.9268" style="stop-color:#43265F"/>
+				<stop  offset="0.9923" style="stop-color:#5F3386"/>
+				<stop  offset="1" style="stop-color:#63358B"/>
+			</radialGradient>
+			<rect id="XMLID_107_" x="464.2" y="75.4" class="st1" width="34.6" height="27.2"/>
+		</g>
+		<g id="XMLID_100_">
+			<g id="XMLID_101_">
+				<g id="XMLID_102_">
+					<defs>
+						<path id="XMLID_103_" d="M436,71.1c0,0,0,0.1,0,0.1c-1.3,9.3-9.1,16.5-18.6,16.5c-10.5,0-19-8.6-19.2-19.4
+							c-5-0.2-10-0.3-15-0.3c-0.3,0-0.5,0-0.8,0c0,0,0,0,0,0.1c0,19.6,15.7,35.4,35.1,35.4c16.8,0,30.9-12.4,33.8-28.7
+							c0.1-0.5,0.1-1.1,0.2-1.6C446.4,72.5,441.2,71.8,436,71.1"/>
+					</defs>
+					<clipPath id="XMLID_119_">
+						<use xlink:href="#XMLID_103_"  style="overflow:visible;"/>
+					</clipPath>
+					
+						<radialGradient id="XMLID_120_" cx="-113.4813" cy="701.4622" r="1.0001" gradientTransform="matrix(0 -462.6614 -462.6614 0 324930.2812 -51968.957)" gradientUnits="userSpaceOnUse">
+						<stop  offset="0" style="stop-color:#110F18"/>
+						<stop  offset="0.6842" style="stop-color:#110F18"/>
+						<stop  offset="0.7389" style="stop-color:#14101C"/>
+						<stop  offset="0.7991" style="stop-color:#1E152A"/>
+						<stop  offset="0.862" style="stop-color:#2D1C40"/>
+						<stop  offset="0.9268" style="stop-color:#43265F"/>
+						<stop  offset="0.9923" style="stop-color:#5F3386"/>
+						<stop  offset="1" style="stop-color:#63358B"/>
+					</radialGradient>
+					<rect id="XMLID_104_" x="382.4" y="68.1" class="st2" width="69.1" height="35.5"/>
+				</g>
+			</g>
+		</g>
+		<g id="XMLID_97_">
+			<defs>
+				<path id="XMLID_98_" d="M344.2,69.8v31.9h16.2v-33C355,69,349.6,69.4,344.2,69.8"/>
+			</defs>
+			<clipPath id="XMLID_121_">
+				<use xlink:href="#XMLID_98_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_122_" cx="-113.4758" cy="701.4631" r="0.9946" gradientTransform="matrix(0 -462.6933 -462.6933 0 324952.9062 -51972.4375)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#110F18"/>
+				<stop  offset="0.6842" style="stop-color:#110F18"/>
+				<stop  offset="0.7389" style="stop-color:#14101C"/>
+				<stop  offset="0.7991" style="stop-color:#1E152A"/>
+				<stop  offset="0.862" style="stop-color:#2D1C40"/>
+				<stop  offset="0.9268" style="stop-color:#43265F"/>
+				<stop  offset="0.9923" style="stop-color:#5F3386"/>
+				<stop  offset="1" style="stop-color:#63358B"/>
+			</radialGradient>
+			<rect id="XMLID_99_" x="344.2" y="68.7" class="st3" width="16.2" height="33"/>
+		</g>
+		<g id="XMLID_94_">
+			<defs>
+				<path id="XMLID_95_" d="M275.1,81.1v20.7h16.2V77.4C285.9,78.6,280.5,79.8,275.1,81.1"/>
+			</defs>
+			<clipPath id="XMLID_123_">
+				<use xlink:href="#XMLID_95_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_124_" cx="-113.4856" cy="701.4628" r="1.0055" gradientTransform="matrix(0 -462.6974 -462.6974 0 324955.4688 -51972.7031)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#110F18"/>
+				<stop  offset="0.6842" style="stop-color:#110F18"/>
+				<stop  offset="0.7389" style="stop-color:#14101C"/>
+				<stop  offset="0.7991" style="stop-color:#1E152A"/>
+				<stop  offset="0.862" style="stop-color:#2D1C40"/>
+				<stop  offset="0.9268" style="stop-color:#43265F"/>
+				<stop  offset="0.9923" style="stop-color:#5F3386"/>
+				<stop  offset="1" style="stop-color:#63358B"/>
+			</radialGradient>
+			<rect id="XMLID_96_" x="275.1" y="77.4" class="st4" width="16.2" height="24.3"/>
+		</g>
+		<g id="XMLID_91_">
+			<defs>
+				<path id="XMLID_92_" d="M318.2,72.8v28.9h16.2v-31C329,71.4,323.6,72.1,318.2,72.8"/>
+			</defs>
+			<clipPath id="XMLID_125_">
+				<use xlink:href="#XMLID_92_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_126_" cx="-113.4821" cy="701.4623" r="1.0007" gradientTransform="matrix(0 -462.6802 -462.6802 0 324943.5625 -51971.4219)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#110F18"/>
+				<stop  offset="0.6842" style="stop-color:#110F18"/>
+				<stop  offset="0.7389" style="stop-color:#14101C"/>
+				<stop  offset="0.7991" style="stop-color:#1E152A"/>
+				<stop  offset="0.862" style="stop-color:#2D1C40"/>
+				<stop  offset="0.9268" style="stop-color:#43265F"/>
+				<stop  offset="0.9923" style="stop-color:#5F3386"/>
+				<stop  offset="1" style="stop-color:#63358B"/>
+			</radialGradient>
+			<rect id="XMLID_93_" x="318.2" y="70.8" class="st5" width="16.2" height="31"/>
+		</g>
+		<g id="XMLID_88_">
+			<defs>
+				<path id="XMLID_89_" d="M253.2,90c-2.2,0-3.8-0.5-4.9-1.6c-5.4,1.7-10.7,3.8-16,5.6c2.9,7.2,9.9,10.2,19.2,10.2
+					c6.4,0,12.2-1.8,18.1-3.8l-4.5-13.1C261.3,88.6,257.4,90,253.2,90"/>
+			</defs>
+			<clipPath id="XMLID_127_">
+				<use xlink:href="#XMLID_89_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_128_" cx="-113.4783" cy="701.4636" r="0.9972" gradientTransform="matrix(0 -462.6924 -462.6924 0 324951.5312 -51972.4961)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#110F18"/>
+				<stop  offset="0.6842" style="stop-color:#110F18"/>
+				<stop  offset="0.7389" style="stop-color:#14101C"/>
+				<stop  offset="0.7991" style="stop-color:#1E152A"/>
+				<stop  offset="0.862" style="stop-color:#2D1C40"/>
+				<stop  offset="0.9268" style="stop-color:#43265F"/>
+				<stop  offset="0.9923" style="stop-color:#5F3386"/>
+				<stop  offset="1" style="stop-color:#63358B"/>
+			</radialGradient>
+			<rect id="XMLID_90_" x="232.3" y="87.3" class="st6" width="37.4" height="16.9"/>
+		</g>
+		<g id="XMLID_83_">
+			<defs>
+				<path id="XMLID_84_" d="M126.8,46c9.1,0,13.7,6.6,13.8,15.1h-27.9C113.1,53.1,118.1,46,126.8,46 M95.3,68.1
+					c0,21,13.8,35.2,34.6,35.2c8,0,16-1.9,23.3-5L148,85.7c-4.9,2.2-11.6,3.5-17.2,3.5c-10,0-17-4.9-18.1-15.3h43.7
+					c0.4-3,0.9-6,0.9-8.9c0-18.8-11.2-32.3-30.7-32.3C106,32.7,95.3,48.5,95.3,68.1"/>
+			</defs>
+			<radialGradient id="XMLID_129_" cx="126.3288" cy="67.9526" r="33.233" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_84_"  style="overflow:visible;fill:url(#XMLID_129_);"/>
+			<clipPath id="XMLID_130_">
+				<use xlink:href="#XMLID_84_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_131_" cx="-113.5841" cy="701.366" r="1.0002" gradientTransform="matrix(0 -579.5294 -579.5294 0 406856.1562 -65290.0742)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_87_" x="95.3" y="32.7" class="st7" width="62.1" height="70.6"/>
+		</g>
+		<g id="XMLID_80_">
+			<defs>
+				<path id="XMLID_81_" d="M449.6,34.3L460.8,66c6.5,0.9,13,2,19.4,3.2l-11.7-34.9H449.6z"/>
+			</defs>
+			<radialGradient id="XMLID_132_" cx="464.9111" cy="51.8076" r="16.4344" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_81_"  style="overflow:visible;fill:url(#XMLID_132_);"/>
+			<clipPath id="XMLID_133_">
+				<use xlink:href="#XMLID_81_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_134_" cx="-113.5828" cy="701.3693" r="0.9961" gradientTransform="matrix(0 -579.549 -579.549 0 406869.5938 -65292.2109)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_82_" x="449.6" y="34.3" class="st8" width="30.6" height="34.9"/>
+		</g>
+		<g id="XMLID_77_">
+			<defs>
+				<path id="XMLID_78_" d="M546.8,34.3l-15.1,46.9l-17-46.9h-15.4l-13.1,36.2c5.1,1.1,10.2,2.2,15.2,3.5l5.4-18.2l6.4,21.3
+					c11,3.1,21.8,6.7,32.3,10.7l18.8-53.4H546.8z"/>
+			</defs>
+			<radialGradient id="XMLID_135_" cx="525.4004" cy="61.0263" r="33.4639" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_78_"  style="overflow:visible;fill:url(#XMLID_135_);"/>
+			<clipPath id="XMLID_136_">
+				<use xlink:href="#XMLID_78_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_137_" cx="-113.5885" cy="701.3674" r="1.0031" gradientTransform="matrix(0 -579.5374 -579.5374 0 406861.375 -65291.2617)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_79_" x="486.3" y="34.3" class="st9" width="78.2" height="53.4"/>
+		</g>
+		<g id="XMLID_72_">
+			<g id="XMLID_73_">
+				<g id="XMLID_74_">
+					<defs>
+						<path id="XMLID_75_" d="M394,61.3c1.8,0,3.6,0,5.4,0.1c2.8-7.2,9.9-12.5,17.8-12.5c8.4,0,15.8,6.1,18.1,14.2
+							c5.5,0.5,10.9,1,16.3,1.7c-1.8-18-16.5-31.9-34.6-31.9c-16.9,0-30.9,12.2-34,28.5C386.7,61.3,390.4,61.3,394,61.3"/>
+					</defs>
+					<radialGradient id="XMLID_138_" cx="417.3881" cy="48.8725" r="26.7482" gradientUnits="userSpaceOnUse">
+						<stop  offset="0" style="stop-color:#C9BED0"/>
+						<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+						<stop  offset="0.8484" style="stop-color:#522582"/>
+						<stop  offset="0.8693" style="stop-color:#49287C"/>
+						<stop  offset="0.8808" style="stop-color:#412B77"/>
+						<stop  offset="0.8821" style="stop-color:#3F2972"/>
+						<stop  offset="0.8883" style="stop-color:#382461"/>
+						<stop  offset="0.8951" style="stop-color:#332157"/>
+						<stop  offset="0.9034" style="stop-color:#322054"/>
+						<stop  offset="1" style="stop-color:#322054"/>
+					</radialGradient>
+					<use xlink:href="#XMLID_75_"  style="overflow:visible;fill:url(#XMLID_138_);"/>
+					<clipPath id="XMLID_139_">
+						<use xlink:href="#XMLID_75_"  style="overflow:visible;"/>
+					</clipPath>
+					
+						<radialGradient id="XMLID_140_" cx="-113.5913" cy="701.3697" r="1.0059" gradientTransform="matrix(0 -579.5157 -579.5157 0 406846.0312 -65288.9336)" gradientUnits="userSpaceOnUse">
+						<stop  offset="0" style="stop-color:#C9BED0"/>
+						<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+						<stop  offset="0.8484" style="stop-color:#522582"/>
+						<stop  offset="0.8693" style="stop-color:#49287C"/>
+						<stop  offset="0.8808" style="stop-color:#412B77"/>
+						<stop  offset="0.8821" style="stop-color:#3F2972"/>
+						<stop  offset="0.8883" style="stop-color:#382461"/>
+						<stop  offset="0.8951" style="stop-color:#332157"/>
+						<stop  offset="0.9034" style="stop-color:#322054"/>
+						<stop  offset="1" style="stop-color:#322054"/>
+					</radialGradient>
+					<rect id="XMLID_76_" x="383.1" y="32.9" class="st10" width="68.6" height="31.9"/>
+				</g>
+			</g>
+		</g>
+		<g id="XMLID_69_">
+			<defs>
+				<path id="XMLID_70_" d="M343,40.1c0,0,1.2,6.8,1.2,10.1v13.5c5.4-0.5,10.8-1,16.2-1.3V49.8c0-0.4-0.1-1.4-0.1-1.4
+					c3.9-1.2,8.1-1.8,12.2-1.8c3,0,6.8,0.7,8.9,1.4l4.9-13.9c-3.7-0.9-8.3-1.5-12.4-1.5C363.2,32.7,352.7,36,343,40.1"/>
+			</defs>
+			<radialGradient id="XMLID_141_" cx="364.646" cy="48.1928" r="18.8344" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_70_"  style="overflow:visible;fill:url(#XMLID_141_);"/>
+			<clipPath id="XMLID_142_">
+				<use xlink:href="#XMLID_70_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_143_" cx="-113.5849" cy="701.3685" r="0.9982" gradientTransform="matrix(0 -579.551 -579.551 0 406870.7812 -65293.1328)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_71_" x="343" y="32.7" class="st11" width="43.3" height="31.1"/>
+		</g>
+		<g id="XMLID_66_">
+			<defs>
+				<path id="XMLID_67_" d="M275.1,6.3v69.4c5.4-1.4,10.8-2.7,16.2-3.8V51.7c4.5-2.7,10.3-5,15.6-5c6.8,0,11.4,4.9,11.4,12.3v8
+					c5.4-0.8,10.8-1.6,16.2-2.2v-8.2c0-15-8-23.9-23.1-23.9c-6.9,0-13.8,1.8-20,4.5V0L275.1,6.3z"/>
+			</defs>
+			<radialGradient id="XMLID_144_" cx="304.7856" cy="37.896" r="34.0371" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_67_"  style="overflow:visible;fill:url(#XMLID_144_);"/>
+			<clipPath id="XMLID_145_">
+				<use xlink:href="#XMLID_67_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_146_" cx="-113.5847" cy="701.3698" r="0.9995" gradientTransform="matrix(0 -579.5367 -579.5367 0 406861.4062 -65290.8633)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_68_" x="275.1" class="st12" width="59.4" height="75.8"/>
+		</g>
+		<g id="XMLID_63_">
+			<defs>
+				<path id="XMLID_64_" d="M247,12.5l-16.2,6.3v15.6l-7.7,0.4v12.8l7.7,0.4v37.3c0,1.5,0.1,2.8,0.3,4.1c5.2-1.9,10.5-3.8,15.9-5.6
+					V48.2h18.9V34.1H247L247,12.5L247,12.5z"/>
+			</defs>
+			<radialGradient id="XMLID_147_" cx="244.4787" cy="50.997" r="31.153" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_64_"  style="overflow:visible;fill:url(#XMLID_147_);"/>
+			<clipPath id="XMLID_148_">
+				<use xlink:href="#XMLID_64_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_149_" cx="-113.5867" cy="701.3691" r="0.9999" gradientTransform="matrix(0 -579.5359 -579.5359 0 406860.25 -65291.1953)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_65_" x="223" y="12.5" class="st13" width="42.9" height="77"/>
+		</g>
+		<g id="XMLID_58_">
+			<defs>
+				<path id="XMLID_59_" d="M177.5,81.5c0-7.6,18.5-5,24.1-10.2v14c0,0.9,0.1,2.8,0.1,2.8c-3.8,1.2-7.6,1.7-11.5,1.7
+					C184.3,89.7,177.5,88.5,177.5,81.5 M165.9,38.5l5.5,12.3c5.7-2.4,12.7-4.1,18.8-4.1c4.1,0,11.4,0.5,11.4,6.2
+					c0,11.8-41.9,2.4-41.9,29.7c0,15.8,17.3,20.6,30.3,20.6c4.1,0,7.3-0.2,10-0.7c5.9-2.8,11.8-5.4,17.8-7.9c0-0.3,0-2.5,0-5.2V54.7
+					c0-15.7-10.8-22-25.3-22C183.8,32.7,173.9,34.8,165.9,38.5"/>
+			</defs>
+			<radialGradient id="XMLID_150_" cx="188.7531" cy="67.9526" r="32.3341" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_59_"  style="overflow:visible;fill:url(#XMLID_150_);"/>
+			<clipPath id="XMLID_151_">
+				<use xlink:href="#XMLID_59_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_152_" cx="-113.5857" cy="701.3644" r="0.9995" gradientTransform="matrix(0 -579.5291 -579.5291 0 406854.5312 -65291.2617)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_62_" x="159.7" y="32.7" class="st14" width="58.1" height="70.6"/>
+		</g>
+		<g id="XMLID_55_">
+			<defs>
+				<polygon id="XMLID_56_" points="13.5,13 13.5,101.8 30.4,101.8 30.4,60.7 71.2,60.7 71.2,101.8 88.1,101.8 88.1,6.4 71.2,13 
+					71.2,46.6 30.4,46.6 30.4,6.3 				"/>
+			</defs>
+			<radialGradient id="XMLID_153_" cx="50.799" cy="54.0507" r="42.8035" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<use xlink:href="#XMLID_56_"  style="overflow:visible;fill:url(#XMLID_153_);"/>
+			<clipPath id="XMLID_154_">
+				<use xlink:href="#XMLID_56_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="XMLID_155_" cx="-113.5873" cy="701.3705" r="0.9997" gradientTransform="matrix(0 -579.535 -579.535 0 406859.3438 -65291.2539)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#C9BED0"/>
+				<stop  offset="0.8219" style="stop-color:#CBC5D8"/>
+				<stop  offset="0.8484" style="stop-color:#522582"/>
+				<stop  offset="0.8693" style="stop-color:#49287C"/>
+				<stop  offset="0.8808" style="stop-color:#412B77"/>
+				<stop  offset="0.8821" style="stop-color:#3F2972"/>
+				<stop  offset="0.8883" style="stop-color:#382461"/>
+				<stop  offset="0.8951" style="stop-color:#332157"/>
+				<stop  offset="0.9034" style="stop-color:#322054"/>
+				<stop  offset="1" style="stop-color:#322054"/>
+			</radialGradient>
+			<rect id="XMLID_57_" x="13.5" y="6.3" class="st15" width="74.5" height="95.4"/>
+		</g>
+	</g>
+	<g id="XMLID_4_">
+		<path id="XMLID_52_" class="st16" d="M63,173.7v-34.8H50.8v-2.3h27.1v2.3H65.8v34.8H63z"/>
+		<path id="XMLID_49_" class="st16" d="M93.4,169.9c-2.3,2.4-4.9,4-9.4,4c-5.1,0-8.9-2.8-8.9-8c0-5.6,4.6-8.1,11.1-8.1
+			c2.6,0,5,0.3,7.3,0.8v-5c0-4.3-2.8-5.8-6.8-5.8c-4.1,0-6.8,1.1-8.6,2.4h-1.1v-2.2c2.2-1.2,5.3-2.4,9.8-2.4c5.6,0,9.3,2.1,9.3,7.8
+			v20.1h-0.7c-1.5,0-1.9-0.5-1.9-2.7V169.9z M93.4,167.4v-6.8c-2.1-0.5-4.5-0.8-7.1-0.8c-4.9,0-8.5,1.8-8.5,6c0,4.4,2.9,6.1,6.6,6.1
+			C88.8,171.9,91.2,170,93.4,167.4z"/>
+		<path id="XMLID_47_" class="st16" d="M105.6,161.7l14.3-15.6h2.1v1.1l-9.6,10.4l10.5,15.1v1h-2.3l-9.9-14.3l-5,5.4v9h-2.6v-37.1h1
+			c1.5,0,1.7,0.3,1.7,2.5V161.7z"/>
+		<path id="XMLID_44_" class="st16" d="M127.3,140c0-1,0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8c0,1-0.8,1.8-1.8,1.8S127.3,141.1,127.3,140z
+			 M127.7,173.7v-27.6h0.8c1.6,0,1.8,0.3,1.8,2.9v24.7H127.7z"/>
+		<path id="XMLID_42_" class="st16" d="M140.3,150.5c3.1-2.5,7.3-4.7,12.1-4.7c3.9,0,7.2,1.6,7.2,7.4v20.6h-2.6v-20.2
+			c0-4.4-2.4-5.5-5.5-5.5c-4.1,0-8,2.3-11.1,4.7v21h-2.6v-27.6h1.2c1.2,0,1.4,0.3,1.4,2.8V150.5z"/>
+		<path id="XMLID_39_" class="st16" d="M188.2,173.4c0,6.1-5.3,9.1-11.7,9.1c-4.7,0-8.4-1.1-10.5-2.4V178h1.1
+			c1.7,1.4,5.1,2.4,9.2,2.4c5.1,0,9.3-2,9.3-7.2v-4.6c-2.3,2.8-5.8,4.9-10.2,4.9c-5.4,0-10.8-3.5-10.8-13.6
+			c0-10.4,6.1-14.2,11.9-14.2c4.2,0,7.2,1.4,9.2,3.4c0.2-1.6,0.4-3.1,1.9-3.1h0.8V173.4z M185.5,165.9v-14.2
+			c-2.2-2.4-4.8-3.8-8.7-3.8c-4.6,0-9.6,2.4-9.6,12c0,9.1,4.3,11.6,8.5,11.6C180,171.4,183.1,169,185.5,165.9z"/>
+		<path id="XMLID_35_" class="st16" d="M208.2,136.6h10.5c6.6,0,11.8,2.2,11.8,9.2c0,5-2.9,7-6.6,8.3v0.1c4.6,1,8.4,3.2,8.4,9.3
+			c0,7.2-5.2,10.2-12.7,10.2h-11.3V136.6z M218.6,153.1c5,0,9.1-1.8,9.1-7.2c0-5.5-4.1-7-9-7h-7.6v14.1H218.6z M219.5,171.4
+			c5.7,0,9.9-2.3,9.9-8c0-5.7-4-7.9-10.5-7.9h-7.8v16H219.5z"/>
+		<path id="XMLID_33_" class="st16" d="M240.4,150.9c2.1-2.5,5.1-5,9.1-5c0.7,0,1.2,0.1,1.3,0.2v2.2c0,0-0.7-0.1-1.2-0.1
+			c-4,0-6.9,2.6-9.2,5.2v20.3h-2.6v-27.6h1.2c1.2,0,1.4,0.3,1.4,3V150.9z"/>
+		<path id="XMLID_30_" class="st16" d="M255,140c0-1,0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8c0,1-0.8,1.8-1.8,1.8S255,141.1,255,140z
+			 M255.5,173.7v-27.6h0.8c1.6,0,1.8,0.3,1.8,2.9v24.7H255.5z"/>
+		<path id="XMLID_28_" class="st16" d="M262.2,146.1h3.7v-7.7h2.6v7.7h7.4v2h-7.4v19.3c0,3.3,1.5,4.3,4.8,4.3h3.2v1.9
+			c-0.8,0.2-2.4,0.3-4.1,0.3c-4.2,0-6.5-1.8-6.5-6.2v-19.6h-3.7V146.1z"/>
+		<path id="XMLID_25_" class="st16" d="M296.6,169.9c-2.3,2.4-4.9,4-9.4,4c-5.1,0-8.9-2.8-8.9-8c0-5.6,4.6-8.1,11.1-8.1
+			c2.7,0,5,0.3,7.3,0.8v-5c0-4.3-2.8-5.8-6.8-5.8c-4.1,0-6.8,1.1-8.6,2.4h-1.1v-2.2c2.2-1.2,5.3-2.4,9.8-2.4c5.6,0,9.3,2.1,9.3,7.8
+			v20.1h-0.7c-1.5,0-1.9-0.5-1.9-2.7V169.9z M296.6,167.4v-6.8c-2.1-0.5-4.5-0.8-7.1-0.8c-4.9,0-8.5,1.8-8.5,6
+			c0,4.4,2.9,6.1,6.6,6.1C292,171.9,294.5,170,296.6,167.4z"/>
+		<path id="XMLID_22_" class="st16" d="M305.9,140c0-1,0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8c0,1-0.8,1.8-1.8,1.8S305.9,141.1,305.9,140z
+			 M306.3,173.7v-27.6h0.8c1.6,0,1.8,0.3,1.8,2.9v24.7H306.3z"/>
+		<path id="XMLID_20_" class="st16" d="M318.9,150.5c3.1-2.5,7.3-4.7,12.1-4.7c3.9,0,7.2,1.6,7.2,7.4v20.6h-2.6v-20.2
+			c0-4.4-2.4-5.5-5.5-5.5c-4.1,0-8,2.3-11.1,4.7v21h-2.7v-27.6h1.2c1.2,0,1.4,0.3,1.4,2.8V150.5z"/>
+		<path id="XMLID_18_" class="st16" d="M354,146.1h3.7v-2.8c0-4.8,2.8-6.9,6.5-6.9c1.5,0,2.7,0.2,3.4,0.3v1.9h-2.8
+			c-2.9,0-4.5,1.1-4.5,4.9v2.6h6.7v2h-6.7v25.6h-2.7v-25.6H354V146.1z"/>
+		<path id="XMLID_16_" class="st16" d="M389.7,169.7c-3.1,2.3-7.2,4.3-11.5,4.3c-4.2,0-7.5-1.7-7.5-7.2v-20.7h2.7v20.5
+			c0,4.2,2.2,5.3,5.1,5.3c4.2,0,8-2.1,11.1-4.4v-21.4h2.7v27.6h-1.2c-1.2,0-1.4-0.4-1.4-3V169.7z"/>
+		<path id="XMLID_14_" class="st16" d="M402.2,150.9c2.1-2.5,5.1-5,9.1-5c0.7,0,1.2,0.1,1.3,0.2v2.2c0,0-0.7-0.1-1.2-0.1
+			c-4,0-6.9,2.6-9.2,5.2v20.3h-2.6v-27.6h1.2c1.2,0,1.4,0.3,1.4,3V150.9z"/>
+		<path id="XMLID_12_" class="st16" d="M414.6,146.1h3.7v-7.7h2.6v7.7h7.4v2h-7.4v19.3c0,3.3,1.5,4.3,4.8,4.3h3.2v1.9
+			c-0.8,0.2-2.4,0.3-4.1,0.3c-4.2,0-6.5-1.8-6.5-6.2v-19.6h-3.7V146.1z"/>
+		<path id="XMLID_10_" class="st16" d="M435.6,150.5c3.1-2.5,7.3-4.7,12.1-4.7c3.9,0,7.2,1.6,7.2,7.4v20.6h-2.6v-20.2
+			c0-4.4-2.4-5.5-5.5-5.5c-4.1,0-8,2.3-11.1,4.7v21H433v-37.1h1c1.5,0,1.7,0.3,1.7,2.5V150.5z"/>
+		<path id="XMLID_7_" class="st16" d="M472.9,171.7c4.4,0,7.1-1.4,8.6-2.9h1.2v2c-2,1.5-5,3.1-10,3.1c-8.3,0-12.9-5.4-12.9-13.9
+			c0-8.7,5.2-14.2,12.2-14.2c6.8,0,11.3,3.9,11.3,12.9c0,0.5-0.1,1.2-0.1,1.3h-20.8C462.4,167.7,466,171.7,472.9,171.7z M462.4,158
+			h18.2c-0.2-7.4-3.5-10.2-8.7-10.2C466.8,147.8,463.1,151.2,462.4,158z"/>
+		<path id="XMLID_5_" class="st16" d="M490.8,150.9c2.1-2.5,5.1-5,9.1-5c0.7,0,1.2,0.1,1.3,0.2v2.2c0,0-0.7-0.1-1.2-0.1
+			c-4,0-6.9,2.6-9.2,5.2v20.3h-2.6v-27.6h1.2c1.2,0,1.4,0.3,1.4,3V150.9z"/>
+	</g>
+	<rect id="XMLID_3_" y="155" class="st16" width="42" height="3"/>
+	<rect id="XMLID_2_" x="513" y="155" class="st16" width="42" height="3"/>
+</g>
+</svg>

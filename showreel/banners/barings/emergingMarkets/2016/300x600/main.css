@@ -1,0 +1,217 @@
+/* RESET */
+
+html, body, div, span, p,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 62.5%; /* Reset font to 10px to make ems easier */
+    line-height: 1;
+    color: #fff;
+}
+/* RESET END */
+
+html, body {
+    background: #EEEEEE;
+}
+
+body {
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+}
+
+p {
+    line-height: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    border: 1px solid #666;
+    display: block;
+    background: #FFFFFF;
+    /*opacity: 0;*/
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+#innerClick,
+#ctaCopy,
+p,
+.item {
+    position: absolute;
+}
+
+#ctaCopy,
+#info,
+.mainCopy p {
+    opacity: 0;
+    display: none;
+}
+
+/* ANIMATION */
+#anim {
+    height: 399px;
+    overflow: hidden;
+}
+
+/*#__bs_notify__{opacity: 0}*/
+
+.sp { background-image: url(spritesheet.png); background-repeat: no-repeat; position: absolute; display: none; }
+#sp-bag { width: 102px; height: 265px; background-position: -2px -2px; left:0px; top:134px; }
+#sp-battery { width: 67px; height: 29px; background-position: -108px -2px; left:140px; top:226px; }
+#sp-camera { width: 162px; height: 115px; background-position: -179px -2px; left:120px; top:93px; }
+#sp-cards { width: 85px; height: 73px; background-position: -108px -121px; left:215px; top:207px; }
+#sp-coin1 { width: 49px; height: 38px; background-position: -197px -121px; left:128px; top:0px; }
+#sp-coin2 { width: 45px; height: 44px; background-position: -250px -121px; left:129px; top:35px; }
+#sp-coin3 { width: 48px; height: 38px; background-position: -299px -121px; left:169px; top:0px; }
+#sp-coin4 { width: 47px; height: 47px; background-position: -197px -163px; left:170px; top:34px; }
+#sp-cookie { width: 48px; height: 48px; background-position: -299px -163px; left:84px; top:211px; }
+#sp-diary { width: 147px; height: 133px; background-position: -108px -215px; left:75px; top:266px; }
+#sp-glasses { width: 74px; height: 157px; background-position: -259px -215px; left:226px; top:286px; }
+#sp-pen { width: 101px; height: 52px; background-position: -353px -19px; left:0px; top:98px; }
+#sp-phone { width: 92px; height: 176px; background-position: -8px -273px; left:85px; top:319px; }
+#sp-photos { width: 92px; height: 86px; background-position: -351px -86px; left:208px; top:0px; }
+#sp-plane { width: 107px; height: 68px; background-position: -351px -176px; left:119px; top:0px; }
+#sp-prints { width: 129px; height: 124px; background-position: -337px -248px; left:0px; top:0px; }
+#sp-sim { width: 20px; height: 31px; background-position: -454px -2px; left:172px; top:326px; }
+
+/* COPY */
+#textContent {
+    height: 100px;
+    background-color: #ed7113;
+    overflow: hidden;
+    top: 399px;
+}
+
+.mainCopy p {
+    width: 260px;
+    left: 20px;
+    font-size: 1.4em;
+}
+
+p#c1 {
+    width:265px;
+    top: 32px;
+    font-size: 2.4em;
+    letter-spacing: -.03em;
+}
+
+p#c2 {
+    top: 23px;
+}
+
+p#c3 {
+    top: 17px;
+}
+
+p#c4 {
+    top: 64px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+#footer {
+    display: block;
+    height: 100px;
+    top: 499px;
+    background-color: #003479;
+}
+
+.fTxt {
+    /*top: 100px;*/
+    left: 8px;
+    width: 50%;
+    font-size: .9em;
+}
+
+#f1 {
+    top: 20px;
+    font-size: 1.4em;
+    width: 80%;
+}
+
+#f2 {
+    top: 55px;
+}
+
+#f3 {
+    top: 68px;
+}
+
+#logo {
+    /*top:100px;*/
+    display: block;
+    height: 100px;
+    width: 50%;
+    left: 50%;
+    background: #fff url(logo.png) no-repeat 41px 11px;
+    background-image: url('logo.svg');
+    background-size: 68px 77px;
+}
+
+#infoClick {
+    background-color: rgba(0,52,121,.01);
+    height: 30px;
+    width: 135px;
+    top: 553px;
+    left: 5px;
+    z-index: 999;
+    position: absolute;
+}
+
+#disclaimer {
+    background-color: #003479;
+    display: none;
+}
+
+    #disclaimer p {
+        top: 55px;
+        left: 20px;
+        width: 260px;
+        font-size: 1.1em;
+    }
+
+p#x {
+    top: 16px;
+    left: 258px;
+}
+
+p#d2 {
+    top: 107px;
+}
+
+p#d3 {
+    top: 177px;
+}
+
+p#d4 {
+    top: 251px;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#bg {
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner_size #container {
+    width: 298px;
+    height: 598px;
+}
+
+.banner_size .fullWidth {
+    width: 298px;
+}
+
+.banner_size .fullHeight {
+    height: 598px;
+}

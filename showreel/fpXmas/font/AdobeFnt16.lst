@@ -1,0 +1,45 @@
+%!Adobe-FontList 1.16
+%Locale:0x809
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Work Space\FP Creative\fp_xmas\Font\archer-semibold-pro-webfont.eot
+FileModTime:1386348306
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Work Space\FP Creative\fp_xmas\Font\archer-semibold-pro-webfont.svg
+FileModTime:1386348306
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Archer-Semibold
+FamilyName:Archer
+StyleName:Semibold
+FullName:Archer Semibold Regular
+MenuName:Archer Semibold
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\Work Space\FP Creative\fp_xmas\Font\archer-semibold-pro-webfont.ttf
+DataFormat:sfntData
+FileLength:80772
+FileModTime:1386348306
+WeightClass:375
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Archer Semibold
+NameArray:0,Win,16,Archer
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Work Space\FP Creative\fp_xmas\Font\archer-semibold-pro-webfont.woff
+FileModTime:1386348306
+%EndFont
+

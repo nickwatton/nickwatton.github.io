@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+		<title>Noodle_01</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+			body{
+				font-size:62.5%;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			p{
+				font-size: 1.2em;
+				margin-left: 130px;
+			}
+			canvas{
+				background-color: #333;
+			}
+			.noselect {
+				-webkit-user-select: none;  /* Chrome all / Safari all */
+				-moz-user-select: none;     /* Firefox all */
+				-ms-user-select: none;      /* IE 10+ */
+				user-select: none;          /* Likely future */
+			}
+		</style>
+
+</head>
+
+<body >
+
+	<div id="wrapper"></div>
+
+	<h2>Animation driven by hooking into sine / cosine curves</h2>
+	<p class="noselect"><span id="less">decrease</span> | <span id="more">increase</span></p>
+
+	<script src="https://code.createjs.com/easeljs-0.8.1.min.js"></script>
+	<script type="text/javascript" src="noodle01.js"></script>
+
+</body>
+</html>

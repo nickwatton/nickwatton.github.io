@@ -1,0 +1,174 @@
+    /* RESET */
+
+html, body, div, span, p,
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	font-size: 62.5%;	/* Reset font to 10px to make ems easier */
+	line-height: 1;
+	color: #fff;
+}
+/* RESET END */
+
+html, body { background: #EEEEEE; }
+body{ cursor:pointer;  -webkit-transform: translate3d(0, 0, 0); }
+a, a:link, a:visited, a:hover, a:active {}
+p{
+	line-height: 1.2em;
+	font-family: Arial, sans-serif;
+}
+#container {
+	border: 1px solid #666;
+	display: block;
+	background: #FFFFFF;
+	/*opacity: 0;*/
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+}
+#innerClick,
+p,
+.item {
+	position: absolute;
+}
+#info,
+.mainCopy p{
+	opacity:0; display:none;
+}
+
+/* ANIMATION */
+#anim{
+	width: 779px;
+	overflow: hidden;
+}
+
+/*#__bs_notify__{opacity: 0}*/
+
+.sp { background-image: url(spritesheet.png); background-repeat: no-repeat; position: absolute; display: none; }
+#sp-bag { width: 162px; height: 171px; background-position: -2px -2px; top:79px; left: 0;}
+#sp-battery { width: 78px; height: 28px; background-position: -168px -2px; top: 220px; left: 365px;}
+#sp-camera { width: 188px; height: 132px; background-position: -168px -34px; top: 90px; left: 300px;}
+#sp-cards { width: 88px; height: 76px; background-position: -168px -170px; top: 100px; left: 494px;}
+#sp-coin1 { width: 53px; height: 39px; background-position: -360px -2px; top: 0; left: 285px;}
+#sp-coin2 { width: 49px; height: 48px; background-position: -360px -45px; top: 37px; left: 287px;}
+#sp-coin3 { width: 53px; height: 38px; background-position: -360px -97px; top: 0; left: 330px;}
+#sp-coin4 { width: 52px; height: 52px; background-position: -360px -139px; top: 37px; left: 332px;}
+#sp-cookie { width: 54px; height: 55px; background-position: -260px -170px; top: 70px; left: 240px;}
+#sp-diary { width: 174px; height: 118px; background-position: -2px -250px; top: 130px; left: 131px;}
+#sp-glasses { width: 85px; height: 179px; background-position: -415px -163px; top:169px;	left: 497px;}
+#sp-pen { width: 187px; height: 54px; background-position: -180px -278px; top:47px;	left: 30px;}
+#sp-phone { width: 115px; height: 201px; background-position: -512px -163px; top: 192px; left: 145px;}
+#sp-photos { width: 164px; height: 88px; background-position: -417px -2px; top: 0; left: 418px;}
+#sp-plane { width: 112px; height: 73px; background-position: -417px -94px; top: 0; left: 280px;}
+#sp-prints { width: 251px; height: 74px; background-position: -179px -336px; top:0;	left: 0;}
+#sp-sim { width: 26px; height: 38px; background-position: -533px -94px; top: 200px; left: 243px;}
+
+/* COPY */
+#textContent{
+	width: 194px;
+	background-color: #ed7113;
+	overflow: hidden;
+	right: 190px;
+}
+.mainCopy p{
+	left: 16px;
+    width: 163px;
+	font-size: 1.7em;/*1.5em;*/
+}
+	p#c1{
+		top:85px;
+		font-size: 3.3em;
+        line-height: 1em;
+		letter-spacing: -.03em;
+	}
+	p#c2{
+		width: 163px;
+         top: 81px;
+	}
+	p#c3{
+		top: 54px;
+	}
+	p#c4{
+		top:159px;
+		font-weight: bold;
+	}
+
+/* FOOTER */
+#footer{
+	display: block;
+	background-color: #003479;
+	width: 190px;
+	right: 0;
+}
+.fTxt{
+	top:50%;
+	left: 16px;
+	width: 100%;
+	height: 50%;
+	font-size: .9em;
+}
+	#f1{
+		width: 130px;
+		top:26px;
+		font-size: 1.7em;
+	}
+	#f2{
+		top:76px;
+	}
+	#f3{
+		top:89px;
+	}
+#logo {
+	display: block;
+	height: 50%;
+	width: 100%;
+	background: #fff url(logo.png) no-repeat 54px 12px;
+     background-image: url('logo.svg');
+    background-size: 83px 95px;
+}
+#infoClick{
+    background-color: rgba(0,52,121,.01);
+    height: 28px;
+    width: 134px;
+    top: 199px;
+    left: 793px;
+    z-index: 999;
+    position: absolute;
+}
+#disclaimer{
+	background-color: #003479;
+	display: none;
+    width: 778px;
+}
+#disclaimer p{
+	top:42px;
+	left:20px;
+	width: 720px;
+    font-size: 1.1em;
+}
+p#x{
+	top:15px;
+	left: 730px;
+    width: 48px;
+}
+p#d2{
+	top:64px;
+}
+p#d3{
+	top:99px;
+}
+p#d4{
+	top:137px;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#bg { background: url('bg.jpg'); background-repeat: no-repeat; }
+
+.banner_size #container  { width: 968px; height: 248px; }
+.banner_size .fullWidth  { width: 968px; }
+.banner_size .fullHeight { height: 248px; }

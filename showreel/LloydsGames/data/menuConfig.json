@@ -1,0 +1,10 @@
+{
+	"menu":
+	{
+		"croc":"spotTheCroc.html",
+		"mop":"mop.html",
+		"build":"buildcar.html",
+		"splat":"splat.html",
+		"checkout":"checkout.html"
+	}
+}

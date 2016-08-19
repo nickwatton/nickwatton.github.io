@@ -1,0 +1,176 @@
+/* RESET */
+
+html, body, div, span, p,
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	font-size: 62.5%;	/* Reset font to 10px to make ems easier */
+	line-height: 1;
+	color: #fff;
+    cursor: pointer;
+     -webkit-transform: translate3d(0, 0, 0);
+}
+/* RESET END */
+
+html, body { background: #EEEEEE; }
+
+a, a:link, a:visited, a:hover, a:active {}
+p{
+	line-height: 1.2em;
+	font-family: Arial, sans-serif;
+}
+#container {
+	border: 1px solid #666;
+	display: block;
+	background: #FFFFFF;
+	/*opacity: 0;*/
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+}
+#clickArea{
+	background: #FFFFFF;
+	/*opacity: .5;*/
+}
+/*#innerClick,
+#ctaCopy,*/
+p,
+.item {
+	position: absolute;
+}
+#ctaCopy,
+#info,
+#textContent,
+.mainCopy p{
+	opacity:0; display:none;
+}
+
+/* ANIMATION */
+#anim{
+	height: 170px;
+	overflow: hidden;
+}
+.sp {background-image: url(spritesheet.png); background-repeat:no-repeat; position:absolute; display:none}
+#designpaper {  width: 111px; height: 204px; background-position: -273px -62px; top:48px; left: 188px;}
+#cards {  width: 34px; height: 55px; background-position: -122px -5px; top:151px; left:206px }
+#coffee { width: 97px; height: 90px; background-position: -166px -5px; top:142px; left:114px }
+#coin {  width: 27px; height: 26px; background-position: -306px -5px; top:5px; left:180px }
+#coinHK {  width: 23px;  height: 24px; background-position: -306px -5px; top:5px; left:186px }
+#corkscrew {   width: 87px; height: 97px; background-position: -5px -62px; top:5px; left:102px }
+#cork {  width: 26px; height: 47px; background-position: -339px -5px; top: 94px; left: 134px; }
+#keys {  width: 92px; height: 101px; background-position: -5px -276px; top:98px; left:63px }
+#mask {   width: 113px; height: 135px; background-position: -394px -5px; top:26px; left:149px }
+#tape {  width: 148px; height: 114px; background-position: -5px -393px; top: 48px; left: 0;}
+#paper {  width: 101px; height: 96px; background-position: -107px -188px; }
+#biro { width:70px; height:12px; background-position:-4px -4px; top:31px; }
+#phone {  width: 77px; height: 58px; background-position: -5px -188px;}
+#photos {   width: 93px; height: 56px; background-position: -394px -188px; left:208px }
+#tablet {   width: 74px; height: 129px;  background-position: -394px -254px; top:125px; }
+#wallet {  width: 74px; height: 69px; background-position: -163px -393px; top:117px; left:231px }
+#piston{ width: 32px; height: 92px;  background-position: -218px -188px; top: 42px; left: 267px;}
+#bolt1, #bolt2, #bolt3 { width: 23px; height: 18px; background-position: -89px -5px;  top:57px; left: 247px;}
+#bolt2{ top: 77px;}
+#bolt3{ top: 97px;}
+/* COPY */
+#textContent{
+	height: 170px;
+	background-color: #00a0df;
+	overflow: hidden;
+}
+.mainCopy p{
+	width: 280px;
+	left:10px;
+	font-size: 1.5em;
+}
+	p#c1{
+		top:21px;
+		font-size: 2.6em;
+		letter-spacing: -.03em;
+	}
+	p#c2,
+	p#c3{
+		top:68px;
+	}
+	p#c4{
+		top:125px;
+		font-weight: bold;
+	}
+
+/* FOOTER */
+#footer{
+	display: block;
+	height: 80px;
+	top:170px;
+	background-color: #003479;
+}
+.fTxt{
+	left: 9px;
+	width: 50%;
+	font-size: .9em;
+}
+	#f1{
+		top:12px;
+		font-size: 1.5em;
+	}
+	#f2{
+		top:48px;
+	}
+	#f3{
+		top:60px;
+		/*z-index: 999;*/
+	}
+#logo {
+	top:0;
+	display: block;
+	height: 80px;
+	width: 50%;
+	left:50%;
+	background: #fff url(logo.png) no-repeat 48px 7px;
+    background-image: url(logo.svg);
+    background-size: 55px 63px;
+}
+#infoClick{
+    height: 20px;
+    width: 105px;
+    /*background-color: #ff3366;
+    opacity:.5;*/
+    top: 223px;
+    left: 5px;
+    z-index: 999;
+    position: absolute;
+    cursor: pointer;
+}
+#disclaimer{
+	background-color: #5d245a;
+	display: none;
+}
+#disclaimer p{
+	top:25px;
+	left:20px;
+	width: 260px;
+}
+p#x{
+	top:5px;
+	left: 263px;
+}
+p#d2{
+	top:68px;
+}
+p#d3{
+	top:114px;
+}
+p#d4{
+	top:149px;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#bg { background: url('bg.jpg'); }
+
+.banner_size #container  { width: 298px; height: 248px; }
+.banner_size .fullWidth  { width: 298px; }
+.banner_size .fullHeight { height: 248px; }

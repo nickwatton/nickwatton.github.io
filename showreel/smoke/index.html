@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+		<title>Smoke</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+			body{
+				font-size:62.5%;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			p{
+				font-size: 1.2em;
+			}
+			canvas{
+				/*background-color: #000;*/
+				/* Make particles soft */
+				-webkit-filter: blur( 5px ) contrast( 1 );
+				-moz-filter: blur( 5px ) contrast( 1 );
+				filter: blur( 5px ) contrast( 1 );
+			}
+			#bg{
+				background-image: url("campfire.jpg");
+				position: absolute;
+				width: 500px;
+				height: 300px;
+			}
+			.option{
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		</style>
+
+</head>
+
+<body >
+
+	<div id="bg"></div>
+	<div id="wrapper"></div>
+
+	<h2>Smoke</h2>
+	<p>JavaScript particles softened to smoke with css.</p>
+
+	<p>There is no <span class="option" id="data-smoke">smoke</span> without <span class="option" id="data-fire">fire</span>.</p>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

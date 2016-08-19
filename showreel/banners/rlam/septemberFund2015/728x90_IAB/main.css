@@ -1,0 +1,338 @@
+/*	RESET
+	http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* RESET END */
+
+@font-face {
+  font-family: Georgia, sans-serif;
+  src: url('Georgia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body { background: #FFF; }
+body{ cursor:pointer; }
+a, a:link, a:visited, a:hover, a:active {}
+p{
+	line-height: 1em;s
+	font-family: Georgia,serif;
+}
+
+#container {
+	border: 1px solid #CCC;
+	display: block;
+	background: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+}
+#logo,
+#ctaCopy,
+.mainCopy,
+.mainCopy p,
+.item {
+	position: absolute;
+}
+.grfx,
+/*#ctaCopy,*/
+.mainCopy p,
+#p1,
+#p2{
+	opacity:0;
+	display:none;
+}
+#disclaimer,
+#screen_1,
+#screen_2{
+	display:none;
+}
+#disclaimer p,
+#copy_3{
+	opacity:1;
+	display:block;
+}
+
+/* ANIMATION ELEMENTS */
+#animWrapper{
+	position: absolute;
+    /*border-right: solid 1px #000;*/
+    width: 178px;
+    /*left: 13px;*/
+    overflow: hidden;
+}
+	/*#animWrapper:after {
+	    content: '';
+	    width: 1px;
+	    height: 171px;
+	    background: #6d3583;
+	    position: absolute;
+	    right: 0px;
+	    top: 38px;
+	}*/
+#magAnim {
+	background:url(fr_1.png) no-repeat ;
+	width: 178px;
+	height:89px;
+	float:left;
+	position:absolute;
+	z-index:-10;
+}
+
+
+/* COPY */
+.mainCopy {
+	font-family: Georgia, serif;
+	color: #6d3583;
+    font-size: 23px;
+    position: absolute;
+    top: 93px;
+}
+.mainCopy p{
+	font-size: 104%;
+	line-height: 1.3em;
+    text-align: left;
+    width: 240px;
+    padding: 0 30px 0 30px;
+}
+	#screen_1.mainCopy p#copy_1{
+		top: -66px;
+	    left: 180px;
+	    width: 490px;
+	}
+	#screen_1.mainCopy p#copy_2{
+	    width: 700px;
+	    padding: 0 15px 0 15px;
+	    top: -78px;
+	    left: 191px;
+	}
+
+#screen_2 #p0{
+	display:none;
+    opacity:0;
+}
+#screen_2 #p0 h2{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: Georgia,serif;
+    color: #6d3583;
+    font-size: 230%;
+    font-weight: normal;
+    width: 176px;
+    padding-top: 14px;
+    right: -25px;
+    top: -31px;
+}
+
+#copy_3{
+    opacity: 1;
+    display: block;
+    width: 295px;
+    left: 10px;
+    padding-left: 0px;
+    padding-right: 0;
+    line-height: 1.1;
+}
+
+#footer{
+	position: absolute;
+    top: inherit;
+    bottom: 42px;
+    right: 291px;
+}
+	#disclaimerLink2{
+		opacity:0;
+	}
+	#disclaimerLink1,
+	#disclaimerLink2{
+	    font-family: arial, sans-serif;
+	    display: block;
+	    opacity: 1;
+	    font-size: 40%;
+	    text-align: right;
+	    top: 15px;
+	    right: -306px;
+	}
+	#disclaimerLink2{
+	    left: 1px;
+	    color: #fff;
+	    opacity: 0;
+	    top: -20px;
+	    font-size: 38%;
+	}
+
+.purplePanel{
+    font-family: arial, sans-serif;
+    font-size: 39%;
+    background-color: #6d3583;
+    color: #fff;
+    height: 63px;
+    width: 540px;
+    left: 178px;
+    top: 19px;
+}
+	.purplePanel h2{
+	    color: #ef7669;
+	    font-size: 200%;
+	    padding: 6px 0 4px 10px;
+	    font-weight: bold;
+	}
+	.purplePanel p{
+	    font-size: 178%;
+		padding: 0 10px 3px 10px;
+	    width: 215px;
+	    position: relative;
+	    opacity: 1;
+	    display: block;
+	}
+	.purplePanel #micrositeLink p{
+	    top: -168px;
+	    color: #ee6c5d;
+	    text-decoration: underline;
+	    padding-bottom: 8px;
+	    left: 395px;
+	}
+
+#disclaimer{
+	top: 0;
+	background-color:#6d3583;
+	color: #fff;
+	font-family: arial, sans-serif;
+	font-size:75%;
+	position: relative;
+	max-width: 100%;
+    overflow: hidden;
+}
+	.scrollContent{
+		overflow: scroll;
+	    overflow-x: hidden;
+	    max-width: 90%;
+	    padding: 0 15px;
+	    height: 57px;
+	    margin-left: -4px;
+	    margin-top: 1px;
+	}
+	.scrollContent p:last-child{
+		padding-bottom: 10px;
+	}
+	#closer{
+		text-align: right;
+		padding: 5px 7px 0 0;
+	}
+
+#ctaCopy{
+	text-transform: uppercase;
+    background: #be5844;
+    border-radius: 15px;
+    height: 32px;
+    width: 206px;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 34px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    left: 328px;
+    bottom: 7px;
+}
+
+/* scrollbar styling */
+#disclaimer {
+	scrollbar-arrow-color: #b35c45;
+	scrollbar-highlight-color: #7a3e2e;
+	-ms-scrollbar-3dlight-color: #7a3e2e;
+	-ms-scrollbar-darkshadow-color: #7a3e2e;
+	scrollbar-highlight-color: #7a3e2e;
+	scrollbar-face-color:#b35c45;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b35c45;
+}
+
+::-webkit-scrollbar-track  {
+	background-color: #471959;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#gilbert{
+	background: url('fr_2.png');
+	width: 177px;
+	height:89px;
+}
+
+.banner_size #container  { width: 726px; height: 88px; }
+.banner_size .fullWidth  { width: 726px; }
+.banner_size .fullHeight { height: 88px; }
+
+.circle-arrow {
+    font-size: 1.75em;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    border: .26em solid white;
+    top: -147px;
+    left: 455px;
+}
+.circle-arrow:before{
+	box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: .4em;
+    left: .6em;
+    border-top: .4em solid transparent;
+    border-left: .6em solid orange;
+    border-bottom: .4em solid transparent;
+}

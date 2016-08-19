@@ -1,0 +1,327 @@
+/* RESET */
+
+html, body, div, span, p,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 62.5%; /* Reset font to 10px to make ems easier */
+    line-height: 1;
+    color: #fff;
+}
+/* RESET END */
+
+html, body {
+    background: #EEEEEE;
+}
+
+body {
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+}
+
+p {
+    line-height: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    border: 1px solid #666;
+    display: block;
+    background: #FFFFFF;
+    /*opacity: 0;*/
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+#innerClick,
+#ctaCopy,
+p,
+.item {
+    position: absolute;
+}
+
+#ctaCopy,
+#info,
+.mainCopy p {
+    opacity: 0;
+    display: none;
+}
+
+/* ANIMATION */
+#anim {
+    height: 399px;
+    overflow: hidden;
+}
+
+.sp {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    position:absolute;
+    display: none;
+}
+
+#businesscards {
+    width: 56px;
+    height: 82px;
+    background-position: -5px -5px;
+    top: 345px;
+    left: 64px;
+
+}
+
+#chopstick1 {
+    width: 13px;
+    height: 231px;
+    background-position: -71px -5px;
+    top: 303px;
+    left: 275px;
+}
+
+#chopstick2 {
+    width: 9px;
+    height: 228px;
+    background-position: -94px -5px;
+    top: 303px;
+    left: 285px;
+}
+
+#compass {
+    width: 90px;
+    height: 85px;
+    background-position: -113px -5px;
+    top: 78px;
+    left: 150px;
+
+}
+
+#football {
+    width: 91px;
+    height: 188px;
+    background-position: -213px -5px;
+    left: 0;
+    top: 40px;
+}
+
+#cookie {
+    width: 50px;
+    height: 49px;
+    background-position: -314px -5px;
+        top: 270px;
+    left: 74px;
+
+}
+
+#glasses {
+    width: 46px;
+    height: 148px;
+    background-position: -314px -64px;
+    top: 105px;
+    left: 85px;
+
+}
+
+#journal {
+    width: 151px;
+    height: 249px;
+    background-position: -374px -5px;
+    top: 230px;
+    left: 125px;
+
+}
+
+#phone {
+    width: 76px;
+    height: 138px;
+    background-position: -5px -264px;
+    top: 309px;
+    left: 138px;
+}
+
+#photos {
+    width: 113px;
+    height: 57px;
+    background-position: -91px -264px;
+    top:0;
+    right:0;
+}
+
+#plate {
+    width: 191px;
+    height: 57px;
+    background-position: -214px -264px;
+    top:0;
+    left:0;
+}
+
+#sim {
+    width: 20px;
+    height: 31px;
+    background-position: -535px -5px;
+    top: 310px;
+    left: 220px;
+
+}
+
+#ipad {
+    width: 57px;
+    height: 225px;
+    background-position: -415px -264px;
+    top: 223px;
+    left: 0px;
+
+}
+
+#teaCup {
+    width: 68px;
+    height: 182px;
+    background-position: -482px -264px;
+    right:0;
+    top: 95px;
+}
+
+
+
+/* COPY */
+#textContent {
+    height: 100px;
+    background-color: #00a0df;
+    overflow: hidden;
+    top: 399px;
+}
+
+.mainCopy p {
+    width: 260px;
+    left: 20px;
+    font-size: 1.49em;
+}
+
+p#c1 {
+    top: 23px;
+    font-size: 2.4em;
+    letter-spacing: -.03em;
+}
+p#c2,
+p#c3 {
+    line-height: 1.3em;
+}
+p#c2 {
+    top: 23px;
+}
+
+p#c3 {
+    width: 270px;
+    top: 17px;
+}
+
+p#c4 {
+    top: 64px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+#footer {
+    display: block;
+    height: 100px;
+    top: 499px;
+    background-color: #003479;
+}
+
+.fTxt {
+    /*top: 100px;*/
+    left: 8px;
+    width: 50%;
+    font-size: .9em;
+}
+
+#f1 {
+    top: 20px;
+    font-size: 1.4em;
+    width: 80%;
+}
+
+#f2 {
+    top: 55px;
+}
+
+#f3 {
+    top: 68px;
+}
+
+#logo {
+    /*top:100px;*/
+    display: block;
+    height: 100px;
+    width: 50%;
+    left: 50%;
+    background: #fff url(logo.png) no-repeat 41px 11px;
+    background-image: url('logo.svg');
+    background-size: 68px 77px;
+}
+
+#infoClick {
+    background-color: rgba(0,52,121,.01);
+    height: 30px;
+    width: 135px;
+    top: 553px;
+    left: 5px;
+    z-index: 999;
+    position: absolute;
+}
+
+#disclaimer {
+    background-color: #003479;
+    display: none;
+}
+
+    #disclaimer p {
+        top: 55px;
+        left: 20px;
+        width: 260px;
+        font-size: 1.1em;
+    }
+
+p#x {
+    top: 16px;
+    left: 258px;
+}
+
+p#d2 {
+    top: 107px;
+}
+
+p#d3 {
+    top: 177px;
+}
+
+p#d4 {
+    top: 251px;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#bg {
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner_size #container {
+    width: 298px;
+    height: 598px;
+}
+
+.banner_size .fullWidth {
+    width: 298px;
+}
+
+.banner_size .fullHeight {
+    height: 598px;
+}

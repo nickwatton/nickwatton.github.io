@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+  font-family: 'StandardLife-Bold';
+  src: url('standardlifebold.eot');
+  src: url('standardlifebold.eot?#iefix') format('embedded-opentype'),
+       url('standardlifebold.woff2') format('woff2'),
+       url('standardlifebold..woff') format('woff'),
+       url('standardlifebold.ttf') format('truetype'),
+       url('standardlifebold.svg#StagSans-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'StandardLife-Regular';
+  src: url('standardliferegular.eot');
+  src: url('standardliferegular.eot?#iefix') format('embedded-opentype'),
+       url('standardliferegular.woff2') format('woff2'),
+       url('standardliferegular..woff') format('woff'),
+       url('standardliferegular.ttf') format('truetype'),
+       url('standardliferegular.svg#StagSans-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	cursor:pointer;
+}
+
+#container {
+	border: 1px solid #CCC;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ 	box-sizing: content-box;
+	font-family: 'StandardLife-Bold', Helvetica, Arial, sans-serif;
+	color:#002d56;
+	width: 726px;
+	height: 88px;
+	position: relative;
+}
+
+#dynamicContent{
+	width:556px;
+	height:88px;
+    position: relative;
+	top: -90px;
+}
+
+#header{
+    opacity: 0;
+    position: absolute;
+    font-size: 15px;
+    top: 6px;
+    left: 10px;
+}
+
+#subHeader {
+	max-width: 65px;
+	opacity: 0;
+    position: absolute;
+	color:#54bceb;
+	font-size:10px;
+    top: 23px;
+    left: 10px;
+}
+
+#potential,
+#delivered{
+    letter-spacing: 3.4px;
+    position: absolute;
+    top:37px;
+    left: 321px;
+    font-size: 14px;
+    opacity: 0;
+}
+
+#delivered{
+	left:291px;
+	color:#FFF;
+    opacity: 0;
+    text-shadow: 0 0 40px #002d56;
+}
+
+p{
+	line-height: 1.25em;
+}
+
+.cta_copy_container
+{
+  text-shadow: 0 0 40px #002d56;
+}
+#cta_btn {
+	top: 42px;
+    left: 289px;
+    position: absolute;
+    width: 260px;
+    color: #FFF;
+    font-size: 12px;
+    margin: auto;
+    text-align: right;
+    opacity: 0;
+}
+.arrow {
+	color:#54bceb;
+	font-size: 22px;
+}
+
+#footer {
+	padding: 10px;
+	height: 68px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#021a32;
+	font-weight:normal;
+	font-size: 6.5px;
+	letter-spacing:-.1px;
+	text-align:left;
+	right: 0;
+	bottom:0px;
+	position: absolute;
+	color: #fff;
+	width:150px;
+}
+#footer a{
+		color: #fff;
+}
+.bottom {
+	font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    z-index: 1;
+    color: #ffffff;
+    position: absolute;
+    top: 74px;
+    left: -302px;
+}
+#importantInformation{
+    position: absolute;
+	top: 5px;
+    right: -68px;
+	text-decoration: underline;
+}
+
+.left-logo {
+	height:50px;
+	position: absolute;
+    top: 18px;
+}
+.right-logo {
+    position: absolute;
+    width: 130px;
+    right: 5px;
+    top: 17px;
+}
+
+#overlay {
+	border: 1px solid #CCC;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#f2f2f2;
+	display:none;
+	z-index: 7;
+}
+
+#overlay p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	text-align:left;
+	margin: 0 20px 10px 0;
+}
+
+#overlay p.header {
+	position:absolute;
+	top: 15px;
+	font-size:12px;
+	font-weight:bold;
+	left: 20px;
+}
+#terms {
+	position:absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+    overflow: auto;
+    margin-bottom: 5px;
+	height: 32px;
+	width: 687px;
+    top: 43px;
+	left: 20px;
+}
+#terms a{
+	color:#002d56;
+	text-decoration: none;
+}
+
+/*scrollbar styling*/
+#terms {
+	scrollbar-arrow-color: #021a32;
+	scrollbar-highlight-color: #f2f2f2;
+	-ms-scrollbar-3dlight-color: #f2f2f2;
+	-ms-scrollbar-darkshadow-color: #f2f2f2;
+	scrollbar-highlight-color: #f2f2f2;
+	scrollbar-face-color:#021a32;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background-color: #021a32; }
+::-webkit-scrollbar-track { background-color: #b1b1b1; }
+
+#close_overlay {
+	position:absolute;
+	top: 15px;
+	right:15px;
+	width:15px;
+	height:0;
+	padding-top:15px;
+	background:url(close.svg) no-repeat;
+	overflow:hidden;
+}
+
+.oldie #close_overlay {
+	background:url(close_btn.png) no-repeat;
+}
+
+#importantInformation {
+	text-decoration: underline;
+}
+
+/* IE specials */
+.oldie #container{
+	background: url(staticBackground.jpg) no-repeat;
+}
+.oldie #dynamicContent{
+	top: 0;
+}
+.oldie #potential{
+	left: 20px;
+}
+.oldie #footer{
+	background-color: transparent;
+}
+.oldie #footer-images{
+	display:none;
+}
+
+.ie7 #footer{
+	position:relative;
+}
+.oldie #footer .bottom{
+	position:relative;
+	top:49px;
+	left:1px;
+}
+
+/* Enable to make <IE9 statics*/
+#dynamicContent,
+.bottom{
+	/*opacity: 0;*/
+}

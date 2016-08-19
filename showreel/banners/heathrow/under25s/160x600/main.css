@@ -1,0 +1,166 @@
+@font-face {
+	font-family:'Frutiger-Bold';
+	src: url('FrutigerLTPro-Bold.woff2') format('woff2'),
+	   url('FrutigerLTPro-Bold.woff') format('woff'),
+	   url('FrutigerLTPro-Bold.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+	unicode-range: U+0-10FFFF;
+}
+
+html,
+body,
+div,
+p {
+    font-family: 'Frutiger-Bold', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+body {
+    cursor: pointer;
+    font-size: 10px;
+    color: #fff;
+}
+
+#container {
+    display: block;
+    position: relative;
+    background: #FFF;
+    overflow: hidden;
+    z-index: 100
+}
+#videoFallback{
+    background-image: url("videoFallback.jpg");
+}
+#video_container video,
+#videoFallback,
+#dynamicContent,
+#logo_1,
+#logo_1 img,
+#logo_2,
+#logo_2 img,
+#travellers_logo,
+#purple_background,
+#terms,
+#terms_txt,
+#divider,
+#cta_btn,
+.mainCopy p {
+    position: absolute
+}
+#bgVideo,
+#videoFallback,
+#copy_1,
+#quote,
+#copy_2,
+#copy_3,
+#copy_4,
+#copy_5,
+#logo_1,
+#logo_2,
+#travellers_logo,
+#purple_background,
+#terms,
+#divider,
+#cta_btn {
+    display: none;
+    opacity: 0
+}
+#logo_1 {
+    top: 213px;
+    left: 2px;
+}
+#logo_1 img{
+    width: 152px;
+    height: 39px;
+}
+#logo_2 {
+    top: 25px;
+    left: 13px;
+}
+#logo_2 img{
+	width: 129px;
+    height: 38px;
+}
+
+.mainCopy p {
+    opacity: 0;
+    text-align: center;
+    font-size: 2.6em;
+	text-shadow: 1px 1px 10px #000;
+    line-height: 1.1em;
+    width: 156px;
+    left: 2px;
+}
+#copy_1 {
+    top: 258px;
+}
+#copy_2,
+#copy_3 {
+    top: 185px;
+    width: 130px;
+    left: 15px;
+}
+#copy_4 {
+	text-shadow: 0 0 0 #000;
+    top: 178px;
+}
+
+#travellers_logo {
+    width: 140px;
+    top: 253px;
+    left: 10px;
+}
+
+#purple_background{
+	background-color:#46216f;
+}
+#divider {
+    background: #FFF;
+    width: 130px;
+    height: 1px;
+    left: 14px;
+    top: 84px;
+}
+#quote{
+    font-size: 10px;
+}
+#quote,
+#terms{
+	top: 557px;
+}
+#quote,
+#terms_txt{
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 6px #000;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#cta_btn{
+	background: #7e5da6;
+    text-align: center;
+    padding: 10px 20px 0 20px;
+    line-height: 21px;
+    color: #FFF;
+    font-size: 1.5em;
+    height: 49px;
+    width: 100px;
+    top: 366px;
+    left: 12px;
+}
+
+.banner_size #container,
+.banner_size .fullWidth {
+    width: 160px
+}
+.banner_size #container,
+.banner_size .fullHeight {
+    height: 600px
+}
+
+
+/*#trace{opacity:1;}*/

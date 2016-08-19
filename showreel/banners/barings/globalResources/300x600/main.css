@@ -1,0 +1,215 @@
+/* RESET */
+
+html, body, div, span, p,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 62.5%; /* Reset font to 10px to make ems easier */
+    line-height: 1;
+    color: #fff;
+}
+/* RESET END */
+
+html, body {
+    background: #EEEEEE;
+}
+
+body {
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+}
+
+p {
+    line-height: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    border: 1px solid #666;
+    display: block;
+    background: #FFFFFF;
+    /*opacity: 0;*/
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+#innerClick,
+#ctaCopy,
+p,
+.item {
+    position: absolute;
+}
+
+#ctaCopy,
+#info,
+.mainCopy p {
+    opacity: 0;
+    display: none;
+}
+
+/* ANIMATION */
+#anim {
+    height: 399px;
+    overflow: hidden;
+}
+
+#__bs_notify__{opacity: 0}
+
+.sp { background-image: url(spritesheet.png); background-repeat: no-repeat; position: absolute; display: none; }
+
+#bag { width: 89px; height: 246px; background-position: -2px -2px; left: 208px; top: 153px; }
+#beanbag { width: 79px; height: 55px; background-position: -95px -2px; left: 141px; top: 0; }
+#beans { width: 74px; height: 77px; background-position: -178px -2px; left: 139px; top: 45px; }
+#bins { width: 248px; height: 141px; background-position: -256px -2px; left: 40px; top: 258px; }
+#cards { width: 43px; height: 59px; background-position: -95px -147px; left: 255px; top: 89px; }
+#clipboard { width: 65px; height: 124px; background-position: -142px -147px; left: -1px; top: 275px; }
+#coal { width: 77px; height: 103px; background-position: -211px -147px; left: -2px; top: 91px; }
+#glasses { width: 58px; height: 119px; background-position: -292px -147px; left: 85px; top: 0px; }
+#gps { width: 85px; height: 124px; background-position: -354px -147px; left: 214px; top: 2px; }
+#hat { width: 259px; height: 165px; background-position: -2px -275px; left: 1px; top: 111px; }
+#maps { width: 89px; height: 142px; background-position: -443px -147px; left: 209px; top: -1px; }
+#pencil { width: 31px; height: 98px; background-position: -508px -2px; left: 28px; top: 301px; }
+#photos { width: 97px; height: 92px; background-position: -265px -293px; left: -2px; top: 0px; }
+#vignette { width: 300px; height: 399px; background-position: -543px -2px; display: block; }
+
+/* COPY */
+#textContent {
+    height: 100px;
+    background-color: #ed7113;
+    overflow: hidden;
+    top: 399px;
+}
+
+.mainCopy p {
+    width: 260px;
+    left: 20px;
+    font-size: 1.4em;
+}
+
+p#c1 {
+    width:265px;
+    top: 34px;
+    font-size: 2.2em;
+    letter-spacing: -.03em;
+}
+
+p#c2 {
+    top: 23px;
+}
+
+p#c3 {
+    top: 17px;
+}
+
+p#c4 {
+    top: 64px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+#footer {
+    display: block;
+    height: 100px;
+    top: 499px;
+    background-color: #003479;
+}
+
+.fTxt {
+    /*top: 100px;*/
+    left: 8px;
+    width: 50%;
+    font-size: .9em;
+}
+
+#f1 {
+    top: 20px;
+    font-size: 1.4em;
+    width: 80%;
+}
+
+#f2 {
+    top: 55px;
+}
+
+#f3 {
+    top: 68px;
+}
+
+#logo {
+    /*top:100px;*/
+    display: block;
+    height: 100px;
+    width: 50%;
+    left: 50%;
+    background: #fff url(logo.png) no-repeat 41px 11px;
+    background-image: url('logo.svg');
+    background-size: 68px 77px;
+}
+
+#infoClick {
+    background-color: rgba(0,52,121,.01);
+    height: 30px;
+    width: 135px;
+    top: 553px;
+    left: 5px;
+    z-index: 999;
+    position: absolute;
+}
+
+#disclaimer {
+    background-color: #003479;
+    display: none;
+}
+
+    #disclaimer p {
+        top: 55px;
+        left: 20px;
+        width: 260px;
+        font-size: 1.1em;
+    }
+
+p#x {
+    top: 16px;
+    left: 258px;
+}
+
+p#d2 {
+    top: 107px;
+}
+
+p#d3 {
+    top: 177px;
+}
+
+p#d4 {
+    top: 251px;
+}
+
+/* BACKGROUNDS & SPRITESHEET */
+#bg {
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner_size #container {
+    width: 298px;
+    height: 598px;
+}
+
+.banner_size .fullWidth {
+    width: 298px;
+}
+
+.banner_size .fullHeight {
+    height: 598px;
+}

@@ -1,0 +1,35 @@
+{
+	"game_id":"21",
+	
+	"scores":
+	[
+		{
+			"fb_name":"fname_habrhabr",
+			"fbu":"fbu321",
+			"nid":"21",
+			"score":"30",
+			"created":"1305202939",
+			"fb_profile_image":"http:\/\/profile.ak.fbcdn.net\/hprofile-ak-snc4\/161346_1713266666_2007586_q.jpg"
+		},
+		{
+			"fb_name":"kukulia",
+			"fbu":"fbu123",
+			"nid":"21",
+			"score":"12",
+			"created":"1305202975",
+			"fb_profile_image":"http:\/\/profile.ak.fbcdn.net\/hprofile-ak-snc4\/161346_1713266666_2007586_q.jpg",
+			"position":2
+		}
+	],
+	
+	"current_user":
+	{
+		"fb_name":"kukulia",
+		"fbu":"fbu123",
+		"nid":"21",
+		"score":"12",
+		"created":"1305202975",
+		"fb_profile_image":"http:\/\/profile.ak.fbcdn.net\/hprofile-ak-snc4\/161346_1713266666_2007586_q.jpg",
+		"position":2
+	}
+}

@@ -1,64 +1,82 @@
 <!doctype html>
-<html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OneSquareYard</title>
 
-<head>
-		<title>Volcano</title>
+<meta name="description" content="OneSquareYard offers actionscript and html5 development for web, desktop and mobile. OneSquareYard has worked with major agencies for advertsing and PR clients, small businesses and individual artists. Check OneSquareYard's work to see if we offer the services you need." />
+<meta name="keywords" content="onesquareyard,actionscript,actionscript development,Adobe AIR,AIR,interactive development,flash,flash development,Nicholas Watton" />
+<meta name="author" content="Nick Watton - oneSquareYard" />
+        
+<!-- iOS specific meta -->
+<meta name = "viewport" content="width=device-width">
+<link rel="apple-touch-icon" href="images/ios.png"/>
+<link rel="icon" href="images/favicon.png">
+<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+<!-- or, set /favicon.ico for IE10 win -->
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<!--<script src="js/jquery.masonry.min.js"></script> -->
 
-		<style type="text/css">
-			body{
-				font-size:62.5%;
-				font-family: Arial, Helvetica, sans-serif;
-			}
-			p{
-				font-size: 1.2em;
-			}
-			#container{
-				position: relative;
-			}
-			#overlay,
-			#wrapper{
-				/*width: 680px;
-				height: 500px;*/
-				position: absolute;
-				top: 10px;
-				bottom: 10px;
-			}
-			#overlay{
-				width: 680px;
-				height: 500px;
-				background: url(volcano.jpg) -221px -26px;
-			}
-			#wrapper{
-				/*background-color: #222;*/
-				/*-webkit-filter: blur( 4px ) contrast( 4 );
-			    -moz-filter: blur( 4px ) contrast( 4 );
-			    filter: blur( 4px ) contrast( 4 );*/
-			}
-			canvas{
-				-webkit-filter: blur(3px) contrast(2);
-				-moz-filter: blur(3px) contrast(2);
-				filter: blur(3px) contrast(2);
-			}
-		</style>
+<!-- Google Analytics includes -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31746588-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 </head>
-
-<body >
-
-	<h2>Volcano</h2>
-	<h3>Advanced particle</h3>
-
-	<div id=container>
-		<div id="overlay"></div>
-		<div id="wrapper"></div>
-	</div>
-
-	<script type="text/javascript" src="realUtils.js"></script>
-	<script type="text/javascript" src="main.js"></script>
-
+<body>
+    <div class='container'>
+    
+        <div id='logotype'>
+        	<p>
+                <div id='companyname'>One Square Yard</div>
+                <div id="tagline">Web, Desktop &amp; Mobile</div>
+            <p>
+        </div>
+        
+        <div id='menu'>
+        	<div class="menu-container">
+                <a href='#menu' class='menu-button'>Menu</a>
+                <div class='menu'>
+                    <a class='activePage'>Home</a>
+                    <a href='work.html'>Work</a>
+                    <a href='about.html'>About</a>
+                    <a href='contact.html'>Contact</a>
+                </div>
+        	</div>
+        </div>
+    
+        <div id='pitch'>
+           <span class='quote'>"...a great developer. He is not only technically proficient but also very creative and has a solutions orientated approach."</span><br />Adam Graham - CEO of <a href="http://www.weapon7.com/" target="_blank">Weapon 7</a>.<br/><br/>
+           <div class="hide_mobile">
+           <span class='quote'>"...a fantastic coder, a brilliant mixture of skill and experience, plus has an insanely curious mind which makes him a fantastic addition to any project."</span><br />Chris Jefford - Founder / Strategy Director at <a href="http://www.hometownlondon.com/" target="_blank">Hometown London</a>.<br/>&nbsp;</div>
+        </div>
+    
+        <div id='work'>
+          <!--<div class='sectionhead'><span class='hide_mobile'>See the work</span><span class='hide_notmobile'>Selected work. <span id='viewAll'>View all</span></div>-->
+          <div class='sectionhead'>Recent Highlights</div>
+          <div id='allJobs'>Loading data. Please wait.</div>
+        </div>
+    
+        <div>
+          <div class='sectionhead' id='footer'>&copy; 2013 Nick Watton All Rights Reserved</div>
+		</div>
+    </div>
+    <script src="./js/main.js"></script>
+    
 </body>
 </html>
