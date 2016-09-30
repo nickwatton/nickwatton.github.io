@@ -105,26 +105,14 @@
 		</div>
 
 		<div id="infoBox">
-			<!-- <h3>ToDo</h3>
-			<p>Optional: Variable rate - swap interval for requestAnimationFrame, then have a tick counter as action gate.<br>If variable this tick counter value can be mapped from colour.<br>Map bewteen values for 1/7sec and 1sec.</p> -->
-			<h3>Read all about it</h3>
-			<p>So, I wanted to do this after one of David's video presentations. The one where the man created an amazing synth, and at one point made tiny fragment sounds, which made ... rather discordant "music". This was a frustrating part of the film.</p>
-			<p>I didn't mind the discordant sound. What I found annoying was that there was an image of clouds on screen, and I thought he was going to sample the image data from the cloud and map it into his syth to make different discordant "music".</p>
-			<p>Well, his loss, my gain. The Picture Synth was conceived in that moment. What followed was a short gestation, and suprisingly straightforward birth.<br />
-			It has been really fun bringing together canvas and audio elements. Never done the whole file system drag'n'drop thing, so that was good. (And again, suprisingly simple.)</p>
-			<p>Aesthetically, for me I think I could pull some BS together about John Cage, chance composition, found sound, that kind of shizzle. But maybe over a beer..</p>
-			<p>Techically, this uses the frequencies from a piano as a source.<br />
-			A picture is sampled and the pixel values read from canvas (you have to use canvas for this - the data isn't available in the DOM). R, G &amp; B values are stored in arrays (we can get alpha too), and then on playback, these colour values are mapped against variables in the synth.<br>
-			For examaple, red might select the frequency (higher value == lower note), and blue will affect the delay in the sound envelope (higher value == longer notes).<br>
-			I had intended to also control the interval speed dynamically - faster values mean the notes overlap more, slower gives a longer more spacious composition. But I ran out of time. Sorry.</p>
 			<p>To use - drop an image on the canvas. It will play some "music". Some pictures sound great. Others are painful.<br>
 			A marker shows which pixel is currently being played.<br>
-			Play with the selectors. <span class="done">(You have to drop the image again if you change the options. Something else I will get to improving in the future.)</span></p>
-			<p>Try the sample images<br>
-			For example, brown noise is really nice with red/green<br>
-			Rainbow - Big difference changing decay colour. blue/green</p>
+			Play with the selectors.</p>
 			<p>There is a STOP button.</p>
 			<p>The random tune button works on my mobile. I need to make a load interface that doesn't use drag'n'drop. Sometime.</p>
+			<p>Techically, this uses the frequencies from a piano as a source.<br />
+			A picture is sampled and the pixel values read from canvas (you have to use canvas for this - the data isn't available in the DOM). R, G &amp; B values are stored in arrays (we can get alpha too), and then on playback, these colour values are mapped against variables in the synth.<br>
+			For examaple, red might select the frequency (higher value == lower note), and blue will affect the delay in the sound envelope (higher value == longer notes).</p>
 		</div>
 
 	</body>
