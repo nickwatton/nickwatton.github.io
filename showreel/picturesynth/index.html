@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+
+	<head>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<style>
+		body{
+			font-family: arial;
+		}
+		input{
+			margin-left:0;
+		}
+		h1{
+			margin-left: 25px;
+		}
+		h2{
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+		h4{
+			margin-top: 0;
+		}
+		canvas{ image-rendering: -webkit-optimize-contrast;}
+		#canvasWrapper{
+			position:relative;
+			float:left;
+		}
+		#marker{
+			display: block;
+			position:absolute;
+			border: 1px solid white;
+			background-color:rgba(255, 255, 255, 0.5);
+			/*opacity: .5;*/
+			height:19px;
+			width:19px;
+			z-index: 99;
+			top:0;
+			left:0;
+		}
+		#controlWrapper{
+			float:left;
+			padding-left:20px;
+			width: 240px;
+		}
+		.cSet{
+			margin-top:20px;
+		}
+		.cSet span{
+			color:#aaa;
+		}
+		#infoBox{
+			clear:both;
+			padding-top: 30px;
+		}
+		.done{
+			text-decoration:line-through;
+		}
+	</style>
+
+	</head>
+
+	<body>
+		<h1>Pixel player</h1>
+
+		<div id="canvasWrapper">
+			<canvas id="soundCanvas" width="300" height="300"></canvas>
+			<div id="marker"></div>
+		</div>
+
+		<div id="controlWrapper">
+			<h2>Controls</h2>
+			<h4>Adjust values to alter the playback parameters, and character of the sound</h4>
+			<div class="cSet">
+			Pick which colour controls frequency <span>(does not work during playback)</span> (higher colour value gives lower frequency):
+				<form name="frequencySelect">
+					<label for="r">red</label>
+				  <input id="r" value="r" type="radio" name="frequencySelect" checked/>
+					<label for="g">green</label>
+				  <input id="g" value="g" type="radio" name="frequencySelect"/>
+					<label for="b">blue</label>
+				  <input id="b" value="b" type="radio" name="frequencySelect"/>
+				</form>
+			</div>
+
+			<hr />
+
+			<div class="cSet">
+				Pick which colour controls sound envelope decay <span>(does not work during playback)</span> (higher colour value gives longer note):
+				<form name="decaySelect">
+					<label for="r">red</label>
+				  <input id="r" value="r" type="radio" name="frequencySelect"/>
+					<label for="g">green</label>
+				  <input id="g" value="g" type="radio" name="frequencySelect" checked/>
+					<label for="b">blue</label>
+				  <input id="b" value="b" type="radio" name="frequencySelect"/>
+				</form>
+			</div>
+
+			<hr />
+
+			<div class="cSet">
+				<button id="random">Play random tune</button>
+				<button id="stop">Stop</button>
+			</div>
+		</div>
+
+		<div id="infoBox">
+			<!-- <h3>ToDo</h3>
+			<p>Optional: Variable rate - swap interval for requestAnimationFrame, then have a tick counter as action gate.<br>If variable this tick counter value can be mapped from colour.<br>Map bewteen values for 1/7sec and 1sec.</p> -->
+			<h3>Read all about it</h3>
+			<p>So, I wanted to do this after one of David's video presentations. The one where the man created an amazing synth, and at one point made tiny fragment sounds, which made ... rather discordant "music". This was a frustrating part of the film.</p>
+			<p>I didn't mind the discordant sound. What I found annoying was that there was an image of clouds on screen, and I thought he was going to sample the image data from the cloud and map it into his syth to make different discordant "music".</p>
+			<p>Well, his loss, my gain. The Picture Synth was conceived in that moment. What followed was a short gestation, and suprisingly straightforward birth.<br />
+			It has been really fun bringing together canvas and audio elements. Never done the whole file system drag'n'drop thing, so that was good. (And again, suprisingly simple.)</p>
+			<p>Aesthetically, for me I think I could pull some BS together about John Cage, chance composition, found sound, that kind of shizzle. But maybe over a beer..</p>
+			<p>Techically, this uses the frequencies from a piano as a source.<br />
+			A picture is sampled and the pixel values read from canvas (you have to use canvas for this - the data isn't available in the DOM). R, G &amp; B values are stored in arrays (we can get alpha too), and then on playback, these colour values are mapped against variables in the synth.<br>
+			For examaple, red might select the frequency (higher value == lower note), and blue will affect the delay in the sound envelope (higher value == longer notes).<br>
+			I had intended to also control the interval speed dynamically - faster values mean the notes overlap more, slower gives a longer more spacious composition. But I ran out of time. Sorry.</p>
+			<p>To use - drop an image on the canvas. It will play some "music". Some pictures sound great. Others are painful.<br>
+			A marker shows which pixel is currently being played.<br>
+			Play with the selectors. <span class="done">(You have to drop the image again if you change the options. Something else I will get to improving in the future.)</span></p>
+			<p>Try the sample images<br>
+			For example, brown noise is really nice with red/green<br>
+			Rainbow - Big difference changing decay colour. blue/green</p>
+			<p>There is a STOP button.</p>
+			<p>The random tune button works on my mobile. I need to make a load interface that doesn't use drag'n'drop. Sometime.</p>
+		</div>
+
+	</body>
+</html>
+
+<script>
+
+	// TODO:
+	// Red for freq && Green for decay ... Blue for ..?
+	// MArker uses har-coded values - make variable
+	// Create interface / notes & instructions
+
+	$(document).ready(init);
+
+	function init() {
+
+		var audio = new window.AudioContext(),
+			position = 0,
+			marker = document.getElementById("marker"),
+			loop = false,
+			frequencyLookup = [4186.01,3951.07,3729.31,3520,3322.44,3135.96,2959.96,2793.83,2637.02,2489.02,2349.32,2217.46,2093,1975.53,1864.66,1760,1661.22,1567.98,1479.98,1396.91,1318.51,1244.51,1174.66,1108.73,1046.5,987.767,932.328,880,830.609,783.991,739.989,698.456,659.255,622.254,587.33,554.365,523.251,493.883,466.164,440,415.305,391.995,369.994,349.228,329.628,311.127,293.665,277.183,261.626,246.942,233.082,220,207.652,195.998,184.997,174.614,164.814,155.563,146.832,138.591,130.813,123.471,116.541,110,103.826,97.9989,92.4986,87.3071,82.4069,77.7817,73.4162,69.2957,65.4064,61.7354,58.2705,55,51.9131,48.9994,46.2493,43.6535,41.2034,38.8909,36.7081,34.6478,32.7032,30.8677,29.1352,27.5], // https://en.wikipedia.org/wiki/Piano_key_frequencies
+			song, /*= writeRandomSong(250),*/
+			canvas = document.getElementById("soundCanvas"),
+			context = canvas.getContext("2d"),
+			img = document.createElement("img"),
+			redValues = [],
+			greenValues = [],
+			blueValues = [],
+			freqValues = redValues,
+			decayValues = greenValues,
+			colourMapping = ["red", "green", "blue"],
+			freqMap = colourMapping[0],
+			decayMap = colourMapping[1],
+			metronome;
+
+		function createOscillator(freq, index) {
+			// Create an envelope to make sound more pleasant
+			var attack = 100,
+				//decay = 1250, // 250 - 1250
+				decay = Math.round(decayValues[index].map(0,255,250,2500)), // 250 - 1250
+				gain = audio.createGain(),
+				osc = audio.createOscillator();
+			// Connect up the envelope
+			gain.connect(audio.destination);
+			gain.gain.setValueAtTime(0, audio.currentTime);
+			gain.gain.linearRampToValueAtTime(1, audio.currentTime + (attack * .001));
+			gain.gain.linearRampToValueAtTime(0, audio.currentTime + (decay * .001));
+			// make the sound
+			osc.frequency.value = freq;
+			osc.type = "sine";// sawtooth sine triangle square
+			osc.connect(gain);
+			osc.start(0);
+			// Clean up - for GC
+			setTimeout(function() {
+				osc.stop(0);
+				osc.disconnect(gain);
+				gain.disconnect(audio.destination);
+			}, decay);
+		}
+
+		function playRandom(){
+			song = writeRandomSong(225);
+			// random data for other parts
+			for(var i=0;i<song.length;i++)
+				decayValues.push(Math.floor(Math.random()*255));
+			// resets
+			if(metronome) clearInterval(metronome);
+			position = 0;
+			metronome = setInterval(playSong, 1000 / 4); // 7 >> polyphoney  2 >> nice seperation (@1250 decay)
+		}
+
+		function writeRandomSong(len){
+			var rSong = [];
+			for(var i=0;i<len;i++)
+				rSong.push(Math.floor(Math.random()*frequencyLookup.length));
+			return rSong.slice();
+		}
+
+		function writePixelSong(len){
+			if(song)
+				song.length = 0;
+			var pSong = [];
+			for(var i=0;i<len;i++)
+				pSong.push(Math.round(freqValues[i].map(0,255,0,frequencyLookup.length-1)));
+			return pSong.slice();
+		}
+
+		function playSong() {
+			var note = song[position],
+				frequency = frequencyLookup[note];
+			if(position >= song.length)
+				loop ? position = 0 : clearInterval(metronome);
+			if(frequency){
+				positionMarker(position);
+				createOscillator(frequency, position);
+			}
+			position++;
+		}
+
+		function positionMarker(indx){
+			var	x = (indx%15)*20,
+				y = (parseInt(indx/15))*20;
+			marker.style.left = x +"px";
+			marker.style.top = y +"px";
+		}
+
+		function setupCanvas(){
+			context.strokeStyle="#333333";
+			context.rect(1,1,299,299);
+			context.stroke();
+			context.fillStyle="#666666";
+			context.font = '14pt Arial';
+			context.textAlign = 'center';
+			context.fillText("Drop an image onto this canvas", 150, 130);
+			context.fillText("to hear what is sounds like", 150, 155);
+
+			// To enable drag and drop
+			canvas.addEventListener("dragover", function (evt) {
+				evt.preventDefault();
+			}, false);
+
+			// Handle dropped image file - only Firefox and Google Chrome
+			canvas.addEventListener("drop", function (evt) {
+				var files = evt.dataTransfer.files;
+				if (files.length > 0) {
+					var file = files[0];
+					if (typeof FileReader !== "undefined" && file.type.indexOf("image") != -1) {
+						var reader = new FileReader();
+						// Note: addEventListener doesn't work in Chrome for this event
+						reader.onload = function (evt) {
+							img.src = evt.target.result;
+							pixelate(5);
+						};
+						reader.readAsDataURL(file);
+					}
+				}
+				evt.preventDefault();
+			}, false);
+		}
+
+		// Thanks:: http://jsfiddle.net/epistemex/u6apxgfk/
+		// Useful size (v) values - 1 - 50
+		function pixelate(v) {
+		    var size = v * 0.01,
+	        w = soundCanvas.width * size,
+	        h = soundCanvas.height * size;
+			context.imageSmoothingEnabled = false;
+		    context.drawImage(img, 0, 0, w, h);
+			gatherPixelData(w, soundCanvas.width/w); // We have tiny image - scan for pixel data, before drawing "pixelated"
+		    context.drawImage(soundCanvas, 0, 0, w, h, 0, 0, soundCanvas.width, soundCanvas.height);
+		}
+
+
+		function gatherPixelData(n, w){
+			// Scan across image and sample required colour values to map to our audio features
+			// n - number of pixels across
+			// w - size of pixels
+			redValues.length = 0;
+			greenValues.length = 0;
+			blueValues.length = 0;
+			var numPixels = n*n;
+			var imageData = context.getImageData(0, 0, n, n);
+			var pixelData = imageData.data;
+			for (i = 0; i < numPixels*4; i+=4){
+				redValues.push(Math.round(pixelData[i]));
+				greenValues.push(Math.round(pixelData[i+1]));
+				blueValues.push(Math.round(pixelData[i+2]));
+			}
+
+				freqValues = redValues;
+			if(freqMap == colourMapping[0])
+				freqValues = redValues;
+			else if(freqMap == colourMapping[1])
+				freqValues = greenValues;
+			else if(freqMap == colourMapping[2])
+				freqValues = blueValues;
+			//else
+
+				decayValues = redValues;
+			if(decayMap == colourMapping[0])
+				decayValues = redValues;
+			else if(decayMap == colourMapping[1])
+				decayValues = greenValues;
+			else if(decayMap == colourMapping[2])
+				decayValues = blueValues;
+			// else
+
+
+			re_startPixelSong();
+		}
+
+		$('#random').on('click', playRandom );
+		$('#stop').on('click', stopPlayback );
+		$('input[type=radio][name=frequencySelect]').change(function() {
+			switch(this.value){
+				case "r":
+					freqValues = redValues;
+					freqMap = colourMapping[0];
+					break;
+				case "g":
+					freqValues = greenValues;
+					freqMap = colourMapping[1];
+					break;
+				case "b":
+					freqValues = blueValues;
+					freqMap = colourMapping[2];
+					break;
+			}
+			re_startPixelSong();
+	    });
+		$('input[type=radio][name=decaySelect]').change(function() {
+			switch(this.value){
+				case "r":
+					decayValues = redValues;
+					decayMap = colourMapping[0];
+					break;
+				case "g":
+					decayValues = greenValues;
+					decayMap = colourMapping[1];
+					break;
+				case "b":
+					decayValues = blueValues;
+					decayMap = colourMapping[2];
+					break;
+			}
+			re_startPixelSong();
+	    });
+
+	    function re_startPixelSong(){
+	    	console.log("re-startPixelSong");
+	    	song = writePixelSong(redValues.length);
+			// resets
+			if(metronome) clearInterval(metronome);
+			position = 0;
+			//
+			metronome = setInterval(playSong, 1000 / 4); // 7 >> polyphoney  2 >> nice seperation (@1250 decay)
+	    }
+
+
+		function stopPlayback(){
+			if(metronome) clearInterval(metronome);
+		}
+
+		setupCanvas();
+	}
+
+	function alert(){
+
+		$('#stop').fadeIn(3000);
+
+		var context = new window.AudioContext();
+
+		var osc = context.createOscillator();
+		osc.frequency.value = 500;
+		osc.connect(context.destination);
+		osc.start(0);
+
+		var gain = context.createGain();
+		gain.gain.value = 100;
+		gain.connect(osc.frequency);
+
+		var osc2 = context.createOscillator();
+		osc2.frequency.value = 1;
+		osc2.type = "sawtooth";
+		osc2.connect(gain);
+		osc2.start(0);
+
+		$('#stop').on('click', function() { osc.stop(); });
+	}
+
+	// Pass minIn, maxIn, minOut, maxOut
+	Number.prototype.map = function(a,b,c,d){return c+(d-c)*((this-a)/(b-a))};
+
+
+</script>
