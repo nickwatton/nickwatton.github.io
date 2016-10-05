@@ -96,7 +96,7 @@ _   initial setup
         drawPixelData=ctx.createImageData(1,1)
         canvasImage = new CanvasImage(canvas, "seed_wide.png");
 
-        fpsCounter = new realUtils.FPS();
+        //fpsCounter = new realUtils.FPS();
     }
  
     function update(){
@@ -106,7 +106,7 @@ _   initial setup
         }
         else{
             running=false;
-            fpsCounter.stop(); // Doesn't work
+            //fpsCounter.stop(); // Doesn't work
         }
         if(factorA.count < factorA.duration){
             factorA.factor = easeInQuad(factorA.count++, factorA.start, factorA.end, factorA.duration);
@@ -149,7 +149,7 @@ _   initial setup
     }
 
     function animate(){
-        fpsCounter.update();
+        //fpsCounter.update();
         now = Date.now();
         elapsed = now - then;
         if (elapsed > fpsInterval) {
@@ -158,7 +158,7 @@ _   initial setup
             draw();
         }
         if(running){
-            fpsCounter.update();
+            //fpsCounter.update();
             requestAnimFrame(animate);
         }
     }

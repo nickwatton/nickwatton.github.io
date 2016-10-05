@@ -90,7 +90,7 @@ _   initial setup
 
         canvasImage = new CanvasImage(canvas, "seed_wide.png");
 
-        fpsCounter = new realUtils.FPS();
+        //fpsCounter = new realUtils.FPS();
     }
 
     function update(){
@@ -100,7 +100,7 @@ _   initial setup
         }
         else{
             running=false;
-            fpsCounter.stop(); // Doesn't work
+            //fpsCounter.stop(); // Doesn't work
         }
     }
 
@@ -144,7 +144,7 @@ _   initial setup
     }
 
     function animate(){
-        fpsCounter.update();
+        //fpsCounter.update();
         now = Date.now();
         elapsed = now - then;
         if (elapsed > fpsInterval) {
@@ -154,7 +154,7 @@ _   initial setup
         }
         if(running){
             console.log("f")
-            fpsCounter.update();
+            //fpsCounter.update();
             requestAnimFrame(animate);
         }
     }

@@ -11,8 +11,7 @@
                     {value: "main_d.js",    text:"Filling the ribbon - last section drawn each frame"},
                     {value: "main_c.js",    text:"Calculating ribbon edge on mouse path. Speed controls ribbon width"},
                     {value: "main_b.js",    text:"Drawing line as mouse trail"},
-                    {value: "main_a.js",    text:"Original - points perpendicular to random line"},
-                    ],
+                    {value: "main_a.js",    text:"Original - points perpendicular to random line"}],
     currentValue = optionList[0].value,
     headingCopy="Explore development phases:",
     warningCopy="Warning - old scripts still run after switching - performance will probably suffer!";
