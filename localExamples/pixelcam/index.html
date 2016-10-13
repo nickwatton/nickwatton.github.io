@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" style="overflow:auto;">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>PixelCam</title>
+		<script src="swfobject.js" language="javascript" type="text/JavaScript"></script>
+
+	</head>
+	<body style="background-color:#000000;">
+    
+		<div id="flashdiv">
+			<p>A webcam toy.</p>
+			<p>To view this content you must have JavaScript enabled in your browser and download a recent version of the Adobe Flash player.</p>
+		</div>
+
+
+		<script type="text/javascript">
+			var flashvars = {};
+			var params = {};
+			params.allowFullScreen = "true";
+			params.allowScriptAccess = "sameDomain"
+			params.wmode = "opaque";
+			swfobject.embedSWF("Pixelcam.swf", "flashdiv", "640", "480", "10.0.0.0", "expressInstall.swf", flashvars, params);
+		</script>
+		
+	</body>
+</html>
