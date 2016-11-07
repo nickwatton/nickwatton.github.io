@@ -6,17 +6,19 @@
     var wrapper, canvas, context, width, height, 
     starCanvas, starContext,
     dancingPlanet1,dancingPlanet2,
+    initialSelect=0,
     speedFactor = 200,
     orbitalScalingFactor=0.000002,
     Tau=Math.PI*2, PI180=Math.PI/180,
     systems=[];
 
-    var optionList = [  {value: "3,2,0.000002,200",  text:"Earth & Venus"},
-                        {value: "3,1,0.000002,200",  text:"Earth & Mercury"},
+    var optionList = [  {value: "3,1,0.000002,200",  text:"Earth & Mercury"},
+                        {value: "3,2,0.000002,200",  text:"Earth & Venus"},
                         {value: "3,4,0.0000015,250",  text:"Earth & Mars"},
                         {value: "3,5,0.0000005,1000",  text:"Earth & Jupiter"},
-                        {value: "5,6,0.0000004,2000",  text:"Jupiter & Saturn"}],
-    currentSelectValue = [2,3,0.000002,200],
+                        {value: "5,6,0.0000004,10000",  text:"Jupiter & Saturn"},
+                        {value: "6,7,0.00000015,80000",  text:"Saturn & Uranus"}],
+    currentSelectValue = optionList[initialSelect].value.split(","),
     dancingPlanet1 = currentSelectValue[0], 
     dancingPlanet2 = currentSelectValue[1], 
     orbitalScalingFactor = currentSelectValue[2],
@@ -33,6 +35,8 @@
             option.text = optionList[i].text;
             selectList.appendChild(option);
         }
+        // selectList.text = optionList[initialSelect].text;
+        // selectList.value = initialSelect;
         selectList.addEventListener('change', handleSelect);
     }
 
@@ -129,9 +133,7 @@
     }
 
     PlanetaryBody.prototype.setorbitalRadius = function(){
-        console.log(this.id, this.orbitalRadius);
         this.orbitalRadius = this.orbitalRadiusBase * orbitalScalingFactor;
-        console.log(this.id, this.orbitalRadius);
     }
 
     PlanetaryBody.prototype.setSpeedFactor = function(value){
@@ -179,8 +181,6 @@
         systems.push(system1);
         system1.x = width * .5;
         system1.y = height * .5;
-
-        // system1.addBody({id:'sun',      diameter:10,     degrees:0,    speed:1,        colour:'#FDFE1D',   orbitalRadius:0,          parentBody:null});
         system1.addBody({id:'sun',      diameter:10,    degrees:0,      speed:1,        colour:'#241c04',   orbitalRadius:0,          parentBody:null});
         system1.addBody({id:'mercury',  diameter:5,     degrees:270,    speed:88,       colour:'#dddddd',   orbitalRadius:57950000,  parentBody:'sun'});
         system1.addBody({id:'venus',    diameter:2,     degrees:270,    speed:225,      colour:'#F6C866',   orbitalRadius:108110000,  parentBody:'sun'});
@@ -188,6 +188,7 @@
         system1.addBody({id:'mars',     diameter:3,     degrees:270,    speed:687,      colour:'#D95E23',   orbitalRadius:227840000,   parentBody:'sun'});
         system1.addBody({id:'jupiter',  diameter:40,    degrees:270,    speed:4343.5,   colour:'#FCE6C1',   orbitalRadius:778140000,   parentBody:'sun'});
         system1.addBody({id:'saturn',   diameter:30,    degrees:270,    speed:10767.5,  colour:'#FBEFA2',   orbitalRadius:342700000,   parentBody:'sun'});
+        system1.addBody({id:'uranus',   diameter:23,    degrees:270,    speed:30660,    colour:'#992299',   orbitalRadius:2870300000,   parentBody:'sun'});
     }
 
     function setupEvents(){
