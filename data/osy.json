@@ -22,7 +22,28 @@
 		},
 
 		{
-			"client":	"Internal research for banner FX",
+			"client":	"Dynamic pattern drawing",
+			"job":		"The Pentagram of Venus",
+			"agency":	"Realise",
+			"date":		"2016010",
+			"rank":		1,
+            "filter":   [0,1,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View the demo",
+					"url":	"/showreel/orrery/venus/"
+				}
+			],
+			"copy1":	"The Pentagram of Venus: Orbital patterns",
+			"copy2":	"Pairs of planets make patterns as they dance through our heavens.|I used my solar system code to map some of them.",
+			"tech":		"HTML Canvas, JavaScript, OOP",
+			"thumb":	"pentagramOfVenus01.png",
+			"images":[]
+		},
+
+		{
+			"client":	"OOP Programming experiment",
 			"job":		"Solar System",
 			"agency":	"Realise",
 			"date":		"201608",
