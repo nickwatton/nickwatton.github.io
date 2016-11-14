@@ -13,12 +13,12 @@ _   initial setup
         frameCount=0, fps=30, fpsInterval, startTime, now, then, elapsed,
         padX=50, padY=50, maxXY=200,
 
-        colour='#333333',
+        colour='#777',
 
-        countX=0, initX=0, stepX=.080,
-        countY=0, initY=-20, stepY=.081,
+        countX=1, initX=0, stepX=.07*.5,
+        countY=1, initY=0, stepY=.05*.5,
         range = 200,
-        ptX=initX, ptY=initY, ptR=1,
+        ptX=initX, ptY=initY, ptR=.5,
 
 
         running=true,
