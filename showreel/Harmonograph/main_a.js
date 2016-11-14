@@ -11,16 +11,11 @@ _   initial setup
         It is called Tau because: http://tauday.com */
     var wrapper, canvas, ctx, width=500, height=500, Tau=Math.PI*2,
         frameCount=0, fps=30, fpsInterval, startTime, now, then, elapsed,
-        padX=50, padY=50, maxXY=200,
-
-        colour='#333333',
-
-        countX=0, initX=0, stepX=.080,
-        countY=0, initY=-20, stepY=.081,
-        range = 200,
-        ptX=initX, ptY=initY, ptR=1,
-
-
+        padX=50, padY=50,
+        minX=-200, maxX=200, initX=0, rateX=3,
+        minY=-200, maxY=200, initY=minY, rateY=2.01,
+        decay=.9999,
+        ptX=initX, ptY=initY, ptR=.5,
         running=true,
         fpsCounter;
 
@@ -38,6 +33,23 @@ _   initial setup
     Date.now = Date.now || function() { return +new Date; };
     // Polyfill methods - End
 
+    function genX(){
+        ptX += rateX;
+        rateX*=decay;
+        if(ptX > maxX || ptX < minX){
+            rateX *= -1;
+        }
+        // console.log("genX")
+    }
+
+    function genY(){
+        ptY += rateY;
+        rateY*=decay;
+        if(ptY > maxY || ptY < minY){
+            rateY *= -1;
+        }
+    }
+
     function createCanvas(id, w, h){
         var tCanvas = document.createElement("canvas");
         tCanvas.width = w;
@@ -51,21 +63,19 @@ _   initial setup
         canvas =  createCanvas("canvas", width, height);
         wrapper.appendChild(canvas);
         ctx = canvas.getContext("2d");
-        ctx.fillStyle = colour;
+        ctx.fillStyle = '#ff0000';
 
         fpsCounter = new realUtils.FPS();
     }
  
     function update(){
-        countX += stepX;
-        countY += stepY;
-        ptX = Math.sin(countX) * range;
-        ptY = Math.sin(countY) * range;
+        genX();
+        genY();
     }
 
     function draw(){
         ctx.beginPath();
-        ctx.arc(padX+maxXY+ptX, padY+maxXY+ptY, ptR, 0, Tau, false);
+        ctx.arc(padX+maxX+ptX, padY+maxY+ptY, ptR, 0, Tau, false);
         // ctx.arc(10, 10, ptR, 0, Tau, false);
         ctx.fill();
         // console.log(ptX,ptY)
