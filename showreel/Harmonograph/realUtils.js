@@ -42,5 +42,5 @@ realUtils.FPS.prototype.update = function(){
     this.frames += 1;
 }
 realUtils.FPS.prototype.stop = function(){
-    //this.timer.clearInterval();
+    this.display.innerHTML = 'FPS display: STOPPED';
 }
