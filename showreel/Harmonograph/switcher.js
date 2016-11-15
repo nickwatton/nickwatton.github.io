@@ -6,8 +6,10 @@
     'use strict';
 
     var canvasDiv=document.getElementById("wrapper"),
-    optionList = [  {value: "main.js",      text:"Adding Sine values"},
-                    {value: "main_a.js",    text:"First run. Linear change."}],
+    optionList = [  {value: "main.js",      text:"Adding dampening"},
+                    {value: "main_c.js",    text:"Tried adding rotation"},
+                    {value: "main_b.js",    text:"Smoothing pendulum with sine values"},
+                    {value: "main_a.js",    text:"First run. Linear change"}],
     currentValue = optionList[0].value,
     headingCopy="Explore development phases:",
     warningCopy="Warning - old scripts still run after switching - performance will probably suffer!";
