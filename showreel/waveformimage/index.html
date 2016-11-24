@@ -59,31 +59,15 @@
 
 	</head>
 
-	<!--
-		TODO
-
-		>>> Load image to canvas
-		>>> Sample waveform area
-			>>> Read vertical strips: sum rgb - looking for concurremt black. Treat < 20 == black
-				>>> store top (for marker), length (for volume)
-			>>> Read horizontal strip - store rgb for song reference
-		>>> Draw block with h-strip eg 10 px so user can see what is happening.
-		>>> Playback song
-			>>> Draw transparent overlay on volume area
-			>>> Draw marker to show position
-			>>> Draw marker to show volume (in place on picture)
-		>>> Registers need clearing on resample
-		Add interaction so user controls interval rate
-			Make this work during playback
-	 -->
-
 	<body>
 		<h1>Pixel volume</h1>
 		<div>
-			<p>Click anywhere on the image to select a pixel row.<br>
+			<p><strong>Click anywhere on the image</strong> to select a row of pixels.<br>
 			This will be sampled (and displayed at the bottom), then your track will begin.<br />
 			The highlighted area of the image controls volume.</p>
-			<p>Click again to start over.</p>
+			<p>Technically, this uses the frequencies from a piano as a source.<br />
+			Colour values are read from the image: R, G &amp; B values are stored, and on playback these colour values are mapped against sound fequencies in the synth.</p>
+			<p><strong>Click again to start over.</strong></p>
 		</div>
 
 		<div id="canvasWrapper">
@@ -92,39 +76,9 @@
 		</div>
 
 		<div id="controlWrapper">
-			<!-- <h2>Controls</h2>
-			<h4>Adjust values to alter the playback parameters, and character of the sound</h4>
-			<div class="cSet">
-			Pick which colour controls frequency <span>(does not work during playback)</span> (higher colour value gives lower frequency):
-				<form name="frequencySelect">
-					<label for="r">red</label>
-				  <input id="r" value="r" type="radio" name="frequencySelect" checked/>
-					<label for="g">green</label>
-				  <input id="g" value="g" type="radio" name="frequencySelect"/>
-					<label for="b">blue</label>
-				  <input id="b" value="b" type="radio" name="frequencySelect"/>
-				</form>
-			</div>
-
-			<hr />
-
-			<div class="cSet">
-				Pick which colour controls sound envelope decay <span>(does not work during playback)</span> (higher colour value gives longer note):
-				<form name="decaySelect">
-					<label for="r">red</label>
-				  <input id="r" value="r" type="radio" name="frequencySelect"/>
-					<label for="g">green</label>
-				  <input id="g" value="g" type="radio" name="frequencySelect" checked/>
-					<label for="b">blue</label>
-				  <input id="b" value="b" type="radio" name="frequencySelect"/>
-				</form>
-			</div>
-
-			<hr /> -->
 
 
 			<div class="cSet">
-				<!-- <button id="random">Play random tune</button> -->
 				<button id="stop">Stop</button>
 			</div>
 		</div>
@@ -239,7 +193,6 @@
 		        sampleVertical(volTopY,500,100);
 		        addVolumeOverlay(volTopY,500,100);
 		    }
-		    // img.src = "david.jpg";
 		    img.src = "nick.jpg";
 		}
 
@@ -314,11 +267,9 @@
 				}
 				blackVals.push([bFirst, bSum]);
 			}
-			// We now have vertical data and marker placement value
 		}
 
 	    function re_startPixelSong(){
-	    	// console.log("re-startPixelSong");
 	    	song = writePixelSong(redValues.length);
 			// resets
 			if(metronome) clearInterval(metronome);

@@ -163,6 +163,26 @@
 			"images":[]
 		},
 		{
+			"client":	"HTML audio",
+			"job":		"Synthesising audio from an image",
+			"agency":	"Realise",
+			"date":		"201511",
+			"rank":		1,
+            "filter":   [0,1,7,5],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View experiment",
+					"url":	"/showreel/waveformimage/"
+				}
+			],
+			"copy1":	"Colour values of an image are converted to audio, using piano frequencies to make the effect more-or-less pleasant.",
+			"copy2":	"A second region of the image and areas of contingent black are used to control the volume.",
+			"tech":		"JavaScript, HTML audio",
+			"thumb":	"waveformimage_01.png",
+			"images":[]
+		},
+		{
 			"client":	"Internal research",
 			"job":		"Multi-canvas Demo",
 			"agency":	"One Square Yard",
@@ -212,7 +232,7 @@
 			"agency":	"FP Creative",
 			"date":		"201311",
 			"rank":		1,
-            "filter":   [0,1,2,4],
+            "filter":   [0,2,4],
 			"links":[
 				{
 					"hero":	1,
@@ -351,7 +371,7 @@
 			"agency":	"FP Creative",
 			"date":		"201110",
 			"rank":		2,
-            "filter":   [7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,
@@ -371,7 +391,7 @@
 			"agency":	"FP Creative",
 			"date":		"201105",
 			"rank":		1,
-            "filter":   [0,1,3,4,5],
+            "filter":   [0,3,4,5],
 			"links":[
 				{
 					"hero":	1,
@@ -409,30 +429,6 @@
 			"tech":		"AS3, MVC,|Away3D,|Full screen support",
 			"thumb":"LR405_01.jpg",
 			"thumb":"DC100_01.jpg",
-			"images":[]
-		},
-		{
-			"client":	"FP Creative",
-			"job":		"Christmas Twitter reader",
-			"agency":	"FP Creative",
-			"date":		"201112",
-			"rank":		2,
-            "filter":   [0,3,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"Gallery on B&#275;hance",
-					"url":	"http://bit.ly/VL5opE"
-				},
-				{
-					"copy":	"View the site (archive version)",
-					"url":	"http://onesquareyard.com/showreel/tweetTree/"
-				}
-			],
-			"copy1":		"I proposed to FP Creative that they should highlight their digital work with an 'HTML5' Christmas card.|This took the form of a Twitter reader with tweets represented by baubles on a tree, and proved popular with client and staff alike.|Developed using canvas, once performance had been optimised I added a second canvas which ran a snow particle system, providing visual depth and some nice movement.",
-			"copy2":		"Sadly now just an archive version, FPs custom Drupal tweet cache has been removed, so the heart as been removed, and this is now just a low-level canvas animation.",
-			"tech":		"JavaScript, jQuery, HTML,|Twitter integration",
-			"thumb":"tweetTree_01.jpg",
 			"images":[]
 		},
 		{
