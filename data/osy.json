@@ -15,27 +15,6 @@
 		},
 
 		{
-			"client":	"Skills development",
-			"job":		"DoubleClick QA Certification",
-			"agency":	"Realise",
-			"date":		"201607",
-			"rank":		1,
-            "filter":   [0,1,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"Read about Studio Certification",
-					"url":	"http://www.richmediagallery.com/tools/certification"
-				}
-			],
-			"copy1":	"I am now QA certified for DoubleClick banners.",
-			"copy2":	"This means I have demonstrated a deeper understanding of the DoubleClick banner QA process, so my builds are more likely to pass their audits first time, and be ready to publish more quickly.",
-			"tech":		"HTML banners",
-			"thumb":	"dc-qa.png",
-			"images":[]
-		},
-
-		{
 			"client":	"Dynamic pattern drawing",
 			"job":		"The Pentagram of Venus",
 			"agency":	"Realise",
@@ -95,6 +74,27 @@
 			"copy2":	"The particles have individual movement, which is influenced by points which attract or repel.|The drawing of the swarm as a whole is influenced by a population manager, which keeps count of the number of particles in each of a defined grid of cells. The more particles in a sector, the bigger the particle.|CSS blur and contrast filters are used on the canvas to soften the effect, and the fireflies appear to glow more brightly as they cluster together.|The effect takes a moment or two to build, just like real fireflies gathering.",
 			"tech":		"HTML Canvas, JavaScript, OOP, CSS",
 			"thumb":	"firefly_1.png",
+			"images":[]
+		},
+
+		{
+			"client":	"Skills development",
+			"job":		"DoubleClick QA Certification",
+			"agency":	"Realise",
+			"date":		"201607",
+			"rank":		1,
+            "filter":   [0,1,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"Read about Studio Certification",
+					"url":	"http://www.richmediagallery.com/tools/certification"
+				}
+			],
+			"copy1":	"I am now QA certified for DoubleClick banners.",
+			"copy2":	"This means I have demonstrated a deeper understanding of the DoubleClick banner QA process, so my builds are more likely to pass their audits first time, and be ready to publish more quickly.",
+			"tech":		"HTML banners",
+			"thumb":	"dc-qa.png",
 			"images":[]
 		},
 
