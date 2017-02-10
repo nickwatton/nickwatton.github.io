@@ -288,7 +288,8 @@ _a   circling rings in 3d space
         draw();
         requestAnimFrame(animate);
     }
-
+    
+    document.body.className = "blurry";
     init();
     drawStars();
     animate();
