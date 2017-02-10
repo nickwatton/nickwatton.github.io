@@ -15,6 +15,27 @@
 		},
 
 		{
+			"client":	"Particle animation",
+			"job":		"My Sensitive Heart",
+			"agency":	"Realise",
+			"date":		"201702",
+			"rank":		1,
+            "filter":   [0,1,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View the demo",
+					"url":	"/showreel/sensitiveHeart/"
+				}
+			],
+			"copy1":	"My Sensitive Heart - Valentine's Day competition",
+			"copy2":	"Internal competition to code a Valentine's Day card. No external code libraries nor images allowed.",
+			"tech":		"HTML Canvas, JavaScript, OOP",
+			"thumb":	"sensitiveHeart.png",
+			"images":[]
+		},
+
+		{
 			"client":	"Dynamic pattern drawing",
 			"job":		"The Pentagram of Venus",
 			"agency":	"Realise",
