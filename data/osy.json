@@ -129,8 +129,8 @@
 			"links":[
 				{
 					"hero":	1,
-					"copy":	"View the demo",
-					"url":	"/showreel/smoke/"
+					"copy":	"View CodePen",
+					"url":	"http://codepen.io/2Mogs/full/jyJKBY"
 				}
 			],
 			"copy1":	"A particle effect to simulate smoke as a canvas animation.",
