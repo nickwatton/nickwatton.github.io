@@ -24,8 +24,8 @@
 			"links":[
 				{
 					"hero":	1,
-					"copy":	"View the demo",
-					"url":	"/showreel/sensitiveHeart/"
+					"copy":	"View CodePen",
+					"url":	"http://codepen.io/2Mogs/full/XpygZZ"
 				}
 			],
 			"copy1":	"My Sensitive Heart - Valentine's Day competition",
@@ -45,8 +45,8 @@
 			"links":[
 				{
 					"hero":	1,
-					"copy":	"View the demo",
-					"url":	"/showreel/orrery/venus/"
+					"copy":	"View CodePen",
+					"url":	"http://codepen.io/2Mogs/full/zNeJYP/"
 				}
 			],
 			"copy1":	"The Pentagram of Venus: Orbital patterns",
@@ -66,7 +66,7 @@
 			"links":[
 				{
 					"hero":	1,
-					"copy":	"View the demo",
+					"copy":	"View CodePen",
 					"url":	"http://codepen.io/2Mogs/full/OXBEvB/"
 				}
 			],
@@ -87,7 +87,7 @@
 			"links":[
 				{
 					"hero":	1,
-					"copy":	"View on CodePen",
+					"copy":	"View CodePen",
 					"url":	"http://codepen.io/2Mogs/full/qNKGoy/"
 				}
 			],
@@ -149,11 +149,7 @@
 			"links":[
 				{
 					"hero":	1,
-					"copy":	"View the demo",
-					"url":	"/showreel/cogs/"
-				},
-				{
-					"copy":	"Play with the code on CodePen",
+					"copy":	"View CodePen",
 					"url":	"http://codepen.io/2Mogs/full/KrQmrQ/"
 				}
 			],
