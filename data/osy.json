@@ -1,6 +1,27 @@
 {
 	"work":[
 		{
+			"client":	"Skills development",
+			"job":		"DoubleClick Studio + HTML5 Certification",
+			"agency":	"Realise",
+			"date":		"201702",
+			"rank":		1,
+            "filter":   [0,1,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"Read about Studio Certification",
+					"url":	"http://www.richmediagallery.com/tools/certification"
+				}
+			],
+			"copy1":	"I am now QA certified for DoubleClick banners.",
+			"copy2":	"This means I have demonstrated my knowledge and skills to build high quality rich media ads within DoubleClick Studio .",
+			"tech":		"HTML banners",
+			"thumb":	"dc-html5.png",
+			"images":[]
+		},
+
+		{
 			"client":	"Not on the High Street",
 			"job":		"Christmas banners",
 			"agency":	"Realise",
