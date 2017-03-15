@@ -16,24 +16,10 @@
 				}
 			],
 			"copy1":	"I am now a certified developer for DoubleClick banners.",
-			"copy2":	"This means I have demonstrated my knowledge and skills to build high quality rich media ads within DoubleClick Studio, with particular knowledge regarding the development of dynamic content creatives.",
+			"copy2":	"This means I have demonstrated my knowledge and skills to build high quality rich media ads within DoubleClick Studio, with particular knowledge regarding the development of dynamic content creatives.|In addition, I am QA certified for DoubleClick banners, so my builds are more likely to pass their audits first time, and be ready to publish more quickly.",
 			"tech":		"HTML banners",
 			"thumb":	"dc-cert.png",
-			"images":[]
-		},
-
-		{
-			"client":	"Not on the High Street",
-			"job":		"Christmas banners",
-			"agency":	"Realise",
-			"date":		"201611",
-			"rank":		1,
-            "filter":   [0,1,4,7],
-			"copy1":	"Built the banners for Not On The High Street's Christmas campaign.",
-			"copy2":	"Eight desktop and mobile sizes, served through DoubleClick.",
-			"tech":		"HTML, JavaScript, CSS",
-			"thumb":	"noths_01.jpg",
-			"images":[]
+			"images":["dc-qa.png"]
 		},
 
 		{
@@ -54,6 +40,51 @@
 			"copy2":	"Internal competition to code a Valentine's Day card. No external code libraries nor images allowed.",
 			"tech":		"HTML Canvas, JavaScript, OOP",
 			"thumb":	"sensitiveHeart.png",
+			"images":[]
+		},
+
+		{
+			"client":	"Heathrow",
+			"job":		"Car parking banners",
+			"agency":	"Realise",
+			"date":		"201701",
+			"rank":		1,
+            "filter":   [0,1,4,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"Valet parking - DoubleClick preview",
+					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/E75q7NNNQZWY8HmV8Z2oHQ"
+				},
+				{
+					"hero":	1,
+					"copy":	"Meet & Greet - DoubleClick preview",
+					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/IGlPdgfySpe-Vc3Y55JcPg"
+				},
+				{
+					"hero":	1,
+					"copy":	"Short Stay parking - DoubleClick preview",
+					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/dS5t4GJ7RymeIcN_Mezjwg"
+				}
+			],
+			"copy1":	"The most recent in an extensive portfolio of Heathrow banners.",
+			"copy2":	"This campaign has seen very high engagement, and presents a clean design and a dynamic feed, in a very lightweight package.|Served through DoubleClick.",
+			"tech":		"HTML, JavaScript, GSAP-js, CSS",
+			"thumb":	"heathrowCP_17q1_01.png",
+			"images":[]
+		},
+
+		{
+			"client":	"Not on the High Street",
+			"job":		"Christmas banners",
+			"agency":	"Realise",
+			"date":		"201611",
+			"rank":		1,
+            "filter":   [0,1,4,7],
+			"copy1":	"Built the banners for Not On The High Street's Christmas campaign.",
+			"copy2":	"Eight desktop and mobile sizes, served through DoubleClick.",
+			"tech":		"HTML, JavaScript, CSS",
+			"thumb":	"noths_01.jpg",
 			"images":[]
 		},
 
@@ -84,7 +115,7 @@
 			"agency":	"Realise",
 			"date":		"201608",
 			"rank":		1,
-            "filter":   [0,1,7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,
@@ -121,27 +152,6 @@
 		},
 
 		{
-			"client":	"Skills development",
-			"job":		"DoubleClick QA Certification",
-			"agency":	"Realise",
-			"date":		"201607",
-			"rank":		1,
-            "filter":   [0,1,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"Read about Studio Certification",
-					"url":	"http://www.richmediagallery.com/tools/certification"
-				}
-			],
-			"copy1":	"I am now QA certified for DoubleClick banners.",
-			"copy2":	"This means I have demonstrated a deeper understanding of the DoubleClick banner QA process, so my builds are more likely to pass their audits first time, and be ready to publish more quickly.",
-			"tech":		"HTML banners",
-			"thumb":	"dc-qa.png",
-			"images":[]
-		},
-
-		{
 			"client":	"Internal research for banner FX",
 			"job":		"Smoke",
 			"agency":	"Realise",
@@ -167,7 +177,7 @@
 			"agency":	"Realise",
 			"date":		"201607",
 			"rank":		1,
-            "filter":   [0,1,7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,
@@ -201,13 +211,34 @@
 			"thumb":	"fps.png",
 			"images":[]
 		},
+
+		{
+			"client":	"Heathrow",
+			"job":		"BA Under 25s banners",
+			"agency":	"Realise",
+			"date":		"201601",
+			"rank":		1,
+            "filter":   [0,1,4,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"DoubleClick preview",
+					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/IGnwXCv1R6GiaDQjoO2hWQ?creativeId=41019248"
+				}
+			],
+			"copy1":	"Video banners for a Heathrow / BA campaign targeting younger passengers.",
+			"copy2":	"Very eye-catching video banners, with a dynamic feed, which saw high engagement.|Served through DoubleClick.",
+			"tech":		"HTML, JavaScript, GSAP-js, CSS",
+			"thumb":	"heathrowU25_16q1_01.jpg",
+			"images":[]
+		},
 		{
 			"client":	"HTML audio",
 			"job":		"Synthesising audio from an image",
 			"agency":	"Realise",
 			"date":		"201511",
 			"rank":		1,
-            "filter":   [0,1,7,5],
+            "filter":   [0,7,5],
 			"links":[
 				{
 					"hero":	1,
@@ -219,50 +250,6 @@
 			"copy2":	"A second region of the image and areas of contingent black are used to control the volume.",
 			"tech":		"JavaScript, HTML audio",
 			"thumb":	"waveformimage_01.png",
-			"images":[]
-		},
-		{
-			"client":	"Internal research",
-			"job":		"Multi-canvas Demo",
-			"agency":	"One Square Yard",
-			"date":		"201401",
-			"rank":		1,
-            "filter":   [0,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"View the demo",
-					"url":	"http://onesquareyard.com/showreel/multiCanvas/"
-				}
-			],
-			"copy1":	"An experiment to control a unified animation across multiple HTML5 canvas elements, demonstrating the 'roadblock' banner functionality common in Flash banners.",
-			"copy2":	"",
-			"tech":		"Canvas, utalising JavaScript, jQuery",
-			"thumb":		"multiCanvas.jpg",
-			"images":[]
-		},
-		{
-			"client":	"FP Creative",
-			"job":		"Singing Christmas Card",
-			"agency":	"FP Creative",
-			"date":		"201312",
-			"rank":		1,
-            "filter":   [0,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"View the site (archive version)",
-					"url":	"http://onesquareyard.com/showreel/fpXmas"
-				},
-				{
-					"copy":	"Audio puzzle demo (HTML only)",
-					"url":	"http://onesquareyard.com/showreel/audioGame/"
-				}
-			],
-			"copy1":	"An animated audio Christmas card.|Developed with mobile friendly HTML5 and desktop Flash versions meaning everyone can enjoy the singing talents of the FP team.",
-			"copy2":	"Some immediate feedback:|“Hahahaha!”, “Brilliant!”, “Outstanding.”|“LOVE IT!! Of course the problem you now face is doing better next year.” - Well, I have an idea for that...",
-			"tech":		"Developed carefully to maximise code reuse between both deliveries, reducing time and cost.|HTML5:|Canvas, utalising JavaScript, Howler audio API, EaselJS, GSAP-js tweening. Zoe sprite-sheet generation|Flash:|AS3, GSAP-as tweening, custom SoundSprite class",
-			"thumb":		"soundcard_01.jpg",
 			"images":[]
 		},
 		{
@@ -406,26 +393,6 @@
 		},
 		{
 			"client":	"Santander",
-			"job":		"F1 Banner",
-			"agency":	"FP Creative",
-			"date":		"201110",
-			"rank":		2,
-            "filter":   [0,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"View animation (archive version)",
-					"url":	"http://onesquareyard.com/showreel/f1Map/"
-				}
-			],
-			"copy1":	"A simple banner animation created to compliment the Santander F1 Facebook Games, for the 2012 season.|Features a Santander red dot which flies around the world visiting the 2012 F1 locations.",
-			"copy2":	"A slightly hypnotic data driven canvas animation, sadly never to see the light of day.",
-			"tech":		"Canvas animation|JavaScript, jQuery, HTML",
-			"thumb":		"f1map_01.jpg",
-			"images":[]
-		},
-		{
-			"client":	"Santander",
 			"job":		"F1 Facebook games",
 			"agency":	"FP Creative",
 			"date":		"201105",
@@ -440,7 +407,7 @@
 				{
 					"tech":	"flash",
 					"copy":	"Play the games (archive version)",
-					"url":	"http://onesquareyard.com/showreel/SantanderGames/"
+					"url":	"/showreel/SantanderGames/"
 				}
 			],
 			"copy1":		"A set of four games, all with a racing feel, as part of a campaign which took Facebook likes from 100's to 15,000+ in a matter of months.",
@@ -656,7 +623,7 @@
 				},
 				{
 					"copy":	"Play the games (archive version)",
-					"url":	"http://onesquareyard.com/showreel/LloydsGames/"
+					"url":	"/showreel/LloydsGames/"
 				}
 			],
 			"copy1":		"A suite of five kids games with financial subtexts!",
@@ -695,6 +662,72 @@
 			"quote":	"Nick is a great developer. He is not only technically proficient but also very creative and has a solutions orientated approach.",
 			"name":		"Adam Graham",
 			"position":	"Co-Founder, Saint London"
+		}
+	],
+	"archived":[
+		{
+			"client":	"Internal research",
+			"job":		"Multi-canvas Demo",
+			"agency":	"One Square Yard",
+			"date":		"201401",
+			"rank":		1,
+            "filter":   [0,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View the demo",
+					"url":	"/showreel/multiCanvas/"
+				}
+			],
+			"copy1":	"An experiment to control a unified animation across multiple HTML5 canvas elements, demonstrating the 'roadblock' banner functionality common in Flash banners.",
+			"copy2":	"",
+			"tech":		"Canvas, utalising JavaScript, jQuery",
+			"thumb":	"multiCanvas.jpg",
+			"images":[]
+		},
+		{
+			"client":	"FP Creative",
+			"job":		"Singing Christmas Card",
+			"agency":	"FP Creative",
+			"date":		"201312",
+			"rank":		1,
+            "filter":   [0,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View the site (archive version)",
+					"url":	"/showreel/fpXmas"
+				},
+				{
+					"copy":	"Audio puzzle demo (HTML only)",
+					"url":	"/showreel/audioGame/"
+				}
+			],
+			"copy1":	"An animated audio Christmas card.|Developed with mobile friendly HTML5 and desktop Flash versions meaning everyone can enjoy the singing talents of the FP team.",
+			"copy2":	"Some immediate feedback:|“Hahahaha!”, “Brilliant!”, “Outstanding.”|“LOVE IT!! Of course the problem you now face is doing better next year.” - Well, I have an idea for that...",
+			"tech":		"Developed carefully to maximise code reuse between both deliveries, reducing time and cost.|HTML5:|Canvas, utalising JavaScript, Howler audio API, EaselJS, GSAP-js tweening. Zoe sprite-sheet generation|Flash:|AS3, GSAP-as tweening, custom SoundSprite class",
+			"thumb":		"soundcard_01.jpg",
+			"images":[]
+		},
+		{
+			"client":	"Santander",
+			"job":		"F1 Banner",
+			"agency":	"FP Creative",
+			"date":		"201110",
+			"rank":		2,
+            "filter":   [0,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View animation (archive version)",
+					"url":	"/showreel/f1Map/"
+				}
+			],
+			"copy1":	"A simple banner animation created to compliment the Santander F1 Facebook Games, for the 2012 season.|Features a Santander red dot which flies around the world visiting the 2012 F1 locations.",
+			"copy2":	"A slightly hypnotic data driven canvas animation, sadly never to see the light of day.",
+			"tech":		"Canvas animation|JavaScript, jQuery, HTML",
+			"thumb":		"f1map_01.jpg",
+			"images":[]
 		}
 	]
 }
