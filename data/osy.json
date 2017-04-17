@@ -11,6 +11,11 @@
 			"links":[
 				{
 					"hero":	1,
+					"copy":	"DoubleClick certified user profile",
+					"url":	"https://www.richmediagallery.com/tools/certified-users#certifiedUser:13511~"
+				},
+				{
+					"hero":	1,
 					"copy":	"Read about Studio Certification",
 					"url":	"http://www.richmediagallery.com/tools/certification"
 				}
