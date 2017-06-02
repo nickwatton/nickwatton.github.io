@@ -2,6 +2,53 @@
 	"work":[
 
 		{
+			"client":	"Standard Life Investments",
+			"job":		"British and Irish Lions: Game",
+			"agency":	"Realise",
+			"date":		"201706",
+			"rank":		1,
+            "filter":   [0,1,4,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"Play the game",
+					"url":	"https://drone.theworldwidepartner.com"
+				},
+				{
+					"hero":	1,
+					"copy":	"Standalone leaderboard",
+					"url":	"https://drone.theworldwidepartner.com/#leaderboard"
+				}
+			],
+			"copy1":	"Drone Kick game",
+			"copy2":	"Part of the One Team. One Standard. campaign.|Written with vanilla JavaScript, this is a simple target shoot game. Gameplay needed to be the same on mobile and desktop so the interaction is necessarily simple: automatic missle direction control and one click to fire.|The game can work in a standalone configuration for conferences, with a leaderboard mode to display the top ten scores on a separate sceen.",
+			"tech":		"HTML, JavaScript, GSAP-js, CSS",
+			"thumb":	"sli_droneGame_01.jpg",
+			"images":[]
+		},
+
+		{
+			"client":	"Standard Life Investments",
+			"job":		"British and Irish Lions: Banners",
+			"agency":	"Realise",
+			"date":		"201705",
+			"rank":		1,
+            "filter":   [0,1,4,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"Video banners - DoubleClick preview",
+					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/mU5rr3xpThi86BO-kiKbeQ"
+				}
+			],
+			"copy1":	"Additions to SLIs banner portfolio.",
+			"copy2":	"Part of the One Team. One Standard. campaign, these banners run video content to showcase SLIs sponsorship of the 2017 Lions tour.|Served through DoubleClick.",
+			"tech":		"HTML, JavaScript, CSS",
+			"thumb":	"SLI_lions_01.jpg",
+			"images":[]
+		},
+
+		{
 			"client":	"Skills development",
 			"job":		"DoubleClick Studio + HTML5 + Dynamic Certification",
 			"agency":	"Realise",
@@ -72,7 +119,7 @@
 					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/dS5t4GJ7RymeIcN_Mezjwg"
 				}
 			],
-			"copy1":	"The most recent in an extensive portfolio of Heathrow banners.",
+			"copy1":	"Additons in an extensive portfolio of Heathrow banners.",
 			"copy2":	"This campaign has seen very high engagement, and presents a clean design and a dynamic feed, in a very lightweight package.|Served through DoubleClick.",
 			"tech":		"HTML, JavaScript, GSAP-js, CSS",
 			"thumb":	"heathrowCP_17q1_01.png",
