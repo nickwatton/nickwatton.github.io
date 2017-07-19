@@ -8,20 +8,9 @@
 			"date":		"201706",
 			"rank":		1,
             "filter":   [0,1,4,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"Play the game",
-					"url":	"https://drone.theworldwidepartner.com"
-				},
-				{
-					"hero":	1,
-					"copy":	"Standalone leaderboard",
-					"url":	"https://drone.theworldwidepartner.com/#leaderboard"
-				}
-			],
+			"links":	[],
 			"copy1":	"Drone Kick game",
-			"copy2":	"Part of the One Team. One Standard. campaign.|Written with vanilla JavaScript, this is a simple target shoot game. Gameplay needed to be the same on mobile and desktop so the interaction is necessarily simple: automatic missle direction control and one click to fire.|The game can work in a standalone configuration for conferences, with a leaderboard mode to display the top ten scores on a separate sceen.",
+			"copy2":	"Part of the One Team. One Standard. campaign.|Written with vanilla JavaScript, this is a simple target shoot game. Gameplay needed to be the same on mobile and desktop so the interaction is necessarily simple: automatic missle direction control and one click to fire.|The game can work in a standalone configuration for conferences, with a leaderboard mode to display the top ten scores on a separate sceen.||Game is now offline. ",
 			"tech":		"HTML, JavaScript, GSAP-js, CSS",
 			"thumb":	"sli_droneGame_01.jpg",
 			"images":[]
