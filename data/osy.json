@@ -27,7 +27,7 @@
 			"agency":	"Realise",
 			"date":		"201706",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,5,7],
 			"links":	[],
 			"copy1":	"Drone Kick game",
 			"copy2":	"Part of the One Team. One Standard. campaign.|Written with vanilla JavaScript, this is a simple target shoot game. Gameplay needed to be the same on mobile and desktop so the interaction is necessarily simple: automatic missle direction control and one click to fire.|The game can work in a standalone configuration for conferences, with a leaderboard mode to display the top ten scores on a separate sceen.||Game is now offline. ",
