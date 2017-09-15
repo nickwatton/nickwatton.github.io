@@ -2,6 +2,26 @@
 	"work":[
 
 		{
+			"client":	"Personal project",
+			"job":		"JS13K Games",
+			"agency":	"",
+			"date":		"201709",
+			"rank":		1,
+            "filter":   [0,1,3,5,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"Lost Love - Play the Game",
+					"url":	"http://js13kgames.com/entries/lost-love"
+				}],
+			"copy1":	"Lost Love game",
+			"copy2":	"My entry to the JS13KGames competition.|The challenge was to write a JavaScript in no more than 13k, all in.|I have created a shadowy maze, with some HTML5 audio :)",
+			"tech":		"JavaScript, HTML audio",
+			"thumb":	"lostLove_01.png",
+			"images":[]
+		},
+
+		{
 			"client":	"Standard Life Investments",
 			"job":		"British and Irish Lions: Game",
 			"agency":	"Realise",
@@ -239,7 +259,7 @@
 			"agency":	"Realise",
 			"date":		"201605",
 			"rank":		1,
-            "filter":   [0,1,7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,
