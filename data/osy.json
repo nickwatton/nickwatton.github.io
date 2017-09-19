@@ -2,6 +2,26 @@
 	"work":[
 
 		{
+			"client":	"Research for games",
+			"job":		"Character movement controller",
+			"agency":	"Personal project",
+			"date":		"201709",
+			"rank":		1,
+            "filter":   [0,5,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"View on CodePen",
+					"url":	"https://codepen.io/2Mogs/full/NaPVMr"
+				}],
+			"copy1":	"Touch the interface anywhere to reveal the controller.|Move your finger to control a character sprite's movement.|Lift your finger to hide the interface.",
+			"copy2":	"Configured to allow larger movement to cause faster movement - two speeds. Small movement - small speed, big movement - bigger speed.",
+			"tech":		"JavaScript, HTML",
+			"thumb":	"movementController_01.png",
+			"images":[]
+		},
+
+		{
 			"client":	"JS13K Games",
 			"job":		"Lost Love",
 			"agency":	"Personal project",
