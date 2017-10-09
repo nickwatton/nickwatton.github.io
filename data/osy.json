@@ -31,7 +31,12 @@
 			"links":	[
 				{
 					"hero":	1,
-					"copy":	"Lost Love - Play the Game",
+					"copy":	"Play the Game",
+					"url":	"/showreel/js13k_lost_love"
+				},
+				{
+					"hero":	1,
+					"copy":	"JS13K entry",
 					"url":	"http://js13kgames.com/entries/lost-love"
 				}],
 			"copy1":	"My entry to the JS13KGames competition.|The challenge was to write a JavaScript in no more than 13k, all in.",
