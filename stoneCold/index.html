@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Stone Cold</title>
+	<style type="text/css">
+		html{
+			font-family:monospace;
+			font-size: 6rem;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div><span id=howMany></span> days</div>
+	<script>
+		var day0 = 'October 19, 2017';
+		document.getElementById('howMany').innerHTML = Math.floor((new Date().getTime() - new Date(day0).getTime())/86400000);
+	</script>
+</body></html>
