@@ -1,19 +1,35 @@
 <!doctype html>
 <html>
-<head>
-	<title>Stone Cold</title>
-	<style type="text/css">
-		html{
-			font-family:monospace;
-			font-size: 6rem;
-			text-align: center;
-		}
-	</style>
-</head>
-<body>
-	<div><span id=howMany></span> days</div>
-	<script>
-		var day0 = 'October 19, 2017';
-		document.getElementById('howMany').innerHTML = Math.floor((new Date().getTime() - new Date(day0).getTime())/86400000);
-	</script>
-</body></html>
+
+	<head>
+		<title>Stone</title>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+			html{
+				font-family: 'Fredericka the Great', cursive;
+				background: #111;
+				color: #eee;
+			}
+			.container{
+				min-height: 80vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 23vw;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class=container>
+			<span id=howMany></span>days
+		</div>
+
+		<script>
+			var day0 = 'October 19, 2017';
+			document.getElementById('howMany').innerHTML = Math.floor((new Date().getTime() - new Date(day0).getTime())/86400000);
+		</script>
+
+	</body>
+</html>
