@@ -2,6 +2,27 @@
 	"work":[
 
 		{
+			"client":	"Particle animation",
+			"job":		"Breath with me",
+			"agency":	"Personal project",
+			"date":		"201802",
+			"rank":		1,
+            "filter":   [0,3,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View CodeSandbox",
+					"url":	"https://rj3jqjz9vq.codesandbox.io/"
+				}
+			],
+			"copy1":	"Breath with me - Coding challenge winner",
+			"copy2":	"Internal challenge to bring awareness to mental health issues.",
+			"tech":		"HTML Canvas, Modular JavaScript, OOP",
+			"thumb":	"breathWithMe01.png",
+			"images":[]
+		},
+
+		{
 			"client":	"Research for games",
 			"job":		"Character movement controller",
 			"agency":	"Personal project",
