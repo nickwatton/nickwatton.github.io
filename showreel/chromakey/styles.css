@@ -1,0 +1,42 @@
+html{
+	font-size:62.5%;
+}
+body{
+	font-family: Arial, sans-serif;
+	background-color: grey;
+	color: white;
+}
+p{
+	font-size:1.2rem;
+}
+
+
+#c1,
+video{
+	display: none;
+}
+#c2{
+	float: left;
+	height: auto;
+	width: 50%;
+}
+#ui{
+	border-left: 1px #555 solid;
+	float: right;
+	padding-left: 2.5%;
+	width: 45%;
+}
+#ui .qs_main{
+	position: relative;
+}
+#ui textarea{
+	height:35px;
+}
+#imageDIV{
+	border: 1px solid #ccc;
+	margin-top:20px;
+}
+.clearfix{
+	clear:both;
+	width:100%;
+}

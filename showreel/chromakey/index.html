@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Chroma key test</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<div id=description>
+		<h1>Webcam chroma-key experiment</h1>
+		<p>Grabbing a webcam video and compositing it with a static image based on a colour gate.</p>
+		<p>Change the RGB values of the colour gate with sliders.</p>
+		<p>Auto capture a series of images from the feed, and they will be turned into a GIF.<br>
+		Same can be acheived by manually selecting frames to capture (use case would be a stop motion tool).</p>
+		<p>Additional options to adjust number of frames in the GIF, and auto-capture delay.</p>
+	</div>
+
+	<div>
+		<video autoplay></video>
+	</div>
+	<div>
+		<canvas id="c1" width="160" height="96"></canvas>
+		<canvas id="c2" width="160" height="96"></canvas>
+	</div>
+	<div id=ui></div>
+	<div class=clearfix></div>
+	<div id=imageDIV></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/quicksettings@latest/quicksettings.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gifshot/0.3.2/gifshot.min.js"></script>
+	<script src="webcam.js"></script>
+</body>
+
+</html>
