@@ -12,7 +12,7 @@
 	rgb, baseR = 100, baseG = 100, baseB=200,
 	allImages = [], imageDIV = document.getElementById('imageDIV'),
 	imageUpload = document.getElementById('imageUpload'),
-	constraints = { video: {width: {exact: 640}, height: {exact: 480}} },
+	constraints = { video: {width: {exact: 640}, height: {exact: 480}}, audio:false },
 	video = document.querySelector('video');
 
 	navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
@@ -40,9 +40,12 @@
 		width = c1.width = c2.width = video.videoWidth;
 		height = c1.height = c2.height = video.videoHeight;
 
-		let videoRatio = width / height;
-		let videoOutScaleFactor = gifWidth / width;
-		gifHeight = gifWidth * videoRatio * videoOutScaleFactor;
+		// let videoRatio = width / height;
+
+		if(width < height){
+			gifWidth = 240;
+			gifHeight = 320;
+		}
 	
 		background = new Image();
 		background.onload = function(){
@@ -62,7 +65,7 @@
 		options = QuickSettings.create(0, 0, 'GIF capture options', document.getElementById('ui'));
 		options.addButton('Capture frame', manualCapture);
 		options.addButton('Start AUTO Capture', startAutoCapture);
-		options.addTextArea("Output");
+		options.addTextArea('Output');
 		options.addRange('No. frames in GIF (3 - 60)', 3, 60, gifFramesMax, 1, function(e){ gifFramesMax = e; });
 		options.addRange('AUTO capture delay (milliseconds)', 250, 5000, autoCaptureRate, 50, function(e){ autoCaptureRate = e; });
 		// options.addRange('FPS', 1, 60, baseFPS, 1, function(e){ recursionRate = 1000 / e; });
