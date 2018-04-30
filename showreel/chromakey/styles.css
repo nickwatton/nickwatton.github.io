@@ -10,7 +10,15 @@ p{
 	font-size:1.2rem;
 }
 
-
+#imageUpload{
+	width:50%;
+	/*height:100px;*/
+	border:1px white dashed;
+	margin: 10px 0 5px 0;
+}
+	#imageUpload p{
+		margin: 5px;
+	}
 #c1,
 video{
 	display: none;
@@ -34,7 +42,7 @@ video{
 }
 #imageDIV{
 	border: 1px solid #ccc;
-	margin-top:20px;
+	margin-top:10px;
 }
 .clearfix{
 	clear:both;

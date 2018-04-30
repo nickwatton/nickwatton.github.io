@@ -11,6 +11,7 @@
 		autoCaptureRunning = false, autoCaptureRate = 500,
 	rgb, baseR = 100, baseG = 100, baseB=200,
 	allImages = [], imageDIV = document.getElementById('imageDIV'),
+	imageUpload = document.getElementById('imageUpload'),
 	constraints = { video: {width: {exact: 640}, height: {exact: 480}} },
 	video = document.querySelector('video');
 
@@ -65,6 +66,31 @@
 		options.addRange('No. frames in GIF (3 - 60)', 3, 60, gifFramesMax, 1, function(e){ gifFramesMax = e; });
 		options.addRange('AUTO capture delay (milliseconds)', 250, 5000, autoCaptureRate, 50, function(e){ autoCaptureRate = e; });
 		// options.addRange('FPS', 1, 60, baseFPS, 1, function(e){ recursionRate = 1000 / e; });
+
+		addDropEvent();
+	}
+
+	function addDropEvent(){
+		imageUpload.addEventListener("dragover", function (evt) {
+			evt.preventDefault();
+		}, false);
+		// Handle dropped image file - only Firefox and Google Chrome
+		imageUpload.addEventListener('drop', function (evt) {
+			var files = evt.dataTransfer.files;
+			if (files.length > 0) {
+				var file = files[0];
+				if (typeof FileReader !== 'undefined' && file.type.indexOf('image') != -1) {
+					var reader = new FileReader();
+					// Note: addEventListener doesn't work in Chrome for this event
+					reader.onload = function (evt) {
+						background.src = evt.target.result
+						bgData = ctx2.getImageData(0, 0, width, height);
+					};
+					reader.readAsDataURL(file);
+				}
+			}
+			evt.preventDefault();
+		}, false);
 	}
 
 	function videoCaptureRecursion() {
@@ -131,7 +157,6 @@
 		ctx2.putImageData(frame, 0, 0);
 		return;
 	}
-	
 	
 	function captureCanvasAsImage(){
 		let dataURL = c2.toDataURL(),
