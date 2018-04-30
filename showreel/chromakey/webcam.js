@@ -7,6 +7,7 @@
 	options, 
 		baseFPS=30, recursionRate = 1000/baseFPS, 
 		gifFramesMax = 10, gifFramesCount = 0,
+		gifWidth = 320, gifHeight = 240,
 		autoCaptureRunning = false, autoCaptureRate = 500,
 	rgb, baseR = 100, baseG = 100, baseB=200,
 	allImages = [], imageDIV = document.getElementById('imageDIV'),
@@ -37,6 +38,10 @@
 
 		width = c1.width = c2.width = video.videoWidth;
 		height = c1.height = c2.height = video.videoHeight;
+
+		let videoRatio = width / height;
+		let videoOutScaleFactor = gifWidth / width;
+		gifHeight = gifWidth * videoRatio * videoOutScaleFactor;
 	
 		background = new Image();
 		background.onload = function(){
@@ -146,8 +151,8 @@
 		gifshot.createGIF(
 		{
 			'images': allImages,
-			'gifWidth': 320,
-			'gifHeight': 240
+			'gifWidth': gifWidth,
+			'gifHeight': gifHeight
 		},
 		function(obj) {
 			if(!obj.error) {
