@@ -11,8 +11,7 @@ p{
 }
 
 #imageUpload{
-	width:50%;
-	/*height:100px;*/
+	max-width: 500px;
 	border:1px white dashed;
 	margin: 10px 0 5px 0;
 }
@@ -24,12 +23,11 @@ video{
 	display: none;
 }
 #c2{
-	float: left;
 	height: auto;
-	width: 50%;
+	max-width: 500px;
 }
 #ui{
-	border-left: 1px #555 solid;
+	border-left: 1px #ccc solid;
 	float: right;
 	padding-left: 2.5%;
 	width: 45%;
@@ -43,6 +41,10 @@ video{
 #imageDIV{
 	border: 1px solid #ccc;
 	margin-top:10px;
+}
+.col50{
+	width: 49%;
+	float: left
 }
 .clearfix{
 	clear:both;

@@ -16,21 +16,22 @@
 		<p>Auto capture a series of images from the feed, and they will be turned into a GIF.<br>
 		Same can be acheived by manually selecting frames to capture (use case would be a stop motion tool).</p>
 		<p>Additional options to adjust number of frames in the GIF, and auto-capture delay.</p>
+		<p>Dropzone under the video allows you to swap the background image.</p>
 	</div>
 
 	<div>
 		<video autoplay></video>
-	</div>
-
-	<div>
 		<canvas id="c1" width="160" height="96"></canvas>
-		<canvas id="c2" width="160" height="96"></canvas>
 	</div>
 
-	<div id=ui></div>
+	<div class=col50>
+		<canvas id="c2" width="160" height="96"></canvas>
+		<div id=imageUpload><p>Drag'n'drop image here to set new background</p></div>
+	</div>
+
+	<div class=col50 id=ui></div>
 	<div class=clearfix></div>
 
-	<div id=imageUpload><p>Drag'n'drop image here to set new background</p></div>
 	
 	<div id=imageDIV></div>
 
