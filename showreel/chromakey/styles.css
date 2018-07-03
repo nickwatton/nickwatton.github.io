@@ -50,3 +50,9 @@ video{
 	clear:both;
 	width:100%;
 }
+
+.colourChip{
+	width: 100%;
+	height: 17px;
+	background-color: red;
+}

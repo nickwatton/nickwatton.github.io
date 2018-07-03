@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
 html{
 	font-size:62.5%;
 }
 body{
 	font-family: Arial, sans-serif;
+	font-family: 'Squada One', cursive;
 	color: white;
 }
 p{
@@ -11,4 +14,38 @@ p{
 
 canvas{
   background:grey;
+}
+#stage{
+	font-size:6rem;
+	height: 400px;
+	position: relative;
+	width: 600px;
+}
+#message{
+	margin-top: 80px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 3;
+}
+#grfx{
+	border-right: 2px white dashed;
+	height: 400px;
+	position: absolute;
+	width: 300px;
+	z-index: 2;
+}
+#scores{
+	margin-left: 25%;
+
+	position: absolute;
+	width:50%;
+	z-index: 3;
+}
+#scores #p1{
+	float:left;
+}
+#scores #p2{
+	float: right;
 }

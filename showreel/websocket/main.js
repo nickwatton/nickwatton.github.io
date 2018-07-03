@@ -13,25 +13,31 @@
 	})();
 	
 	let width=600, height=400,
+		messageWindow = document.getElementById('message'),
 		socket,
 		uid,
-		players = {}, isPlayer = false, isMaster = false,
+		countDownCount,
+		players = {}, isPlayer = false, isPlayer1 = false,
 		leftPaddle, rightPaddle, activePaddle = null,
+		keysDown = {},
 		canvas, ctx,
 		ball,
+		scoreP1 = document.getElementById('p1'),
+		scoreP2 = document.getElementById('p2'),
+		pointsP1 = 0, pointsP2 = 0,
 		Tau=Math.PI*2;
-		/*px=width*.5, py=height*.5,*/
 
 	const	MOVE = 'move',
 			PLAYER = 'player',
 			JOIN = 'join',
+			START = 'start',
+			SCORE = 'score',
+			STATUS_MESSAGE = 'ready',
 			POLL_ACTIVE_PLAYERS = 'pollPlayers',
 			LEFT_PADDLE_ID = 'left',
-			RIGHT_PADDLE_ID = 'right';
-
-	let KEY_UP = 38,
-		KEY_DOWN = 40,
-		keysDown = {};
+			RIGHT_PADDLE_ID = 'right',
+			KEY_UP = 38,
+			KEY_DOWN = 40;
 	
 	function createCanvas(id, w, h) {
 		var tCanvas = document.createElement('canvas');
@@ -49,26 +55,12 @@
 				y: evt.clientY - rect.top
 			};
 		}
-		/*canvas.addEventListener('mousemove', function(evt) {
-			var mousePos = getMousePos(canvas, evt);
-			moveBall(mousePos.x, mousePos.y);
-			// sendMessage({ state:MOVE, x:px, y:py });
-		}, false);
-*/
-		// document.addEventListener('keydown', (evt) => console.log(evt.keyCode));
 		document.addEventListener('keydown', (evt) => keysDown[evt.keyCode] = true);
 		document.addEventListener('keyup', (evt) => delete keysDown[evt.keyCode]);
 	}
 	
-	// Check the socket state and update status field accordingly.
-	setInterval(function() {
-	// console.log(socket.readyState);
-	// if (socket.readyState === 0) statusMessage.textContent = "Connecting...";
-	// if (socket.readyState === 1) statusMessage.textContent = "Connected";
-	// if (socket.readyState === 2) statusMessage.textContent = "Closing...";
-	// if (socket.readyState === 3) statusMessage.textContent = "Disconnected";
-	}, 1000);
 	
+/* SOCKETS */
 	function setupWebSocket(){
 		socket = new WebSocket("wss://node2.wsninja.io");
 		socket.addEventListener('open', function(event) {
@@ -80,29 +72,28 @@
 	}
 	
 	function sendMessage(msg){
-		// console.log('sendMessage', msg.state)
 		socket.send(JSON.stringify(msg));
 	}
 	
-	function receiveMessage(msg){
+	function receiveMessage(message){
 		// console.log(msg)
-		if(msg.accepted){
+		if(message.accepted){
 			uid = Date.now();
 			addPlayer(uid);
 			sendMessage({ state:JOIN, uid:uid });
 		}
 		
-		switch(msg.state){
+		switch(message.state){
 			case MOVE:
-				if(msg.paddleID === LEFT_PADDLE_ID){
-					leftPaddle.y = msg.paddleY;
+				if(message.paddleID === LEFT_PADDLE_ID){
+					leftPaddle.y = message.paddleY;
 				}
-				else if(msg.paddleID === RIGHT_PADDLE_ID){
-					rightPaddle.y = msg.paddleY;
+				else if(message.paddleID === RIGHT_PADDLE_ID){
+					rightPaddle.y = message.paddleY;
 				}
-				if(!isMaster){
-					ball.x = msg.ballX;
-					ball.y = msg.ballY;
+				if(!isPlayer1){
+					ball.x = message.ballX;
+					ball.y = message.ballY;
 				}
 				break;
 			case JOIN:
@@ -112,18 +103,33 @@
 				sendMessage({ state:POLL_ACTIVE_PLAYERS, uid:uid });
 				break;
 			case POLL_ACTIVE_PLAYERS:
-				addPlayer(msg.uid);
+				addPlayer(message.uid);
+				break;
+			case STATUS_MESSAGE:
+				setStatusMessage(message.msg, false);
+				break;
+			case SCORE:
+				setScore(message.playerID);
 				break;
 			default:
 				// console.log('Unhandled message:', msg);
 		}
 	}
+
+	// Socket state heartbeat
+	/*setInterval(function() {
+		console.log(socket.readyState);
+		if (socket.readyState === 0) statusMessage.textContent = "Connecting...";
+		if (socket.readyState === 1) statusMessage.textContent = "Connected";
+		if (socket.readyState === 2) statusMessage.textContent = "Closing...";
+		if (socket.readyState === 3) statusMessage.textContent = "Disconnected";
+	}, 1000);*/
 	
+/* PLAYERS */
 	function addPlayer(id){
 		players[id] = id;
 		checkIsPlayer();
 	}
-
 
 	function resetPlayerList(){
 		/* Ensure only active players are in list */
@@ -132,8 +138,9 @@
 	}
 
 	function checkIsPlayer(){
-		let active = 0;
+		let active = 0, playerCount = 0;
 		for(let player in players){
+			playerCount++;
 			if(players[player] < uid) active++;
 		}
 		if(active < 2){
@@ -141,12 +148,12 @@
 			if(active === 0){
 				activePaddle = leftPaddle;
 				rightPaddle.activate(false);
-				isMaster = true;
+				isPlayer1 = true;
 			}
 			else{
 				activePaddle = rightPaddle;
 				leftPaddle.activate(false);
-				isMaster = false;
+				isPlayer1 = false;
 			}
 			activePaddle.activate(true);
 		}
@@ -155,6 +162,30 @@
 			leftPaddle.activate(false);
 			rightPaddle.activate(false);
 		}
+
+		// console.log(isPlayer1, playerCount)
+		if(playerCount >= 1 && isPlayer1){
+			countDownStart();
+		}
+	}
+
+	function countDownStart(){
+		countDownCount = 4;
+		setStatusMessage('ready', true);
+		runCountDown();
+	}
+	
+	function runCountDown(){
+		setTimeout(function() {
+			if(--countDownCount <= 0){
+				setStatusMessage('', true);
+				ball.start();
+			}
+			else{
+				setStatusMessage(countDownCount, true);
+				runCountDown();
+			}
+		}, 1000);
 	}
 
 	function update(){
@@ -167,7 +198,7 @@
 			}
 			activePaddle.checkBounds();
 
-			if(isMaster){
+			if(isPlayer1){
 				ball.update();
 			}
 
@@ -198,23 +229,16 @@
         draw();
         requestAnimFrame(animate);
     }
-	
-	function init(){
-		canvas = createCanvas('stage', width, height);
-		document.getElementById('stage').appendChild(canvas);
-		ctx = canvas.getContext('2d');
-		ctx.fillStyle = '#ff4500';
 
-		leftPaddle = new Paddle(LEFT_PADDLE_ID, true, 20, 170, height);
-		rightPaddle = new Paddle(RIGHT_PADDLE_ID, false, 585, 170, height);
-
-		ball = new Ball(width*.5, height*.5, 10, width, height, leftPaddle, rightPaddle);
-
-		setUpEvents();
-		setupWebSocket();
-		animate();
-
-		ball.start();
+/* MESSAGING */
+	function setStatusMessage(msg, forward){
+		if(forward){
+			sendMessage({state:STATUS_MESSAGE, msg:msg});
+		}
+		messageWindow.innerHTML = msg;
+	}
+	function setScore(playerID){
+		//
 	}
 
 /* PADDLES */
@@ -253,8 +277,10 @@
 		Object.defineProperty(this, 'y', { value:y, writable:true} );
 		Object.defineProperty(this, 'w', { value:w, writable:true} );
 		Object.defineProperty(this, 'h', { value:h, writable:true} );
+		Object.defineProperty(this, 'vx', { value:0, writable:true} );
+		Object.defineProperty(this, 'vy', { value:0, writable:true} );
 		Object.defineProperty(this, 'radius', { value:radius, writable:true} );
-		Object.defineProperty(this, 'colour', { value:'#ff4500', writable:true} );
+		Object.defineProperty(this, 'colour', { value:'#fff', writable:true} );
 		Object.defineProperty(this, 'speed', { value:5, writable:true} );
 		Object.defineProperty(this, 'running', { value:false, writable:true} );
 		Object.defineProperty(this, 'leftPaddle', { value:p1, writable:true} );
@@ -264,7 +290,7 @@
 		this.running = true;
 		this.vx = this.speed;
 		if(Math.random() < .5) this.vx *= -1;
-		this.vy = Math.random()*(this.speed*.5)-this.speed;
+		// this.vy = Math.random()*(this.speed*.5)-this.speed;
 	}
 	Ball.prototype.stop = function(){
 		this.running = false;
@@ -281,8 +307,11 @@
 		this.y += this.vy;
 
 		if(this.x < this.leftPaddle.paddleHitX){
-			if(this.y < this.leftPaddle.y || this.y > this.leftPaddle.y+this.leftPaddle.height){
+			// console.log(this.y, this.leftPaddle.y, this.leftPaddle.length)
+			if(this.y < this.leftPaddle.y || this.y > this.leftPaddle.y+this.leftPaddle.length){
 				console.log('Explode!')
+				// setScore()
+				// countDownStart();
 				this.stop();
 			}
 			else{
@@ -290,9 +319,17 @@
 				this.vx *= -1;
 			}
 		}
-		else if(this.x > this.w){
-			this.x = this.w;
-			this.vx *= -1;
+		else if(this.x > this.rightPaddle.paddleHitX){
+			// console.log(this.y, this.rightPaddle.y, this.rightPaddle.length)
+			if(this.y < this.rightPaddle.y || this.y > this.rightPaddle.y+this.rightPaddle.length){
+				console.log('Explode!')
+				// countDownStart();
+				this.stop();
+			}
+			else{
+				this.x = this.rightPaddle.paddleHitX;
+				this.vx *= -1;
+			}
 		}
 		if(this.y < 0){
 			this.y = 0;
@@ -305,6 +342,22 @@
 	}
 	
 /* KICK OFF */
+	function init(){
+		canvas = createCanvas('stage', width, height);
+		document.getElementById('stage').appendChild(canvas);
+		ctx = canvas.getContext('2d');
+		ctx.fillStyle = '#ff4500';
+
+		leftPaddle = new Paddle(LEFT_PADDLE_ID, true, 20, 170, height);
+		rightPaddle = new Paddle(RIGHT_PADDLE_ID, false, 585, 170, height);
+
+		ball = new Ball(width*.5, height*.5, 10, width, height, leftPaddle, rightPaddle);
+
+		setUpEvents();
+		setupWebSocket();
+		animate();
+	}
+
 	init();
 	
 }());

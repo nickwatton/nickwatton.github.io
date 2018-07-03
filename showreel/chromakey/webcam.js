@@ -10,6 +10,8 @@
 		gifWidth = 320, gifHeight = 240,
 		autoCaptureRunning = false, autoCaptureRate = 500,
 	rgb, baseR = 100, baseG = 100, baseB=200,
+	highRedGate = true, highGreendGate = true, highBlueGate = false, 
+	colourChip,
 	allImages = [], imageDIV = document.getElementById('imageDIV'),
 	imageUpload = document.getElementById('imageUpload'),
 	constraints = { video: {width: {exact: 640}, height: {exact: 480}}, audio:false },
@@ -57,10 +59,18 @@
 	}
 
 	function createUI(){
+		colourChip = document.createElement('div');
+		colourChip.setAttribute('class', 'colourChip'); 
+
 		rgb = QuickSettings.create(0, 0, 'Chroma Key RGB', document.getElementById('ui'));
 		rgb.addRange('RED default('+baseR+')', 0, 255, baseR, 1, function(e){ baseR = e; });
+		rgb.addBoolean('High RED gate', highRedGate, function(e){ highRedGate = e; });
 		rgb.addRange('GREEN default('+baseG+')', 0, 255, baseG, 1, function(e){ baseG = e; });
+		rgb.addBoolean('High GREEN gate', highGreendGate, function(e){ highGreendGate = e; });
 		rgb.addRange('BLUE default('+baseB+')', 0, 255, baseB, 1, function(e){ baseB = e; });
+		rgb.addBoolean('High BLUE gate', highBlueGate, function(e){ highBlueGate = e; });
+		rgb.addElement('colourChip', colourChip);
+		updateColourChip();
 
 		options = QuickSettings.create(0, 0, 'GIF capture options', document.getElementById('ui'));
 		options.addButton('Capture frame', manualCapture);
@@ -71,6 +81,11 @@
 		// options.addRange('FPS', 1, 60, baseFPS, 1, function(e){ recursionRate = 1000 / e; });
 
 		addDropEvent();
+	}
+
+	function updateColourChip(){
+		console.log('sfgsgf');
+		colourChip.style.background = '(rgb=0,255,0)';
 	}
 
 	function addDropEvent(){
@@ -151,7 +166,8 @@
 			let r = frame.data[i * 4 + 0];
 			let g = frame.data[i * 4 + 1];
 			let b = frame.data[i * 4 + 2];
-			if (g > baseG && r > baseR && b < baseB) {
+			// if (g > baseG && r > baseR && b < baseB) {
+			if (checkRedGate(r) && checkGreenGate(g) && checkBlueGate(b)) {
 				frame.data[i * 4] = bgData.data[i * 4];
 				frame.data[i * 4 + 1] = bgData.data[i * 4 + 1];
 				frame.data[i * 4 + 2] = bgData.data[i * 4 + 2];
@@ -160,6 +176,10 @@
 		ctx2.putImageData(frame, 0, 0);
 		return;
 	}
+
+	function checkRedGate(r) { return highRedGate ? r > baseR : r < baseR; }
+	function checkGreenGate(g) { return highGreendGate ? g > baseG : g < baseG; }
+	function checkBlueGate(b) { return highBlueGate ? b > baseB : b < baseB; }
 	
 	function captureCanvasAsImage(){
 		let dataURL = c2.toDataURL(),
