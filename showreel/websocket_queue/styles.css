@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+html{
+	font-size:62.5%;
+	font-family: Arial, sans-serif;
+	font-family: 'Squada One', cursive;
+	text-align: center;
+	text-transform: uppercase;
+}
+#message{
+	font-size:3rem;
+	width: 100%;
+}
