@@ -2,6 +2,27 @@
 	"work":[
 
 		{
+			"client":	"CSS Illustration",
+			"job":		"Visit Mars",
+			"agency":	"Personal project",
+			"date":		"201809",
+			"rank":		1,
+            "filter":   [0,3,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View CodePen",
+					"url":	"https://codepen.io/2Mogs/full/ajGzGo/"
+				}
+			],
+			"copy1":	"Mars poster",
+			"copy2":	"A personal challenge to recreate a NASA/JPL poster just using CSS and HTML markup, ie no images.",
+			"tech":		"CSS",
+			"thumb":	"mars.png",
+			"images":[]
+		},
+
+		{
 			"client":	"Aberdeen Standard Investments",
 			"job":		"Managed Portfolio Service banners",
 			"agency":	"Realise",
@@ -18,27 +39,6 @@
 			"copy2":	"Display banners with a lightweight animated background, dynamically creating Delaunay triangles.|Served through DoubleClick.",
 			"tech":		"HTML, Canvas, JavaScript, CSS",
 			"thumb":	"asi_mps.jpg",
-			"images":[]
-		},
-
-		{
-			"client":	"CSS Illustration",
-			"job":		"Visit Mars",
-			"agency":	"Personal project",
-			"date":		"201802",
-			"rank":		1,
-            "filter":   [0,3,7],
-			"links":[
-				{
-					"hero":	1,
-					"copy":	"View CodePen",
-					"url":	"https://codepen.io/2Mogs/full/ajGzGo/"
-				}
-			],
-			"copy1":	"Mars poster",
-			"copy2":	"A personal challenge to recreate a NASA/JPL poster just using CSS and HTML markup, ie no images.",
-			"tech":		"CSS",
-			"thumb":	"mars.png",
 			"images":[]
 		},
 
