@@ -12,7 +12,12 @@
 				{
 					"hero":	1,
 					"copy":	"View CodePen",
-					"url":	"https://codepen.io/2Mogs/full/ajGzGo/"
+					"url":	"https://codepen.io/2Mogs/pen/ajGzGo?editors=0100"
+				},
+				{
+					"hero":	1,
+					"copy":	"View original poster",
+					"url":	"https://www.designboom.com/art/invisible-creature-nasa-posters-space-tourism-02-11-2016/"
 				}
 			],
 			"copy1":	"Mars poster",
