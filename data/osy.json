@@ -22,6 +22,27 @@
 		},
 
 		{
+			"client":	"CSS Illustration",
+			"job":		"Visit Mars",
+			"agency":	"Personal project",
+			"date":		"201802",
+			"rank":		1,
+            "filter":   [0,3,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"View CodePen",
+					"url":	"https://codepen.io/2Mogs/full/ajGzGo/"
+				}
+			],
+			"copy1":	"Mars poster",
+			"copy2":	"A personal challenge to recreate a NASA/JPL poster just using CSS and HTML markup, ie no images.",
+			"tech":		"CSS",
+			"thumb":	"mars.png",
+			"images":[]
+		},
+
+		{
 			"client":	"Particle animation",
 			"job":		"Breath with me",
 			"agency":	"Personal project",
@@ -215,7 +236,7 @@
 					"url":	"http://codepen.io/2Mogs/full/XpygZZ"
 				}
 			],
-			"copy1":	"My Sensitive Heart - Valentine's Day competition winner",
+			"copy1":	"My Sensitive Heart - Valentine's Day competition winner and CodePen Picked Pen.",
 			"copy2":	"Internal competition to code a Valentine's Day card. No external code libraries nor images allowed.",
 			"tech":		"HTML Canvas, JavaScript, OOP",
 			"thumb":	"sensitiveHeart.png",
