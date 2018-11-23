@@ -7,7 +7,7 @@
 			"agency":	"Personal project",
 			"date":		"201809",
 			"rank":		1,
-            "filter":   [0,3,7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,
