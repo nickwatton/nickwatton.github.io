@@ -1,13 +1,50 @@
 {
 	"work":[
-
+		{
+			"client":	"Heathrow",
+			"job":		"Christmas retail banners",
+			"agency":	"AmazeRealise",
+			"date":		"201811",
+			"rank":		1,
+            "filter":   [0,4,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"DoubleClick preview",
+					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/ngzctbsCTyWTrVw1eAoOZQ?creativeId=60941996"
+				}],
+			"copy1":	"Additions in an extensive portfolio of Heathrow banners.",
+			"copy2":	"Technically tricky data driven banners, serving over 100 products in five product groups, to four target markets.|Each banner randomly selected 5 products from a static list for a carousel. Current price and stock availability where checked against a bespoke feed developed in partnership with Heathrow's retail partner, ensuring accurate information was displayed, and click-throughs would never resolve to a 'product unavailable' message.|Served through DoubleClick.",
+			"tech":		"HTML, JavaScript, CSS",
+			"thumb":	"heathrowXmas18.jpg",
+			"images":[]
+		},
+		{
+			"client":	"Aberdeen Standard Investments",
+			"job":		"Breadth of Capabilities banners",
+			"agency":	"AmazeRealise",
+			"date":		"201810",
+			"rank":		1,
+            "filter":   [0,1,4,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"DoubleClick preview",
+					"url":	"https://www.google.com/doubleclick/studio/externalpreview/#/5zBZqPGPSMOO48Fa4fPcrQ?creativeId=60863559"
+				}],
+			"copy1":	"Additions to ASIs (SLI) banner portfolio.",
+			"copy2":	"Display banners for a multi-language global campaign.|Served through DoubleClick.",
+			"tech":		"HTML, JavaScript, CSS",
+			"thumb":	"ASI_BoC_01.jpg",
+			"images":[]
+		},
 		{
 			"client":	"CSS Illustration",
 			"job":		"Visit Mars",
 			"agency":	"Personal project",
 			"date":		"201809",
 			"rank":		1,
-            "filter":   [0,7],
+            "filter":   [0,1,7],
 			"links":[
 				{
 					"hero":	1,
@@ -30,7 +67,7 @@
 		{
 			"client":	"Aberdeen Standard Investments",
 			"job":		"Managed Portfolio Service banners",
-			"agency":	"Realise",
+			"agency":	"AmazeRealise",
 			"date":		"201806",
 			"rank":		1,
             "filter":   [0,4,7],
