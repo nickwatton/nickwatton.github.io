@@ -1,0 +1,35 @@
+html{
+	font-size:62.5%;
+}
+body{
+	background-color: grey;
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 1.2rem;
+}
+p{
+	font-size:1.2rem;
+}
+video{
+	width:250px;
+}
+canvas{
+	border: 1px solid white;
+}
+
+.save-as-file{
+	display: block;
+	margin-top: 10px;
+}
+
+.hidden{
+	display: none;
+}
+
+.col-12{
+	width: 100%;
+}
+.col-6{
+	float:left;
+	width: 50%;
+}
