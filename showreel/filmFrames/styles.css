@@ -17,6 +17,16 @@ canvas{
 	border: 1px solid white;
 }
 
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.body-wrapper{
+	max-width:600px; /* 800 */
+}
+
 .save-as-file{
 	display: block;
 	margin-top: 10px;

@@ -26,7 +26,7 @@
 
 	smoothingQuality = 'high', // medium is acceptable.
 
-	baseFPS = 6, 
+	baseFPS = 3, 
 	recursionRate = Math.round(1000 / baseFPS),
 	recursiveTimer,
 	running = false,

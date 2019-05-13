@@ -9,40 +9,42 @@
 
 	<body>
 
-		<div id="description">
-			<h1>Video Mosaic</h1>
-			<h2>Grab video frames to create a mosaic of the whole film - one frame captured 3 times a second.</h2>
-			<h3>Instructions:</h3>
-			<ul>
-				<li>Drag and drop a video file onto the drop area.
-					<ul>
-						<li>Something your browser can play. Try webm or mp4.</li>
-					</ul>
-				</li>
-				<li>When the video controls become active, click play to start playback and capture.</li>
-				<li>Watch the video play, and the frames building the mosaic - this is realtime, so be patient.</li>
-				<li>When the process is complete, download your film as an image.</li>
-				<li>Experimental - Print resolution might not save, due to file size restrictions.</li>
-			</ul>
-		</div>
-
-		<div class="col-12">
-			<div class="col-6">
-				<video class="vid hidden" controls muted >
-					<source id="video-src"></source>
-				</video>
-				<div class="drop-zone"></div>
+		<div class="body-wrapper clearfix">
+			<div id="description">
+				<h1>Video Mosaic</h1>
+				<h2>Grab video frames to create a mosaic of the whole film - one frame captured 3 times a second.</h2>
+				<h3>Instructions:</h3>
+				<ul>
+					<li>Drag and drop a video file onto the drop area.
+						<ul>
+							<li>Something your browser can play. Try webm or mp4.</li>
+						</ul>
+					</li>
+					<li>When the video controls become active, click play to start playback and capture.</li>
+					<li>Watch the video play, and the frames building the mosaic - this is realtime, so be patient.</li>
+					<li>When the process is complete, download your film as an image.</li>
+					<li>Experimental - Print resolution might not save, due to file size restrictions.</li>
+				</ul>
 			</div>
-			<div class="col-6">
-				<button class="start-over" type="button">Start over</button>
-				<br>
-				<a id="download" class="save-as-file" download="image.png">
-					<button type="button">Download Image</button>
-				</a>
-				<!-- <p>Options - These will restart the capture</p>
-				<input type="checkbox" name="printDPI" value="printDPI" id='printDPI'><label for="printDPI">300DPI (JPEG) </label>
-				<br>
-				<input id="fpsSelect" type="number" min="1" max="10" step="1" value="3" /><label> FPS to capture (1-10)</label> -->
+
+			<div class="col-12">
+				<div class="col-6">
+					<video class="vid hidden" controls muted >
+						<source id="video-src"></source>
+					</video>
+					<div class="drop-zone"></div>
+				</div>
+				<div class="col-6">
+					<button class="start-over" type="button">Start over</button> (This will restart the capture)
+					<br>
+					<a id="download" class="save-as-file" download="image.png">
+						<button type="button">Download Image</button>
+					</a>
+					<!-- <p>Options - These will restart the capture</p>
+					<input type="checkbox" name="printDPI" value="printDPI" id='printDPI'><label for="printDPI">300DPI (JPEG) </label>
+					<br>
+					<input id="fpsSelect" type="number" min="1" max="10" step="1" value="3" /><label> FPS to capture (1-10)</label> -->
+				</div>
 			</div>
 		</div>
 		
