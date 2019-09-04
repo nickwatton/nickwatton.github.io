@@ -192,8 +192,8 @@ ul.sublist li{
     width:50%;
 }
 .social{
-   padding-bottom:0.5em;
-   padding-left:3.0em;
+	padding-bottom:0.5em;
+	padding-left:3.0em;
 }
 .social.codepen{
 	background:#000;
@@ -258,7 +258,6 @@ ul.sublist li{
 
 
 
-/* Menu http://goo.gl/jiJHL */
   .menu-container {
     /*padding: 20px;*/
 	margin-top:-2em;
@@ -289,8 +288,8 @@ ul.sublist li{
 
 
 
-/* Mobile Layout: 480px and below. */
-@media only screen and (max-width: 480px) {
+/* Mobile Layout: 600px and below. */
+@media only screen and (max-width: 600px) {
 	.container {
 		padding-left: 1.82%;
 		padding-right: 1.82%;
@@ -377,8 +376,8 @@ ul.sublist li{
 	}               
 }
 
-/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* Tablet Layout: 600px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
 	.container {
 		padding-left: 1.1625%;
 		padding-right: 1.1625%;
