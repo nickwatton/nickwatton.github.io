@@ -14,7 +14,7 @@
 	
 	let width=600, height=400,
 		messageWindow = document.getElementById('message'),
-		socket,
+		socket, socketUID,
 		uid,
 		countDownCount,
 		players = {}, isPlayer = false, isPlayer1 = false,
@@ -62,22 +62,54 @@
 	
 /* SOCKETS */
 	function setupWebSocket(){
-		socket = new WebSocket("wss://node2.wsninja.io");
-		socket.addEventListener('open', function(event) {
-			sendMessage({ guid: 'f5eb085b-e187-4850-b260-3889aca6b3ff' });
+		// socket = new WebSocket("wss://node2.wsninja.io");ws://achex.ca:4010
+		socket = new WebSocket("ws://achex.ca:4010");
+
+		socket.onmessage = function(event){
+			// console.log('received: ' + event.data, event.data);
+			receiveMessage(JSON.parse(event.data));
+		}; // add event handler for incomming message
+	
+		socket.onclose = function(event){
+			console.log('log: Diconnected');
+		}; // add event handler for diconnection 
+	
+		socket.onerror = function(event){
+			console.log('log: Error');
+		}; // add event handler for error 
+	
+		socket.onopen = function(event){
+			console.log('log: Connected', event);
+		};// add event handler for new connection 
+
+
+
+
+		/* socket.addEventListener('open', function(event) {
+			// sendMessage({ guid: 'f5eb085b-e187-4850-b260-3889aca6b3ff' });
 		});
 		socket.addEventListener('message', function(event) {
 			receiveMessage(JSON.parse(event.data));
-		});
+		}); */
 	}
 	
 	function sendMessage(msg){
+		console.log('sending...', msg);
 		socket.send(JSON.stringify(msg));
 	}
 	
 	function receiveMessage(message){
-		// console.log(msg)
-		if(message.accepted){
+		console.log('received;', message, message.SID);
+		
+		if(message.SID != undefined && socketUID === undefined){
+			socketUID = message.SID;
+			uid = Date.now();
+			// addPlayer(uid);
+			console.log('socketUID: ' + socketUID);
+			sendMessage({"setID":String(uid), "passwd":String(uid)});
+		}
+
+		/* if(message.accepted){
 			uid = Date.now();
 			addPlayer(uid);
 			sendMessage({ state:JOIN, uid:uid });
@@ -113,7 +145,7 @@
 				break;
 			default:
 				// console.log('Unhandled message:', msg);
-		}
+		} */
 	}
 
 	// Socket state heartbeat
@@ -290,7 +322,7 @@
 		this.running = true;
 		this.vx = this.speed;
 		if(Math.random() < .5) this.vx *= -1;
-		// this.vy = Math.random()*(this.speed*.5)-this.speed;
+		// this.vy = Math.random()*(this.speed*.5)-this.speed; // Commented out to force easy horizontal play
 	}
 	Ball.prototype.stop = function(){
 		this.running = false;
@@ -307,7 +339,6 @@
 		this.y += this.vy;
 
 		if(this.x < this.leftPaddle.paddleHitX){
-			// console.log(this.y, this.leftPaddle.y, this.leftPaddle.length)
 			if(this.y < this.leftPaddle.y || this.y > this.leftPaddle.y+this.leftPaddle.length){
 				console.log('Explode!')
 				// setScore()

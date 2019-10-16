@@ -19,14 +19,14 @@
 	cWidth,
 	cHeight,
 	
-	ratio = 9 / 16,  // Base is 16:9
+	ratio = 9 / 16,  // Set default aspect ration @ 16:9
 	iWidthBase = 350,
 	iWidth = iWidthBase, 
-	iHeight = Math.round(iWidth * ratio),
+	iHeight = iWidth * ratio,
 
 	smoothingQuality = 'high', // medium is acceptable.
 
-	baseFPS = 3, 
+	baseFPS = 1, 
 	recursionRate = Math.round(1000 / baseFPS),
 	recursiveTimer,
 	running = false,
@@ -34,7 +34,7 @@
 	cols, 
 	totalFrames,
 	counter = 0,
-	skipStart = 0,
+	skipStart = 2,
 
 	forPrint = false;
 
@@ -46,9 +46,9 @@
 	})
 
 	downLoadLink.addEventListener('click', download, false);
-	document.querySelector('.start-over').addEventListener('click', () => {
-		reset();
-	}, false);
+	// document.querySelector('.start-over').addEventListener('click', () => {
+	// 	reset();
+	// }, false);
 	// document.querySelector('#printDPI').addEventListener('change', (evt) => {
 	// 	forPrint = evt.target.checked;
 	// 	resetOptions();
@@ -78,7 +78,10 @@
 	function playing() {
 		if(running) return;
 		running = true;
-		totalFrames = vid.duration * baseFPS - skipStart;
+		totalFrames = Math.floor(vid.duration * baseFPS - skipStart);
+		if(vid.videoHeight != undefined && vid.videoHeight != 0 && vid.videoWidth != undefined && vid.videoWidth){
+			ratio = vid.videoHeight / vid.videoWidth;
+		}
 		calculateImageSize();
 		timerCallback();
 	}
@@ -97,30 +100,30 @@
         downLoadLink.setAttribute('href', imageToSave);
 	}
 
-	function resetOptions(val) {
-		let currentlyPlaying = vid.playing;
-		clearTimeout(recursiveTimer);
-		vid.pause();
-		vid.currentTime = 0;
-		iWidth = iWidthBase;
-		iHeight = Math.round(iWidth * ratio);
-		totalFrames = vid.duration * baseFPS - skipStart;
-		counter = 0;
-		ctx.clearRect(0, 0, cWidth, cHeight);
-		setCanvasWidth();
-		calculateImageSize();
+	// function resetOptions(val) {
+	// 	let currentlyPlaying = vid.playing;
+	// 	clearTimeout(recursiveTimer);
+	// 	vid.pause();
+	// 	vid.currentTime = 0;
+	// 	iWidth = iWidthBase;
+	// 	iHeight = Math.round(iWidth * ratio);
+	// 	totalFrames = vid.duration * baseFPS - skipStart;
+	// 	counter = 0;
+	// 	ctx.clearRect(0, 0, cWidth, cHeight);
+	// 	setCanvasWidth();
+	// 	calculateImageSize();
 		
-		if (currentlyPlaying) {
-			vid.play();
-		}
-	}
+	// 	if (currentlyPlaying) {
+	// 		vid.play();
+	// 	}
+	// }
 
 	/* Ensure all captured frames fit on destination canvas */
 	function calculateImageSize(){
 		cols = Math.floor(cWidth / iWidth);
 		if((totalFrames / cols) * iHeight > cHeight) {
 			iWidth -= 1;
-			iHeight = Math.round(iWidth * ratio);
+			iHeight = iWidth * ratio;
 			calculateImageSize();
 		}
 	}
@@ -139,14 +142,14 @@
 		counter++;
 	}
 
-	function reset() {
-		document.querySelector('.vid').classList.add('hidden');
-		document.querySelector('.drop-zone').classList.remove('hidden');
-		document.querySelector('.vid').pause();
-		document.querySelector('#video-src').setAttribute('src', '');
-		counter = 0;
-		ctx.clearRect(0, 0, cWidth, cHeight);
-	}
+	// function reset() {
+	// 	document.querySelector('.vid').classList.add('hidden');
+	// 	document.querySelector('.drop-zone').classList.remove('hidden');
+	// 	document.querySelector('.vid').pause();
+	// 	document.querySelector('#video-src').setAttribute('src', '');
+	// 	counter = 0;
+	// 	ctx.clearRect(0, 0, cWidth, cHeight);
+	// }
 
 	function createDropZone(target, id, w, h){
 		let dropCanvas = document.createElement('canvas');

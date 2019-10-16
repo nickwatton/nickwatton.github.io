@@ -1,0 +1,16 @@
+button{
+  margin-top: 10px;
+}
+button.start{
+  background:#bada55;
+}
+button.stop{
+  background:#ff3366;
+}
+
+canvas{
+  border: 1px dashed whitesmoke;
+}
+body{
+  background: black;
+}
