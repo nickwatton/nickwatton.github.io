@@ -6,11 +6,37 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div>
+		<div class="wrapper display">
+			<div class="rear"></div>
 			<canvas class="oscilloscope"></canvas>
+			<div class="front"></div>
 		</div>
-		<button class="start">start</button>
-		<button class="stop">stop</button>
+		<div class="wrapper ui">
+			<p>Click start to hear and see some Oscilloscope music</p>
+			<button class="start">start</button>
+			<button class="stop">stop</button>
+			<!-- <br>
+			<button data-trackID="asteroids">asteroids</button>
+			<button data-trackID="blocks">blocks</button>
+			<button data-trackID="planets">planets</button>
+			<button data-trackID="reconstruct">reconstruct</button>
+			<button data-trackID="shrooms">shrooms</button> -->
+		</div>
+		<div class="wrapper accordian">
+			<label for="my-toggle">What is this?</label>
+			<input type="checkbox" id="my-toggle" name="my-toggle"
+			class="css-toggle sr-only"/>
+			<div class="hidden">
+				<p>These graphics are created by combining stereo waveforms of specially created music.</p>
+				<p>Inspired by Jerobeam Fenderson at <a href="http://oscilloscopemusic.com" target="_blank">oscilloscopemusic.com</a> who creates music that can be visualised through an oscilloscope.</p>
+				<p>As I don't have an oscilloscope, I thought I would code a JavaScript player that did the same thing.</p>
+				<p>I'm using the HTML5 Audio API to the play and interpret his tracks, and running the visualisation through canvas.</p>
+				<p>This demo is using the track "Planets". I highly recommend you check the whole album which you can buy complete with videos. The results through the oscilloscope have a smoother feel.</p>
+				<p>I bought this music, which is released under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons BY-NC-SA 4.0</a> which allows me to freely use and share this with you, as long as I share my my work.<br>
+				This is <a href="script.js" target="_blank">my code</a>, standing on the shoulders of giants.</p>
+
+			</div>
+		</div>
 		<script  src="script.js"></script>
 	</body>
 </html>

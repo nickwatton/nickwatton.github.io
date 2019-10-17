@@ -1,16 +1,80 @@
-button{
-  margin-top: 10px;
+html{
+	font-size: 62.5%;
 }
-button.start{
-  background:#bada55;
+body{ 
+	background: #111;
+	color:whitesmoke;
+	font-family: sans-serif;
 }
-button.stop{
-  background:#ff3366;
+/* button{ margin-top: 10px; } */
+button.start{ background:#bada55; }
+button.stop{ background:#ff3366; }
+
+canvas{ 
+	/* border: 1px solid whitesmoke; */
+	
+	filter: blur( 1px ) contrast( 4 );
+	left: 127px;
+	position: absolute;
+	top: 112px;
 }
 
-canvas{
-  border: 1px dashed whitesmoke;
+.wrapper{
+	/* border:1px solid red; */
+	font-size: 1.4rem;
+	margin: 0 auto;
+	position: relative;
+	text-align:center;
+	width:518px;
 }
-body{
-  background: black;
+.display{
+	height: 550px;
+}
+.rear{
+	background: #042506;
+	border-radius: 160px;
+	height: 350px;
+	left: 110px;
+	position: absolute;
+	top:80px;
+	width: 350px;
+}
+.front{
+	background: url(front.png) no-repeat;
+	height: 550px;
+	position: absolute;
+	top:0;
+	width: 518px;
+}
+
+.ui{
+	margin-bottom: 20px;;
+}
+
+
+.wrapper.accordian{
+	max-width:800px;
+	width: auto;
+}
+
+label{
+	font-size: 1.6rem;
+	text-decoration: underline;
+}
+.hidden {
+	display: none;
+	
+	text-align:left;
+}
+.css-toggle:checked + .hidden {
+	display: block;
+}
+.sr-only{
+	height:1px;
+	margin:-1px;
+	position:absolute;
+	width:1px;
+}
+a{
+	color:whitesmoke
 }
