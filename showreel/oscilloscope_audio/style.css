@@ -71,6 +71,7 @@ label{
 }
 .sr-only{
 	height:1px;
+	left:-99999px;
 	margin:-1px;
 	position:absolute;
 	width:1px;
