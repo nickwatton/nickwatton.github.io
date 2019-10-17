@@ -12,7 +12,7 @@
 		colourTick = 0,
 		audioOffset = 0,
 		audioContext,
-		trackID = 'planets.mp3',  // reconstruct blocks planets asteroids shrooms
+		trackID = 'spirals.mp3',  // reconstruct blocks planets asteroids shrooms
 		audio,// = new Audio(),
 		bufferLength = 1024 * 2,
 		processor, source, splitter,
