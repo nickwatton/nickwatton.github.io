@@ -1,0 +1,323 @@
+@font-face {
+  font-family: 'MetaStandardLifeProTF-Norm';
+  src: url('./fonts/MetaStandardLifeProTF/MetaStandardLifeProTF-Norm.eot');
+  src: url('./fonts/MetaStandardLifeProTF/MetaStandardLifeProTF-Norm.eot?#iefix') format('embedded-opentype'),
+	   url('./fonts/MetaStandardLifeProTF/MetaStandardLifeProTF-Norm.woff') format('woff'),
+	   url('./fonts/MetaStandardLifeProTF/MetaStandardLifeProTF-Norm.ttf') format('truetype'),
+	   url('./fonts/MetaStandardLifeProTF/MetaStandardLifeProTF-Norm.svg#StagSans-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'StandardLifeBold';
+  src: url('./fonts/standardlifebold.eot');
+  src: url('./fonts/standardlifebold.eot?#iefix') format('embedded-opentype'),
+	   url('./fonts/standardlifebold.woff') format('woff'),
+	   url('./fonts/standardlifebold.woff2') format('woff2'),
+	   url('./fonts/standardlifebold.ttf') format('truetype'),
+	   url('./fonts/standardlifebold.svg#StagSans-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+	font-family: MetaStandardLifeProTF-Norm, Arial, sans-serif;
+	background: rgb(255, 255, 255);
+	overflow: auto;
+}
+
+header::after, header::before {
+	content: " ";
+	display: block;
+	height: 0px;
+	overflow: hidden;
+}
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+a, a:active, a:hover, a:link, a:visited {
+	color: rgb(38, 38, 38);
+	text-decoration: none;
+}
+a, a:active, a:hover, a:link, a:visited {
+	color: rgb(38, 38, 38);
+	text-decoration: none;
+}
+a:active, a:hover {
+	outline: 0px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0px;
+}
+h1 {
+	display: block;
+	font-size: 2em;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+
+		vertical-align: baseline;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	border-style: initial;
+	border-color: initial;
+	border-image: initial;
+	font: inherit;
+}
+
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	display: none;
+}
+#countdown, .hidden, .image-replacement, .mfp-bg {
+	overflow: hidden;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+	padding: 1px 6px;
+}
+header button {
+	display: none;
+}
+a.button, button, input[type="button"], input[type="submit"] {
+	cursor: pointer;
+	display: inline-block;
+	font-family: StandardLifeBold, StandardLifeRegular, Arial, sans-serif;
+	background: 0px 0px;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+	text-decoration: none;
+}
+a, a:active, a:hover, a:link, a:visited {
+	color: rgb(38, 38, 38);
+	text-decoration: none;
+}
+button, html, input, select, textarea {
+	color: rgb(34, 34, 34);
+}
+
+
+
+header .logo {
+	float: left;
+	margin: 9px 0px;
+}
+
+header .logo.standardlifeinvestments {
+	margin: 12px 20px 16px;
+}
+header .logo.standardlifeinvestments {
+	width: 146px;
+	height: 51px;
+	margin-left: 20px;
+	margin-top: 12px;
+	background: url(./images/standard_life_investments.png) center top / 146px 51px no-repeat;
+}
+header .logo.lions-logo {
+	margin: 15px 16px 0px;
+}
+header .logo.lions-logo {
+	width: 33px;
+	height: 49px;
+	background: url(./images/lions-logo-smaller.png) center top no-repeat;
+}
+
+
+
+.clearfix::after, header nav, header::after {
+	clear: both;
+}
+header nav {
+	overflow: auto;
+	border-top: 1px solid rgb(221, 221, 221);
+	border-bottom: 2px solid #fff;
+}
+
+header nav a:link, header nav a:visited {
+	color: rgb(175, 0, 30);
+}
+header nav a:link, header nav a:visited {
+	margin-left: 5px;
+	color: rgb(175, 0, 30);
+	text-transform: uppercase;
+	/*font-size: 0.9em;*/
+	font-size: 14.4px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	float: left;
+	padding: 11px 14px 8px;
+	border-bottom: 4px solid rgb(255, 255, 255);
+}
+header nav a:link:hover, header nav a:visited:hover {
+	border-bottom: 4px solid rgb(175, 0, 30);
+}
+
+
+
+
+header nav .social {
+	float: right;
+}
+header nav a:link, header nav a:visited {
+	color: rgb(175, 0, 30);
+}
+header nav .social a {
+	display: block;
+	float: left;
+	clear: none;
+	margin: 5px 4px 0px 0px;
+	padding: 0px;
+}
+header nav .social a.twitter,
+header nav .social a.youtube,
+header nav .social a.linkedin {
+	width: 35px;
+	height: 35px;
+	background: url(./images/linked_in.png) center center / 35px 35px no-repeat;
+}
+header nav .social a.twitter {
+	background: url(./images/twitter.png) center center / 35px 35px no-repeat;
+}
+header nav .social a.youtube {
+	background: url(./images/you_tube.png) center center / 35px 35px no-repeat;
+}
+
+
+
+header nav a.active {
+	border-bottom: 4px solid rgb(175, 0, 30);
+}
+
+header nav #subnav{
+	position: absolute;
+	left: 300px;
+	top: 127px;
+	z-index: 20;
+}
+header nav #subnav a{
+	color: #fff;
+	border-bottom: 4px solid transparent;
+	margin-bottom: 2px;
+	padding-bottom: 6px;
+}
+header nav #subnav a:link:hover, header nav #subnav a:visited:hover, header nav #subnav a.active {
+	border-bottom: 4px solid #fff;
+}
+
+
+@media screen and (max-width: 1000px){
+
+
+	header button {
+		display: block;
+	}
+	header nav {
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 100%;
+		z-index: 5000;
+		width: 0px;
+		box-shadow: rgba(0, 0, 0, 0.298039) -5px 0px 13px -1px;
+		background: rgb(175, 0, 30);
+		border-width: initial;
+		border-style: none;
+		border-color: initial;
+		border-image: initial;
+		overflow: auto;
+		transition: width 0.4s;
+	}
+	header nav.visible {
+		width: 400px;
+	}
+	header nav .close {
+		background: url(./images/close.png) center center no-repeat;
+		background-size: 23px 23px;
+		width: 79px;
+		height: 79px;
+		margin-bottom: -16px;
+		float: right;
+	}
+	header nav a, header nav a:active, header nav a:hover, header nav a:link, header nav a:visited {
+		clear: both;
+		width: 400px;
+		display: block;
+		float: none;
+		padding: 0;
+		margin: 0 0 0 39px;
+		color: #FFF;
+		border-bottom: none !important;
+		font-size: 4em;
+		font-family: StandardLifeBold, StandardLifeRegular, Arial, sans-serif;
+		text-transform: initial;
+		letter-spacing: -1px;
+		line-height: 1.4em;
+	}
+	header button.menu {
+		width: 25.5px;
+		height: 24px;
+		background: url(./images/burger.png) center center / 25.5px 24px no-repeat;
+	}
+	header button.menu, header button.share {
+		float: right;
+		width: 79px;
+		height: 79px;
+		display: block;
+		border-left: 1px solid rgb(220, 221, 222);
+	}
+
+
+
+	header nav .social {
+		width: 100%;
+	}
+	header nav .social a {
+		display: block;
+		float: left;
+		margin: 15px 15px 15px 39px;
+		clear: none;
+	}
+	header nav .social a + a {
+		margin-left: 0;
+	}
+	header nav .social a.linkedin,
+	header nav .social a.twitter,
+	header nav .social a.youtube {
+		width: 45px;
+		height: 45px;
+		background: url(./images/linked_in.png) top center no-repeat;
+		background-size: 45px 45px;
+	}
+	header nav .social a.twitter {
+		background: url(./images/twitter.png) top center no-repeat;
+		background-size: 45px 45px;
+	}
+	header nav .social a.youtube {
+		background: url(./images/you_tube.png) top center no-repeat;
+		background-size: 45px 45px;
+	}
+
+	header nav #subnav{
+		position: initial;
+		width: 300px;
+		margin-left: 40px;
+		font-size: 80%;
+	}
+		header nav #subnav a{
+			width: inherit;
+		}
+
+}

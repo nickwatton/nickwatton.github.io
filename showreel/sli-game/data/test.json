@@ -1,0 +1,10 @@
+{
+	"name": "Hello again",
+	"intro": {
+		"alpha": 654,
+		"beta":  321
+	},
+	"people": [
+		{ "first": "Morgan", "last": "Freeman" }
+	]
+}
