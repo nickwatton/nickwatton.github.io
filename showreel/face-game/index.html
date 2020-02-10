@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ASI Game</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="icon.png">
+
+		
+		<link rel="stylesheet" type="text/css" href="styles/main.css" media="screen">
+		
+	</head>
+	<body>
+
+		<header>
+	<img src="images/logo.svg" />
+</header>
+
+		
+<div class="horizontal-top-fill"></div>
+
+<div class="horizontal-middle clearfix">
+	<div class="side-tab side-tab-left"></div>
+
+	<div class="container game-wrapper" id="game-wrapper">
+
+		<div class="game-ui">
+
+			<div class="city-scape">
+				<img class="building-facade" src="https://campaigns.aberdeenstandard.com/ASI-capabilities/gameface/images/cutout-facade.png" alt="facade of tower block, with holes for the windows">
+			</div>
+
+			<div class="game-option-buttons">
+				<div class="icon-sprite mute"></div>
+				<div class="icon-sprite reset hidden"></div>
+			</div>
+
+			<div class="clock-wrapper hidden">
+				<div class="time-display">
+					00:00:00
+				</div>
+				<div class="time-toggle">
+					<span class="icon-sprite time-icon"></span>
+				</div>
+			</div>
+
+			<div class="glasses-wrapper">
+				<div class="glass">
+					<img src="https://campaigns.aberdeenstandard.com/ASI-capabilities/gameface/images/glass.png" alt="wine glass">
+					<img src="https://campaigns.aberdeenstandard.com/ASI-capabilities/gameface/images/glass.png" alt="another wine glass">
+				</div>
+				<div class="bubbles">
+					<div id="bubbles_1"></div>
+					<div id="bubbles_2"></div>
+				</div>
+			</div>
+
+			<div class="btn-grid hidden">
+				<img class="control-panel" src="https://campaigns.aberdeenstandard.com/ASI-capabilities/gameface/images/controlBase.png" alt="box for controls">
+				<ul>
+					<li><button class="btn icon-sprite btn-0">1</button></li>
+					<li><button class="btn icon-sprite btn-1">2</button></li>
+					<li><button class="btn icon-sprite btn-2">3</button></li>
+					<li><button class="btn icon-sprite btn-3">4</button></li>
+					<li><button class="btn icon-sprite btn-4">5</button></li>
+					<li><button class="btn icon-sprite btn-5">6</button></li>
+					<li><button class="btn icon-sprite btn-6">7</button></li>
+					<li><button class="btn icon-sprite btn-7">8</button></li>
+					<li><button class="btn icon-sprite btn-8">9</button></li>
+					<li><button class="btn icon-sprite btn-9">0</button></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="ui-panels">
+			
+<div class="ui-panel welcome">
+		<section>
+			<header><span>WIN</span> a world-class dining experience.</header>
+		</section>
+
+		<section class="body-copy">
+			<p><span class="hightlight">Connect with your colleagues</span></p>
+			<p>Play the game for a chance to win a world-class dining experience with fabulous <span class="hightlight">cityscape, night sky views</span>.</p>
+			<p>Wherever you&rsquo;re based around the world, we&rsquo;ll arrange a night for you and four colleagues in a beautiful restaurant. Amongst others globally, these include:</p>
+			<p class="centered">
+				<span class="hightlight">Oblix, The Shard</span> in London<br>
+				<span class="hightlight">Hutong</span> in Hong Kong<br>
+				<span class="hightlight">XIX (NINETEEN)</span> in Philadelphia<br>
+				<span class="hightlight">O Bar</span> in Sydney<br>
+				<span class="hightlight">Spago, Marina Bay Sands</span> in Singapore<br>
+				<span class="hightlight">The Lookout by Gardener&rsquo;s Cottage</span> in Edinburgh
+			</p>
+		</section>
+
+		<section>
+			<button name="how-to-play" class="panel-button how-to-play">How to play</button>
+			<p class="tnc-link">Terms &amp; Conditions</p>
+		</section>
+</div>
+
+			
+<div class="ui-panel welcome-external">
+		<section>
+			<header><span>WIN</span> a world-class dining experience.</header>
+		</section>
+
+		<section class="body-copy">
+			<p>Play the game for a chance to win a dining experience for two with fabulous <span class="hightlight">cityscape, night sky views</span>.</p>
+			<p>You&lsquo;ll be able to choose from four top restaurants in <span class="hightlight">Leeds, London, Edinburgh and Birmingham</span>:</p>
+			<p class="centered">
+				<span class="hightlight">Crafthouse</span> - Leeds<br>
+				<span class="hightlight">Oblix, The Shard</span> – London<br>
+				<span class="hightlight">The Tower</span> – Edinburgh<br>
+				<span class="hightlight">Marco Pierre White, Steakhouse Bar &amp; Grill</span> - Birmingham
+			</p>
+		</section>
+
+		<section>
+			<button name="how-to-play" class="panel-button how-to-play-external">How to play</button>
+			<p class="tnc-link">Terms &amp; Conditions</p>
+		</section>
+</div>
+
+			
+<div class="ui-panel how-to">
+		<section>
+			<header>How to Play</header>
+		</section>
+
+		<section class="body-copy">
+			<p><span class="hightlight">Are you switched on enough to crack the code?</span></p>
+			<p>Click the numbers on the remote control to switch on the skyscraper lights.</p>
+			<p>Correct numbers will turn on the lights.<br>Incorrect numbers will turn lights off.<br>
+				Numbers <span class="hightlight">in the right order</span> will <span class="hightlight green-glow">illuminate green</span>.</p>
+			<p>Enter the right 4-digit code <span class="hightlight">in the right order</span> and you&rsquo;ll be entered into our prize draw to <span class="hightlight">WIN!</span></p>
+		</section>
+
+		<section>
+			<button name="watch-film" class="panel-button watch-film">Start</button>
+			<p class="tnc-link">Terms &amp; Conditions</p>
+		</section>
+</div>
+
+			
+<div class="ui-panel video">
+
+		<section>
+			<header>10 capabilities - 10 buttons - 1 code</header>
+		</section>
+
+		<section class="body-copy">
+			<p>The 10 buttons stand for our 10 capabilities: Alternatives, Multi-Asset, Quantitative Investing, Active Equities, Fixed Income, Real Estate, Private Markets, ESG, Insurance, Strategic Client Solutions.</p>
+			<p>Can you find the code?</p>
+		</section>
+
+		<section class="video-player">
+
+			<p class="video-message">Get ready to play <span class="countdown-count"></span></p>
+
+
+			<video class="asi-video" width="100%" playsinline webkit-playsinline>
+				<source src="https://campaigns.aberdeenstandard.com/ASI-capabilities/gameface/video/ASI_Capabilities.webm"
+						type="video/webm">
+				<source src="https://campaigns.aberdeenstandard.com/ASI-capabilities/gameface/video/ASI_Capabilities.mp4"
+						type="video/mp4">
+			</video>
+			<div class="video-progress-wrapper">
+				<div class="video-progress"></div>
+			</div>
+		</section>
+
+</div>
+
+			<div class="ui-panel count-down">
+	<section>
+		<p class="count-down-message">Get ready to play <span class="replay-count"></span></p>
+	</section>
+</div>
+
+			
+<div class="ui-panel winner">
+		<section>
+			<header>You did it!</header>
+		</section>
+
+		<form id="registerForm" action="https://s1911602307.t.eloqua.com/e/f2" name="digi_game_internal" class="elq-form" id="form1416" method="post">
+			<input name="elqFormName" type="hidden" value="digi_game_internal">
+			<input name="elqSiteID" type="hidden" value="1911602307">
+			<input name="elqCampaignId" type="hidden"  />
+			<input name="lastName" type="hidden" value="Test Last Name">
+			<input name="singleLineText5" type="hidden" value="Yes">
+			<input name="singleLineText6" type="hidden" value="24/04/2019">
+			<input name="singleLineText4" type="hidden" value="3999" id="singleLineText4">
+
+			<section class="form-copy">
+				<p>You solved the puzzle in:<br>
+					<span class="your-score"></span></p>
+
+				<p>Fill out the form and enter our prize draw to win a night out with four of your colleagues.</p>
+
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="formSet" id="formSetName">
+							<div class="col-12"><p class="validationWarning">First &amp; Last Name:</p></div>
+							<div class="col-12"><input type="text" name="firstName" id="fName" autocomplete="off" title="User name (a-z)" pattern="^[\p{L}\s'.-]+$" maxlength="30"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="formSet" id="formSetEmail">
+							<div class="col-12"><p class="validationWarning">Work Email Address:</p></div>
+							<div class="col-12"><input type="email" name="emailAddress" id="fEmail" autocomplete="off" maxlength="129"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="formSet" id="formSetTnC">
+							<input type="checkbox" name="tnc" value="tnc" id='fTnC'><label for="fTnC">I agree to the Terms and Conditions</label><br>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section>
+				<button name="play-again" class="panel-button play-again">Play again</button>
+				<button name="fSubmit" id="fSubmit" type="submit" class="panel-button enter-now">Enter now</button>
+				<!-- <button name="view-leaderboard" class="panel-button view-leaderboard">View leaderboard</button> -->
+				<p class="tnc-link">Terms &amp; Conditions</p>
+			</section>
+
+		</form>
+
+</div>
+
+			
+<div class="ui-panel winner-external">
+		<section>
+			<header>You did it!</header>
+		</section>
+
+		<form id="registerFormExternal" action="https://s1911602307.t.eloqua.com/e/f2" name="digi_game_internal" class="elq-form" id="form1416" method="post">
+			<input name="elqFormName" type="hidden" value="digi_game_internal">
+			<input name="elqSiteID" type="hidden" value="1911602307">
+			<input name="elqCampaignId" type="hidden"  />
+			<input name="lastName" type="hidden" value="Test Last Name">
+			<input name="singleLineText5" type="hidden" value="Yes">
+			<input name="singleLineText6" type="hidden" value="24/04/2019">
+			<input name="singleLineText4" type="hidden" value="3999" id="singleLineText4-external">
+
+			<section class="form-copy">
+				<p>You solved the puzzle in: <span class="your-score-external"></span></p>
+
+				<p>Fill out the form and enter our prize draw to win a dining experience for two with fabulous <span class="hightlight">cityscape, night sky views</span>.</p>
+
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="formSet col-6 sm-col-12" id="formSetName-external">
+							<div class="col-12"><p class="validationWarning">First &amp; Last Name:</p></div>
+							<div class="col-12"><input type="text" name="firstName" id="fName-external" autocomplete="off" title="User name (a-z)" pattern="^[\p{L}\s'.-]+$" maxlength="30"></div>
+						</div>
+						<div class="formSet col-6 sm-col-12" id="formSetEmail-external">
+							<div class="col-12"><p class="validationWarning">Email Address:</p></div>
+							<div class="col-12"><input type="email" name="emailAddress" id="fEmail-external" autocomplete="off" maxlength="129"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="formSet col-6 sm-col-12" id="formSetCompany-external">
+							<div class="col-12"><p class="validationWarning">Company:</p></div>
+							<div class="col-12"><input type="text" name="fCompany" id="fCompany-external" autocomplete="off" title="Company name (a-z)" pattern="^[\p{L}\s'.-]+$" maxlength="30"></div>
+						</div>
+						<div class="formSet col-6 sm-col-12" id="formSetType-external">
+							<div class="col-12"><p class="validationWarning">Investor Type:</p></div>
+							<div class="col-12"><input type="text" name="fType" id="fType-external" autocomplete="off" title="Investor type (a-z)" pattern="[a-zA-Z]+[a-zA-Z ]+" maxlength="129"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="formSet col-6 sm-col-12" id="formSetCountry-external">
+							<div class="col-12"><p class="validationWarning">Country:</p></div>
+							<div class="col-12"><input type="text" name="fCountry" id="fCountry-external" autocomplete="off" title="Country name (a-z)" pattern="[a-zA-Z]+[a-zA-Z ]+" maxlength="30"></div>
+						</div>
+						<div class="formSet col-6 sm-col-12" id="formSetType-external">
+							<div class="formSet" id="formSetMarketing">
+								<input type="checkbox" name="marketing" value="marketing" id='fMarketing'><label for="fMarketing">I agree to my email being stored and used to receive the newsletter</label><br>
+								<input type="checkbox" name="tnc" value="tnc" id='fTnC-external'><label for="fTnC-external">I agree to the Terms and Conditions</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<button name="play-again" class="panel-button play-again">Play again</button>
+				<button name="fSubmit" id="fSubmit" type="submit" class="panel-button enter-now">Enter now</button>
+				<!-- <button name="view-leaderboard" class="panel-button view-leaderboard">View leaderboard</button> -->
+				<p class="tnc-link">Terms &amp; Conditions</p>
+			</section>
+
+		</form>
+
+</div>
+
+			
+<div class="ui-panel leader-board">
+		<section>
+			<header>Leaderboard</header>
+		</section>
+
+		<section class="leader-board-body">
+
+				<div class="container-fluid">
+
+					<div class="row clearfix board-labels">
+						<div class="col-2"><p>Rank:</p></div>
+						<div class="col-8"><p>Username:</p></div>
+						<div class="col-2"><p>Score:</p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>1</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>2</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>3</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>4</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>5</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>6</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>7</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>8</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>9</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result">
+						<div class="col-2 player-rank"><p>10</p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+					<div class="row clearfix board-results player-result your-score">
+						<div class="col-2 player-rank"><p></p></div>
+						<div class="col-8 sm-col-7 player-name"><p></p></div>
+						<div class="col-2 sm-col-3 player-score"><p></p></div>
+					</div>
+
+				</div>
+
+				<section>
+					<button name="play-again-board" class="panel-button play-again-board">Play again</button>
+					<!-- <p class="tnc-link">Terms &amp; Conditions</p> -->
+				</section>
+		</section>
+
+</div>
+
+			
+<div class="ui-panel tnc">
+		<section>
+			<header>Terms and Conditions</header>
+		</section>
+
+		<section class="body-copy">
+			<p>By entering The Global Campaign Game (&ldquo;The Competition&rdquo;), all participants are deemed to have read these Terms and agree to be bound by them. The decision of Standard Life Investments Limited, a company registered in Scotland (company number SC123321) having its registered office at 1 George Street, Edinburgh, EH2 2LL (the &ldquo;Promoter&rdquo; or &ldquo;we&rdquo;), is final on all matters relating to the Competition and the Terms, and no correspondence will be entered into. The Promoter reserves the right to refuse entry, or refuse to award the Prize to anyone in breach of these Terms.</p>
+			<ol>
+				<li>The Competition is free and open to permanent employees of, or individuals working full time on a contractor or consultant basis for, Standard Life Aberdeen Group (&ldquo;SLA Group Employees&rdquo;) (Standard Life Aberdeen Group meaning Standard Life Aberdeen plc, a company registered in Scotland (company number SC286832) with its registered office at 1 George Street, Edinburgh, United Kingdom, EH2 2LL, together with its subsidiaries (as defined in section 1159 of Companies Act 2006). Eligible entrants must have an "aberdeenstandard&rdquo; email address. You will only be eligible to receive the Prize if you are an SLA Group Employee and are not working under notice of termination (whether given by you or by your employer, unless by reason of retirement or redundancy) on the date of the competition announcement – Wednesday 8 May 2019.</li>
+				<li>The opening date of the Competition is 9am BST Wednesday 8 May 2019 and the closing date of the Competition is 17:00:00 British Summer Timer (BST) on Monday 26 June 2019 (the &ldquo;Closing Date&rdquo;). Any entries (a) following the Closing Date; (b) incomplete; or (c) otherwise illegible will not be accepted and you will not be entered into the Competition. Any entries that contain any sexual, offensive, inappropriate or defamatory content will not be accepted.</li>
+				<li>To enter the Competition, please visit the Global News intranet site and follow the instructions therein to enter online.</li>
+				<li>There is one Prize to be won. All those who complete the game and enter their details will be entered into a prize draw.  The participant who is then selected at random from all the entries (the &ldquo;Winner&rdquo;) will win a night with their choice of four colleagues from the same office, up to the value of &pound;1,000 in a top restaurant (with a cityscape night sky view location dependent) (the &ldquo;Prize&rdquo;).</li>
+				<li>The Prize is subject to availability and the Promoter reserves the right to substitute any Prize with another of equivalent or higher value without giving notice if circumstances beyond the Promoter&rsquo;s control make it necessary to do so.</li>
+				<li>The Prize is transferable. The Prize can be gifted to a colleague of the Winner (i.e. the Winner can transfer the Prize to a colleague who can then take their choice of four colleagues from the same office to a top restaurant up to the value of &pound;1,000). Each Prize is non-exchangeable and no cash equivalent or choice (other than as stated in these Terms) or alternative prize will be available (except pursuant to paragraph 5 of these Terms). Each Prize will be awarded to the Winner selected in accordance with these Terms.</li>
+				<li>Entrants may only enter the Competition once. Multiple entries from the same person will be disqualified and only the first entry from such person shall be valid, provided that the remaining terms of these Terms have been complied with.</li>
+				<li>The Winner of the Competition will be notified by email no later than Wednesday 26 June 2019 and the winner will be announced on the Global News intranet site.</li>
+				<li>The Prize will be arranged with the Winner and the &lsquo;Brand Team ASI&rsquo;. Restaurant choice is dependent on location of Winner and will be arranged accordingly in the Winner&lsquo;s City. In the event that the Winner cannot be contacted, is on notice to leave or is no longer an SLA Group Employee, the Promoter reserves the right to select an alternate winner(s).</li>
+				<li>The Promoter reserves the right to hold void, cancel, suspend, or amend the Competition where it becomes necessary to do so.</li>
+				<li>Any personal data collected from you by the Promoter will be used lawfully in accordance with Regulation (EU) 2016/679 and is used solely for the purpose of processing the Competition including identifying the successful participants and awarding the Prizes.</li>
+				<li>If for any reason a technical interruption, fault or site failure occurs when entering the Competition, the Promoter does not take any responsibility for incomplete Competition entries and any incomplete Competition entries will not be considered valid for entry into the Competition.</li>
+				<li>We may refuse or disqualify any entry (including entries by Winners), if we have good reason to believe that you have broken these Terms or if you or anyone authorised by you to deal with your entry acts in a way towards us which we reasonably consider to be inappropriate, unlawful or offensive. If the Winner is disqualified, we can give the Prize to another person who entered the Competition on these Terms.</li>
+				<li>Singular terms include the plural and these Terms will be interpreted in accordance with English law. If any provision of these Terms proves to be illegal or unenforceable, this shall not prevent the remaining provisions remaining in full force and effect. Any disputes will be subject to English law and the exclusive jurisdiction of the courts of England and Wales.</li>
+			</ol>
+		</section>
+
+		<section>
+			<button name="back" class="panel-button back">Back</button>
+		</section>
+</div>
+
+			
+<div class="ui-panel tnc-external">
+		<section>
+			<header>Terms and Conditions</header>
+		</section>
+
+		<section class="body-copy">
+			<p>By entering The Global Campaign Game (&ldquo;The Competition&rdquo;), all participants are deemed to have read these Terms and agree to be bound by them. The decision of Standard Life Investments Limited, a company registered in Scotland (company number SC123321) having its registered office at 1 George Street, Edinburgh, EH2 2LL (the &ldquo;Promoter&rdquo; or &ldquo;we&rdquo;), is final on all matters relating to the Competition and the Terms, and no correspondence will be entered into. The Promoter reserves the right to refuse entry, or refuse to award the Prize to anyone in breach of these Terms.</p>
+
+			<ol>
+				<li>The Competition is free and open to external clients on the date of the competition – 14-15 May 2019.</li>
+				<li>The opening date of the Competition is 9am British Summer Time (BST) 14 May 2019 and the closing date of the Competition is 17:00 (BST) on 15 May 2019 (the &ldquo;Closing Date&rdquo;). Any entries (a) following the Closing Date; (b) incomplete; or (c) otherwise illegible will not be accepted and you will not be entered into the Competition. Any entries that contain any sexual, offensive, inappropriate or defamatory content will not be accepted.</li>
+				<li>To enter the Competition, please visit the exhibition stand and follow the instructions therein to enter online.</li>
+
+				<li>There are 5 Prizes to be won. All those who complete the game and enter their details will be entered into a prize draw. The participant who is then selected at random from all the entries (the &ldquo;Winner&rdquo;) will win a dinner for two, up to the value of &pound;250 in their choice of one of the four listed restaurants (with a cityscape night sky view location dependent) (the &ldquo;Prize&rdquo;). The restaurant choices are:
+					<ul>
+						<li>Crafthouse - Leeds</li>
+						<li>Marco Pierre White, Steakhouse Bar & Grill - Birmingham</li>
+						<li>Oblix, The Shard – London</li>
+						<li>The Tower – Edinburgh</li>
+					</ul>
+				Travel to the restaurant is not included.</li>
+
+				<li>The Prize is subject to availability and the Promoter reserves the right to substitute any Prize with another of equivalent or higher value without giving notice if circumstances beyond the Promoter&rsquo;s control make it necessary to do so.</li>
+				<li>The Prize is transferable. The Prize can be gifted to a friend or family member of the Winner (i.e. the Winner can transfer the Prize to a friend or partner who can then take their choice of guest to one of the selected restaurants up to the value of &pound;250). Each Prize is non-exchangeable and no cash equivalent or choice (other than as stated in these Terms) or alternative prize will be available (except pursuant to paragraph 5 of these Terms). Each Prize will be awarded to the Winner selected in accordance with these Terms.</li>
+				<li>Entrants may only enter the Competition once. Multiple entries from the same person will be disqualified and only the first entry from such person shall be valid, provided that the remaining terms of these Terms have been complied with.</li>
+				<li>The Winner of the Competition will be notified by email no later than 24th May 2019.</li>
+				<li>The Prize will be arranged with the Winner and &lsquo;Chanel Marketer at ASI&rsquo;. In the event that the Winner cannot be contacted, the Promoter reserves the right to select an alternate winner(s).</li>
+				<li>The Promoter reserves the right to hold void, cancel, suspend, or amend the Competition where it becomes necessary to do so.</li>
+				<li>Any personal data collected from you by the Promoter will be used lawfully in accordance with Regulation (EU) 2016/679 and is used solely for the purpose of processing the Competition including identifying the successful participants and awarding the Prizes.</li>
+				<li>If for any reason a technical interruption, fault or site failure occurs when entering the Competition, the Promoter does not take any responsibility for incomplete Competition entries and any incomplete Competition entries will not be considered valid for entry into the Competition.</li>
+				<li>We may refuse or disqualify any entry (including entries by Winners), if we have good reason to believe that you have broken these Terms or if you or anyone authorised by you to deal with your entry acts in a way towards us which we reasonably consider to be inappropriate, unlawful or offensive. If the Winner is disqualified, we can give the Prize to another person who entered the Competition on these Terms.</li>
+				<li>Singular terms include the plural and these Terms will be interpreted in accordance with English law. If any provision of these Terms proves to be illegal or unenforceable, this shall not prevent the remaining provisions remaining in full force and effect. Any disputes will be subject to English law and the exclusive jurisdiction of the courts of England and Wales.</li>
+			</ol>
+		</section>
+
+		<section>
+			<button name="back" class="panel-button back-external">Back</button>
+		</section>
+</div>
+
+		</div>
+
+		<div class="game-panels">
+			<div class="right-wrong">
+	<section>
+		<p>Nearly there!</p>
+		<p>Right numbers<span class="key-stack"></span>.<br>
+			Wrong order.</p>
+	</section>
+</div>
+
+		</div>
+
+	</div>
+
+	<div class="side-tab side-tab-right"></div>
+
+</div>
+
+<div class="horizontal-bottom-fill"></div>
+
+
+		
+			<script src="scripts/main.js"></script>
+		
+	</body>
+</html>
