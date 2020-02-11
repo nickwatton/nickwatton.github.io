@@ -3,14 +3,24 @@ $(function () {
 	var jobPopWindow, thisWindow = $( window ), $alljobs = $('#allJobs'), $viewAll = $('#viewAll'), $menuAbout = $('#about'), $root = $('html,body'), jobs = [], filterLinks, jobHtml = '', thumbHtml, linksHtml, awardsHtml, i, j, heroLink, heroTitle;
     
     thisWindow.on('focus', handleFocus);
-    
-    filterLinks = $('a.workFilter').click(function (e) {
-        e.preventDefault();
-        filterLinks.removeClass('active');
-         $(this).addClass('active');
-        buildFilteredJobs(parseInt($(this).attr('data_id'), 10));
-        return false;
-    });
+
+    filterLinks =  [...document.querySelectorAll('.workFilter')];
+    for(let i = 0; i < filterLinks.length; i++){
+		filterLinks[i].addEventListener('click', (evt) => { evt.preventDefault();  invalidateMenu(evt.target)});
+	}
+
+    function invalidateMenu(target){
+        // console.log(target.dataSet.id)
+        for(let i = 0; i < filterLinks.length; i++){
+            if(filterLinks[i] === target){
+                filterLinks[i].classList.add('active');
+                buildFilteredJobs(Number(target.getAttribute('data-id')));
+            }
+            else {
+                filterLinks[i].classList.remove('active');
+            }
+        }
+    }
     
 	function setJobItemListeners() {
         $('.job').fadeTo(0, 0);
@@ -66,7 +76,7 @@ $(function () {
                         tech:			safeEncode(json.work[i].tech),
                         thumb:			safeEncode(json.work[i].thumb)
                     };
-				    jobs.push(job);
+                    jobs.push(job);
                 }
                 buildFilteredJobs(filter);
             });
@@ -183,6 +193,19 @@ $(function () {
         }
     }
     
-	gatherData(1);
+    let section = 1, sectionTarget;
+    if(window.location.hash) {
+        let hsh = Number(window.location.hash.substr(1,1));
+        const regex = /^([0-8])$/gm;
+        if(regex.test(hsh)){
+            section = hsh;
+        }
+        for(let i = 0; i < filterLinks.length; i++){
+            if(Number(filterLinks[i].getAttribute('data-id')) === section){
+                invalidateMenu(filterLinks[i])
+            }
+        }
+    }
+    gatherData(section);
 	
 });

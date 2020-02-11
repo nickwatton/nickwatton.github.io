@@ -25,7 +25,7 @@
 			"agency":	"AmazeRealise",
 			"date":		"201811",
 			"rank":		1,
-            "filter":   [0,4,7],
+            "filter":   [0,4,7,8],
 			"links":	[
 				{
 					"hero":	1,
@@ -44,7 +44,7 @@
 			"agency":	"AmazeRealise",
 			"date":		"201810",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,7,8],
 			"links":	[
 				{
 					"hero":	1,
@@ -89,7 +89,7 @@
 			"agency":	"AmazeRealise",
 			"date":		"201806",
 			"rank":		1,
-            "filter":   [0,4,7],
+            "filter":   [0,4,7,8],
 			"links":	[
 				{
 					"hero":	1,
@@ -201,7 +201,7 @@
 			"agency":	"Realise",
 			"date":		"201705",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,7,8],
 			"links":[
 				{
 					"hero":	1,
@@ -222,7 +222,7 @@
 			"agency":	"Realise",
 			"date":		"201705",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,7,8],
 			"links":[
 				{
 					"hero":	1,
@@ -242,7 +242,7 @@
 			"agency":	"Realise",
 			"date":		"201705",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,7,8],
 			"links":[
 				{
 					"hero":	1,
@@ -263,7 +263,7 @@
 			"agency":	"Realise",
 			"date":		"201702",
 			"rank":		1,
-            "filter":   [0,1,7],
+            "filter":   [0,1,7,8],
 			"links":[
 				{
 					"hero":	1,
@@ -310,7 +310,7 @@
 			"agency":	"Realise",
 			"date":		"201701",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,7,8],
 			"links":[
 				{
 					"hero":	1,
@@ -341,7 +341,7 @@
 			"agency":	"Realise",
 			"date":		"201611",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,7,8],
 			"copy1":	"Built the banners for Not On The High Street's Christmas campaign.",
 			"copy2":	"Eight desktop and mobile sizes, served through DoubleClick.",
 			"tech":		"HTML, JavaScript, CSS",
@@ -479,7 +479,7 @@
 			"agency":	"Realise",
 			"date":		"201601",
 			"rank":		1,
-            "filter":   [0,1,4,7],
+            "filter":   [0,1,4,7,8],
 			"links":[
 				{
 					"hero":	1,
