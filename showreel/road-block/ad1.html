@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>framed content</title>
+		<style>
+			body {
+				font-family: Arial, sans;
+				font-size: 80%;
+				background-color: red;
+				overflow: hidden;
+			}
+			#report{
+				background-color: black;
+				position: absolute;
+				width:10px;
+				height:10px;
+				left:0px;
+				top:130px;
+			}
+		</style>
+	</head>
+	<body>
+		iFrame1
+		<div id=report></div>
+		<script type="text/javascript">
+			localStorage.run1="true";
+			localStorage.run2="false";
+			var left = 0, step=1;
+			var domElement = document.getElementById("report");
+			var anim = setInterval(function() {
+				if(localStorage.run1 === "true"){
+					if(left < 310){
+						domElement.style.left = left+"px";
+						if(left <= -1){
+							step*=-1;
+						}
+					}
+					else{
+						step*=-1;
+						localStorage.run1="false";
+						localStorage.run2="true";
+					}
+					left+=step;
+				}
+			}, 10);
+		</script>
+	</body>
+</html>

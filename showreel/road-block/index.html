@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Road block banner demo</title>
+		<style>
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 75%;
+			}
+			#wrapper{
+				position: relative;
+			}
+			.iF{
+				position: absolute;
+			}
+			#ad2{
+				right: 0
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Synced iFrames</h2>
+		<p>Two iFrames both reference the same session storage object. <br />
+		A shared variable is set/updated, allowing each to know when to handle the animation.</p>
+		<p>This is a simple research demo for "road-block" banners.</p>
+		<div id=wrapper>
+			<iframe class=iF id=ad1 src="ad1.html"></iframe>
+			<iframe class=iF id=ad2 src="ad2.html"></iframe>
+		</div>
+	</body>
+</html>
