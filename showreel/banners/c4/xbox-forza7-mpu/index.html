@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.min.css">
+		<script>
+		/* New Freewheel code - 2015 12 15 */
+			function getQueryVariable(variable)
+            {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i=0;i<vars.length;i++) {
+                       var pair = vars[i].split("=");
+                       if(pair[0] == variable){ return decodeURIComponent(pair[1]); }
+                }
+                return(false);
+            }
+			var clickThruURL = getQueryVariable("clickthru");
+		</script>
+	</head>
+	<body>
+		<div class="sz" id="container">
+			<div class="bg" id=bg2></div>
+			<div class="bg" id=bg1>
+				<div id="s1"></div>
+				<div id="s2"></div>
+				<div id="s3"></div>
+				<div id="s4"></div>
+				<div id="s5"></div>
+				<div id="s6"></div>
+				<div id="s7"></div>
+				<div id="s8"></div>
+				<div id="s9"></div>
+				<div id="s10"></div>
+				<div id="s11"></div>
+				<div id="s12"></div>
+				<div id="s13"></div>
+				<div id="s14"></div>
+				<div id="s15"></div>
+			</div>
+			<div class="t" id="pegi"></div>
+			<div class="t" id="brand"></div>
+			<div class="t" id="car"></div>
+			<div class="t" id="t1"></div>
+			<div class="t" id="t2"></div>
+			<div class="t" id="cta"></div>
+			<div class="t" id="t3"></div>
+			
+			<div class="sz" id="bg-exit"></div>
+		</div>
+		<script src="main.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+/* RESET */
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* RESET END */
+
+#container{
+  background:url(bg.jpg);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.sz {
+  width: 300px;
+  height: 250px;
+}
+
+.sz div{
+  position: absolute;
+}
+
+.sz .sprites{
+  background:url(sprites.png) no-repeat;
+  opacity:0;
+}
+
+.sz .pack{
+  background:url(pack1.png);
+  bottom:0;
+  height: 250px;
+  right:0;
+  width: 233px;
+}
+.sz .pack#pack2{
+  background:url(pack2.png);
+  height: 197px;
+  opacity:0;
+  width: 183px;
+}
+
+.sz .sprites#upper{
+  height: 46px;
+  left:13px;
+  top: 9px;
+  width:271px;
+}
+.sz .sprites#lower{
+  background-position: 0 -145px;
+  height: 96px;
+  left:13px;
+  bottom: 0;
+  width:271px;
+}
+.sz .sprites#txt1{
+  background-position: 0 -48px;
+  height: 96px;
+  left:13px;
+  top: 57px;
+  width:90px;
+}
+.sz .sprites#txt2{
+  background-position: -142px -52px;
+  height: 86px;
+  left:13px;
+  opacity:0;
+  top: 61px;
+  width:118px;
+}

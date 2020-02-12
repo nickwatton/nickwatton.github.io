@@ -1,0 +1,69 @@
+/* RESET */
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* RESET END */
+
+#container{
+  background: #00b2a9;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.sz {
+  width: 728px;
+  height: 90px;
+}
+
+.sz div{
+  position: absolute;
+}
+
+.sz .fr1{
+  background:url(frame1.jpg) no-repeat;
+  height: inherit;
+  left: 130px;
+  opacity:0;
+}
+.sz .fr1#fr1_1{
+  background-position: -130px 0px;
+  width: 460px;
+}
+.sz .fr1#fr1_2{
+  background-position: -0px 0px;
+  left: 0px;
+  top: -30px;
+  width: 130px;
+}
+.sz .fr1#fr1_3{
+  background-position: -590px 0px;
+  left: 590px;
+  top: -30px;
+  width: 130px;
+}
+
+.sz .fr2{
+  background:url(frame2.jpg) no-repeat;
+  height: inherit;
+  opacity:0;
+}
+.sz .fr2#fr2_1{
+  top: -20px;
+  width: 130px;
+}
+.sz .fr2#fr2_2{
+  background-position: -130px 0;
+  left: 130px;
+  top: -20px;
+  width: 470px;
+}
+.sz .fr2#fr2_3{
+  background-position: -600px 0;
+  left: 600px;
+  width: 115px;
+}

@@ -1,0 +1,69 @@
+/* RESET */
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* RESET END */
+
+#container{
+  background: url(bg.jpg) no-repeat;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.sz {
+  width: 300px;
+  height: 250px;
+}
+
+.sz div{
+  position: absolute;
+}
+
+.sz .fr1{
+  background:url(spritesheet.png) no-repeat;
+  left: 0;
+  opacity:0;
+  width: inherit;
+}
+.sz .fr1#fr1_1{
+  height: 42px;
+  top: -50px;
+}
+.sz .fr1#fr1_2{
+  background-position: 0 -42px;
+  height: 83px;
+  top: 42px;
+}
+.sz .fr1#fr1_3{
+  background-position: 0 -120px;
+  height: 35px;
+  top: 120px;
+}
+.sz .fr1#fr1_4{
+  background-position: 0 -250px;
+  height: 250px;
+}
+
+.sz .fr2{
+  background:url(spritesheet.png) 0 -250px no-repeat;
+  left: 0;
+  opacity:0;
+  width: inherit;
+}
+.sz .fr2#fr2_1{
+  background-position: 0 -506px;
+  height: 126px;
+  top: -50px;
+}
+.sz .fr2#fr2_2{
+  background-position: 0 -626px;
+  height: 79px;
+  left: -150px;
+  opacity: 1;
+  top: 126px;
+}

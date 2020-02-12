@@ -10,7 +10,6 @@ $(function () {
 	}
 
     function invalidateMenu(target){
-        // console.log(target.dataSet.id)
         for(let i = 0; i < filterLinks.length; i++){
             if(filterLinks[i] === target){
                 filterLinks[i].classList.add('active');
