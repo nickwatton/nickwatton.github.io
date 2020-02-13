@@ -14,7 +14,7 @@
 					"url":	"/showreel/oscilloscope_audio"
 				}],
 			"copy1":	"The sound artist Jerobeam Fenderson (oscilloscopemusic.com) creates music that can be visualised through an oscilloscope. I don't have an oscilloscope, so I wrote a JavaScript player that does the same thing.",
-			"copy2":	"This is not an animation. The graphics are the visual output of specially created music, produced by combining the stereo waveforms. Featured in Steve Gardner's Tiny Web Animation Newsletter.",
+			"copy2":	"This is not an animation.|The graphics are the visual output of specially created music, produced by combining the stereo waveforms.|Featured in Steve Gardner's Tiny Web Animation Newsletter.",
 			"tech":		"JavaScript, Audio API",
 			"thumb":	"oscilliscope_01.png",
 			"images":[]
@@ -38,6 +38,46 @@
 			"thumb":	"sunlife_02.png",
 			"images":[]
 		},
+
+		{
+			"client":	"Brompton",
+			"job":		"Interactive folding Brompton",
+			"agency":	"AmazeRealise",
+			"date":		"201905",
+			"rank":		1,
+            "filter":   [0,1,4,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"View on CodePen",
+					"url":	"https://codepen.io/2Mogs/full/eoVJGr"
+				}],
+			"copy1":	"Responsively animated, interactive Brompton bike",
+			"copy2":	"Moving through the three main steps in the bike's amazing fold, this responsive illustration was created out of my passion for these bikes, to help with a pitch to the client.|In addition to demonstrating the fold, the user can also customize the paint, just like ordering the real thing.",
+			"tech":		"SVG, CSS, JavaScript",
+			"thumb":	"brompton_01.png",
+			"images":[]
+		},
+		{
+			"client":	"Strandbeest",
+			"job":		"Jansen's mechanical linkage kinetic sculpture",
+			"agency":	"Personal project",
+			"date":		"201905",
+			"rank":		1,
+            "filter":   [0,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"View on CodePen",
+					"url":	"https://codepen.io/2Mogs/full/gJBQwR"
+				}],
+			"copy1":	"Animation of Jansen's linkage",
+			"copy2":	"Mechanical linkage fundamental to Theo Jansen's kinetic sculpture Strandbeest. All movement driven by the upper right rotation.|Speed and direction of the animation is controlled through user interaction.",
+			"tech":		"JavaScript",
+			"thumb":	"strandbeest_01.png",
+			"images":[]
+		},
+
 		{
 			"client":	"Heathrow",
 			"job":		"Christmas retail banners",
@@ -82,7 +122,7 @@
 			"agency":	"Personal project",
 			"date":		"201809",
 			"rank":		1,
-            "filter":   [0,1,7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,
