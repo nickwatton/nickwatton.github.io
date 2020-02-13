@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 viewBox="0 0 194.1 182.1" style="enable-background:new 0 0 194.1 182.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#021F49;}
+	.st2{fill:#FF0B3A;}
+	.st3{fill:none;stroke:#61F7EF;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="main_boat">
+	<polygon class="st0" points="133.2,87.1 133.2,60.5 110.1,60.5 99.7,87.1 	"/>
+	<g>
+		<polygon class="st0" points="133.2,115.2 133.2,88.6 99.2,88.6 88.8,115.2 		"/>
+		<polygon class="st0" points="88.3,116.7 78.9,140.8 130.6,140.8 130.6,157.2 133.2,157.2 133.2,116.7 		"/>
+	</g>
+	<g>
+		<rect x="70.9" y="145.4" class="st0" width="1" height="9.1"/>
+	</g>
+	<polygon class="st1" points="70.9,150.4 64.8,150.4 70.9,145.7 	"/>
+	<path class="st0" d="M191.3,147.6L132.5,6.2c3.2,11.3,5.3,62.5,5.3,86c0,23.6-2.2,44.2-5.4,55.5L191.3,147.6L191.3,147.6z"/>
+	<polygon class="st1" points="130.6,1.4 122.8,1.4 130.6,6.2 	"/>
+	<path class="st1" d="M77,139.7h53.6v2.2H79.2C78,141.9,77,140.9,77,139.7L77,139.7z"/>
+	<path class="st0" d="M133.2,30.9V2.6c0-1.5-1.2-2.6-2.6-2.6v7.6l-9,23.3H133.2z"/>
+	<polygon class="st0" points="133.2,59 133.2,32.4 121,32.4 110.7,59 	"/>
+	<polygon class="st2" points="66.1,154.4 63,157.7 71.3,166.9 184.3,166.9 194.1,154.4 	"/>
+	<polygon class="st1" points="66.4,161.5 71.3,166.9 184.3,166.9 188.6,161.5 	"/>
+	<line class="st3" x1="179" y1="173.1" x2="29.2" y2="173.1"/>
+	<line class="st3" x1="88.8" y1="180.6" x2="1.5" y2="180.6"/>
+	<line class="st3" x1="155.5" y1="180.6" x2="190.3" y2="180.6"/>
+</g>
+</svg>

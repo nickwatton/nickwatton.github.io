@@ -474,6 +474,27 @@
 		},
 
 		{
+			"client":	"Expedia",
+			"job":		"Bermuda tourism",
+			"agency":	"Realise",
+			"date":		"201603",
+			"rank":		1,
+            "filter":   [0,4,7],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"Feel the width",
+					"url":	"/showreel/expedia_bermuda"
+				}
+			],
+			"copy1":	"A massive scrollable site with hotspots to access information about the activities in Bermuda.",
+			"copy2":	"",
+			"tech":		"HTML, JavaScript, CSS, ScrollMagic",
+			"thumb":	"bermuda_01.png",
+			"images":[]
+		},
+
+		{
 			"client":	"Heathrow",
 			"job":		"BA Under 25s banners",
 			"agency":	"Realise",
@@ -493,6 +514,7 @@
 			"thumb":	"heathrowU25_16q1_01.jpg",
 			"images":[]
 		},
+
 		{
 			"client":	"HTML audio",
 			"job":		"Synthesising audio from an image",

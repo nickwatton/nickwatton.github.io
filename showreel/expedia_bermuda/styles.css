@@ -1,0 +1,12 @@
+body{
+	background-color: grey;
+	margin:0;
+}
+.boat{
+	top: 305px;
+	height: 113px;
+	left: 43%;
+	margin: 0 auto;
+	position: fixed;
+	width: 120px;
+}
