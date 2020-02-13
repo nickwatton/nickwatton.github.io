@@ -1,6 +1,25 @@
 {
 	"work":[
 		{
+			"client":	"Oscilloscope Music",
+			"job":		"Stereo audio visualisation",
+			"agency":	"Personal project",
+			"date":		"201910",
+			"rank":		1,
+            "filter":   [0,1,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"Listen and watch",
+					"url":	"/showreel/oscilloscope_audio"
+				}],
+			"copy1":	"The sound artist Jerobeam Fenderson (oscilloscopemusic.com) creates music that can be visualised through an oscilloscope. I don't have an oscilloscope, so I wrote a JavaScript player that does the same thing.",
+			"copy2":	"This is not an animation. The graphics are the visual output of specially created music, produced by combining the stereo waveforms. Featured in Steve Gardner's Tiny Web Animation Newsletter.",
+			"tech":		"JavaScript, Audio API",
+			"thumb":	"oscilliscope_01.png",
+			"images":[]
+		},
+		{
 			"client":	"Sunlife",
 			"job":		"Funeral Song Generator",
 			"agency":	"AmazeRealise",
@@ -341,7 +360,7 @@
 			"agency":	"Realise",
 			"date":		"201611",
 			"rank":		1,
-            "filter":   [0,1,4,7,8],
+            "filter":   [0,4,7,8],
 			"copy1":	"Built the banners for Not On The High Street's Christmas campaign.",
 			"copy2":	"Eight desktop and mobile sizes, served through DoubleClick.",
 			"tech":		"HTML, JavaScript, CSS",
