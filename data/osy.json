@@ -1,6 +1,25 @@
 {
 	"work":[
 		{
+			"client":	"Co-Op",
+			"job":		"Animation prototype for display ad",
+			"agency":	"AmazeRealise",
+			"date":		"201911",
+			"rank":		1,
+            "filter":   [0,4,7,8],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"View on CodePen",
+					"url":	"https://codepen.io/2Mogs/full/jOOpGxq"
+				}],
+			"copy1":	"This animation was created for a display ad, with a highly constrained file size.",
+			"copy2":	"The supplied asset was a 666kb video, so I hand coded as SVG and added CSS animation, reducing the filesize to approx 1% of the original.",
+			"tech":		"SVG, CSS",
+			"thumb":	"coop_01.png",
+			"images":[]
+		},
+		{
 			"client":	"Oscilloscope Music",
 			"job":		"Stereo audio visualisation",
 			"agency":	"Personal project",
