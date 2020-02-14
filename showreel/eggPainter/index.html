@@ -36,7 +36,7 @@
 					<button class="button button-undo" disabled>Undo stamp</button>
 				</div>
 				<div class="col col-4">
-					<button class="button button-save">Save</button>
+					<button class="button button-save hidden-outputs">Save</button>
 				</div>
 				<hr/>
 			</div>
@@ -45,19 +45,31 @@
 		<details open>
 			<summary>Stamps</summary>
 			<label class="colour-picker" for="stamp-colour-picker"><input class="hidden" type="color" id="stamp-colour-picker"></label> Stamp colour
-			<ul class="clearfix" id="stamp-list">
+			<ul class="clearfix stamp-list">
 				<li><img class="stamp stamp1" data-src="stamp1" src="images/stamps/dot-l.svg" /></li>
 				<li><img class="stamp stamp2" data-src="stamp2" src="images/stamps/dot-m.svg" /></li>
 				<li><img class="stamp stamp3" data-src="stamp3" src="images/stamps/dot-s.svg" /></li>
-				<li><img class="stamp stamp4" data-src="stamp4" src="images/stamps/band.png" /></li>
-				<li><img class="stamp stamp5" data-src="stamp5" src="images/stamps/skull-2.png" /></li>
-				<li><img class="stamp stamp6" data-src="stamp6" src="images/stamps/skull-fancy-2.png" /></li>
 				<li><img class="stamp stamp7" data-src="stamp7" src="images/stamps/star-l.svg" /></li>
 				<li><img class="stamp stamp8" data-src="stamp8" src="images/stamps/star-m.svg" /></li>
 				<li><img class="stamp stamp9" data-src="stamp9" src="images/stamps/star-s.svg" /></li>
 				<li><img class="stamp stamp10" data-src="stamp10" src="images/stamps/square-l.svg" /></li>
 				<li><img class="stamp stamp11" data-src="stamp11" src="images/stamps/square-m.svg" /></li>
 				<li><img class="stamp stamp12" data-src="stamp12" src="images/stamps/square-s.svg" /></li>
+			</ul>
+			<ul class="clearfix stamp-list stamp-list-lower">
+				<li><img class="stamp stamp4" data-src="stamp4" src="images/stamps/bar-l.svg" /></li>
+				<li><img class="stamp stamp13" data-src="stamp13" src="images/stamps/bar-m.svg" /></li>
+				<li><img class="stamp stamp14" data-src="stamp14" src="images/stamps/bar-s.svg" /></li>
+				<li><img class="stamp stamp15" data-src="stamp15" src="images/stamps/col-l.svg" /></li>
+				<li><img class="stamp stamp16" data-src="stamp16" src="images/stamps/col-m.svg" /></li>
+				<li><img class="stamp stamp20" data-src="stamp20" src="images/stamps/col-s.svg" /></li>
+				<li><img class="stamp stamp18" data-src="stamp18" src="images/stamps/tiltL-l.svg" /></li>
+				<li><img class="stamp stamp19" data-src="stamp19" src="images/stamps/tiltL-m.svg" /></li>
+				<li><img class="stamp stamp17" data-src="stamp17" src="images/stamps/tiltL-s.svg" /></li>
+			</ul>
+			<ul class="clearfix stamp-list stamp-list-lower">
+				<li class="filled"><img class="stamp stamp5" data-src="stamp5" src="images/stamps/skull-2.png" /></li>
+				<li class="filled"><img class="stamp stamp6" data-src="stamp6" src="images/stamps/skull-fancy-2.png" /></li>
 <!-- 				<li><button class="button button-undo" disabled>Undo stamp</button></li> -->
 			</ul>
 			<div class="upload-zone"></div>

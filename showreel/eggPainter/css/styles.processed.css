@@ -36,18 +36,30 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+ul.stamp-list{
+  margin-bottom:0;
+}
+ul.stamp-list-lower{
+  margin:0;
+}
 
-ul#stamp-list li {
+ul.stamp-list li {
   display: block;
+  height: 50px;
   float: left;
-  margin-right: 20px;
+  width: 50px;
+  /* margin-right: 20px; */
+}
+ul.stamp-list li.filled {
+  background: #b9b9b9;
+  /* margin-right: 20px; */
 }
 
-ul#stamp-list li img {
-  border: 1px solid white;
+ul.stamp-list li img {
+  border: 1px solid black;
 }
 
-ul#stamp-list li img.picked {
+ul.stamp-list li img.picked {
   border-color: red;
 }
 

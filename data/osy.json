@@ -1,7 +1,27 @@
 {
 	"work":[
 		{
-			"client":	"My Dev Team",
+			"client":	"Internal",
+			"job":		"Easter Egg Painter",
+			"agency":	"AmazeRealise",
+			"date":		"202001",
+			"rank":		1,
+            "filter":   [0,1,3,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"Paint an Egg",
+					"url":	"/showreel/eggPainter"
+				}],
+			"copy1":	"Co-ran a team building challenge, to painter Easter Eggs, then create a game or interface to use the images.",
+			"copy2":	"My primary role were creating the initial painter application, which used canvas for the main painting app, and live rendered the result onto an interactive 3D egg.|I also took responsibility for encouraging colleagues to contribue to the project, helping with the egg API.",
+			"tech":		"JS, Three.js, Canvas, SVG, Firebase, GitHub",
+			"thumb":	"eggPainter_01.png",
+			"images":[]
+		},
+
+		{
+			"client":	"Internal",
 			"job":		"Collaborative Advent calendar",
 			"agency":	"AmazeRealise",
 			"date":		"201912",
@@ -386,7 +406,7 @@
 			"agency":	"Personal project",
 			"date":		"201702",
 			"rank":		1,
-            "filter":   [0,1,7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,

@@ -66,7 +66,7 @@
 		previewThumbCTX.drawImage(renderer.domElement, 0, 0, thumbSize, thumbSize);
 	}
 	
-    gLTFloader.load('egg-UV.gltf', function (gltf) {
+    gLTFloader.load('egg.gltf', function (gltf) {
         if (gltf.scene.children && Array.isArray(gltf.scene.children) && gltf.scene.children.length > 0 & gltf.scene.children[0].name === "Egg") {
             egg = gltf.scene.children[0];
             textureLoader.load('images/blank.png', function (texture) {
