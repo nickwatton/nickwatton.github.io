@@ -24,12 +24,12 @@ $(function () {
 	function setJobItemListeners() {
         $('.job').fadeTo(0, 0);
         $('.thumb').load(function (e) {
-            $(this).parent().animate({opacity:.5}, 1000);
+            $(this).parent().animate({opacity:1}, 1000);
         });
-        $('.job').mouseenter(function (e) {$(this).animate({opacity:1}, 100);});
-        $('.job').mouseleave(function (e) {$(this).animate({opacity:.5}, 250);});
-        $('.job').on({'touchstart' : function(e){$(this).animate({opacity:1}, 100);} });
-        $('.job').on({'touchend' : function(e){$(this).animate({opacity:.5}, 250);} });
+        // $('.job').mouseenter(function (e) {$(this).animate({opacity:1}, 100);});
+        // $('.job').mouseleave(function (e) {$(this).animate({opacity:.8}, 250);});
+        // $('.job').on({'touchstart' : function(e){$(this).animate({opacity:1}, 100);} });
+        // $('.job').on({'touchend' : function(e){$(this).animate({opacity:.8}, 250);} });
 		$('.viewFull').click(function (e) {
 			createGalleryPage($(this).attr('data_id'));
         });

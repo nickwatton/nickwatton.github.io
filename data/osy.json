@@ -24,6 +24,35 @@
 			"thumb":	"eggPainter_01.png",
 			"images":[]
 		},
+		{
+			"client":	"Internal",
+			"job":		"AR Easter Egg Viewer",
+			"agency":	"AmazeRealise",
+			"date":		"202001",
+			"rank":		1,
+            "filter":   [0,1,3,7],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"Grab a Hiro marker. Print or on screen.",
+					"url":	"https://commons.wikimedia.org/wiki/File:Hiro_marker_ARjs.png"
+				},
+				{
+					"hero":	1,
+					"copy":	"View some eggs",
+					"url":	"/showreel/eggViewer"
+				},
+				{
+					"hero":	1,
+					"copy":	"Paint an Egg",
+					"url":	"/showreel/eggPainter"
+				}],
+			"copy1":	"A companion piece with my Easter Egg painter, this is an augmented reality (AR) egg viewer, which cycles through eggs, displaying them together with the given name and author.",
+			"copy2":	"You need to have the Hiro marker printed or on a screen, then point your webcam at it. An egg shold appear, floating in space.",
+			"tech":		"JS, Three.js, Canvas, SVG, Firebase, GitHub",
+			"thumb":	"eggViewer_01.png",
+			"images":[]
+		},
 
 		{
 			"client":	"Internal",
@@ -622,7 +651,7 @@
 			"agency":	"Realise",
 			"date":		"201601",
 			"rank":		1,
-            "filter":   [0,1,4,7,8],
+            "filter":   [0,4,7,8],
 			"links":[
 				{
 					"hero":	1,
