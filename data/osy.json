@@ -6,7 +6,7 @@
 			"agency":	"AmazeRealise",
 			"date":		"201912",
 			"rank":		1,
-            "filter":   [0,3,7,8],
+            "filter":   [0,3,7],
 			"links":	[
 				{
 					"hero":	1,
