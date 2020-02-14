@@ -1,0 +1,163 @@
+
+$colour1: rgba(34,193,195,1);
+$colour2: rgba(253,187,45,1);
+
+$gridWhite: rgba(255,255,255,.3);
+
+$inactiveColor: grey;
+$activeColor: whitesmoke;
+
+$size: 512px; // 512px
+
+html{
+	background: #151515;
+	color: $activeColor;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.4rem;
+}
+p.sub{
+	color: #d3d3d3;
+	font-size: 1.2rem;
+	margin-top: -10px;
+}
+
+summary{
+	font-size: 1.75rem;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.stamp,
+.layer{
+	height: auto;
+	width: 50px;
+}
+hr{
+	margin: 20px 0;
+	width:100%;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	&#stamp-list li {
+		display:block;
+		float: left;
+		margin-right: 20px;
+		img{
+			border: 1px solid white;
+			&.picked{
+				border-color: red;
+			}
+		}
+	}
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+button{
+	margin-bottom: 14px;
+}
+
+label{
+	&.colour-picker{
+		background-color: #fff;
+		border: 1px solid white;
+		display: inline-block;
+		height: 32px;
+		width: 32px;
+	}
+	
+	input.hidden{
+		clip: rect(0,0,0,0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+}
+
+.wrapper{
+	margin: 0 auto;
+	max-width: $size * 2;
+	width: $size * 2;
+	#painter{
+		position: relative;
+		&::after,
+		&::before{
+			border: 1px dashed #dadada;
+			box-sizing: border-box;
+			content: "";
+			height: 84.2%;
+			left: 0;
+			pointer-events: none;
+			position: absolute;
+			top: 13.4%;
+			width: $size;
+		}
+		&::after{
+			border-color: #bbb;
+			height: 46.4%;
+			top: 32.2%;
+		}
+	}
+}
+canvas{
+	border: 0;
+	margin: 0;
+	padding:0;
+	
+	
+}
+#preview{
+	background: linear-gradient(0deg, grey 30%, whitesmoke 70%);
+	canvas.ready{
+		background: url(../images/egg_shadow.png) no-repeat;
+	}
+}
+
+.hidden-outputs{
+	left: -9000px;
+	position: absolute;
+}
+
+.upload-zone{
+	border: 1px dashed grey;
+	display: none;
+	height: 100px;
+	position: relative;
+	width: 100px;
+	&::before{
+		display:block;
+		content: "drop image to upload here";
+		height: auto;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100px;
+	}
+}
+
+/* GRID */
+.row, .col{
+	float: left;
+}
+.row{
+	width: 100%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.3%;
+}
+.col-6{
+	width: 50%;
+}

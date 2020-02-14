@@ -1,0 +1,167 @@
+html {
+  background: #151515;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+p.sub {
+  color: #d3d3d3;
+  font-size: 1.2rem;
+  margin-top: -10px;
+}
+
+summary {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stamp,
+.layer {
+  height: auto;
+  width: 50px;
+}
+
+hr {
+  margin: 20px 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#stamp-list li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+ul#stamp-list li img {
+  border: 1px solid white;
+}
+
+ul#stamp-list li img.picked {
+  border-color: red;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button {
+  margin-bottom: 14px;
+}
+
+label.colour-picker {
+  background-color: #fff;
+  border: 1px solid white;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+
+label input.hidden {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 1024px;
+}
+
+.wrapper #painter {
+  position: relative;
+}
+
+.wrapper #painter::after, .wrapper #painter::before {
+  border: 1px dashed #dadada;
+  box-sizing: border-box;
+  content: "";
+  height: 84.2%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 13.4%;
+  width: 512px;
+}
+
+.wrapper #painter::after {
+  border-color: #bbb;
+  height: 46.4%;
+  top: 32.2%;
+}
+
+canvas {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#preview {
+  background: linear-gradient(0deg, grey 30%, whitesmoke 70%);
+}
+
+#preview canvas.ready {
+  background: url(../images/egg_shadow.png) no-repeat;
+}
+
+.hidden-outputs {
+  left: -9000px;
+  position: absolute;
+}
+
+.upload-zone {
+  border: 1px dashed grey;
+  display: none;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.upload-zone::before {
+  display: block;
+  content: "drop image to upload here";
+  height: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+}
+
+/* GRID */
+.row, .col {
+  float: left;
+}
+
+.row {
+  width: 100%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3%;
+}
+
+.col-6 {
+  width: 50%;
+}

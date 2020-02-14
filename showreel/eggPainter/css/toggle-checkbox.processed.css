@@ -1,0 +1,50 @@
+p.toggle-checkbox {
+  margin: 0;
+}
+
+p.toggle-checkbox input[type=checkbox] {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+p.toggle-checkbox label {
+  background: #dedede;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+p.toggle-checkbox label:after {
+  background: #ff3366;
+  border-radius: 9px;
+  content: '';
+  height: 18px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  transition: 0.25s;
+  width: 18px;
+}
+
+p.toggle-checkbox input:checked + label {
+  background: white;
+}
+
+p.toggle-checkbox input:checked + label:after {
+  background: #ff6633;
+  left: 39.1px;
+  transform: translateX(-100%);
+}
+
+p.toggle-checkbox label:active:after {
+  width: 23.4px;
+}
