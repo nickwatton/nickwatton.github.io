@@ -1,6 +1,25 @@
 {
 	"work":[
 		{
+			"client":	"My Dev Team",
+			"job":		"Collaborative Advent calendar",
+			"agency":	"AmazeRealise",
+			"date":		"201912",
+			"rank":		1,
+            "filter":   [0,3,7,8],
+			"links":	[
+				{
+					"hero":	1,
+					"copy":	"View the calendar",
+					"url":	"https://tux-advent-calendar.azurewebsites.net/"
+				}],
+			"copy1":	"Co-ran a team building challenge, to create and populate an advent calendar.",
+			"copy2":	"My roles were creating the initial brief and example content, supervising and encouraging entries, and creating content.|This was a ground-up initiative which helped connect the different physical within the team.",
+			"tech":		"SVG, JS, Firebase, GitHub",
+			"thumb":	"tuxmas_01.jpg",
+			"images":[]
+		},
+		{
 			"client":	"Co-Op",
 			"job":		"Animation prototype for display ad",
 			"agency":	"AmazeRealise",
