@@ -15,11 +15,21 @@
 				},
 				{
 					"hero":	1,
-					"copy":	"Using egg textures to decorate a 3D CSS room",
+					"copy":	"AR egg viewer",
+					"url":	"/showreel/eggViewer"
+				},
+				{
+					"hero":	1,
+					"copy":	"Using egg textures to decorate a 3D CSS room - by Ross Angus",
 					"url":	"https://codepen.io/ross-angus/full/XWJYNjO"
+				},
+				{
+					"hero":	1,
+					"copy":	"Egg Hunt (WiP) - by Joe McDowall",
+					"url":	"http://project-egg-hunt.azurewebsites.net/"
 				}],
 			"copy1":	"Co-ran a team building challenge, to painter Easter Eggs, then create a game or interface to use the images.",
-			"copy2":	"My primary role was creating the initial paint application, using canvas for the main painting app, and live rendering the result onto an interactive 3D egg.|I also took responsibility for encouraging colleagues to contribue to the project, helping with the egg API.",
+			"copy2":	"My primary role was creating the initial paint application, using canvas for the main painting app, and live rendering the result onto an interactive 3D egg.|I also took responsibility for encouraging colleagues to contribue to the project, helping with the egg API.|Colleague eggsample links are all works in progress and may not be running...",
 			"tech":		"JS, Three.js, Canvas, SVG, Firebase, GitHub",
 			"thumb":	"eggPainter_01.png",
 			"images":[]

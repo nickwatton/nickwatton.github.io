@@ -94,6 +94,9 @@ a:hover {
     height:10em;
 	float:left;
 }
+.job:hover{
+	border: #b7b7b7 medium solid;
+}
 .job .thumb{
 	border:#989898 thin solid;
 	margin-top:.3em;
