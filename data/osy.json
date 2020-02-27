@@ -516,7 +516,7 @@
 			"agency":	"Personal project",
 			"date":		"201610",
 			"rank":		1,
-            "filter":   [0,1,7],
+            "filter":   [0,7],
 			"links":[
 				{
 					"hero":	1,
@@ -640,7 +640,7 @@
 			"agency":	"Realise",
 			"date":		"201603",
 			"rank":		1,
-            "filter":   [0,4,7],
+            "filter":   [0,1,4,7],
 			"links":[
 				{
 					"hero":	1,
@@ -1066,6 +1066,25 @@
 			"tech":		"AS3, MVC",
 			"thumb":"lloydsGames_01.jpg",
 			"images":[]
+		},
+		{
+			"client":	"Virgin Group",
+			"job":		"Virgin Eye - News aggregator",
+			"agency":	"Saint",
+			"date":		"200806",
+			"rank":		2,
+            "filter":   [0,3,4,6],
+			"links":[
+				{
+					"hero":	1,
+					"copy":	"YouTube promo",
+					"url":	"https://youtu.be/YfOZ58o1Xw4?t=21"
+				}
+			],
+			"copy1":		"Lead developer for a visual front end giving access to news and images from all companies within the Virgin Group, over 7 days.",
+			"copy2":		"The design created a universe where each star was a news item.",
+			"tech":		"OOP AS3,|Daylife API",
+			"thumb":"virginEye.jpg"
 		},
 		{
 			"client":	"BBC",
