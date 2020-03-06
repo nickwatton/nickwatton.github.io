@@ -1,0 +1,38 @@
+.page-header {
+  padding: 0 50px;
+
+  h1 {
+    margin: 39px 0;
+  }
+}
+
+.page-wrapper {
+  background-color: $light-grey;
+  padding: 30px 50px;
+}
+
+// .egg-container {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
+// .egg-item {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
+
+// .egg-item img {
+//   height: 150px;
+//   width: auto;
+// }
+// .egg-item img.egg-item-thumb {
+//   height: 75px;
+//   width: auto;
+// }
+// .egg-detail {
+//   flex-basis: 30%;
+// }
