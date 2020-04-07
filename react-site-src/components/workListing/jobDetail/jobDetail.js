@@ -8,14 +8,14 @@ const jobDetail = (props) => {
 	let awards = '';
 	if(details.awards){
 		awards = details.awards.map (
-			(award, index) => <JobAward key={details.uid + index} url={award.url} copy={award.copy} />
+			(award, index) => <JobAward key={'award' + details.uid + index} url={award.url} copy={award.copy} />
 		)
 	}
 
 	let links = '';
 	if(details.links){
 		links = details.links.map (
-			(link, index) => <JobLink key={details.uid + index} url={link.url} copy={link.copy} />
+			(link, index) => <JobLink key={'link' + details.uid + index} url={link.url} copy={link.copy} />
 		)
 	}
 
@@ -26,18 +26,19 @@ const jobDetail = (props) => {
 			</summary>
 
 			<p className='job-date'>{details.date.substr(4,2) + '.' + details.date.substr(0,4)}</p>
+			
 			<section>
 				{details.copy.split('|').map( (p,i) => <p key={i}>{p}</p>)}
-			</section>
 
-			<h4>Tech stack:</h4>
-			<p>{details.tech}</p>
-			
-			{ links !== '' ? <h4>Links:</h4> : ''}
-			{links}
-			
-			{ awards !== '' ? <h4>Awards:</h4> : ''}
-			{awards}
+				<h4>Tech stack:</h4>
+				<p>{details.tech}</p>
+				
+				{ links !== '' ? <h4>Links:</h4> : ''}
+				{links}
+				
+				{ awards !== '' ? <h4>Awards:</h4> : ''}
+				{awards}
+			</section>
 			
 		</details>
 	)

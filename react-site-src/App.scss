@@ -29,38 +29,12 @@ body {
 	font-size: 1.4rem;
 }
 
-section{
-	margin-bottom: 10px;
-	header{
-		background: #222;
-		color: #fafafa;
-		font-weight: bold;
-		padding: 7px 20px;
-		width: calc(100% - 40px);
-	}
-}
-
-blockquote{
-	// background: lightgrey;
-	// border: 1px solid grey;
-	margin: 8px;
-	padding: 5px;
-	p{
-		font-style: italic;
-		margin: 0;
-		&::after,
-		&::before{
-			content: '"';
-		}
-	}
-	cite{
-		font-style: normal;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	blockquote:not(:first-of-type){
-		display: none;
+a {
+	text-decoration:none;
+	color: #F0498E;
+	&:hover {
+		text-decoration:underline;
+		color: #555;
 	}
 }
 
@@ -90,14 +64,74 @@ blockquote{
 	}
 }
 
+.filterMenu{
+	margin-bottom: 5px;
+	div{
+		border: 1px solid grey;
+		cursor: pointer;
+		display: inline-block;
+		margin: 0 5px 5px;
+		padding: 2px 5px;
+		&.active,
+		&:hover{
+			border-color: $highlight-colour;
+			color: $highlight-colour;
+		}
+	}
+}
+
+section{
+	margin-bottom: 10px;
+	header{
+		background: #222;
+		color: #fafafa;
+		font-weight: bold;
+		padding: 7px 20px;
+		width: calc(100% - 40px);
+	}
+	article{
+		padding: 20px;
+		p{
+			margin: 10px 0;
+			&:first-of-type{
+				margin-top: 0;
+			}
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+blockquote{
+	margin: 8px;
+	padding: 5px;
+	p{
+		font-style: italic;
+		margin: 0;
+		&::after,
+		&::before{
+			content: '"';
+		}
+	}
+	cite{
+		font-style: normal;
+	}
+}
+@media only screen and (max-width: 600px) {
+	blockquote:not(:first-of-type){
+		display: none;
+	}
+}
+
 
 .job {
 	background-image:url(/images/000_5.png);
 	border:#fff medium solid;
-	float: left;
-	margin:.2em;
+	box-sizing: border-box;
+	margin:0;
 	margin-bottom:.6em;
-	padding:.7em;
+	padding: 10px;
 	width: 100%;
 	&:hover{
 		border: #b7b7b7 medium solid;
@@ -150,6 +184,10 @@ blockquote{
 					font-size: 1.05em;
 					font-weight: bold;
 				}
+				&.job-award,
+				&.job-link{
+					padding: 1px 0;
+				}
 			}
 		}
 	}
@@ -166,21 +204,15 @@ blockquote{
 }
 @media only screen and (min-width: 600px) {
 	.job{
-		width: 44%;
-	}
-}
-
-
-.filterMenu div{
-	border: 1px solid grey;
-	cursor: pointer;
-	display: inline-block;
-	margin: 0 5px 5px;
-	padding: 2px 5px;
-	&.active,
-	&:hover{
-		border-color: $highlight-colour;
-		color: $highlight-colour;
+		float: left;
+		width: calc(50% - 6px);
+		&.even{
+			margin-right: 3px; 
+		}
+		&.odd{
+			margin-left: 3px;
+			float: right;
+		}
 	}
 }
 

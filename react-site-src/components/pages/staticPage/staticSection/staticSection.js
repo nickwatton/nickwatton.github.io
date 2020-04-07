@@ -4,9 +4,13 @@ const staticSection = (props) => {
 	return (
 		<section>
 			<header>{props.header}</header>
-			<article>
-				{props.body.split('|').map( (p,i) => <p key={i}>{p}</p>)}
-			</article>
+
+			{/* There can be header with no content */}
+			{(props.body === '') ? '' :
+				<article>
+					{props.body.split('|').map( (p,i) => <p key={i}>{p}</p>)}
+				</article>
+			}
 		</section>
 	)
 }

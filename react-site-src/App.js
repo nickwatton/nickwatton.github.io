@@ -27,11 +27,6 @@ class App extends Component {
 		this.setState(mutable);
 	}
 
-	// jobDetailsHandler = (evt) => {
-	// 	const selectedJob = this.state.jobs.filter(job => job.uid === evt)[0];
-	// 	console.log(selectedJob);
-	// }
-
 	componentDidMount() {
 		let serviceURL = './data/data.json';
 		let requestOptions = {
@@ -46,9 +41,14 @@ class App extends Component {
 
 	setData(data) {
 		const mutable = {...this.state};
-		mutable.quotes = [...mutable.quotes, ...data.quotes];
 		mutable.pages = [...mutable.pages, ...data.pages];
-		mutable.jobs = data.work;
+
+		// Exclude archived recommendations
+		mutable.quotes = [...mutable.quotes, ...data.quotes.filter(quote => !quote.archived)];
+
+		// Exclude archived examples
+		mutable.jobs = data.work.filter(job => !job.archived);
+
 		mutable.jobFilters = data.workFilters;
 		mutable.activeSection = data.activeSection;
 		mutable.copyrightYear = data.copyrightYear;
@@ -59,7 +59,6 @@ class App extends Component {
 
 	render() {
 		let pageToDisplay = '';
-		// replace this loop with a filter ??
 		for(let i = 0; i < this.state.pages.length; i++){
 			if(this.state.pages[i].id === this.state.activeSection){
 				let page = this.state.pages[i];
@@ -79,7 +78,6 @@ class App extends Component {
 															filters={this.state.jobFilters}
 															activeSection={this.state.activeSection}
 															filterClick={ this.filterHandler }
-															// jobClick={ this.jobDetailsHandler }
 															jobs={this.state.jobs} />;
 							break;
 						case 'contact':

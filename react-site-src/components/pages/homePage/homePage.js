@@ -4,31 +4,33 @@ import StaticSection from '../staticPage/staticSection/staticSection';
 import WorkListing from '../../../components/workListing/workListing';
 
 const homePage = (props) => {
+
+	/* Recommendation quotes */
+	const recommendations = props.quotes.map( 
+		(quote, index) => <Recommendation quote={quote.quote} 
+													key={'q'+index} 
+													name={quote.name} 
+													company={quote.position} /> 
+		);
+
+	/* Static content sections - section title in this special case */
+	const staticSections = props.page.sections.map(
+		section => (
+			<StaticSection 
+					body={section.body}
+					header={section.header} 
+					key={Math.random()}/>
+		)
+	)
+
 	return (
 		<div>
-			{/* Recommendation quotes */}
-			{props.quotes.map( 
-					(quote, index) => <Recommendation quote={quote.quote} 
-							key={'q'+index} 
-							name={quote.name} 
-							company={quote.position} /> 
-			)}
+			{recommendations}
 
-			{/* Static content sections - section title in this special case */}
-			{props.page.sections.map(
-				section => (
-					<StaticSection 
-							body={section.body}
-							header={section.header} 
-							key={Math.random()}/>
-				)
-			)}
+			{staticSections}
 
 			{/* Job list */}
-			<WorkListing jobs={props.jobs} 
-							// jobClick={props.jobClick}
-							filter={props.filter} />
-			
+			<WorkListing jobs={props.jobs} filter={props.filter} />
 		</div>
 	)
 }
