@@ -28,10 +28,10 @@ const jobDetail = (props) => {
 			<p className='job-date'>{details.date.substr(4,2) + '.' + details.date.substr(0,4)}</p>
 			
 			<section>
-				{details.copy.split('|').map( (p,i) => <p key={i}>{p}</p>)}
+				{details.copy.split('|').map( (p,i) => <p key={'copy'+i}>{p}</p>)}
 
 				<h4>Tech stack:</h4>
-				<p>{details.tech}</p>
+				<div>{details.tech.split('|').map( (p,i) => <p className='tech-stack' key={'tech'+i}>{p}</p>)}</div>
 				
 				{ links !== '' ? <h4>Links:</h4> : ''}
 				{links}

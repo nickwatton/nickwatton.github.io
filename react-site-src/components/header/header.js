@@ -6,8 +6,10 @@ const header = (props) => {
 		<React.Fragment>
 			<header>
 				<img alt="profile" src="./images/header.png" />
-				<h1>Nick Watton</h1>
-				<p>Creative web developer</p>
+				<div>
+					<h1>Nick Watton</h1>
+					<p>Creative web developer</p>
+				</div>
 			</header>
 			<Nav	click={props.click} 
 						navList={props.navList}

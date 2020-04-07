@@ -38,10 +38,18 @@ a {
 	}
 }
 
+header{
+	div{
+		display:inline-block;
+		margin-left: 20px;
+		vertical-align: top;
+	}
+}
+
 .menu{
 	margin-left: 10px;
 	div{
-		background-color: hsla(0, 0%, 30%, .8);
+		background-color: hsla(0, 0%, 30%, .9);
 		color: #fafafa;
 		cursor: pointer;
 		display: inline-block;
@@ -157,6 +165,7 @@ blockquote{
 				max-width: 100%;
 			}
 			&::after{
+				font-family: 'Courier New', Courier, monospace;
 				background: #fff;
 				border:#989898 thin solid;
 				color: red;
@@ -164,16 +173,12 @@ blockquote{
 				font-size: 2rem;
 				font-weight: bold;
 				line-height: 0;
-				padding: 8px 5px 12px;
+				padding: 13px 5px 11px;
 				position: absolute;
 				right:-4px;
 				top:-2px;
 			}
 		}
-		.open{
-			color: red;
-			border: 3px solid red;
-		}	
 		&[open] summary::after{
 			content: '-'
 		}
@@ -188,6 +193,11 @@ blockquote{
 				&.job-link{
 					padding: 1px 0;
 				}
+			}
+			p.tech-stack{
+				font-size: 1em;
+				font-weight: normal;
+				padding: 0;
 			}
 		}
 	}
@@ -217,20 +227,20 @@ blockquote{
 }
 
 
+section.contact-page{
+		padding: 10px 20px;
+}
 .social {
-	padding-bottom: 0.5em;
-	padding-left: 3.0em;
+	margin: 15px 0 7px 42px;
+	width: 160px;
 	&.codepen {
 		background: #000;
 		border-radius: 6px;
 		border: 0;
 		height: 33px;
-		margin-left: 3em;
-		margin-bottom: 0.5em;
 		outline: 0;
 		padding: 0;
 		padding-left: 9px;
-		width: 160px;
 	}
 }
 
@@ -239,7 +249,7 @@ blockquote{
 	background: #222;
 	color: #fafafa;
 	font-size: 1.2rem;
-	padding: 7px 20px;
+	padding: 20px 20px;
 	width: calc(100% - 40px);
 }
 
