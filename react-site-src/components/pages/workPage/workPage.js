@@ -9,9 +9,11 @@ const workPage = (props) => {
 			{/* Add in static content sections - section title in this special case */}
 			{props.page.sections.map(
 				section => (
-					<StaticSection body={section.body}
+					(!section.archived) ? 
+						<StaticSection body={section.body}
 													header={section.header} 
-													key={Math.random()}/>
+													className={section.className}
+													key={Math.random()}/> : ''
 				)
 			)}
 

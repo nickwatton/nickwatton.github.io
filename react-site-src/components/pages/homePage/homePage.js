@@ -16,10 +16,12 @@ const homePage = (props) => {
 	/* Static content sections - section title in this special case */
 	const staticSections = props.page.sections.map(
 		section => (
-			<StaticSection 
-					body={section.body}
-					header={section.header} 
-					key={Math.random()}/>
+			(!section.archived) ? 
+				<StaticSection 
+						body={section.body}
+						header={section.header} 
+						className={section.className}
+						key={Math.random()}/> : ''
 		)
 	)
 

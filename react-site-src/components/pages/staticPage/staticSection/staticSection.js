@@ -7,7 +7,7 @@ const staticSection = (props) => {
 
 			{/* There can be header with no content */}
 			{(props.body === '') ? '' :
-				<article>
+				<article className={props.className} >
 					{props.body.split('|').map( (p,i) => <p key={i}>{p}</p>)}
 				</article>
 			}
