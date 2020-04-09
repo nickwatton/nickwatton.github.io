@@ -5,7 +5,7 @@ const header = (props) => {
 	return (
 		<React.Fragment>
 			<header>
-				<img alt="profile" src="./images/header.png" />
+				<img alt="profile" src="./images/nickwatton.png" />
 				<div>
 					<h1>Nick Watton</h1>
 					<p>Creative web developer</p>
