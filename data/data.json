@@ -1179,11 +1179,17 @@
 			"static": true,
 			"sections":[
 				{
-					"header": "About",
+					"header": "About me",
 					"body": "A front end developer and Visual Technologist with 6 years experience at AmazeRealise. I have worked with many fintech sites including Scottish Widows, Sunlife and Lloyds.|I was also responsible for the company's banner output, enabling the transition from Flash to HTML5 with the development of a bespoke animation framework, and conducting training across the dev and CS teams.|I am an enthusiastic, self motivated and creative developer, with strong JavaScript skills and a specialism in campaign microsites and web animation that stretches back over twenty years.|An early-adopter actionscript developer, I applied my training in physical theatre to facilitate my joy in making things move. I’ve worked as lead developer on several award winning projects and even won a Blue Peter Gold badge, by proxy.|I am a regular CodePen contributor, and my work has featured in their round-ups and Steve Gardener’s Tiny Animation Newsletter.|I enjoy the shared vision of working in teams, and take great pleasure in mentoring others."
 				},
 				{
-					"header": "Technical",
+					"header": "About this site",
+					"body": "This site is made using React as part of my ongoing professional development.|You can check the code at the following github directory:",
+					"linkCopy": "github.com/nickwatton/portfolio.git",
+					"url": "https://github.com/nickwatton/portfolio.git"
+				},
+				{
+					"header": "Tech stack",
 					"body": "JavaScript, with React (ES5, ES6)|CSS , SASS|HTML5 (inc Canvas, Audio & Video APIs)|Web Animation (inc JS, CSS, SVG, GSAP, Three.js, AR)|Display advertising platforms (DoubleClick certified, FlashTalking)|Version control (Git, SVN)|Waterfall and agile methodologies |CMS (Ektron, Teamsite)|Line management, and team knowledge share presentations|Actionscript (AS2/3, inc AIR for iOS)"
 				}
 			]
