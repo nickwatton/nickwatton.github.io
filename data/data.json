@@ -1,6 +1,6 @@
 {
 	"activeSection": "home",
-	"copyrightYear": "2020",
+	"copyrightYear": "2021",
 	"workFilters":[
 		{"label":"All", "id":0},
 		{"label":"Highlights", "id":1},
@@ -1154,9 +1154,17 @@
 			"sections":[
 				{
 					"header": "News",
+					"body": "Working as a senior software engineer at Secureworks, working on frontend developments in React and Backbone.",
+					"className": "news",
+					"archived": false,
+					"displayDate": "April 2021"
+				},
+				{
+					"header": "News",
 					"body": "Currently looking for work as a front end developer, with React.",
 					"className": "news",
-					"archived": false
+					"archived": true,
+					"displayDate": "March 2020"
 				},
 				{
 					"header": "Recent Highlights",
