@@ -1154,9 +1154,16 @@
 			"sections":[
 				{
 					"header": "News",
-					"body": "Working as a senior software engineer at Secureworks, working on frontend developments in React and Backbone.",
+					"body": "Joined the front end team at Storm ID, currently focussed on Scottish Government sites and a11y :)",
 					"className": "news",
 					"archived": false,
+					"displayDate": "February 2022"
+				},
+				{
+					"header": "News",
+					"body": "Working as a senior software engineer at Secureworks, working on frontend developments in React and Backbone.",
+					"className": "news",
+					"archived": true,
 					"displayDate": "April 2021"
 				},
 				{
