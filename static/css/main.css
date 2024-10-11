@@ -115,6 +115,7 @@ footer{
     justify-content: space-between;
 }
 .job {
+	align-self: start;
 	background-image: url(/images/000_5.png);
 	border: solid #fff;
 	box-sizing: border-box;
@@ -130,6 +131,9 @@ footer{
 	background-color: #00000017;
 	border: solid #7b7b7b;
 	width: 100%;
+}
+.job.double:not(:first-of-type){
+	margin-top: 5rem;
 }
 .job.double:hover{
 	background-color: #0000000f;
