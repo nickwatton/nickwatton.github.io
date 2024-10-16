@@ -67,6 +67,13 @@ section article.news {
 	background: hsla(0, 0%, 60%, 0.6);
 	text-align: center;
 }
+section article.news a{
+	filter: drop-shadow(0 0 12px #1a1a1a);
+	font-weight: 700;
+}
+section article.news a:hover{
+	filter: drop-shadow(0 0 9px #fafafa);
+}
 /* section article.news p:after,
 section article.news p:before {
 	content: "*";
@@ -139,7 +146,8 @@ footer{
 	background-color: #0000000f;
 	border: solid #b7b7b7;
 }
-.job.double .client a{
+.job.double .client{
+	color: #f0498e;
 	font-size: 2rem;
 }
 .job.double .thumb{
