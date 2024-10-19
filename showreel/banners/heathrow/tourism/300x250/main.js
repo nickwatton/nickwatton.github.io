@@ -1,20 +1,8 @@
 (function(){
 	'use strict';
 
-	 window.requestAnimFrame = (function() {
-      return  window.requestAnimationFrame       ||
-              window.webkitRequestAnimationFrame ||
-              window.mozRequestAnimationFrame    ||
-              window.oRequestAnimationFrame      ||
-              window.msRequestAnimationFrame     ||
-              function(callback, element){
-                window.setTimeout(callback, 1000 / 60);
-              };
-    })();
-
 	/* DoubleClick dynamic data */
 	var enablerInitHandler = function() {
-		Enabler.setProfileId(1063073);
 	    var devDynamicContent = {};
 
 	    devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1= [{}];
@@ -35,30 +23,13 @@
 	    devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Exit_URL.Url = "http://www.heathrow.com/";
 	    devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Default = true;
 	    devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Active = true;
-	    Enabler.setDevDynamicContent(devDynamicContent);
 
 	    /* Apply dynamic content */
-		get("copy_1").innerHTML = dynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy1;
-		get("copy_2").innerHTML = dynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy2;
-		get("copy_3").innerHTML = dynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy3;
-		get("copy_4").innerHTML = dynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy4;
-		get("ctaCopy").innerHTML = dynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].CTA;
-
-		function addExit(){
-			Enabler.exit("Heathrow_Tourism");
-		}
-		function addExit(){
-			Enabler.exit("Heathrow_Tourism_visited");
-		}
-
-		function clickHandler(){
-			 Enabler.exitOverride(dynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Reporting_Label, dynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Exit_URL.Url);
-		}
-
-		// IE8 ready click handlers
-		var clickArea = get("clickArea");
-		if (clickArea.addEventListener){ clickArea.addEventListener("click", clickHandler, false); }
-		else { clickArea.attachEvent("onclick", clickHandler); }
+		get("copy_1").innerHTML = devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy1;
+		get("copy_2").innerHTML = devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy2;
+		get("copy_3").innerHTML = devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy3;
+		get("copy_4").innerHTML = devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].Copy4;
+		get("ctaCopy").innerHTML = devDynamicContent.Heathrow_Q4_2015_Tourism_dynamic_feed_Sheet1[0].CTA;
 
 		/* Data ready. Play banner */
 		runSequencer();
@@ -185,7 +156,7 @@
 				sequencer();
 			}
 
-			requestAnimFrame(animate);
+			requestAnimationFrame(animate);
 	    }
 	    running = true;
 	    var delay = setTimeout(animate, 10);
@@ -197,11 +168,5 @@
 	}
 
 	/* Kick off when page ready */
-	window.onload = function() {
-		if (Enabler.isInitialized()) {
-			enablerInitHandler();
-		} else {
-			Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
-		}
-	};
+	enablerInitHandler();
 }());

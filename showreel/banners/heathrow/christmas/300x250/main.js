@@ -1,20 +1,8 @@
 (function(){
 	'use strict';
 
-	 window.requestAnimFrame = (function() {
-      return  window.requestAnimationFrame       ||
-              window.webkitRequestAnimationFrame ||
-              window.mozRequestAnimationFrame    ||
-              window.oRequestAnimationFrame      ||
-              window.msRequestAnimationFrame     ||
-              function(callback, element){
-                window.setTimeout(callback, 1000 / 60);
-              };
-    })();
-
 	/* DoubleClick dynamic data */
 	var enablerInitHandler = function() {
-		Enabler.setProfileId(1065022);
 	    var devDynamicContent = {};
 
 	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport= [{}];
@@ -31,32 +19,15 @@
 	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy3_mob = "For those final festive touches before you fly";
 	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy4_mob = "";
 	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].CTA_mob = "Shop Christmas at Heathrow";
-	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Exit_URL = {};
-	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Exit_URL.Url = "http://your.heathrow.com/";
 	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Default = true;
 	    devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Active = true;
-	    Enabler.setDevDynamicContent(devDynamicContent);
 
 	    /* Apply dynamic content */
-		get("copy_1").innerHTML = dynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy1;
-		get("copy_2").innerHTML = dynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy2;
-		get("copy_3").innerHTML = dynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy3;
-		get("ctaCopy").innerHTML = dynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].CTA;
-
-		function addExit(){
-			Enabler.exit("Heathrow_OnAirport");
-		}
-
-		function clickHandler(){
-			 Enabler.exitOverride(dynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Reporting_Label, dynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Exit_URL.Url);
-		}
-
-		// IE8 ready click handlers
-		var clickArea = get("clickArea");
-		if (clickArea.addEventListener){ clickArea.addEventListener("click", clickHandler, false); }
-		else { clickArea.attachEvent("onclick", clickHandler); }
-
-		/* Data ready. Play banner */
+		get("copy_1").innerHTML = devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy1;
+		get("copy_2").innerHTML = devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy2;
+		get("copy_3").innerHTML = devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].Copy3;
+		get("ctaCopy").innerHTML = devDynamicContent.Heathrow_Christmas_2015_dynamic_feed_OnAirport[0].CTA;
+		
 		runSequencer();
 	}
 
@@ -170,7 +141,7 @@
 	    {
 	    	if(running)
 				sequencer();
-			requestAnimFrame(animate);
+			requestAnimationFrame(animate);
 	    }
 	    running = true;
 
@@ -183,11 +154,5 @@
 	}
 
 	/* Kick off when page ready */
-	window.onload = function() {
-		if (Enabler.isInitialized()) {
-			enablerInitHandler();
-		} else {
-			Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
-		}
-	};
+	enablerInitHandler();
 }());

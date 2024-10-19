@@ -1,17 +1,6 @@
 (function(){
 	'use strict';
 
-	 window.requestAnimFrame = (function(){
-      return  window.requestAnimationFrame       ||
-              window.webkitRequestAnimationFrame ||
-              window.mozRequestAnimationFrame    ||
-              window.oRequestAnimationFrame      ||
-              window.msRequestAnimationFrame     ||
-              function(callback, element){
-                window.setTimeout(callback, 1000 / 60);
-              };
-    })();
-
 	var init = function() {
 
 		function addExit(){
@@ -213,7 +202,7 @@
 	    {
 	    	if(running){
 				sequencer();
-				requestAnimFrame(animate);
+				requestAnimationFrame(animate);
 			}
 	    }
 
@@ -231,7 +220,5 @@
 	}
 
 	/* Kick off when page ready */
-	window.onload = function() {
-		init();
-	};
+	init();
 }());

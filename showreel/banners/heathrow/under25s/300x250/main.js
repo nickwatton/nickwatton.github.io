@@ -20,13 +20,13 @@
 	/* DoubleClick dynamic data */
 	var enablerInitHandler = function() {
 
-		function clickHandler(){
-		}
+		// function clickHandler(){
+		// }
 
-		// IE8 ready click handlers
-		var clickArea = get("container");
-		if (clickArea.addEventListener){ clickArea.addEventListener("click", clickHandler, false); }
-		else { clickArea.attachEvent("onclick", clickHandler); }
+		// // IE8 ready click handlers
+		// var clickArea = get("container");
+		// if (clickArea.addEventListener){ clickArea.addEventListener("click", clickHandler, false); }
+		// else { clickArea.attachEvent("onclick", clickHandler); }
 
 		buildVideo();
 	}
@@ -206,9 +206,7 @@
 	}
 
 	/* Kick off when page ready */
-	window.onload = function() {
-		enablerInitHandler();
-	};
+	enablerInitHandler();
 
 	/* TWEENING */
 	var PI = Math.PI,
