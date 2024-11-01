@@ -10,7 +10,7 @@ html {
 	padding: 10px;
 }
 body {
-	background-image: url(/images/project_papper.png);
+	/* background-image: url(/images/project_papper.png); */
 	color: #2a2a2a;
 	font-family: sans-serif;
 	font-weight: 400;
@@ -18,7 +18,7 @@ body {
 }
 a {
 	text-decoration: none;
-	color: #f0498e;
+	color: #cd3d78 ;
 }
 a:hover {
 	text-decoration: underline;
@@ -64,11 +64,12 @@ section article p:last-of-type {
 	margin-bottom: 0;
 }
 section article.news {
-	background: hsla(0, 0%, 60%, 0.6);
+	background: #e6e6e655;
 	text-align: center;
 }
 section article.news a{
-	filter: drop-shadow(0 0 12px #1a1a1a);
+	color: #c23972;
+	filter: drop-shadow(0 0 12px #000b);
 	font-weight: 700;
 }
 section article.news a:hover{
@@ -123,28 +124,29 @@ footer{
 }
 .job {
 	align-self: start;
-	background-image: url(/images/000_5.png);
-	border: solid #fff;
+	/* background-image: url(/images/000_5.png); */
+	border: solid 2px #949494;
 	box-sizing: border-box;
 	margin: 0 0 0.6em;
 	padding: 10px;
 	width: 100%;
 }
 .job:hover {
-	border: solid #b7b7b7;
+	background-color: #00000005;
+	border: solid 2px #b7b7b7;
 }
 
 .job.double{
-	background-color: #00000017;
-	border: solid #7b7b7b;
+	/* background-color: #00000017; */
+	border: solid 2px #7b7b7b;
 	width: 100%;
 }
 .job.double:not(:first-of-type){
 	margin-top: 5rem;
 }
 .job.double:hover{
-	background-color: #0000000f;
-	border: solid #b7b7b7;
+	background-color: #00000005;
+	border: solid 2px #b7b7b7;
 }
 .job.double .client{
 	color: #f0498e;
@@ -233,6 +235,7 @@ footer{
 	padding: 0;
 }
 .job img.secondary{
+	border: thin solid #989898;
 	display: block;
 	margin: 10px auto;
 }
