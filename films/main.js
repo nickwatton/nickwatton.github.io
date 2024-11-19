@@ -48,7 +48,6 @@ const noResult = () =>  `<div class='omdb-card'><h2>No results</h2>
 const omdbDirectors = (dir) => {
 	let ret = '';
 	let dirs = dir.split(',');
-	// dirs.forEach((d, i) => { ret += `<a href="javascript:cardDir('${d.trim()}')">${d}</a>${i === dirs.length-1 ? '' : ', '}` });
 	dirs.forEach((d, i) => { ret += `<a data-feature="director" data-payload='${d.trim()}'>${d}</a>${i === dirs.length-1 ? '' : ', '}` });
 	return ret;
 }
@@ -394,7 +393,7 @@ titleSearch.addEventListener('input', onTitleInput);
 /* Load and process the data */
 let filmList = [];
 async function fetchFilmsJSON() {
-    const response = await fetch('/films.json');
+    const response = await fetch('./films.json');
     const films = await response.json();
     return films;
 }
