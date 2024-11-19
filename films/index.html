@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+	<meta name="description" content="Searchable listing of my personal fim database" />
+    
+    <title>Personal Film DB</title>
+    
+    <link href="main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="wrapper">
+        
+	<div class="ui" id="ui">
+		<p>Filter film collection by:</p>
+		
+		<div class="tab-container">
+			<div id="genre-search" class="tab" data-linkid="tab_1">Genre</div>
+			<div id="director-search" class="tab" data-linkid="tab_2">Director</div>
+			<div id="title-search" class="tab active-tab" data-linkid="tab_3">Title</div>
+			<div id="duration-search" class="tab" data-linkid="tab_4">Duration</div>
+			<div id="year-search" class="tab" data-linkid="tab_5">Year</div>
+		</div>
+		<div id="tab_1" class="tab-content filter_input">
+			<select aria-labelledby="genre-search" name="genre" id="genres">
+				<option selected="selected">Select a genre</option>
+			</select>
+		</div>
+		<div id="tab_2" class="tab-content filter_input">
+			<select aria-labelledby="director-search" name="director" id="directors">
+				<option selected="selected">Select a director</option>
+			</select>
+		</div>
+		<div id="tab_3" class="tab-content filter_input active-content">
+			<input aria-labelledby="title-search" type="text" id="title__search" name="title__search" placeholder="Start typing to search" />
+		</div>
+		<div id="tab_4" class="tab-content filter_input">
+			<div class="min-max-pair durations">
+				<div class="range-input">
+					<label for="rangeMin">Min:</label>
+					<input name="duration_min" id="rangeMin" type="range" min="1" max="3"><span id="minValue"></span>
+				</div>
+				<div class="range-input">
+					<label for="rangeMax">Max:</label>
+					<input name="duration_max" id="rangeMax" type="range" min="1" max="3"><span id="maxValue"></span>
+				</div>
+			</div>
+		</div>
+		<div id="tab_5" class="tab-content filter_input">
+			<div class="min-max-pair years">
+				<div class="range-input">
+					<label for="rangeMin">Min:</label>
+					<input name="year_min" id="rangeMin" type="range" min="1" max="3"><span id="minValue"></span>
+				</div>
+				<div class="range-input">
+					<label for="rangeMax">Max:</label>
+					<input name="year_max" id="rangeMax" type="range" min="1" max="3"><span id="maxValue"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="grid__parent">
+        <div class="output-list"></div>
+        <div class="card__wrapper"></div>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body></html>
