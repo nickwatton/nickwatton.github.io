@@ -259,3 +259,7 @@ footer{
 		width: calc(50% - 6px);
 	}
 }
+.msg_404{
+	text-align: center;
+	margin: 10rem auto 0;
+}
