@@ -1091,7 +1091,6 @@
           </p>
         </article>
       </section>
-
       <div class="jobListing">
         <div class="job">
           <p class="client">Wolsey Hall Oxford</p>
@@ -1300,6 +1299,14 @@
       <footer>© 2025 Nick Watton All Rights Reserved</footer>
     </div>
 
-	<script src="/static/js/script.min.js" defer></script>
+	<script>
+		const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+		if (!isReduced) {
+			const script = document.createElement('script');
+			script.src = '/static/js/animations.min.js';
+			script.defer = true;
+			document.head.appendChild(script);
+		}
+	</script>
   </body>
 </html>
