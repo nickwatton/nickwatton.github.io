@@ -1,3 +1,57 @@
+:root {
+    --bg-color: #fafafa;
+    --text-color: #2a2a2a;
+    --text-color-secondary: #444;
+    --heading-colour:#fafafa;
+    --bg-heading-primary: #333;
+    --bg-heading-secondary: #c2c2c2;
+
+    --job-border-color: #949494;
+    --job-border-hover-color: #b7b7b7;
+    --job-background-hover-color: #00000005;
+    --job-double-border-color: #7b7b7b;
+
+    --image-border: #989898;
+
+    --anchor-color: #ff3366;
+    --anchor-hover-color: #555;
+    --anchor-hover-shadow: #fafafa;
+    --nav-color: #fafafa;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #fafafa;
+    --text-color-secondary: #c7c7c7;
+    --bg-heading-primary: #333;
+    --bg-heading-secondary: #454545;
+
+    --anchor-color: #e73e84;
+    --anchor-hover-color: #bdbdbd;
+    --anchor-hover-shadow: #070707;
+}
+
+.mode_pixel{
+    cursor: pointer;
+    height: 34px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 34px;
+}
+.moon_icon{
+    display: none;
+}
+.sun_icon{
+    display: block;
+}
+body.dark-mode .sun_icon{
+    display: none;
+}
+body.dark-mode .moon_icon{
+    display: block;
+}
+
 * {
     margin: 0;
 }
@@ -10,21 +64,23 @@ html {
     padding: 10px;
 }
 body {
-    color: #2a2a2a;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
 }
 a {
     text-decoration: none;
-    color: #cd3d78;
+    color: var(--anchor-color);
 }
 a:hover {
     text-decoration: underline;
-    color: #555;
+    color: var(--anchor-hover-color);
 }
 header {
     margin-bottom: 12px;
+    position: relative;
 }
 header div {
     display: inline-block;
@@ -42,8 +98,8 @@ section:first-of-type {
     margin-top: 10px;
 }
 section header {
-    background: #333;
-    color: #fafafa;
+    background: var(--bg-heading-primary);
+    color: var(--heading-colour);
     font-weight: 700;
     padding: 7px 20px;
     width: calc(100% - 40px);
@@ -61,16 +117,16 @@ section article p:last-of-type {
     margin-bottom: 0;
 }
 section article.news {
-    background: #e6e6e655;
+    background: var(--bg-heading-secondary);
     text-align: center;
 }
 section article.news a {
-    color: #c23972;
-    filter: drop-shadow(0 0 12px #000b);
+    color: var(--anchor-color);
+    filter: drop-shadow(0 0 12px var(--anchor-hover-shadow));
     font-weight: 700;
 }
 section article.news a:hover {
-    filter: drop-shadow(0 0 9px #fafafa);
+    filter: drop-shadow(0 0 9px var(--anchor-hover-shadow));
 }
 blockquote {
     margin: 8px;
@@ -88,7 +144,7 @@ blockquote p:before {
     font-weight: 700;
 }
 blockquote .attribution {
-    color: #444;
+    color: var(--text-color-secondary);
     font-style: italic;
 }
 blockquote cite {
@@ -100,8 +156,8 @@ blockquote cite {
     }
 }
 footer {
-    background: #222;
-    color: #fafafa;
+    background: var(--bg-heading-primary);
+    color: var(--heading-colour);
     font-size: 1.2rem;
     margin-top: 3rem;
     padding: 20px;
@@ -114,29 +170,29 @@ footer {
 }
 .job {
     align-self: start;
-    border: solid 2px #949494;
+    border: solid 2px var(--job-border-color);
     box-sizing: border-box;
     margin: 0 0 0.6em;
     padding: 10px;
     width: 100%;
 }
 .job:hover {
-    background-color: #00000005;
-    border: solid 2px #b7b7b7;
+    background-color: var(--job-background-hover-color);
+    border: solid 2px var(--job-border-hover-color);
 }
 .job.double {
-    border: solid 2px #7b7b7b;
+    border: solid 2px var(--job-double-border-color);
     width: 100%;
 }
 .job.double:not(:first-of-type) {
     margin-top: 5rem;
 }
 .job.double:hover {
-    background-color: #00000005;
-    border: solid 2px #b7b7b7;
+    background-color: var(--job-background-hover-color);
+    border: solid 2px var(--job-border-hover-color);
 }
 .job.double .client {
-    color: #f0498e;
+    color: var(--anchor-color);
     font-size: 2rem;
 }
 .job.double .thumb {
@@ -176,16 +232,16 @@ footer {
     width: 100%;
 }
 .job details summary .thumb {
-    border: thin solid #989898;
+    border: thin solid var(--image-border);
     display: block;
     margin: 0.3rem auto 0;
     max-width: 100%;
 }
 .job details summary:after {
     font-family: "Courier New", Courier, monospace;
-    background: #fff;
-    border: thin solid #989898;
-    color: red;
+    background: var(--text-color);
+    border: thin solid var(--image-border);
+    color: var(--anchor-color);
     content: "+";
     font-size: 2rem;
     font-weight: 700;
@@ -222,7 +278,7 @@ footer {
     margin-top: 1.2rem;
 }
 .job img.secondary {
-    border: thin solid #989898;
+    border: thin solid var(--image-border);
     display: block;
     margin: 10px auto;
     max-width: 100%;
@@ -239,7 +295,7 @@ footer {
     content: "@";
 }
 .job .job-date {
-    color: #333;
+    color: var(--text-color-secondary);
     font-size: 1.1rem;
 }
 @media only screen and (min-width: 600px) {
@@ -256,7 +312,7 @@ footer {
 }
 
 nav{
-	background-color: #333;
+	background-color: var(--bg-heading-primary);
 	display: flex;
 	font-weight: 700;
 	margin-top: -11px;
@@ -274,13 +330,13 @@ nav ul li.personal{
 	font-weight: 300;
 }
 nav ul li a {
-	color: white;
+	color: var(--nav-color);
 	display: block;
 	padding: 10px 16px;
 	text-decoration: none;
 }
 nav ul li a:hover {
-	color: #f0498e;
+	color: var(--anchor-color);
 	text-decoration: underline;
 }
 @media only screen and (min-width: 600px) {
