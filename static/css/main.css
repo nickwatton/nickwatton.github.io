@@ -1,4 +1,6 @@
-:root {
+
+  
+  :root {
     --bg-color: #fafafa;
     --text-color: #2a2a2a;
     --text-color-secondary: #444;
@@ -31,13 +33,30 @@
     --anchor-hover-shadow: #070707;
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(calc(var(--rotationAmount) * -1));
+    }
+    to {
+        transform: rotate(var(--rotationAmount));
+    }
+}
 .mode_pixel{
+    --rotationAmount: 30deg;
     cursor: pointer;
     height: 34px;
-    right: 0;
     position: absolute;
+    right: 0;
     top: 0;
     width: 34px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .mode_pixel {
+        --rotationAmount: 0deg;
+    }
+}
+.mode_pixel svg:hover{
+    animation: rotate 0.75s infinite ease-in-out alternate;
 }
 .moon_icon{
     display: none;
@@ -56,7 +75,11 @@ body.dark-mode .moon_icon{
     margin: 0;
 }
 html {
-    font-size: 62.5%;
+    --font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+  /* Set a global default */
+  font-family: var(--font-sans-serif);
 }
 .wrapper {
     margin: 0 auto;
@@ -66,9 +89,9 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: sans-serif;
+    font-family: var(--font-sans-serif);
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 a {
     text-decoration: none;
@@ -88,10 +111,10 @@ header div {
     vertical-align: top;
 }
 .push__top {
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 section {
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 section:first-of-type {
@@ -158,7 +181,7 @@ blockquote cite {
 footer {
     background: var(--bg-heading-primary);
     color: var(--heading-colour);
-    font-size: 1.2rem;
+    font-size: .8rem;
     margin-top: 3rem;
     padding: 20px;
     width: calc(100% - 40px);
@@ -185,7 +208,7 @@ footer {
     width: 100%;
 }
 .job.double:not(:first-of-type) {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .job.double:hover {
     background-color: var(--job-background-hover-color);
@@ -193,7 +216,7 @@ footer {
 }
 .job.double .client {
     color: var(--anchor-color);
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 .job.double .thumb {
     margin-top: 1rem;
@@ -211,7 +234,6 @@ footer {
     }
 }
 .job .subhead {
-    font-size: 1.05em;
     font-weight: 700;
     margin-top: 1.2rem;
 }
@@ -243,7 +265,7 @@ footer {
     border: thin solid var(--image-border);
     color: var(--anchor-color);
     content: "+";
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 0;
     padding: 13px 5px 11px;
@@ -258,7 +280,6 @@ footer {
 .job details section::before {
     display: block;
     content: "Details:";
-    font-size: 1.05em;
     font-weight: 700;
 }
 .tech-stack::before {
@@ -272,7 +293,6 @@ footer {
     padding: 1px 0;
 }
 .job details section p.tech-stack {
-    font-size: 1em;
     font-weight: 400;
     padding: 0;
     margin-top: 1.2rem;
@@ -296,7 +316,7 @@ footer {
 }
 .job .job-date {
     color: var(--text-color-secondary);
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 @media only screen and (min-width: 600px) {
     .job {
