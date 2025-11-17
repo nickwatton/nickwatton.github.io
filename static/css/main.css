@@ -34,9 +34,6 @@
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(calc(var(--rotationAmount) * -1));
-    }
     to {
         transform: rotate(var(--rotationAmount));
     }
