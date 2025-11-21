@@ -19,6 +19,8 @@
     --anchor-hover-color: #555;
     --anchor-hover-shadow: #fafafa;
     --nav-color: #fafafa;
+
+    --color-swap: color 0.3s ease;
 }
 
 .dark-mode {
@@ -93,6 +95,7 @@ body {
 a {
     text-decoration: none;
     color: var(--anchor-color);
+    transition: var(--color-swap);
 }
 a:hover {
     text-decoration: underline;
@@ -195,6 +198,7 @@ footer {
     margin: 0 0 0.6em;
     padding: 10px;
     width: 100%;
+    transition: all 0.3s ease;
 }
 .job:hover {
     background-color: var(--job-background-hover-color);
@@ -351,6 +355,7 @@ nav ul li a {
 	display: block;
 	padding: 10px 16px;
 	text-decoration: none;
+    transition: var(--color-swap);
 }
 nav ul li a:hover {
 	color: var(--anchor-color);
