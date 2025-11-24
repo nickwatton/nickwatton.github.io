@@ -15,7 +15,7 @@
 
     --image-border: #989898;
 
-    --anchor-color: #ff3366;
+    --anchor-color: #fc1951;
     --anchor-hover-color: #555;
     --anchor-hover-shadow: #fafafa;
     --nav-color: #fafafa;
@@ -30,7 +30,7 @@
     --bg-heading-primary: #333;
     --bg-heading-secondary: #454545;
 
-    --anchor-color: #e73e84;
+    --anchor-color: #98dc54;
     --anchor-hover-color: #bdbdbd;
     --anchor-hover-shadow: #070707;
 }
@@ -353,7 +353,7 @@ nav ul li.personal{
 nav ul li a {
 	color: var(--nav-color);
 	display: block;
-	padding: 10px 16px;
+	padding: 2px 16px;
 	text-decoration: none;
     transition: var(--color-swap);
 }
@@ -379,4 +379,13 @@ nav ul li a:hover {
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+main{position: relative}
+
+section[role="navigation"]{
+    background: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
