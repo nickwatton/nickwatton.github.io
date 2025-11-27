@@ -15,9 +15,11 @@
 
     --image-border: #989898;
 
-    --anchor-color: #fc1951;
+    --anchor-color: #d91445;
     --anchor-hover-color: #555;
     --anchor-hover-shadow: #fafafa;
+    --anchor-color-alt: #272727;
+    --anchor-color-alt-hover: #d91445;
     --nav-color: #fafafa;
 
     --color-swap: color 0.3s ease;
@@ -33,6 +35,8 @@
     --anchor-color: #98dc54;
     --anchor-hover-color: #bdbdbd;
     --anchor-hover-shadow: #070707;
+    --anchor-color-alt: #98dc54;
+    --anchor-color-alt-hover: #bdbdbd;
 }
 
 @keyframes rotate {
@@ -57,15 +61,11 @@
 .mode_pixel svg:hover{
     animation: rotate 0.75s infinite ease-in-out alternate;
 }
-.moon_icon{
-    display: none;
-}
-.sun_icon{
-    display: block;
-}
+.moon_icon,
 body.dark-mode .sun_icon{
     display: none;
 }
+.sun_icon,
 body.dark-mode .moon_icon{
     display: block;
 }
@@ -75,10 +75,6 @@ body.dark-mode .moon_icon{
 }
 html {
     --font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-    --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-
-  /* Set a global default */
-  font-family: var(--font-sans-serif);
 }
 .wrapper {
     margin: 0 auto;
@@ -89,16 +85,17 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-sans-serif);
-    font-weight: 400;
     font-size: 1rem;
+    font-weight: 400;
 }
+h1{ font-size: 1.7rem }
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--anchor-color);
     transition: var(--color-swap);
 }
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--anchor-hover-color);
 }
 header {
@@ -144,26 +141,27 @@ section article.news {
     text-align: center;
 }
 section article.news a {
-    color: var(--anchor-color);
+    color: var(--anchor-color-alt);
     filter: drop-shadow(0 0 12px var(--anchor-hover-shadow));
     font-weight: 700;
 }
 section article.news a:hover {
+    color: var(--anchor-color-alt-hover);
     filter: drop-shadow(0 0 9px var(--anchor-hover-shadow));
 }
-blockquote {
-    margin: 8px;
-    max-width: 800px;
-    padding: 5px;
+
+.testimonials {
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
 }
 blockquote p {
     font-style: normal;
-    margin: 0;
 }
 blockquote p:after,
 blockquote p:before {
     content: '"';
-    font-size: 1.2em;
     font-weight: 700;
 }
 blockquote .attribution {
@@ -174,10 +172,14 @@ blockquote cite {
     font-style: normal;
 }
 @media only screen and (max-width: 600px) {
-    blockquote:not(:first-of-type) {
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+    blockquote:not(.mbl_hilite) {
         display: none;
     }
 }
+
 footer {
     background: var(--bg-heading-primary);
     color: var(--heading-colour);
@@ -186,12 +188,20 @@ footer {
     padding: 20px;
     width: calc(100% - 40px);
 }
+
 .jobListing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
+}
+
+@media only screen and (min-width: 700px) {
+    .jobListing {
+        display: grid;
+        gap: 1rem 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .job {
+    display: block;
     align-self: start;
     border: solid 2px var(--job-border-color);
     box-sizing: border-box;
@@ -206,7 +216,7 @@ footer {
 }
 .job.double {
     border: solid 2px var(--job-double-border-color);
-    width: 100%;
+    grid-column: span 2;
 }
 .job.double:not(:first-of-type) {
     margin-top: 3rem;
@@ -219,12 +229,11 @@ footer {
     color: var(--anchor-color);
     font-size: 1.25rem;
 }
-.job.double .thumb {
-    margin-top: 1rem;
-}
 .job.double .job-summary {
     margin: 1.5rem 0;
 }
+
+.job.double .thumb,
 .job.double .job-summary p {
     margin-top: 1rem;
 }
@@ -258,7 +267,7 @@ footer {
     border: thin solid var(--image-border);
     display: block;
     margin: 0.3rem auto 0;
-    max-width: 100%;
+    max-width: calc(100% - 2px);
 }
 .job details summary:after {
     font-family: "Courier New", Courier, monospace;
@@ -271,7 +280,7 @@ footer {
     line-height: 0;
     padding: 13px 5px 11px;
     position: absolute;
-    right: -4px;
+    right: 0;
     top: -2px;
 }
 .job details[open] summary:after {
@@ -320,9 +329,6 @@ footer {
     font-size: .9rem;
 }
 @media only screen and (min-width: 600px) {
-    .job {
-        width: calc(50% - 6px);
-    }
     .msg_404 {
         text-align: center;
         margin: 3rem auto 0;

@@ -10,7 +10,7 @@
     <meta property="og:title" content="Nick Watton front end web developer">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nickwatton.github.io/">
-    <meta property="og:image" content="https://nickwatton.github.io/images/nickwatton_02.png">
+    <meta property="og:image" content="https://nickwatton.github.io/images/nickwatton_02.webp">
 
     <title>Nick Watton</title>
     <link href="/static/css/main.min.css" rel="stylesheet">
@@ -29,19 +29,16 @@
     <div class="wrapper">
       <header>
         <img
-          alt="profile"
-          src="/images/nickwatton.png"
-          width="50"
-          height="50">
+          alt="Portrait of Nick Watton"
+          src="/images/nickwatton_02.webp"
+          srcset="/images/nickwatton_02.webp 1x, /images/nickwatton_02@2x.webp 2x"
+          width="150"
+          height="150">
         <div>
           <h1>Nick Watton</h1>
           <p>Front end web developer</p>
-          <p class="push__top">
-            <a href="mailto:nickwatton@gmail.com?subject=Website%20contact">nickwatton@gmail.com</a>
-          </p>
-          <p class="push__top">
-            <a href="http://www.linkedin.com/in/nickwatton">View my profile on LinkedIn</a>
-          </p>
+          <p class="push__top"><a href="mailto:nickwatton@gmail.com?subject=Website%20contact">nickwatton@gmail.com</a></p>
+          <p class="push__top"><a href="http://www.linkedin.com/in/nickwatton">View my profile on LinkedIn</a></p>
         </div>
 
         <div class="mode_pixel">
@@ -51,41 +48,31 @@
         </div>
       </header>
 
-      <div>
+      <div class="testimonials">
         <blockquote>
-          <p>A talented developer and key team member on significant projects for
-            some of Storm's highest profile clients, demonstrating strong core
-            frontend competencies and an appetite for personal growth and skill
-            development.</p>
-          <div class="attribution">
-            Mick Perkins - <cite>Technical Lead, Storm ID</cite>
-          </div>
+          <p>You've brought curiosity, dedication, and a willingness to jump into any challenge. Since joining your drive to learn, improve, and help the team grow has made a real impact.</p>
+          <div class="attribution">Tony Goncalves - <cite>Senior Product Manager, ClearSky Logic</cite></div>
+        </blockquote>
+        <blockquote class="mbl_hilite">
+          <p>A talented developer and key team member on significant projects for some of Storm's highest profile clients, demonstrating strong core front end competencies and an appetite for personal growth and skill development.</p>
+          <div class="attribution">Mick Perkins - <cite>Technical Lead, Storm ID</cite></div>
         </blockquote>
         <blockquote>
-          <p>Nick is a great developer. He is not only technically proficient but
-            also very creative and has a solutions orientated approach.</p>
-          <div class="attribution">
-            Adam Graham - <cite>Managing Partner, Saint London</cite>
-          </div>
+          <p>A true wizard at using code and maths to create the most amazing visual animations and experiences. Honestly, look him up on <a href="https://codepen.io/2Mogs">CodePen</a>.</p>
+          <div class="attribution">David Storey - <cite>Head of web development, AmazeRealise</cite></div>
         </blockquote>
         <blockquote>
-          <p>A true wizard at using code and maths to create the most amazing
-            visual animations and experiences. Honestly, look him up on <a href="https://codepen.io/2Mogs">CodePen</a>.</p>
-          <div class="attribution">
-            David Storey - <cite>Head of web development, AmazeRealise</cite>
-          </div>
+          <p>A fantastic coder, a brilliant mixture of skill and experience, plus has an insanely curious mind which makes him a fantastic addition to any project.</p>
+          <div class="attribution">Chris Jefford - <cite>Founder/CEO, Truant</cite></div>
         </blockquote>
       </div>
 
-      <section>
+      <!-- <section>
         <header>News</header>
         <article class="news">
-          <p>
-            ~ You don't have to get lost to enjoy my 404 page game
-            <a href="/404.html" target="_self">you can just click here!</a> ~
-          </p>
+          <p>~ You don't have to get lost to enjoy my 404 page game <a href="/404.html" target="_self">you can just click here!</a> ~</p>
         </article>
-      </section>
+      </section> -->
 
       <main>
       <section role="navigation">
@@ -117,16 +104,9 @@
               src="/images/thumb/csl_01.png">
             <p class="job-date">11.2024 - current</p>
             <div class="job-summary">
-              <p>
-                Working across a range of clients, creating both admin and
-                public facing interfaces.
-              </p>
-              <p>
-                Projects to date have been developed either in React (with Typescript and Jest testing), or custom Shopify templates.
-              </p>
-              <p>
-                I am currently involved with developing the front end for an AI prototype project.
-              </p>
+              <p>Working across a range of clients, creating both admin and public facing interfaces.</p>
+              <p>Projects to date have been developed either in React (with Typescript and Jest testing), or custom Shopify templates.</p>
+              <p>I am currently involved with developing the front end for an AI prototype project.</p>
             </div>
           </div>
         </div>
@@ -145,13 +125,11 @@
             <section class="content">
               <p class="job-date">11.2025 - ongoing</p>
               <p>Building the front end for an AI prototype project.</p>
-              <p>Rapid development was required to meet a tight demonstration deadline, so I roughed out a functioning interface with vanilla JSX, then leveraged Claude to refine the build, including proper TS interfaces, and accessibility features.<br>
-                This met the original speed requirements, and also created a more solid base for further development with little additional overhead.</p>
+              <p>Rapid development was required to meet a tight demonstration deadline, so I roughed out a functioning interface with vanilla JSX, then leveraged Claude to refine the build, including proper TS interfaces, and accessibility features.<br>This met the original speed requirements, and also created a more solid base for further development with little additional overhead.</p>
               <p>The prototype has been well received by prospective clients, and we are currently developing a second iteration.</p>
               <p class="tech-stack">React (Vite), TypeScript, Tailwind CSS, CSS Modules</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a href="https://www.linkedin.com/posts/clearskylogic_our-team-doesnt-just-deliver-value-and-projects-activity-7397275530934403072-hklq/">Polaris View post on LinkedIn</a>
+              <p class="job-link"><a href="https://www.linkedin.com/posts/clearskylogic_our-team-doesnt-just-deliver-value-and-projects-activity-7397275530934403072-hklq/">Polaris View post on LinkedIn</a>
               </p>
             </section>
           </details>
@@ -170,24 +148,11 @@
             </summary>
             <section class="content">
               <p class="job-date">03.2025 - 10.2025</p>
-              <p>
-                Wolfson Brands run multiple Shopify stores, with European and
-                global markets. I have been working across their range,
-                introducing new features and maintaining existing ones.
-              </p>
-              <p>
-                I developed my role in the squad to include elements of team
-                support both for the squad manager and team colleagues, covering
-                elements of backlog refinement and sprint planning, general team
-                support and code reviews, in addition to my front end
-                development.
-              </p>
-
+              <p>Wolfson Brands run multiple Shopify stores, with European and global markets. I have been working across their range, introducing new features and maintaining existing ones.</p>
+              <p>I developed my role in the squad to include elements of team support both for the squad manager and team colleagues, covering elements of backlog refinement and sprint planning, general team support and code reviews, in addition to my front end development.</p>
               <p class="tech-stack">JS, Shopify Liquid, CSS, Tailwind CSS</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a href="https://www.wolfsonbrands.com/">Wolfson Brands</a>
-              </p>
+              <p class="job-link"><a href="https://www.wolfsonbrands.com/">Wolfson Brands</a></p>
             </section>
           </details>
         </div>
@@ -206,16 +171,13 @@
             <section class="content">
               <p class="job-date">05.2025</p>
               <p>Following a chat with the marking team, I grabbed a quiet moment to create a small series of internal branding animations based on the neon identity ClearSky have around the office.</p>
-                <p>Following up on the intrigue created by the animation, in a second quiet moment I repurposed the code to create a Neon drawing tool as part of a demonstration of the flexibility and power of SVGs for an internal Brown Bag Lunch session.
-              </p>
+              <p>Following up on the intrigue created by the animation, in a second quiet moment I repurposed the code to create a Neon drawing tool as part of a demonstration of the flexibility and power of SVGs for an internal Brown Bag Lunch session.</p>
               <p class="tech-stack">CSS, hand-crafted SVG</p>
               <div class="subhead">Links:</div>
               <p><a href="https://codepen.io/2Mogs/full/ByyBNRX">"Neon: Unicorn" on CodePen</a></p>
               <p><a href="https://codepen.io/2Mogs/full/PwwBeZY">"Neon: Power Flash" on CodePen</a></p>
               <p><a href="https://codepen.io/2Mogs/full/myyGaOo">"Neon: Target" on CodePen</a></p>
-              <p>
-                <a href="https://codepen.io/2Mogs/full/bNNOjdq">Drawing tool on CodePen</a>
-              </p>
+              <p><a href="https://codepen.io/2Mogs/full/bNNOjdq">Drawing tool on CodePen</a></p>
             </section>
           </details>
         </div>
@@ -233,21 +195,11 @@
             </summary>
             <section class="content">
               <p class="job-date">11.2024 - 03.2025</p>
-              <p>
-                Zonal are the market leaders in point of sale services for the
-                hospitality industry.
-              </p>
-              <p>
-                They have an established client side offering, but were in the
-                process of moving their services to the cloud. CSL stepped
-                in to help crunch on some back- and front-end processes in
-                their admin interface.
-              </p>
+              <p>Zonal are the market leaders in point of sale services for the hospitality industry.</p>
+              <p>They have an established client side offering, but were in the process of moving their services to the cloud. CSL stepped in to help crunch on some back- and front-end processes in their admin interface.</p>
               <p class="tech-stack">React, TypeScript, Jest testing</p>
               <div class="subhead">Links:</div>
-              <p>
-                As this is an admin interface there are no links I can share.
-              </p>
+              <p>As this is an admin interface there are no links I can share.</p>
             </section>
           </details>
         </div>
@@ -262,22 +214,9 @@
               src="/images/thumb/stormid_01.png">
             <div class="job-summary">
               <p class="job-date">10.2021 - 10.2024</p>
-              <p>
-                Working primarily on government and public sector websites, with
-                a focus on clear UX and accessibility.
-              </p>
-              <p>
-                Projects generally involved JSX prototyping within a Preact
-                framework and subsequently working with the .Net or Umbraco
-                teams to realise the final build.
-              </p>
-              <p>
-                Sometimes rapid prototyping was required, for example exploring
-                charting libraries, the OpenSystemsLab geo-data mapping API, or
-                creating bespoke JS/SVG tools. Where these moved into
-                production, I managed the integration, produced documentation
-                and provided training as required.
-              </p>
+              <p>Working primarily on government and public sector websites, with a focus on clear UX and accessibility.</p>
+              <p>Projects generally involved JSX prototyping within a Preact framework and subsequently working with the .Net or Umbraco teams to realise the final build.</p>
+              <p>Sometimes rapid prototyping was required, for example exploring charting libraries, the OpenSystemsLab geo-data mapping API, or creating bespoke JS/SVG tools. Where these moved into production, I managed the integration, produced documentation and provided training as required.</p>
             </div>
           </div>
         </div>
@@ -295,33 +234,13 @@
             </summary>
             <section class="content">
               <p class="job-date">03.2024 - 07.2024</p>
-              <p>
-                Building on a long-term understanding of Scot.Gov requirements,
-                Storm undertook a project to use AI to auto-generate forms from
-                a variety of sources.
-              </p>
-              <p>
-                As the lead front end developer my primary role was to ensure a
-                coherent front end design, and provide any DOM manipulation
-                JavaScript. In addition, throughout the project daily stand-ups
-                provided the space for me to reflect on the UI, UX and
-                accessibility directions the (backend driven) build was taking,
-                and keeping it honest!
-              </p>
-              <p>
-                A small UX discussion about visual representaions of a user's
-                journey through a complex chart led to me implimenting the
-                Mermaid charting library which swiftly become a central pillar
-                of the projects UI.
-              </p>
-              <p class="tech-stack">
-                JS, Mermaid, CSS, .Net Razor template integration
-              </p>
+              <p>Building on a long-term understanding of Scot.Gov requirements, Storm undertook a project to use AI to auto-generate forms from a variety of sources.</p>
+              <p>As the lead front end developer my primary role was to ensure a coherent front end design, and provide any DOM manipulation JavaScript. In addition, throughout the project daily stand-ups provided the space for me to reflect on the UI, UX and accessibility directions the (backend driven) build was taking, and keeping it honest!</p>
+              <p>A small UX discussion about visual representaions of a user's journey through a complex chart led to me implimenting the Mermaid charting library which swiftly become a central pillar of the projects UI.</p>
+              <p class="tech-stack">JS, Mermaid, CSS, .Net Razor template integration</p>
               <div class="subhead">Links:</div>
               <p>Implementations are not currently public.</p>
-              <p class="job-link">
-                <a href="https://codepen.io/2Mogs/full/wvLMKaG">Mermaid prototype on CodePen</a>
-              </p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/full/wvLMKaG">Mermaid prototype on CodePen</a></p>
             </section>
           </details>
         </div>
@@ -339,37 +258,14 @@
             </summary>
             <section class="content">
               <p class="job-date">03.2022</p>
-              <p>
-                A large scale Scot.Gov project to review the existing online
-                planning permission process.
-              </p>
-              <p>
-                As the lead front end developer on the project I implementated
-                the Scot.Gov design system, integrated with Storm's own design
-                agnostic scaffold. I was responsible for ensuring that during
-                the process of .Net implementation WCAG 2.2 accessibility
-                standards were maintained, and providing any DOM manipulation or
-                forms related JavaScript as required.
-              </p>
-              <p>
-                One such custom element was a tool for accurately mapping the
-                boundaries of a property. For this we used the OpenSystemsLab
-                geo-data mapping API, and you can see a test implementation via
-                the link below.
-              </p>
-              <p>
-                The project is not yet live, but the Scot.Gov Digital Planning
-                team intends to take the alpha service prototypes forward to
-                beta and live, in line with its digital strategy.
-              </p>
-              <p class="tech-stack">
-                JSX, JS, CSS, .Net Razor template integration
-              </p>
+              <p>A large scale Scot.Gov project to review the existing online planning permission process.</p>
+              <p>As the lead front end developer on the project I implementated the Scot.Gov design system, integrated with Storm's own design agnostic scaffold. I was responsible for ensuring that during the process of .Net implementation WCAG 2.2 accessibility standards were maintained, and providing any DOM manipulation or forms related JavaScript as required.</p>
+              <p>One such custom element was a tool for accurately mapping the boundaries of a property. For this we used the OpenSystemsLab geo-data mapping API, and you can see a test implementation via the link below.</p>
+              <p>The project is not yet live, but the Scot.Gov Digital Planning team intends to take the alpha service prototypes forward to beta and live, in line with its digital strategy.</p>
+              <p class="tech-stack">JSX, JS, CSS, .Net Razor template integration</p>
               <div class="subhead">Links:</div>
               <p>Implementations are not currently public.</p>
-              <p class="job-link">
-                <a href="https://codepen.io/2Mogs/full/KKoBRZy">OpenSystemsLab API prototype on CodePen</a>
-              </p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/full/KKoBRZy">OpenSystemsLab API prototype on CodePen</a></p>
             </section>
           </details>
         </div>
@@ -387,31 +283,12 @@
             </summary>
             <section class="content">
               <p class="job-date">08.2023</p>
-              <p>
-                Following the Glasgow Life transformation, Storm was tasked with
-                a similar overhaul of the sister site, Glasgow Club.
-              </p>
-              <p>
-                Glasgow Club has a distinct design language from other sites in
-                the group, so whilst the underlying scaffold is largely shared
-                across the estate, as lead front end developer on the project, I
-                needed to take care that all details of their design were
-                implemented correctly.
-              </p>
-              <p>
-                Whilst many of the challanges from Glasgow Life had been solved
-                for this build, the scale of tablular data presented for venues
-                and activities proved an issue. Smaller tables (opening times)
-                maintained visual structure and only changed width responsively.
-                Larger tables required a visual collapsing of
-                <code>&lt;td&gt;</code> elements, whilst maintaining DOM
-                structure and coherance for keyboard users.
-              </p>
+              <p>Following the Glasgow Life transformation, Storm was tasked with a similar overhaul of the sister site, Glasgow Club.</p>
+              <p>Glasgow Club has a distinct design language from other sites in the group, so whilst the underlying scaffold is largely shared across the estate, as lead front end developer on the project, I needed to take care that all details of their design were implemented correctly.</p>
+              <p>Whilst many of the challenges from Glasgow Life had been solved for this build, the scale of tabular data presented for venues and activities proved an issue. Smaller tables (opening times) maintained visual structure and only changed width responsively. Larger tables required a visual collapsing of <code>&lt;td&gt;</code> elements, whilst maintaining DOM structure and coherence for keyboard users.</p>
               <p class="tech-stack">JS, CSS, .Net Razor template integration</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a href="https://glasgowclub.org/">Visit Glasgow Club</a>
-              </p>
+              <p class="job-link"><a href="https://glasgowclub.org/">Visit Glasgow Club</a></p>
             </section>
           </details>
         </div>
@@ -429,31 +306,12 @@
             </summary>
             <section class="content">
               <p class="job-date">04.2022</p>
-              <p>
-                Storm took Glasgow Life through a complete digital
-                transformation programme, redeveloping their main web portal,
-                and dedicated venue and event sites.
-              </p>
-              <p>
-                As the lead front end developer on the project I ensured the
-                design was faithfully implimented, and ensured accessibility
-                standards were maintained.
-              </p>
-              <p>
-                Interesting challanges included the map view for the venue
-                finder, bespoke Swiper carousel conflicts, and much longer than
-                expected horizontal in-page navigations. However, working
-                closely with the design, UX, and testing teams, all issues were
-                resolved to the client's satisfaction.
-              </p>
+              <p>Storm took Glasgow Life through a complete digital transformation programme, redeveloping their main web portal, and dedicated venue and event sites.</p>
+              <p>As the lead front end developer on the project I ensured the design was faithfully implemented, and ensured accessibility standards were maintained.</p>
+              <p>Interesting challenges included the map view for the venue finder, bespoke Swiper carousel conflicts, and much longer than expected horizontal in-page navigations. However, working closely with the design, UX, and testing teams, all issues were resolved to the client's satisfaction.</p>
               <p class="tech-stack">JS, CSS, .Net Razor template integration</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://www.glasgowlife.org.uk/"
-                  >Visit Glasgow Life</a
-                >
-              </p>
+              <p class="job-link"><a href="https://www.glasgowlife.org.uk/">Visit Glasgow Life</a></p>
             </section>
           </details>
         </div>
@@ -471,41 +329,13 @@
             </summary>
             <section class="content">
               <p class="job-date">05.2023 - 11.2023</p>
-              <p>
-                The Historic Environment Scotland (HES) estate comprises some
-                30+ separately maintained websites, build over many years with
-                multiple technologies. And they all needed to have their cookie
-                banner updated and WCAG 2.2 compliant.
-              </p>
-              <p>
-                My role was to adapt their existing cookie banner code for
-                compliance (specifically ensuring no interactive elements are
-                obscured), to be standardised for all sites, with configuration
-                options, but without the need for an implementing developer to
-                customise the JavaScript.
-              </p>
-              <p>
-                Final delivery was with a <code>.umd</code> JavaScript bundle
-                with a configuration object in a
-                <code>&lt;script&gt;</code> tag. I provided extensive
-                documentation for HES developers to use, and was available for
-                support when some implementations where less straightforward and
-                the HES developer needed assistance.
-              </p>
+              <p>The Historic Environment Scotland (HES) estate comprises some 30+ separately maintained websites, build over many years with multiple technologies. And they all needed to have their cookie banner updated and WCAG 2.2 compliant.</p>
+              <p>My role was to adapt their existing cookie banner code for compliance (specifically ensuring no interactive elements are obscured), to be standardised for all sites, with configuration options, but without the need for an implementing developer to customise the JavaScript.</p>
+              <p>Final delivery was with a <code>.umd</code> JavaScript bundle with a configuration object in a <code>&lt;script&gt;</code> tag. I provided extensive documentation for HES developers to use, and was available for support when some implementations where less straightforward and the HES developer needed assistance.</p>
               <p class="tech-stack">JS, CSS, Markdown (for documentation)</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://www.historicenvironment.scot/"
-                  >Historic Environment Scotland</a
-                >
-              </p>
-              <p class="job-link">
-                <a
-                  href="https://www.edinburghcastle.scot/"
-                  >Edinburgh Castle</a
-                >
-              </p>
+              <p class="job-link"><a href="https://www.historicenvironment.scot/">Historic Environment Scotland</a></p>
+              <p class="job-link"><a href="https://www.edinburghcastle.scot/">Edinburgh Castle</a></p>
             </section>
           </details>
         </div>
@@ -523,27 +353,13 @@
             </summary>
             <section class="content">
               <p class="job-date">03.2022</p>
-              <p>
-                When the COPFS started to return to office work after lockdown,
-                they needed a tool to allow staff to book desk space. I
-                converted paper office layout charts into data, in JSON format,
-                which allowed all offices / desks to be dynamically drawn and
-                interacted with. Booking data was submitted to their existing
-                SharePoint intranet.
-              </p>
+              <p>When the COPFS started to return to office work after lockdown, they needed a tool to allow staff to book desk space. I converted paper office layout charts into data, in JSON format, which allowed all offices / desks to be dynamically drawn and interacted with. Booking data was submitted to their existing SharePoint intranet.</p>
               <div>
                 <p class="tech-stack">JS, SVG, JSON, CSS</p>
               </div>
               <div class="subhead">Links:</div>
-              <p>
-                As the full application is an intranet, there is no public URL.
-              </p>
-              <p class="job-link">
-                <a
-                  href="https://codepen.io/2Mogs/full/rNpOORQ"
-                  >View WiP on CodePen</a
-                >
-              </p>
+              <p>As the full application is an intranet, there is no public URL.</p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/full/rNpOORQ">View WiP on CodePen</a></p>
             </section>
           </details>
         </div>
@@ -558,18 +374,10 @@
               src="/images/thumb/secureworks_01.png">
             <p class="job-date">06.2020 - 09.2021</p>
             <div class="job-summary">
-              <p>
-                My role was to enhance the Secureworks Client Portal, both through conversion of elements to the React framework, and extending existing Backbone elements.
-              </p>
-              <p>
-                I developed a number of features through to production, leveraging Material-UI, Formik (+Yup), Axios and Redux, as well as native JavaScript.
-              </p>
-              <p class="tech-stack">
-                React, Backbone, JS, Material-UI, Formik (+Yup), Axios and Redux
-              </p>
-              <p>
-                <a href="https://www.secureworks.com/" >Secureworks</a >
-              </p>
+              <p>My role was to enhance the Secureworks Client Portal, both through conversion of elements to the React framework, and extending existing Backbone elements.</p>
+              <p>I developed a number of features through to production, leveraging Material-UI, Formik (+Yup), Axios and Redux, as well as native JavaScript.</p>
+              <p class="tech-stack">React, Backbone, JS, Material-UI, Formik (+Yup), Axios and Redux</p>
+              <p><a href="https://www.secureworks.com/">Secureworks</a></p>
             </div>
           </div>
         </div>
@@ -584,28 +392,9 @@
               src="/images/thumb/realise_kc_01.png">
             <p class="job-date">04.2014 - 03.2020</p>
             <div class="job-summary">
-              <p>
-                I first approached Realise as a Flash/actionscript developer
-                looking to transition into HTML5 work. I had a little JS / CSS /
-                HTML experience, and although I had 14 years Flash experience I
-                was wet behind my HTML5 ears.
-              </p>
-              <p>
-                However, Realise had a few banner clients which needed to be
-                transitioned to HTML5 builds, and I had made a lot of banners at
-                Wunderman and Saint (RKCR/y&r), and the deal was struck.<br>
-                I made a build pipeline in Gulp, set guides and processes, and
-                arranged training so other team members could join the fun.
-              </p>
-              <p>
-                Banners production sat in Support, so I also worked on (amongst
-                others) Standard Life Investments and Lloyds Banking Group CMS
-                sites, using Teamsite and Ektron.<br>
-                In addition I helped in development teams for multiple smaller
-                projects, and championed team learning through skill share
-                excercises and addressing topics like Imposter Syndrome and
-                general mental health.
-              </p>
+              <p>I first approached Realise as a Flash/actionscript developer looking to transition into HTML5 work. I had a little JS / CSS / HTML experience, and although I had 14 years Flash experience I was wet behind my HTML5 ears.</p>
+              <p>However, Realise had a few banner clients which needed to be transitioned to HTML5 builds, and I had made a lot of banners at Wunderman and Saint (RKCR/y&r), and the deal was struck.<br>I made a build pipeline in Gulp, set guides and processes, and arranged training so other team members could join the fun.</p>
+              <p>Banners production sat in Support, so I also worked on (amongst others) Standard Life Investments and Lloyds Banking Group CMS sites, using Teamsite and Ektron.<br>In addition, I helped in development teams for multiple smaller projects, and championed team learning through skill share excercises and addressed topics like Imposter Syndrome and general mental health.</p>
             </div>
           </div>
         </div>
@@ -624,33 +413,14 @@
             <section class="content">
               <p class="job-date">06.2017</p>
               <p>Drone Kick game.</p>
-              <p>
-                Part of the "One Team. One Standard." British and Irish Lions
-                tour sponsorship campaign.
-              </p>
-              <p>
-                Written with vanilla JavaScript, this is a simple target shoot
-                game. Gameplay needed to be the same on mobile and desktop so
-                the interaction is necessarily simple: automatic missle
-                direction control and one click to fire.
-              </p>
-              <p>
-                The game can work in a standalone configuration for conferences,
-                with a leaderboard mode to display the top ten scores on a
-                separate sceen.
-              </p>
-              <p>
-                Over 64,500 plays in a month, with an average 44 plays per
-                person.
-              </p>
+              <p>Part of the "One Team. One Standard." British and Irish Lions tour sponsorship campaign.</p>
+              <p>Written with vanilla JavaScript, this is a simple target shoot game. Gameplay needed to be the same on mobile and desktop so the interaction is necessarily simple: automatic missile direction control and one click to fire.</p>
+              <p>The game can work in a standalone configuration for conferences, with a leaderboard mode to display the top ten scores on a separate screen.</p>
+              <p>Over 64,500 plays in a month, with an average 44 plays per person.</p>
               <p>The campaign (game and banners), was awarded BT Sport Industry Award. Best Ambassador, Influencer or Partnership of the Year.</p>
               <p class="tech-stack">HTML, JavaScript, GSAP-js, CSS</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a href="/showreel/sli-game/"
-                  >Drone Kick - Play an archive of the Game</a
-                >
-              </p>
+              <p class="job-link"><a href="/showreel/sli-game/">Drone Kick - Play an archive of the Game</a></p>
             </section>
           </details>
         </div>
@@ -673,11 +443,7 @@
               <p>Served through DoubleClick.</p>
               <p class="tech-stack">HTML, JavaScript, GSAP-js, CSS</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a href="https://www.google.com/doubleclick/studio/externalpreview/#/mU5rr3xpThi86BO-kiKbeQ"
-                  >Video banners - DoubleClick preview</a
-                >
-              </p>
+              <p class="job-link"><a href="https://www.google.com/doubleclick/studio/externalpreview/#/mU5rr3xpThi86BO-kiKbeQ">Video banners - DoubleClick preview</a></p>
             </section>
           </details>
         </div>
@@ -696,33 +462,13 @@
             </summary>
             <section class="content">
               <p class="job-date">09.2019</p>
-              <p>
-                A quiz that selects your funeral song, embedded as a standalone
-                tool within the main Sunlife site.
-              </p>
-              <p>
-                I include this project not for it's scale or technical merit,
-                but rather because it casts a fun light on a can-be dark
-                subject.
-              </p>
-              <p>
-                It was a quick and enjoyable project which is still alive on the
-                client site 5 years later. Now that's something to sing about!
-              </p>
+              <p>A quiz that selects your funeral song, embedded as a standalone tool within the main Sunlife site.</p>
+              <p>I include this project not for it's scale or technical merit, but rather because it casts a fun light on a can-be dark subject.</p>
+              <p>It was a quick and enjoyable project which is still alive on the client site 5 years later. Now that's something to sing about!</p>
               <p class="tech-stack">HTML, JavaScript, CSS</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://www.sunlife.co.uk/life-cover/over-50-life-insurance/funeral-song-generator/"
-                  >Take the quiz</a
-                >
-              </p>
-              <p class="job-link">
-                <a
-                  href="https://codepen.io/2Mogs/pen/YzKwZgK?editors=0010"
-                  >CodePen prototype</a
-                >
-              </p>
+              <p class="job-link"><a href="https://www.sunlife.co.uk/life-cover/over-50-life-insurance/funeral-song-generator/">Take the quiz</a></p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/pen/YzKwZgK?editors=0010">CodePen prototype</a></p>
             </section>
           </details>
         </div>
@@ -740,43 +486,22 @@
             </summary>
             <section class="content">
               <p class="job-date">01.2017</p>
-              <p>
-                At Realise I built 10s of campaigns (each with 10-14
-                individually sized units) for Heathrow. I really enjoy the
-                specific challenges of making banners work. They must be
-                lightweight, and the design and animation immediately engaging.
-                It looks easy but it needs a fine eye for detail and a high
-                level of trust between designer and developer.
-              </p>
+              <p>At Realise I built 10s of campaigns (each with 10-14 individually sized units) for Heathrow. I really enjoy the specific challenges of making banners work. They must be lightweight, and the design and animation immediately engaging. It looks easy but it needs a fine eye for detail and a high level of trust between designer and developer.</p>
               <img
                 loading="lazy"
                 class="secondary"
                 alt="Still image from Heathrow banner ad showing a family walking in woods on holiday"
                 src="./images/thumb/heathrow_17WoP_01.png">
-              <p>
-                These campaigns saw very high engagement, and presented a clean
-                design in a very lightweight package.
-              </p>
+              <p>These campaigns saw very high engagement, and presented a clean design in a very lightweight package.</p>
               <img
                 loading="lazy"
                 class="secondary"
                 alt="Still image from Heathrow Boutique banner ad showing a woman with lots of showing bags"
                 src="./images/thumb/heathrowXmas18.jpg">
-              <p>
-                I even saved enough filesize to be able to include a subtle
-                particle system in their Christmas campaign to add movement and
-                sparkle.
-              </p>
-              <p class="tech-stack">
-                HTML, JavaScript, GSAP-js, CSS, DoubleClick with dynamic feed
-              </p>
+              <p>I even saved enough filesize to be able to include a subtle particle system in their Christmas campaign to add movement and sparkle.</p>
+              <p class="tech-stack">HTML, JavaScript, GSAP-js, CSS, DoubleClick with dynamic feed</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="/showreel/banners/heathrow/christmas/300x250/"
-                  >Heathrow Christmas MPU banner, with added sparkle</a
-                >
-              </p>
+              <p class="job-link"><a href="/showreel/banners/heathrow/christmas/300x250/">Heathrow Christmas MPU banner, with added sparkle</a></p>
             </section>
           </details>
         </div>
@@ -793,57 +518,25 @@
                 src="./images/thumb/noths_01.jpg">
             </summary>
             <section class="content">
-              <p>
-                Whilst at Realise I made probably hundreds of banners for
-                clients like Not on the High Street, Forza Racing, Channel 4,
-                Heathrow, Standard Life, Sun Life... All fun and unique.
-              </p>
+              <p>Whilst at Realise I made probably hundreds of banners for clients like Not on the High Street, Forza Racing, Channel 4, Heathrow, Standard Life, Sun Life... All fun and unique.</p>
               <img
                 loading="lazy"
                 class="secondary"
                 alt="Blue image with abstract Delaunay pattern of shaded trianges"
                 src="./images/thumb/asi_mps.jpg">
-              <p>
-                Some were simple image and text; there were several with videos,
-                and a few exciting ones where I could get interactive, add
-                particle sparkles or even dynamically create Delaunay triangles
-                in the background. One of my favourites (sadly now lost without
-                trace) was for Channel 4 and had a washing machine with a
-                spinning drum, served under their strict 55kb size limit.
-              </p>
+              <p>Some were simple image and text; there were several with videos, and a few exciting ones where I could get interactive, add particle sparkles or even dynamically create Delaunay triangles in the background. One of my favourites (sadly now lost without trace) was for Channel 4 and had a washing machine with a spinning drum, served under their strict 55kb size limit.</p>
               <img
                 loading="lazy"
                 class="secondary"
                 alt="Still image from Heathrow banner ad showing people throwing colouful powder towards the camera"
                 src="./images/thumb/heathrowU25_16q1_01.jpg">
-              <p>
-                Mostly served through DoubleClick, but also via FlashTalking.
-              </p>
-              <p class="tech-stack">
-                HTML, JavaScript, CSS, DoubleClick / FlashTalking with dynamic
-                feed
-              </p>
+              <p>Mostly served through DoubleClick, but also via FlashTalking.</p>
+              <p class="tech-stack">HTML, JavaScript, CSS, DoubleClick / FlashTalking with dynamic feed</p>
 
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="/showreel/banners/c4/xbox-forza7-mpu/"
-                  >C4 MPU XBox One Forza Racing 7. Coded venetian blind (?!)
-                  image transition</a
-                >
-              </p>
-              <p class="job-link">
-                <a
-                  href="/showreel/banners/sli/unconstrained/300x250/"
-                  >SLI MPU banner with scenic parallax and plane flight</a
-                >
-              </p>
-              <p class="job-link">
-                <a
-                  href="https://codepen.io/2Mogs/pen/RwXZvGb?editors=0010"
-                  >Lightweight animation sequencing engine demo, on CodePen</a
-                >
-              </p>
+              <p class="job-link"><a href="/showreel/banners/c4/xbox-forza7-mpu/">C4 MPU XBox One Forza Racing 7. Coded venetian blind (?!) image transition</a></p>
+              <p class="job-link"><a href="/showreel/banners/sli/unconstrained/300x250/">SLI MPU banner with scenic parallax and plane flight</a></p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/pen/RwXZvGb?editors=0010">Lightweight animation sequencing engine demo, on CodePen</a></p>
             </section>
           </details>
         </div>
@@ -861,28 +554,12 @@
             </summary>
             <section class="content">
               <p class="job-date">05.2019</p>
-              <p>
-                I am a huge Brompton bike fanboy, so when I heard AmazeRealise
-                was pitching to them I had to butt in, and quickly knocked up this
-                responsively animated, interactive Brompton bike banner.
-              </p>
-              <p>
-                Moving through the three main steps in the bike's amazing fold,
-                the user can also customize the paint, just like ordering the
-                real thing (used to be).
-              </p>
-              <p>
-                Born out of personal passion, whilst the pitch wasn't sucessful,
-                this illustrates how all parts of a team can pull together and
-                produce something unexpected.
-              </p>
+              <p>I am a huge Brompton bike fanboy, so when I heard AmazeRealise was pitching to them I had to butt in, and quickly knocked up this responsively animated, interactive Brompton bike banner.</p>
+              <p>Moving through the three main steps in the bike's amazing fold, the user can also customize the paint, just like ordering the real thing (used to be).</p>
+              <p>Born out of personal passion, whilst the pitch wasn't sucessful, this illustrates how all parts of a team can pull together and produce something unexpected.</p>
               <p class="tech-stack">SVG, CSS, JavaScript</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://codepen.io/2Mogs/full/eoVJGr"
-                  >View on CodePen</a>
-              </p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/full/eoVJGr">View on CodePen</a></p>
             </section>
           </details>
         </div>
@@ -912,12 +589,7 @@
               <p>As a self-taught developer on CSS through practice not study, I wanted to develop a deeper understanding of the principles that underlie CSS. This course has been instrumental in filling gaps, and enhancing my skills.</p>
               <p class="tech-stack">CSS, JS</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://courses.joshwcomeau.com/css-for-js"
-                  >Course overview and curriculum</a
-                >
-              </p>
+              <p class="job-link"><a href="https://courses.joshwcomeau.com/css-for-js">Course overview and curriculum</a></p>
             </section>
           </details>
         </div>
@@ -939,12 +611,7 @@
               <p>I've been making web-based animations for years, and when this course popped up I thought it would be good to shake myself up and learn some new techniques. The course has confirmed my growing love of SVGs, and greatly deepened my understanding of CSS animation.</p>
               <p class="tech-stack">CSS, SVG, JS</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://courses.joshwcomeau.com/wham"
-                  >Course overview and curriculum</a
-                >
-              </p>
+              <p class="job-link"><a href="https://courses.joshwcomeau.com/wham">Course overview and curriculum</a></p>
             </section>
           </details>
         </div>
@@ -965,12 +632,7 @@
               <p class="job-date">9.2025</p>
               <p>Building on the foundations laid in the previous course, this training delved deeper into the principles of effective engineering management. It probably took me past where I project myself being for now. However, it was really useful in helping me understand the breadth of management tasks, and will certainly be useful for my skills as a senior team member.</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://frontendmasters.com/courses/engineering-management/"
-                  >Course overview and curriculum</a
-                >
-              </p>
+              <p class="job-link"><a href="https://frontendmasters.com/courses/engineering-management/">Course overview and curriculum</a></p>
             </section>
           </details>
         </div>
@@ -991,12 +653,7 @@
               <p class="job-date">7.2025</p>
               <p>I actively enjoying my development work, but within squads I find myself taking on mentoring and somewhat-management roles. I took this course to gain greater understanding of this area, and to build some foundational skills.</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://frontendmasters.com/courses/intro-management/"
-                  >Course overview and curriculum</a
-                >
-              </p>
+              <p class="job-link"><a href="https://frontendmasters.com/courses/intro-management/">Course overview and curriculum</a></p>
             </section>
           </details>
         </div>
@@ -1018,12 +675,7 @@
               <p>Whilst I had brushed up against TypeScript, I never really needed to apply it until I joined ClearSky Logic. I wanted more than a passing understanding based on code picking, so I enrolled in this course to underpin and grow my understanding.</p>
               <p class="tech-stack">CSS, SVG, JS</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://frontendmasters.com/courses/typescript-v4/"
-                  >Course overview and curriculum</a
-                >
-              </p>
+              <p class="job-link"><a href="https://frontendmasters.com/courses/typescript-v4/">Course overview and curriculum</a></p>
             </section>
           </details>
         </div>
@@ -1042,18 +694,11 @@
             </summary>
             <section class="content">
               <p class="job-date">07.2024</p>
-              <p>
-                I took this React course to refresh and deepen my understanding
-                of the framework. It was super interesting and great fun.
-              </p>
+              <p>I took this React course to refresh and deepen my understanding
+                of the framework. It was super interesting and great fun.</p>
               <p class="tech-stack">React, a little bit of Next</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://courses.joshwcomeau.com/joy-of-react"
-                  >Course overview and curriculum</a
-                >
-              </p>
+              <p class="job-link"><a href="https://courses.joshwcomeau.com/joy-of-react">Course overview and curriculum</a></p>
             </section>
           </details>
         </div>
@@ -1063,11 +708,7 @@
         <header>Playground</header>
         <article class="news">
           <p>A small selection of the games, tools, and experiments I've made in my own time.</p>
-          <p>
-            Visit my
-            <a href="https://codepen.io/2Mogs">CodePen</a>
-            for more.
-          </p>
+          <p>Visit my <a href="https://codepen.io/2Mogs">CodePen</a> for more.</p>
         </article>
       </section>
       <div class="jobListing">
@@ -1085,19 +726,12 @@
             </summary>
             <section class="content">
               <p class="job-date">07.2022</p>
-              <p>
-                When the application my dyslexic son's learning support teacher
-                used was closed down, I remade it for her and her colleagues.
-              </p>
+              <p>When the application my dyslexic son's learning support teacher
+                used was closed down, I remade it for her and her colleagues.</p>
               <p>Free to use.</p>
               <p class="tech-stack">JS, Canvas</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://codepen.io/2Mogs/full/rNYjWOO"
-                  >View on CodePen</a
-                >
-              </p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/full/rNYjWOO">View on CodePen</a></p>
             </section>
           </details>
         </div>
@@ -1115,36 +749,13 @@
             </summary>
             <section class="content">
               <p class="job-date">09.2021</p>
-              <p>
-                Made during a hack week at Secureworks, with an idea that it
-                could be an easter egg on a 404 page.
-              </p>
-              <p>
-                A horizontal scolling invaders game, with handrawn graphics.
-                Vanilla JavaScript, using ES6 modules. The first two waves of
-                invaders are hand coded to spell a message (originally relevant
-                as a 404), then afterwards we fall back to an endless random
-                enemy pattern generator.
-              </p>
-              <p>
-                I revisted this to make a JS13K Games entry. I managed to keep
-                it hand-drawn, although I did need to cut the parallax
-                environment layers.
-              </p>
+              <p>Made during a hack week at Secureworks, with an idea that it could be an easter egg on a 404 page.</p>
+              <p>A horizontal scolling invaders game, with handrawn graphics. Vanilla JavaScript, using ES6 modules. The first two waves of invaders are hand coded to spell a message (originally relevant as a 404), then afterwards we fall back to an endless random enemy pattern generator.</p>
+              <p>I revisted this to make a JS13K Games entry. I managed to keep it hand-drawn, and although I did need to cut the parallax environment layers I was able to add light-speed star effects.</p>
               <p class="tech-stack">JavaScript, HTML audio</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://codepen.io/2Mogs/full/poWbzwo"
-                  >The original game on CodePen</a
-                >
-              </p>
-              <p class="job-link">
-                <a
-                  href="https://js13kgames.com/2022/games/deaths-hand"
-                  >JS13K entry</a
-                >
-              </p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/full/poWbzwo">The original game on CodePen</a></p>
+              <p class="job-link"><a href="https://js13kgames.com/2022/games/deaths-hand">JS13K entry</a></p>
             </section>
           </details>
         </div>
@@ -1163,28 +774,12 @@
             <section class="content">
               <p class="job-date">09.2017</p>
               <p>My first entry for the JS13KGames competition.</p>
-              <p>
-                The challenge was to write a JavaScript game in no more than
-                13k, all in.
-              </p>
-              <p>
-                I created a shadowy maze which you have to navigate against the
-                clock to find a heart.
-              </p>
+              <p>The challenge was to write a JavaScript game in no more than 13k, all in.</p>
+              <p>I created a shadowy maze which you have to navigate against the clock to find a heart.</p>
               <p class="tech-stack">JavaScript, HTML audio</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a
-                  href="https://codepen.io/2Mogs/full/oNVyrzr"
-                  >Play the Game</a
-                >
-              </p>
-              <p class="job-link">
-                <a
-                  href="http://js13kgames.com/entries/lost-love"
-                  >JS13K entry</a
-                >
-              </p>
+              <p class="job-link"><a href="https://codepen.io/2Mogs/full/oNVyrzr">Play the Game</a></p>
+              <p class="job-link"><a href="http://js13kgames.com/entries/lost-love">JS13K entry</a></p>
             </section>
           </details>
         </div> -->
@@ -1202,25 +797,13 @@
             </summary>
             <section class="content">
               <p class="job-date">10.2019</p>
-              <p>
-                The sound artist Jerobeam Fenderson (oscilloscopemusic.com)
-                creates music that can be visualised through an oscilloscope. I
-                don't have an oscilloscope, so I wrote a JavaScript player that
-                does the same thing.
-              </p>
+              <p>The sound artist <a href="https://oscilloscopemusic.com/">Jerobeam Fenderson</a> creates music that can be visualised through an oscilloscope. I don't have an oscilloscope, so I wrote a JavaScript player that does the same thing.</p>
               <p>This is not an animation.</p>
-              <p>
-                The graphics are the visual output of specially created music,
-                produced by combining the stereo waveforms.
-              </p>
+              <p>The graphics are the visual output of specially created music, produced by combining the stereo waveforms.</p>
               <p>Featured in Steve Gardner's Tiny Web Animation Newsletter.</p>
               <p class="tech-stack">JavaScript, Audio API</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a href="/showreel/oscilloscope_audio"
-                  >Listen and watch</a
-                >
-              </p>
+              <p class="job-link"><a href="/showreel/oscilloscope_audio">Listen and watch</a></p>
             </section>
           </details>
         </div>
@@ -1238,25 +821,12 @@
             </summary>
             <section class="content">
               <p class="job-date">01.2020</p>
-              <p>
-                I co-ran a team building challenge, to paint 3D Easter Eggs,
-                then create a game or interface to use the resultant images.
-              </p>
-              <p>
-                My primary role was creating the initial paint application,
-                using canvas for the main painting app, and live rendering the
-                result onto an interactive 3D egg.
-              </p>
-              <p>
-                I also took responsibility for encouraging colleagues to
-                contribue to the project, helping with the egg API.
-              </p>
+              <p>I co-ran a team building challenge, to paint 3D Easter Eggs, then create a game or interface to use the resultant images.</p>
+              <p>My primary role was creating the initial paint application, using canvas for the main painting app, and live rendering the result onto an interactive 3D egg.</p>
+              <p>I also took responsibility for encouraging colleagues to contribue to the project, helping with the egg API.</p>
               <p class="tech-stack">JS, Three.js, Canvas, SVG</p>
               <div class="subhead">Links:</div>
-              <p class="job-link">
-                <a href="/showreel/eggPainter">Paint an Egg</a>
-                - No instructions, but you'll work it out!
-              </p>
+              <p class="job-link"><a href="/showreel/eggPainter">Paint an Egg</a> - No instructions, but you'll work it out!</p>
             </section>
           </details>
         </div>
@@ -1264,7 +834,7 @@
 
       </main>
 
-      <footer>© 2025 Nick Watton All Rights Reserved</footer>
+      <footer>© 2015-<script>document.write(new Date().getFullYear())</script> Nick Watton. All Rights Reserved.</footer>
     </div>
 
     <script>
