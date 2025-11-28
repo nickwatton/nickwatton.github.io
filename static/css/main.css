@@ -107,6 +107,9 @@ header div {
     margin-left: 20px;
     vertical-align: top;
 }
+.sous_rature {
+    text-decoration: line-through;
+}
 .push__top {
     margin-top: 1rem;
 }
