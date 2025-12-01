@@ -1,15 +1,13 @@
-
-  
-  :root {
+:root {
     --bg-color: #fafafa;
     --text-color: #2a2a2a;
     --text-color-secondary: #444;
     --heading-colour:#fafafa;
     --bg-heading-primary: #333;
-    --bg-heading-secondary: #c2c2c2;
+    --bg-heading-secondary: #e6e6e6;
 
-    --job-border-color: #949494;
-    --job-border-hover-color: #b7b7b7;
+    --job-border-color: #f1f1f1;
+    --job-border-hover-color: #e7e7e7;
     --job-background-hover-color: #00000005;
     --job-double-border-color: #7b7b7b;
 
@@ -37,6 +35,9 @@
     --anchor-hover-shadow: #070707;
     --anchor-color-alt: #98dc54;
     --anchor-color-alt-hover: #bdbdbd;
+
+    --job-border-color: #1f1f1f;
+    --job-border-hover-color: #2f2f2f;
 }
 
 @keyframes rotate {
@@ -78,7 +79,7 @@ html {
 }
 .wrapper {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 10px;
 }
 body {
@@ -90,12 +91,10 @@ body {
 }
 h1{ font-size: 1.7rem }
 a {
-    /* text-decoration: none; */
     color: var(--anchor-color);
     transition: var(--color-swap);
 }
 a:hover {
-    /* text-decoration: underline; */
     color: var(--anchor-hover-color);
 }
 header {
@@ -194,6 +193,7 @@ footer {
 
 .jobListing {
     display: block;
+    padding: 0 6px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -201,6 +201,7 @@ footer {
         display: grid;
         gap: 1rem 2rem;
         grid-template-columns: 1fr 1fr;
+        padding: 0;
     }
 }
 .job {
@@ -209,7 +210,6 @@ footer {
     border: solid 2px var(--job-border-color);
     box-sizing: border-box;
     margin: 0 0 0.6em;
-    padding: 10px;
     width: 100%;
     transition: all 0.3s ease;
 }
@@ -218,7 +218,7 @@ footer {
     border: solid 2px var(--job-border-hover-color);
 }
 .job.double {
-    border: solid 2px var(--job-double-border-color);
+    border: none;
     grid-column: span 2;
 }
 .job.double:not(:first-of-type) {
@@ -226,7 +226,7 @@ footer {
 }
 .job.double:hover {
     background-color: var(--job-background-hover-color);
-    border: solid 2px var(--job-border-hover-color);
+    border: none
 }
 .job.double .client {
     color: var(--anchor-color);
@@ -239,6 +239,10 @@ footer {
 .job.double .thumb,
 .job.double .job-summary p {
     margin-top: 1rem;
+}
+
+.job img.thumb{
+    width: 100%;
 }
 @media only screen and (min-width: 800px) {
     .double__inner {
@@ -260,6 +264,7 @@ footer {
 .job details {
     margin: 0 auto;
     max-width: 800px;
+    padding: 22px 26px;
 }
 .job details summary {
     outline: none;
@@ -271,6 +276,9 @@ footer {
     display: block;
     margin: 0.3rem auto 0;
     max-width: calc(100% - 2px);
+}
+.job details summary p.client {
+    margin-bottom: 6px;
 }
 .job details summary:after {
     font-family: "Courier New", Courier, monospace;
@@ -311,15 +319,9 @@ footer {
     margin-top: 1.2rem;
 }
 .job img.secondary {
-    border: thin solid var(--image-border);
     display: block;
-    margin: 10px auto;
-    max-width: 100%;
-}
-@media only screen and (max-width: 530px) {
-    .job img.secondary {
-        width: 100%;
-    }
+    margin-bottom: 16px;
+    width: 100%;
 }
 .job .client {
     font-weight: 700;
