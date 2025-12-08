@@ -6,9 +6,8 @@
     --bg-heading-primary: #333;
     --bg-heading-secondary: #e6e6e6;
 
-    --job-border-color: #f1f1f1;
-    --job-border-hover-color: #e7e7e7;
-    --job-background-hover-color: #00000005;
+    --job-background-color: #f1f1f1;
+    --job-background-hover-color: #e0e0e0;
     --job-double-border-color: #7b7b7b;
 
     --image-border: #989898;
@@ -35,9 +34,9 @@
     --anchor-hover-shadow: #070707;
     --anchor-color-alt: #98dc54;
     --anchor-color-alt-hover: #bdbdbd;
-
-    --job-border-color: #1f1f1f;
-    --job-border-hover-color: #2f2f2f;
+    
+    --job-background-color: #0f0f0f;
+    --job-background-hover-color: #282828;
 }
 
 @keyframes rotate {
@@ -207,25 +206,28 @@ footer {
 .job {
     display: block;
     align-self: start;
-    border: solid 2px var(--job-border-color);
+    background: var(--job-background-color);
+    border-radius: 8px;
+    border-top-right-radius: 30px;;
     box-sizing: border-box;
     margin: 0 0 0.6em;
+    overflow: hidden;
     width: 100%;
     transition: all 0.3s ease;
 }
 .job:hover {
     background-color: var(--job-background-hover-color);
-    border: solid 2px var(--job-border-hover-color);
 }
 .job.double {
+    background: none;
     border: none;
+    border-radius: unset;
     grid-column: span 2;
 }
 .job.double:not(:first-of-type) {
     margin-top: 3rem;
 }
 .job.double:hover {
-    background-color: var(--job-background-hover-color);
     border: none
 }
 .job.double .client {
@@ -244,6 +246,7 @@ footer {
 .job img.thumb{
     width: 100%;
 }
+
 @media only screen and (min-width: 800px) {
     .double__inner {
         width: 50%;
@@ -271,12 +274,6 @@ footer {
     position: relative;
     width: 100%;
 }
-.job details summary .thumb {
-    border: thin solid var(--image-border);
-    display: block;
-    margin: 0.3rem auto 0;
-    max-width: calc(100% - 2px);
-}
 .job details summary p.client {
     margin-bottom: 6px;
 }
@@ -284,6 +281,7 @@ footer {
     font-family: "Courier New", Courier, monospace;
     background: var(--text-color);
     border: thin solid var(--image-border);
+    border-radius: 4px;
     color: var(--anchor-color);
     content: "+";
     font-size: 1.5rem;
