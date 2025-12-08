@@ -35,7 +35,7 @@
     --anchor-color-alt: #98dc54;
     --anchor-color-alt-hover: #bdbdbd;
     
-    --job-background-color: #0f0f0f;
+    --job-background-color: #1a1a1a;
     --job-background-hover-color: #282828;
 }
 
@@ -213,8 +213,9 @@ footer {
     margin: 0 0 0.6em;
     overflow: hidden;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease-out;
 }
+.job:has(details[open]),
 .job:hover {
     background-color: var(--job-background-hover-color);
 }
@@ -278,22 +279,28 @@ footer {
     margin-bottom: 6px;
 }
 .job details summary:after {
-    font-family: "Courier New", Courier, monospace;
     background: var(--text-color);
     border: thin solid var(--image-border);
     border-radius: 4px;
     color: var(--anchor-color);
     content: "+";
+    font-family: "Courier New", Courier, monospace;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 0;
+    opacity: .7;
     padding: 13px 5px 11px;
     position: absolute;
     right: 0;
     top: -2px;
+    transition: opacity 0.9s ease;
+}
+.job:hover details summary:after {
+    opacity: 1;
 }
 .job details[open] summary:after {
     content: "-";
+    opacity: 1;
 }
 .tech-stack::before,
 .job details section::before {
