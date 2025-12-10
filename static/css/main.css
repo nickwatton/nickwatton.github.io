@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #fafafa;
+    --bg-color: rgb(247, 241, 241);
     --text-color: #2a2a2a;
     --text-color-secondary: #444;
     --heading-colour:#fafafa;
@@ -23,7 +23,7 @@
 }
 
 .dark-mode {
-    --bg-color: #121212;
+    --bg-color: #16200d;
     --text-color: #fafafa;
     --text-color-secondary: #c7c7c7;
     --bg-heading-primary: #333;
@@ -75,7 +75,14 @@ body.dark-mode .moon_icon{
 }
 html {
     --font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    scroll-padding-top: 160px;
 }
+@media only screen and (min-width: 700px) {
+    html{
+        scroll-padding-top: 90px;
+    }
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1000px;
@@ -195,14 +202,6 @@ footer {
     padding: 0 6px;
 }
 
-@media only screen and (min-width: 700px) {
-    .jobListing {
-        display: grid;
-        gap: 1rem 2rem;
-        grid-template-columns: 1fr 1fr;
-        padding: 0;
-    }
-}
 .job {
     display: block;
     align-self: start;
@@ -246,13 +245,6 @@ footer {
 
 .job img.thumb{
     width: 100%;
-}
-
-@media only screen and (min-width: 800px) {
-    .double__inner {
-        width: 50%;
-        margin: 0 auto;
-    }
 }
 .job .subhead {
     font-weight: 700;
@@ -338,6 +330,27 @@ footer {
     color: var(--text-color-secondary);
     font-size: .9rem;
 }
+.job.dt_only {
+    display: none;
+}
+@media only screen and (min-width: 800px) {
+    .double__inner {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .jobListing {
+        display: grid;
+        gap: 1rem 2rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+    .job.dt_only {
+        display: block;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .msg_404 {
         text-align: center;
@@ -351,6 +364,7 @@ footer {
 nav{
 	background-color: var(--bg-heading-primary);
 	display: flex;
+	flex-wrap: wrap;
 	font-weight: 700;
 	margin-top: -11px;
 	gap: 10px;
@@ -358,7 +372,6 @@ nav{
 nav ul {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	list-style-type: none;
 	margin: 10px 0 10px 12px;
 	padding: 0;
@@ -379,7 +392,7 @@ nav ul li a:hover {
 }
 @media only screen and (min-width: 600px) {
 	nav ul {
-		flex-direction: row;
+        flex-direction: row;
 		margin: 0 0 0 12px;
 	}
 	nav ul li a {
