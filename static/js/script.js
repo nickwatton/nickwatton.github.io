@@ -4,7 +4,7 @@
         document.body.classList.toggle("dark-mode");
         localStorage.setItem(
             "modePreference",
-            document.body.classList.contains("dark-mode") ? "dark-mode" : ""
+            document.body.classList.contains("dark-mode") ? "" : "light-mode"
         );
     });
 })();
