@@ -111,6 +111,10 @@ header div {
     margin-left: 20px;
     vertical-align: top;
 }
+.avatar {
+    border-radius: 8px;
+    border-top-right-radius: 30px;
+}
 .sous_rature {
     text-decoration: line-through;
 }
@@ -146,6 +150,7 @@ section article p:last-of-type {
 section article.news {
     background: var(--bg-heading-secondary);
     text-align: center;
+    margin-top: -11px;
 }
 section article.news a {
     color: var(--anchor-color-alt);
@@ -262,7 +267,6 @@ footer {
     padding: 22px 26px;
 }
 .job details summary {
-    outline: none;
     position: relative;
     width: 100%;
 }
