@@ -1,0 +1,204 @@
+{
+  "content": {
+    "id": 6,
+    "proposalNumber": "PROP-0002",
+    "status": 1,
+    "createdAt": "2026-02-11T17:10:39.5871642",
+    "companyName": "Kingfisher Transport",
+    "companyStatus": "Active",
+    "industrySector": "Transportation & Logistics",
+    "timeInBusinessYears": 12,
+    "requestedAmount": 120000.0,
+    "proposedTermMonths": 48,
+    "interestRatio": 0.065,
+    "fees": 1500.0,
+    "feesRiskAdjustedRatio": 0.0125,
+    "purposeOfLoan": "Fleet Expansion",
+    "fundsUsageStatement": "Acquisition of 3 new electric delivery vans to service a recently awarded municipal contract.",
+    "loan": {},
+    "guarantor": {
+      "title": "Mr",
+      "firstName": "Robert",
+      "middleName": "James",
+      "lastName": "Miller",
+      "dateOfBirth": "1975-03-12",
+      "role": "Managing Director",
+      "ownershipRatio": 100.0,
+      "ninoLast4Digits": 8821,
+      "ficoScore": 520,
+      "annualIncome": 95000.0,
+      "housingStatus": "Homeowner - Owned Outright",
+      "monthlyHousingCosts": 66350.0,
+      "personalLiquidity": 100.0,
+      "totalPersonalDebt": 62000.0,
+      "totalPersonalDebtNote": "Credit cards paid in full monthly. No other personal debt.",
+      "derogatoryMarks": "None",
+      "addresses": [
+        {
+          "street": "52 Winchester Road",
+          "city": "Southampton",
+          "postcode": "SO16 2UA",
+          "movingInDate": "2010-05-20",
+          "movingOutDate": null
+        }
+      ],
+      "employments": [
+        {
+          "employerName": "Kingfisher Transport",
+          "jobTitle": "Managing Director",
+          "startDate": "2014-02-01T09:00:00",
+          "endDate": null
+        },
+        {
+          "employerName": "Global Freight Systems",
+          "jobTitle": "Operations Manager",
+          "startDate": "2008-01-15T09:00:00",
+          "endDate": "2014-01-31T17:00:00"
+        },
+        {
+          "employerName": "Precision Mechanics Ltd",
+          "jobTitle": "Logistics Coordinator",
+          "startDate": "2004-06-01T09:00:00",
+          "endDate": "2007-12-31T17:00:00"
+        }
+      ],
+      "directorships": [
+        {
+          "companyName": "Kingfisher Transport",
+          "isActive": true,
+          "investmentAmount": 100000.0,
+          "investmentType": "Director Loan / Equity",
+          "isFlagged": false,
+          "riskReason": null
+        },
+        {
+          "companyName": "Miller Holdings Who Love to Hold Things Forever Ltd",
+          "isActive": true,
+          "investmentAmount": 1000.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        }
+      ]
+    },
+    "financials": {
+      "grossProfitMarginRatio": 0.35,
+      "netProfitMarginRatio": 0.3,
+      "leverageRatio": 1.2,
+      "liquidityRatio": 1.8,
+      "workingCapitalCycleDays": 40
+    },
+    "affordability": {
+      "averageDailyBalance": 200.0,
+      "overdraftFrequencyLast12Months": 10,
+      "largestMonthlyDeposit": 65000.0,
+      "workingCapital": 5000.0,
+      "cashFlow": "Positive",
+      "averageMonthlyTurnover": 6000.0,
+      "existingDebtToServiceMonthly": 1200.0,
+      "operatingExpensesMonthly": 35000.0,
+      "debtServiceCoverageRatio": 2.5
+    },
+    "dealer": {
+      "name": "Default Dealer",
+      "code": "Dealer-01",
+      "phone": "07123456789",
+      "email": "default@dealer.com"
+    },
+    "triage": {
+      "flags": [
+        {
+          "severity": "Critical",
+          "title": "Implausible Monthly Housing Costs",
+          "targetField": "Guarantor.MonthlyHousingCosts",
+          "documentSource": "",
+          "currentValue": "66350.00",
+          "expectedValue": "A plausible value (e.g., <£10,000/month)",
+          "description": "The Guarantor's stated monthly housing costs are implausibly high and likely a data entry error.",
+          "recommendation": "Request clarification and supporting documentation for the Guarantor's housing costs before proceeding.",
+          "reasoning": "A monthly housing cost of £66,350 is biologically and financially impossible for an individual, especially one who owns their home outright. This violates hard sanity invariants and undermines the credibility of the affordability assessment."
+        }
+      ],
+      "reasoning": "The main concern is the Guarantor's reported monthly housing costs of £66,350, which is biologically and financially implausible and likely a data entry error. All other aspects, including credit score, business financials, and affordability, are within acceptable policy limits. However, this critical anomaly must be resolved to ensure accurate affordability assessment and data integrity.",
+      "summary": "The proposal is generally strong, with a long-established business, positive credit summary, and healthy financial ratios. However, there is a critical anomaly in the Guarantor's stated monthly housing costs, which are implausibly high and likely a data entry error.",
+      "recommendation": "Proceed with caution and request clarification and documentation regarding the Guarantor's monthly housing costs before further consideration.",
+      "riskLevel": "Critical"
+    },
+    "creditReport": {
+      "reportHeader": {
+        "reportId": "EXP-2026-LOG-001",
+        "bureauName": "Experian",
+        "reportGeneratedDate": "2026-01-16T10:00:00Z"
+      },
+      "applicantDetails": {
+        "name": {
+          "title": "Mr",
+          "firstName": "Robert",
+          "lastName": "Miller"
+        },
+        "dateOfBirth": "1975-03-12",
+        "isElectoralRollRegistered": true,
+        "currentAddress": {
+          "street": "52 Winchester Road",
+          "town": "Southampton",
+          "postcode": "SO16 2UA",
+          "residentSince": "2010-05-20",
+          "residentFrom": "2010-05-20",
+          "residentTo": "Present"
+        },
+        "previousAddresses": []
+      },
+      "creditScoreSummary": {
+        "score": 680,
+        "scoreBand": "Fair",
+        "positiveFactors": [
+          "No missed payments",
+          "Low credit utilisation",
+          "Long account history"
+        ],
+        "negativeFactors": []
+      },
+      "publicRecords": {
+        "ccjs": [],
+        "bankruptcies": [],
+        "ivas": []
+      },
+      "creditAccountSummary": {
+        "totalBalance": 2000.0,
+        "totalCreditLimit": 35000.0,
+        "totalMonthlyPayment": 200.0,
+        "creditUtilisationPercentage": 5.0
+      },
+      "creditAccounts": [
+        {
+          "accountType": "Credit Card",
+          "lenderName": "American Express",
+          "accountNumber": "****3002",
+          "status": "Active",
+          "openedDate": "2018-06-15",
+          "currentBalance": 2000.0,
+          "creditLimit": 20000.0,
+          "monthlyPayment": 200.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2026-01-01",
+          "defaultDate": null,
+          "defaultBalance": 0.0
+        }
+      ],
+      "searchHistory": [
+        {
+          "searchDate": "2025-06-10",
+          "lenderName": "Hiscox Business Insurance",
+          "searchType": "Insurance Quotation"
+        }
+      ],
+      "fraudWarnings": {
+        "markers": []
+      },
+      "financialAssociations": []
+    },
+    "files": []
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}

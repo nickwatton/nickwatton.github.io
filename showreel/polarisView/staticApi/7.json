@@ -1,0 +1,204 @@
+{
+  "content": {
+    "id": 7,
+    "proposalNumber": "PROP-0003",
+    "status": 1,
+    "createdAt": "2026-02-11T17:10:43.4570548",
+    "companyName": "North Coast Haulage",
+    "companyStatus": "Active",
+    "industrySector": "Transportation & Logistics",
+    "timeInBusinessYears": 12,
+    "requestedAmount": 120000.0,
+    "proposedTermMonths": 48,
+    "interestRatio": 0.065,
+    "fees": 1500.0,
+    "feesRiskAdjustedRatio": 0.0125,
+    "purposeOfLoan": "Fleet Expansion",
+    "fundsUsageStatement": "Acquisition of 3 new electric delivery vans to service a recently awarded municipal contract.",
+    "loan": {},
+    "guarantor": {
+      "title": "Mr",
+      "firstName": "Robert",
+      "middleName": "James",
+      "lastName": "Miller",
+      "dateOfBirth": "1975-03-12",
+      "role": "Managing Director",
+      "ownershipRatio": 100.0,
+      "ninoLast4Digits": 8821,
+      "ficoScore": 620,
+      "annualIncome": 95000.0,
+      "housingStatus": "Homeowner - Owned Outright",
+      "monthlyHousingCosts": 6350.0,
+      "personalLiquidity": 12001.0,
+      "totalPersonalDebt": 42000.0,
+      "totalPersonalDebtNote": "Credit cards paid in full monthly. No other personal debt.",
+      "derogatoryMarks": "None",
+      "addresses": [
+        {
+          "street": "52 Winchester Road",
+          "city": "Southampton",
+          "postcode": "SO16 2UA",
+          "movingInDate": "2010-05-20",
+          "movingOutDate": null
+        }
+      ],
+      "employments": [
+        {
+          "employerName": "North Coast Haulage",
+          "jobTitle": "Managing Director",
+          "startDate": "2014-02-01T09:00:00",
+          "endDate": null
+        },
+        {
+          "employerName": "Global Freight Systems",
+          "jobTitle": "Operations Manager",
+          "startDate": "2008-01-15T09:00:00",
+          "endDate": "2014-01-31T17:00:00"
+        },
+        {
+          "employerName": "Precision Mechanics Ltd",
+          "jobTitle": "Logistics Coordinator",
+          "startDate": "2004-06-01T09:00:00",
+          "endDate": "2007-12-31T17:00:00"
+        }
+      ],
+      "directorships": [
+        {
+          "companyName": "North Coast Haulage",
+          "isActive": true,
+          "investmentAmount": 100000.0,
+          "investmentType": "Director Loan / Equity",
+          "isFlagged": false,
+          "riskReason": null
+        },
+        {
+          "companyName": "Miller Holdings Who Love to Hold Things Forever Ltd",
+          "isActive": true,
+          "investmentAmount": 1000.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        }
+      ]
+    },
+    "financials": {
+      "grossProfitMarginRatio": 0.35,
+      "netProfitMarginRatio": 0.3,
+      "leverageRatio": 1.2,
+      "liquidityRatio": 1.8,
+      "workingCapitalCycleDays": 40
+    },
+    "affordability": {
+      "averageDailyBalance": 200.0,
+      "overdraftFrequencyLast12Months": 5,
+      "largestMonthlyDeposit": 65000.0,
+      "workingCapital": 26000.0,
+      "cashFlow": "Positive",
+      "averageMonthlyTurnover": 6000.0,
+      "existingDebtToServiceMonthly": 1200.0,
+      "operatingExpensesMonthly": 35000.0,
+      "debtServiceCoverageRatio": 2.5
+    },
+    "dealer": {
+      "name": "Default Dealer",
+      "code": "Dealer-01",
+      "phone": "07123456789",
+      "email": "default@dealer.com"
+    },
+    "triage": {
+      "flags": [
+        {
+          "severity": "Critical",
+          "title": "Affordability Mismatch: Turnover vs. Expenses",
+          "targetField": "Affordability.AverageMonthlyTurnover",
+          "documentSource": "",
+          "currentValue": "6000.00",
+          "expectedValue": "At least equal to or greater than OperatingExpensesMonthly (35000.00)",
+          "description": "Average monthly turnover is significantly lower than stated monthly operating expenses, indicating a potential cash flow shortfall.",
+          "recommendation": "Request recent bank statements and management accounts to verify actual turnover and expenses before proceeding.",
+          "reasoning": "Policy requires that businesses demonstrate sufficient cash flow to cover operating expenses and debt service. The stated figures suggest the business cannot meet its obligations, which is a critical risk. This must be resolved to ensure the loan is affordable and responsible."
+        }
+      ],
+      "reasoning": "While the business and guarantor demonstrate stability, positive credit history, and no policy violations on credit or structure, the affordability section reveals a mismatch: average monthly turnover (£6,000) is far below monthly operating expenses (£35,000), which raises a critical concern about the business's ability to service additional debt. No bank statement verification has been performed to clarify this discrepancy. All other policy checks were passed, but this affordability issue must be resolved before proceeding.",
+      "summary": "The proposal for North Coast Haulage shows a well-established business with strong profitability and a clean credit profile, but there are significant concerns regarding affordability, specifically the low average monthly turnover relative to high operating expenses and the requested loan size.",
+      "recommendation": "Proceed with caution and request up-to-date bank statements to verify affordability and cash flow before making a final decision.",
+      "riskLevel": "Critical"
+    },
+    "creditReport": {
+      "reportHeader": {
+        "reportId": "EXP-2026-LOG-001",
+        "bureauName": "Experian",
+        "reportGeneratedDate": "2026-01-16T10:00:00Z"
+      },
+      "applicantDetails": {
+        "name": {
+          "title": "Mr",
+          "firstName": "Robert",
+          "lastName": "Miller"
+        },
+        "dateOfBirth": "1975-03-12",
+        "isElectoralRollRegistered": true,
+        "currentAddress": {
+          "street": "52 Winchester Road",
+          "town": "Southampton",
+          "postcode": "SO16 2UA",
+          "residentSince": "2010-05-20",
+          "residentFrom": "2010-05-20",
+          "residentTo": "Present"
+        },
+        "previousAddresses": []
+      },
+      "creditScoreSummary": {
+        "score": 680,
+        "scoreBand": "Good",
+        "positiveFactors": [
+          "No missed payments",
+          "Low credit utilisation",
+          "Long account history"
+        ],
+        "negativeFactors": []
+      },
+      "publicRecords": {
+        "ccjs": [],
+        "bankruptcies": [],
+        "ivas": []
+      },
+      "creditAccountSummary": {
+        "totalBalance": 2000.0,
+        "totalCreditLimit": 35000.0,
+        "totalMonthlyPayment": 1200.0,
+        "creditUtilisationPercentage": 75.0
+      },
+      "creditAccounts": [
+        {
+          "accountType": "Credit Card",
+          "lenderName": "American Express",
+          "accountNumber": "****3002",
+          "status": "Active",
+          "openedDate": "2018-06-15",
+          "currentBalance": 2000.0,
+          "creditLimit": 20000.0,
+          "monthlyPayment": 200.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2026-01-01",
+          "defaultDate": null,
+          "defaultBalance": 0.0
+        }
+      ],
+      "searchHistory": [
+        {
+          "searchDate": "2025-06-10",
+          "lenderName": "Hiscox Business Insurance",
+          "searchType": "Insurance Quotation"
+        }
+      ],
+      "fraudWarnings": {
+        "markers": []
+      },
+      "financialAssociations": []
+    },
+    "files": []
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}

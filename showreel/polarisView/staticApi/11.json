@@ -1,0 +1,253 @@
+{
+  "content": {
+    "id": 11,
+    "proposalNumber": "PROP-0007",
+    "status": 1,
+    "createdAt": "2026-02-11T17:12:25.4894117",
+    "companyName": "Apex Structures & Design Ltd",
+    "companyStatus": "Active",
+    "industrySector": "Construction & Civil Engineering",
+    "timeInBusinessYears": 4,
+    "requestedAmount": 85000.0,
+    "proposedTermMonths": 36,
+    "interestRatio": 0.089,
+    "fees": 1950.0,
+    "feesRiskAdjustedRatio": 0.022,
+    "purposeOfLoan": "Asset Acquisition",
+    "fundsUsageStatement": "Purchase of a Kubota KX080-4 excavator to reduce monthly plant hire costs on current residential development projects.",
+    "loan": {},
+    "guarantor": {
+      "title": "Mr",
+      "firstName": "David",
+      "middleName": "John",
+      "lastName": "Sterling",
+      "dateOfBirth": "1985-11-23",
+      "role": "Director",
+      "ownershipRatio": 100.0,
+      "ninoLast4Digits": 2291,
+      "ficoScore": 605,
+      "annualIncome": 72000.0,
+      "housingStatus": "Homeowner - Mortgaged",
+      "monthlyHousingCosts": 1850.0,
+      "personalLiquidity": 2500.0,
+      "totalPersonalDebt": 28500.0,
+      "totalPersonalDebtNote": "High utilisation on primary credit card due to recent home renovations.",
+      "derogatoryMarks": "None",
+      "addresses": [
+        {
+          "street": "14 Brick Lane",
+          "city": "Manchester",
+          "postcode": "M4 3TR",
+          "movingInDate": "2019-02-01",
+          "movingOutDate": null
+        }
+      ],
+      "employments": [
+        {
+          "employerName": "Apex Structures & Design Ltd",
+          "jobTitle": "Director",
+          "startDate": "2022-03-01T09:00:00",
+          "endDate": null
+        },
+        {
+          "employerName": "Sterling Builders",
+          "jobTitle": "Sole Trader",
+          "startDate": "2015-06-01T09:00:00",
+          "endDate": "2022-02-28T17:00:00"
+        }
+      ],
+      "directorships": [
+        {
+          "companyName": "Apex Structures & Design Ltd",
+          "isActive": true,
+          "investmentAmount": 15000.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        }
+      ]
+    },
+    "financials": {
+      "grossProfitMarginRatio": 0.22,
+      "netProfitMarginRatio": 0.05,
+      "leverageRatio": 2.5,
+      "liquidityRatio": 0.92,
+      "workingCapitalCycleDays": 55
+    },
+    "affordability": {
+      "averageDailyBalance": 1200.0,
+      "overdraftFrequencyLast12Months": 4,
+      "largestMonthlyDeposit": 52000.0,
+      "workingCapital": -4500.0,
+      "cashFlow": "Lumpy - Project based",
+      "averageMonthlyTurnover": 45000.0,
+      "existingDebtToServiceMonthly": 850.0,
+      "operatingExpensesMonthly": 42000.0,
+      "debtServiceCoverageRatio": 1.15
+    },
+    "dealer": {
+      "name": "Default Dealer",
+      "code": "Dealer-01",
+      "phone": "07123456789",
+      "email": "default@dealer.com"
+    },
+    "triage": {
+      "flags": [
+        {
+          "severity": "Medium",
+          "title": "High Credit Utilisation",
+          "targetField": "CreditReport.CreditAccountSummary.CreditUtilisationPercentage",
+          "documentSource": "",
+          "currentValue": "89.0",
+          "expectedValue": "<80%",
+          "description": "The guarantor's revolving credit utilisation is high, indicating increased risk of financial stress.",
+          "recommendation": "Request a plan to reduce credit utilisation and monitor for further increases.",
+          "reasoning": "Policy guidance and credit risk best practices flag utilisation above 80% as a significant risk factor for new lending."
+        },
+        {
+          "severity": "Medium",
+          "title": "Low Liquidity Ratio",
+          "targetField": "Financials.LiquidityRatio",
+          "documentSource": "",
+          "currentValue": "0.92",
+          "expectedValue": "≥1.0",
+          "description": "The company's liquidity ratio is below the policy minimum, indicating potential short-term cash flow constraints.",
+          "recommendation": "Request evidence of short-term liquidity support or mitigating factors.",
+          "reasoning": "Policy requires a minimum liquidity ratio of 1.0 to ensure the business can meet short-term obligations; 0.92 is below this threshold."
+        },
+        {
+          "severity": "Medium",
+          "title": "Negative Working Capital",
+          "targetField": "Affordability.WorkingCapital",
+          "documentSource": "",
+          "currentValue": "-4500.00",
+          "expectedValue": "Positive value",
+          "description": "The business has negative working capital, which may impact its ability to meet obligations.",
+          "recommendation": "Request explanation and evidence of how working capital shortfall will be managed.",
+          "reasoning": "Negative working capital is a risk for ongoing operations and is flagged in policy as a concern for loan servicing."
+        },
+        {
+          "severity": "Medium",
+          "title": "DSCR Marginally Above Minimum",
+          "targetField": "Affordability.DebtServiceCoverageRatio",
+          "documentSource": "",
+          "currentValue": "1.15",
+          "expectedValue": "≥1.15 (policy minimum)",
+          "description": "The debt service coverage ratio is only marginally above the policy minimum, leaving little margin for error.",
+          "recommendation": "Proceed with caution and verify DSCR with bank statements before approval.",
+          "reasoning": "Policy requires a DSCR of at least 1.15; values at or near the threshold indicate higher risk if cash flow fluctuates."
+        },
+        {
+          "severity": "Low",
+          "title": "Short Company History",
+          "targetField": "TimeInBusinessYears",
+          "documentSource": "",
+          "currentValue": "4",
+          "expectedValue": "≥3 (policy minimum)",
+          "description": "The company has a relatively short trading history, which may increase risk.",
+          "recommendation": "Consider as a minor risk factor; monitor for stability and growth.",
+          "reasoning": "While above the minimum, four years is still considered a short history in construction, as flagged in credit summary negative factors."
+        }
+      ],
+      "reasoning": "The analysis identified multiple medium and high-severity issues: high credit utilisation (89%), low liquidity ratio (0.92), negative working capital, and a DSCR of 1.15. While none are immediate deal-breakers, their combination increases risk. Policy checks confirm the DSCR and liquidity are at or below minimum thresholds, and the high credit utilisation is a notable risk. Bank statement verification is needed to confirm affordability and cash flow stability before proceeding.",
+      "summary": "The proposal presents a business with moderate profitability, high leverage, and a director-guarantor with fair credit but high credit utilisation. Several policy and risk issues are present, including high revolving credit utilisation, a low liquidity ratio, negative working capital, and a DSCR only marginally above minimum policy thresholds.",
+      "recommendation": "Proceed with caution and request bank statements for affordability verification; consider requesting a plan to reduce credit utilisation and improve liquidity.",
+      "riskLevel": "Medium"
+    },
+    "creditReport": {
+      "reportHeader": {
+        "reportId": "EXP-2026-CON-882",
+        "bureauName": "Experian",
+        "reportGeneratedDate": "2026-02-01T09:15:00Z"
+      },
+      "applicantDetails": {
+        "name": {
+          "title": "Mr",
+          "firstName": "David",
+          "lastName": "Sterling"
+        },
+        "dateOfBirth": "1985-11-23",
+        "isElectoralRollRegistered": true,
+        "currentAddress": {
+          "street": "14 Brick Lane",
+          "town": "Manchester",
+          "postcode": "M4 3TR",
+          "residentSince": "2019-02-01",
+          "residentFrom": "2019-02-01",
+          "residentTo": "Present"
+        },
+        "previousAddresses": []
+      },
+      "creditScoreSummary": {
+        "score": 605,
+        "scoreBand": "Fair",
+        "positiveFactors": ["Mortgage paid on time", "Long residence history"],
+        "negativeFactors": [
+          "High credit utilisation",
+          "Short company history",
+          "Recent hard searches"
+        ]
+      },
+      "publicRecords": {
+        "ccjs": [],
+        "bankruptcies": [],
+        "ivas": []
+      },
+      "creditAccountSummary": {
+        "totalBalance": 28500.0,
+        "totalCreditLimit": 32000.0,
+        "totalMonthlyPayment": 850.0,
+        "creditUtilisationPercentage": 89.0
+      },
+      "creditAccounts": [
+        {
+          "accountType": "Credit Card",
+          "lenderName": "Barclaycard",
+          "accountNumber": "****5591",
+          "status": "Active",
+          "openedDate": "2020-05-10",
+          "currentBalance": 13500.0,
+          "creditLimit": 15000.0,
+          "monthlyPayment": 450.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2026-01-28",
+          "defaultDate": null,
+          "defaultBalance": 0.0
+        },
+        {
+          "accountType": "Personal Loan",
+          "lenderName": "Tesco Bank",
+          "accountNumber": "****2210",
+          "status": "Active",
+          "openedDate": "2024-11-15",
+          "currentBalance": 15000.0,
+          "creditLimit": 15000.0,
+          "monthlyPayment": 400.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2026-01-28",
+          "defaultDate": null,
+          "defaultBalance": 0.0
+        }
+      ],
+      "searchHistory": [
+        {
+          "searchDate": "2025-12-10",
+          "lenderName": "Funding Circle",
+          "searchType": "Loan Application"
+        },
+        {
+          "searchDate": "2025-11-05",
+          "lenderName": "Tesco Bank",
+          "searchType": "Loan Application"
+        }
+      ],
+      "fraudWarnings": {
+        "markers": []
+      },
+      "financialAssociations": []
+    },
+    "files": []
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}

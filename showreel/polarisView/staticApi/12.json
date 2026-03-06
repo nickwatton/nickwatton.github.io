@@ -1,0 +1,271 @@
+{
+  "content": {
+    "id": 12,
+    "proposalNumber": "PROP-0008",
+    "status": 1,
+    "createdAt": "2026-02-11T17:12:32.4375571",
+    "companyName": "Bean & Grind Roastery Ltd",
+    "companyStatus": "Active",
+    "industrySector": "Food & Beverage Manufacturing",
+    "timeInBusinessYears": 5,
+    "requestedAmount": 55000.0,
+    "proposedTermMonths": 36,
+    "interestRatio": 0.095,
+    "fees": 1200.0,
+    "feesRiskAdjustedRatio": 0.021,
+    "purposeOfLoan": "Equipment Upgrade",
+    "fundsUsageStatement": "Purchase of a new Giesen W15 Coffee Roaster to triple production capacity for new wholesale contracts secured with regional supermarket chain.",
+    "loan": {},
+    "guarantor": {
+      "title": "Ms",
+      "firstName": "Elena",
+      "middleName": "Maria",
+      "lastName": "Rossi",
+      "dateOfBirth": "1988-06-14",
+      "role": "Founder & Director",
+      "ownershipRatio": 80.0,
+      "ninoLast4Digits": 5543,
+      "ficoScore": 710,
+      "annualIncome": 55000.0,
+      "housingStatus": "Homeowner - Mortgaged",
+      "monthlyHousingCosts": 2100.0,
+      "personalLiquidity": 1500.0,
+      "totalPersonalDebt": 215000.0,
+      "totalPersonalDebtNote": "Includes substantial buy-to-let mortgage portfolio. Personal liquidity is low due to recent deposit on new investment property.",
+      "derogatoryMarks": "None",
+      "addresses": [
+        {
+          "street": "Flat 4, The Old Warehouse, Dock Street",
+          "city": "Bristol",
+          "postcode": "BS1 4TY",
+          "movingInDate": "2025-12-01",
+          "movingOutDate": null
+        }
+      ],
+      "employments": [
+        {
+          "employerName": "Bean & Grind Roastery Ltd",
+          "jobTitle": "Director",
+          "startDate": "2021-01-15T09:00:00",
+          "endDate": null
+        }
+      ],
+      "directorships": [
+        {
+          "companyName": "Bean & Grind Roastery Ltd",
+          "isActive": true,
+          "investmentAmount": 40000.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        },
+        {
+          "companyName": "Rossi Property Management Ltd",
+          "isActive": true,
+          "investmentAmount": 100.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        }
+      ]
+    },
+    "financials": {
+      "grossProfitMarginRatio": 0.65,
+      "netProfitMarginRatio": 0.03,
+      "leverageRatio": 1.8,
+      "liquidityRatio": 0.85,
+      "workingCapitalCycleDays": 60
+    },
+    "affordability": {
+      "averageDailyBalance": 450.0,
+      "overdraftFrequencyLast12Months": 8,
+      "largestMonthlyDeposit": 35000.0,
+      "workingCapital": -2000.0,
+      "cashFlow": "Positive but Tight",
+      "averageMonthlyTurnover": 85000.0,
+      "existingDebtToServiceMonthly": 2100.0,
+      "operatingExpensesMonthly": 81000.0,
+      "debtServiceCoverageRatio": 1.25
+    },
+    "dealer": {
+      "name": "Default Dealer",
+      "code": "Dealer-01",
+      "phone": "07123456789",
+      "email": "default@dealer.com"
+    },
+    "triage": {
+      "flags": [
+        {
+          "severity": "Critical",
+          "title": "Fraud Marker Present",
+          "targetField": "CreditReport.FraudWarnings.Markers",
+          "documentSource": "",
+          "currentValue": "true",
+          "expectedValue": "false",
+          "description": "A fraud marker is present on the credit file, which is an immediate deal-breaker per policy.",
+          "recommendation": "Decline the application due to the presence of a fraud marker.",
+          "reasoning": "Company policy prohibits lending where a fraud marker is present, as confirmed by the 'Fraud Warnings' section in the credit summary."
+        },
+        {
+          "severity": "Medium",
+          "title": "Address Discrepancy Detected",
+          "targetField": "CreditReport.CreditScoreSummary.NegativeFactors",
+          "documentSource": "",
+          "currentValue": "Address discrepancy detected",
+          "expectedValue": "No address discrepancies",
+          "description": "An address discrepancy was detected in the credit report, raising concerns about identity verification.",
+          "recommendation": "Request additional address verification and investigate the discrepancy before proceeding.",
+          "reasoning": "Policy requires all address information to be consistent and verifiable to prevent fraud and ensure accurate risk assessment."
+        },
+        {
+          "severity": "Medium",
+          "title": "High Revolving Credit Utilisation",
+          "targetField": "CreditReport.CreditAccountSummary.CreditUtilisationPercentage",
+          "documentSource": "",
+          "currentValue": "72.0",
+          "expectedValue": "< 50%",
+          "description": "Revolving credit utilisation is high, indicating potential overextension of credit.",
+          "recommendation": "Assess the applicant's ability to manage additional debt and consider requesting a reduction in utilisation before approval.",
+          "reasoning": "Policy flags high credit utilisation (>70%) as a significant risk factor for new lending."
+        },
+        {
+          "severity": "Medium",
+          "title": "Low Liquidity Ratio",
+          "targetField": "Financials.LiquidityRatio",
+          "documentSource": "",
+          "currentValue": "0.85",
+          "expectedValue": "≥ 1.0",
+          "description": "The business's liquidity ratio is below policy minimum, indicating potential short-term cash flow issues.",
+          "recommendation": "Request evidence of additional liquid assets or improved liquidity before proceeding.",
+          "reasoning": "Policy requires a minimum liquidity ratio of 1.0 to ensure the business can meet short-term obligations."
+        },
+        {
+          "severity": "Medium",
+          "title": "Negative Working Capital",
+          "targetField": "Affordability.WorkingCapital",
+          "documentSource": "",
+          "currentValue": "-2000.00",
+          "expectedValue": "≥ 0",
+          "description": "The business has negative working capital, suggesting it may struggle to cover short-term liabilities.",
+          "recommendation": "Obtain a plan for improving working capital or additional financial support before considering approval.",
+          "reasoning": "Policy requires positive working capital to demonstrate financial stability and ability to service new debt."
+        },
+        {
+          "severity": "Medium",
+          "title": "Short Address History for Guarantor",
+          "targetField": "Guarantor.Addresses",
+          "documentSource": "",
+          "currentValue": "2",
+          "expectedValue": "≥ 12",
+          "description": "The guarantor has only 2 months of address history at their current residence, which is below policy requirements.",
+          "recommendation": "Request full address history and supporting documentation to verify stability and identity.",
+          "reasoning": "Policy requires at least 12 months of continuous address history for identity verification and fraud prevention."
+        }
+      ],
+      "reasoning": "The presence of a fraud marker is a critical policy violation and immediate deal-breaker. Additional issues such as the address discrepancy, high credit utilisation, low liquidity, negative working capital, and the guarantor's short address history further increase risk. Policy checks confirm these are not isolated minor issues but a pattern of elevated risk, justifying a decline recommendation.",
+      "summary": "The proposal presents a business with solid gross profit margins and a guarantor with a good credit score, but there are significant concerns including a fraud marker on the credit file, an address discrepancy, high revolving credit utilisation, low liquidity, negative working capital, and a short address history for the guarantor.",
+      "recommendation": "Decline due to the presence of a fraud marker and multiple compounding risk factors.",
+      "riskLevel": "Critical"
+    },
+    "creditReport": {
+      "reportHeader": {
+        "reportId": "EXP-2026-HOS-101",
+        "bureauName": "Experian",
+        "reportGeneratedDate": "2026-02-05T14:30:00Z"
+      },
+      "applicantDetails": {
+        "name": {
+          "title": "Ms",
+          "firstName": "Elena",
+          "lastName": "Rossi"
+        },
+        "dateOfBirth": "1988-06-14",
+        "isElectoralRollRegistered": true,
+        "currentAddress": {
+          "street": "12 Maple Avenue",
+          "town": "Bristol",
+          "postcode": "BS7 8RR",
+          "residentSince": "2018-03-01",
+          "residentFrom": "2018-03-01",
+          "residentTo": "Present"
+        },
+        "previousAddresses": []
+      },
+      "creditScoreSummary": {
+        "score": 710,
+        "scoreBand": "Good",
+        "positiveFactors": ["No missed payments", "Multiple settled accounts"],
+        "negativeFactors": [
+          "Address discrepancy detected",
+          "High revolving credit utilisation"
+        ]
+      },
+      "publicRecords": {
+        "ccjs": [],
+        "bankruptcies": [],
+        "ivas": []
+      },
+      "creditAccountSummary": {
+        "totalBalance": 18000.0,
+        "totalCreditLimit": 25000.0,
+        "totalMonthlyPayment": 650.0,
+        "creditUtilisationPercentage": 72.0
+      },
+      "creditAccounts": [
+        {
+          "accountType": "Credit Card",
+          "lenderName": "Virgin Money",
+          "accountNumber": "****8821",
+          "status": "Active",
+          "openedDate": "2022-06-10",
+          "currentBalance": 12000.0,
+          "creditLimit": 15000.0,
+          "monthlyPayment": 400.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2026-02-01",
+          "defaultDate": null,
+          "defaultBalance": 0.0
+        },
+        {
+          "accountType": "Hire Purchase",
+          "lenderName": "Close Brothers",
+          "accountNumber": "****4402",
+          "status": "Active",
+          "openedDate": "2023-01-15",
+          "currentBalance": 6000.0,
+          "creditLimit": null,
+          "monthlyPayment": 250.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2026-02-01",
+          "defaultDate": null,
+          "defaultBalance": 0.0
+        }
+      ],
+      "searchHistory": [
+        {
+          "searchDate": "2026-01-15",
+          "lenderName": "Capital on Tap",
+          "searchType": "Credit Card Application"
+        },
+        {
+          "searchDate": "2025-11-30",
+          "lenderName": "Vodafone",
+          "searchType": "Telecommunications"
+        }
+      ],
+      "fraudWarnings": {
+        "markers": [
+          {
+            "markerType": "Address Mismatch",
+            "description": "Applicant current address (BS1 4TY) does not match Bureau current address (BS7 8RR).",
+            "recordedDate": "2026-02-01T14:30:00Z"
+          }
+        ]
+      },
+      "financialAssociations": []
+    },
+    "files": []
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}

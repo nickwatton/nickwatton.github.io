@@ -1,0 +1,126 @@
+{
+  "content": {
+    "proposals": [
+      {
+        "id": 5,
+        "proposalNumber": "PROP-0001",
+        "status": 1,
+        "createdAt": "2026-02-11T17:10:26.3978905",
+        "companyName": "FastTrack Logistics Solutions Ltd",
+        "guarantorName": "Robert Miller",
+        "requestedAmount": 120000.0,
+        "proposedTermMonths": 48,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 4,
+        "riskLevel": "Critical"
+      },
+      {
+        "id": 6,
+        "proposalNumber": "PROP-0002",
+        "status": 1,
+        "createdAt": "2026-02-11T17:10:39.5871642",
+        "companyName": "Kingfisher Transport",
+        "guarantorName": "Robert Miller",
+        "requestedAmount": 120000.0,
+        "proposedTermMonths": 48,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 1,
+        "riskLevel": "Critical"
+      },
+      {
+        "id": 7,
+        "proposalNumber": "PROP-0003",
+        "status": 1,
+        "createdAt": "2026-02-11T17:10:43.4570548",
+        "companyName": "North Coast Haulage",
+        "guarantorName": "Robert Miller",
+        "requestedAmount": 120000.0,
+        "proposedTermMonths": 48,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 1,
+        "riskLevel": "Critical"
+      },
+      {
+        "id": 8,
+        "proposalNumber": "PROP-0004",
+        "status": 1,
+        "createdAt": "2026-02-11T17:10:47.4072041",
+        "companyName": "Anchor Freight Services",
+        "guarantorName": "Robert Miller",
+        "requestedAmount": 75000.0,
+        "proposedTermMonths": 48,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 2,
+        "riskLevel": "Medium"
+      },
+      {
+        "id": 9,
+        "proposalNumber": "PROP-0005",
+        "status": 1,
+        "createdAt": "2026-02-11T17:10:52.5186639",
+        "companyName": "Highland Freight Ltd",
+        "guarantorName": "Robert Miller",
+        "requestedAmount": 6000.0,
+        "proposedTermMonths": 24,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 0,
+        "riskLevel": "Low"
+      },
+      {
+        "id": 10,
+        "proposalNumber": "PROP-0006",
+        "status": 1,
+        "createdAt": "2026-02-11T17:10:54.8961498",
+        "companyName": "Brightside Digital Solutions Ltd",
+        "guarantorName": "Sarah Mitchell",
+        "requestedAmount": 45000.0,
+        "proposedTermMonths": 36,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 5,
+        "riskLevel": "Critical"
+      },
+      {
+        "id": 11,
+        "proposalNumber": "PROP-0007",
+        "status": 1,
+        "createdAt": "2026-02-11T17:12:25.4894117",
+        "companyName": "Apex Structures & Design Ltd",
+        "guarantorName": "David Sterling",
+        "requestedAmount": 85000.0,
+        "proposedTermMonths": 36,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 5,
+        "riskLevel": "Medium"
+      },
+      {
+        "id": 12,
+        "proposalNumber": "PROP-0008",
+        "status": 1,
+        "createdAt": "2026-02-11T17:12:32.4375571",
+        "companyName": "Bean & Grind Roastery Ltd",
+        "guarantorName": "Elena Rossi",
+        "requestedAmount": 55000.0,
+        "proposedTermMonths": 36,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 6,
+        "riskLevel": "Critical"
+      },
+      {
+        "id": 13,
+        "proposalNumber": "PROP-0009",
+        "status": 1,
+        "createdAt": "2026-02-11T17:12:40.6312374",
+        "companyName": "SmartX Digital Ltd",
+        "guarantorName": "Sarah Mitchell",
+        "requestedAmount": 45000.0,
+        "proposedTermMonths": 36,
+        "dealerName": "Default Dealer",
+        "noOfTriageFlags": 3,
+        "riskLevel": "High"
+      }
+    ],
+    "totalCount": 9
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}

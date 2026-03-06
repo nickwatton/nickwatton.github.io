@@ -1,0 +1,192 @@
+{
+  "content": {
+    "id": 9,
+    "proposalNumber": "PROP-0005",
+    "status": 1,
+    "createdAt": "2026-02-11T17:10:52.5186639",
+    "companyName": "Highland Freight Ltd",
+    "companyStatus": "Active",
+    "industrySector": "Transportation & Logistics",
+    "timeInBusinessYears": 12,
+    "requestedAmount": 6000.0,
+    "proposedTermMonths": 24,
+    "interestRatio": 0.065,
+    "fees": 60.0,
+    "feesRiskAdjustedRatio": 0.01,
+    "purposeOfLoan": "Fleet Expansion",
+    "fundsUsageStatement": "Acquisition of 3 new electric delivery vans to service a recently awarded municipal contract.",
+    "loan": {},
+    "guarantor": {
+      "title": "Mr",
+      "firstName": "Robert",
+      "middleName": "James",
+      "lastName": "Miller",
+      "dateOfBirth": "1975-03-12",
+      "role": "Managing Director",
+      "ownershipRatio": 100.0,
+      "ninoLast4Digits": 8821,
+      "ficoScore": 700,
+      "annualIncome": 95000.0,
+      "housingStatus": "Homeowner - Owned Outright",
+      "monthlyHousingCosts": 2500.0,
+      "personalLiquidity": 12001.0,
+      "totalPersonalDebt": 42000.0,
+      "totalPersonalDebtNote": "Credit cards paid in full monthly. No other personal debt.",
+      "derogatoryMarks": "None",
+      "addresses": [
+        {
+          "street": "52 Winchester Road",
+          "city": "Southampton",
+          "postcode": "SO16 2UA",
+          "movingInDate": "2010-05-20",
+          "movingOutDate": null
+        }
+      ],
+      "employments": [
+        {
+          "employerName": "Highland Freight Ltd",
+          "jobTitle": "Managing Director",
+          "startDate": "2014-02-01T09:00:00",
+          "endDate": null
+        },
+        {
+          "employerName": "Global Freight Systems",
+          "jobTitle": "Operations Manager",
+          "startDate": "2008-01-15T09:00:00",
+          "endDate": "2014-01-31T17:00:00"
+        },
+        {
+          "employerName": "Precision Mechanics Ltd",
+          "jobTitle": "Logistics Coordinator",
+          "startDate": "2004-06-01T09:00:00",
+          "endDate": "2007-12-31T17:00:00"
+        }
+      ],
+      "directorships": [
+        {
+          "companyName": "Highland Freight Ltd",
+          "isActive": true,
+          "investmentAmount": 100000.0,
+          "investmentType": "Director Loan / Equity",
+          "isFlagged": false,
+          "riskReason": null
+        },
+        {
+          "companyName": "Miller Holdings Who Love to Hold Things Forever Ltd",
+          "isActive": true,
+          "investmentAmount": 1000.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        }
+      ]
+    },
+    "financials": {
+      "grossProfitMarginRatio": 0.35,
+      "netProfitMarginRatio": 0.3,
+      "leverageRatio": 1.2,
+      "liquidityRatio": 1.8,
+      "workingCapitalCycleDays": 40
+    },
+    "affordability": {
+      "averageDailyBalance": 2000.0,
+      "overdraftFrequencyLast12Months": 5,
+      "largestMonthlyDeposit": 65000.0,
+      "workingCapital": 26000.0,
+      "cashFlow": "Positive",
+      "averageMonthlyTurnover": 6000.0,
+      "existingDebtToServiceMonthly": 1200.0,
+      "operatingExpensesMonthly": 5000.0,
+      "debtServiceCoverageRatio": 2.5
+    },
+    "dealer": {
+      "name": "Default Dealer",
+      "code": "Dealer-01",
+      "phone": "07123456789",
+      "email": "default@dealer.com"
+    },
+    "triage": {
+      "flags": [],
+      "reasoning": "A thorough review found no data inconsistencies, credit risks, or policy breaches. The guarantor's credit score and financials meet policy requirements, the loan structure is appropriate, and affordability is well supported. No bank statement verification was performed, but all available data aligns with policy and logical expectations.",
+      "summary": "The proposal for Highland Freight Ltd is generally strong, with a solid credit profile, good profitability, and a reasonable loan request relative to business size and purpose. No material discrepancies or policy violations were identified.",
+      "recommendation": "Proceed as is.",
+      "riskLevel": "Low"
+    },
+    "creditReport": {
+      "reportHeader": {
+        "reportId": "EXP-2026-LOG-001",
+        "bureauName": "Experian",
+        "reportGeneratedDate": "2026-01-16T10:00:00Z"
+      },
+      "applicantDetails": {
+        "name": {
+          "title": "Mr",
+          "firstName": "Robert",
+          "lastName": "Miller"
+        },
+        "dateOfBirth": "1975-03-12",
+        "isElectoralRollRegistered": true,
+        "currentAddress": {
+          "street": "52 Winchester Road",
+          "town": "Southampton",
+          "postcode": "SO16 2UA",
+          "residentSince": "2010-05-20",
+          "residentFrom": "2010-05-20",
+          "residentTo": "Present"
+        },
+        "previousAddresses": []
+      },
+      "creditScoreSummary": {
+        "score": 680,
+        "scoreBand": "Good",
+        "positiveFactors": [
+          "No missed payments",
+          "Low credit utilisation",
+          "Long account history"
+        ],
+        "negativeFactors": []
+      },
+      "publicRecords": {
+        "ccjs": [],
+        "bankruptcies": [],
+        "ivas": []
+      },
+      "creditAccountSummary": {
+        "totalBalance": 2000.0,
+        "totalCreditLimit": 35000.0,
+        "totalMonthlyPayment": 1200.0,
+        "creditUtilisationPercentage": 75.0
+      },
+      "creditAccounts": [
+        {
+          "accountType": "Credit Card",
+          "lenderName": "American Express",
+          "accountNumber": "****3002",
+          "status": "Active",
+          "openedDate": "2018-06-15",
+          "currentBalance": 2000.0,
+          "creditLimit": 20000.0,
+          "monthlyPayment": 200.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2026-01-01",
+          "defaultDate": null,
+          "defaultBalance": 0.0
+        }
+      ],
+      "searchHistory": [
+        {
+          "searchDate": "2025-06-10",
+          "lenderName": "Hiscox Business Insurance",
+          "searchType": "Insurance Quotation"
+        }
+      ],
+      "fraudWarnings": {
+        "markers": []
+      },
+      "financialAssociations": []
+    },
+    "files": []
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}

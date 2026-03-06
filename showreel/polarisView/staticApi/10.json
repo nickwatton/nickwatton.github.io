@@ -1,0 +1,299 @@
+{
+  "content": {
+    "id": 10,
+    "proposalNumber": "PROP-0006",
+    "status": 1,
+    "createdAt": "2026-02-11T17:10:54.8961498",
+    "companyName": "Brightside Digital Solutions Ltd",
+    "companyStatus": "Active",
+    "industrySector": "Professional Services / Digital Marketing",
+    "timeInBusinessYears": 3,
+    "requestedAmount": 45000.0,
+    "proposedTermMonths": 36,
+    "interestRatio": 0.085,
+    "fees": 1800.0,
+    "feesRiskAdjustedRatio": 0.04,
+    "purposeOfLoan": "Equipment & Infrastructure",
+    "fundsUsageStatement": "Purchase of high-performance workstations, design software licenses, and server infrastructure to support expansion of our video production and 3D design services. This will enable us to take on larger clients and increase capacity by 40%.",
+    "loan": {},
+    "guarantor": {
+      "title": "Ms",
+      "firstName": "Sarah",
+      "middleName": "Elizabeth",
+      "lastName": "Mitchell",
+      "dateOfBirth": "1985-03-15",
+      "role": "Director & Founder",
+      "ownershipRatio": 100.0,
+      "ninoLast4Digits": 4521,
+      "ficoScore": 745,
+      "annualIncome": 85000.0,
+      "housingStatus": "Homeowner - Mortgaged",
+      "monthlyHousingCosts": 1200.0,
+      "personalLiquidity": 18500.0,
+      "totalPersonalDebt": 12000.0,
+      "totalPersonalDebtNote": "Low utilisation, all payments current. Car finance and credit card in good standing.",
+      "derogatoryMarks": "None",
+      "addresses": [
+        {
+          "street": "24 Oakwood Gardens",
+          "city": "Bristol",
+          "postcode": "BS8 3PQ",
+          "movingInDate": "2018-09-15",
+          "movingOutDate": null
+        }
+      ],
+      "employments": [
+        {
+          "employerName": "Brightside Digital Solutions Ltd",
+          "jobTitle": "Director & Founder",
+          "startDate": "2023-01-15T09:00:00",
+          "endDate": null
+        }
+      ],
+      "directorships": [
+        {
+          "companyName": "Brightside Digital Solutions Ltd",
+          "isActive": true,
+          "investmentAmount": 50000.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        }
+      ]
+    },
+    "financials": {
+      "grossProfitMarginRatio": 0.68,
+      "netProfitMarginRatio": 0.22,
+      "leverageRatio": 0.35,
+      "liquidityRatio": 2.1,
+      "workingCapitalCycleDays": 28
+    },
+    "affordability": {
+      "averageDailyBalance": 12500.0,
+      "overdraftFrequencyLast12Months": 2,
+      "largestMonthlyDeposit": 28500.0,
+      "workingCapital": 35000.0,
+      "cashFlow": "Stable with seasonal peaks in Q4",
+      "averageMonthlyTurnover": 24000.0,
+      "existingDebtToServiceMonthly": 850.0,
+      "operatingExpensesMonthly": 10000.0,
+      "debtServiceCoverageRatio": 2.15
+    },
+    "dealer": {
+      "name": "Default Dealer",
+      "code": "Dealer-01",
+      "phone": "07123456789",
+      "email": "default@dealer.com"
+    },
+    "triage": {
+      "flags": [
+        {
+          "severity": "Critical",
+          "title": "Stated Income Overstated by 33%",
+          "targetField": "Affordability.AverageMonthlyTurnover",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "£16,075 average monthly deposits (bank statements)",
+          "expectedValue": "£24,000 stated average monthly turnover (proposal)",
+          "description": "The proposal overstates average monthly turnover by 33% compared to bank statement evidence.",
+          "recommendation": "Request a detailed explanation and supporting evidence for the significant income overstatement; consider recalculating affordability based on actual income.",
+          "reasoning": "Bank statement analysis shows an average monthly income of £16,075, while the proposal claims £24,000. The variance is -£7,925 (-33.02%), which is well above the typical 15% tolerance. This raises concerns about the accuracy of the financial information provided and may indicate misrepresentation."
+        },
+        {
+          "severity": "High",
+          "title": "Stated Cash Flow Narrative Contradicts Actual Seasonality",
+          "targetField": "Affordability.CashFlow",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "Income peaks in Q3 (July–September), declines sharply in Q4 (October–December); Q4 is the weakest period.",
+          "expectedValue": "\"Stable with seasonal peaks in Q4\" (proposal narrative)",
+          "description": "The proposal claims Q4 is the peak season, but bank statements show Q4 is the weakest period.",
+          "recommendation": "Challenge the applicant on the cash flow narrative; require clarification and updated projections consistent with actual seasonality.",
+          "reasoning": "The proposal asserts 'stable with seasonal peaks in Q4,' but both the computed metrics and pattern analysis show income drops significantly in Q4, with July–August as the strongest months. This misalignment is a key underwriting concern and may indicate either misunderstanding or intentional misrepresentation of business performance."
+        },
+        {
+          "severity": "Medium",
+          "title": "Significant Drop in Key Client Retainer Income in Q4",
+          "targetField": "Affordability.AverageMonthlyTurnover",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "Northlane Dental retainer drops from £7,250 (Jul–Sep) to £4,000–£4,500 (Oct–Dec); GreenRoof Builders drops from £6,900/£6,650 to £4,000–£4,200.",
+          "expectedValue": "No client churn or contract changes stated in proposal.",
+          "description": "Major client retainer income drops sharply in Q4, not explained in the proposal.",
+          "recommendation": "Request explanation for the reduction in retainer income from key clients and assess impact on future cash flow.",
+          "reasoning": "Bank statement analysis highlights a marked reduction in retainer income from two major clients in Q4, which is not addressed in the proposal. This could indicate client churn, contract renegotiation, or loss of business, all of which materially affect future income and loan servicing ability."
+        },
+        {
+          "severity": "Low",
+          "title": "Operating Expenses Slightly Understated",
+          "targetField": "Affordability.OperatingExpensesMonthly",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "£9,836.77 average monthly expenses (bank statements)",
+          "expectedValue": "£10,000 stated operating expenses (proposal)",
+          "description": "Stated operating expenses are slightly higher than evidenced by bank statements.",
+          "recommendation": "No action required; the difference is minor and within normal tolerance.",
+          "reasoning": "The proposal states £10,000 monthly operating expenses, while bank statements show £9,836.77. The variance is minor and does not materially affect affordability."
+        },
+        {
+          "severity": "Medium",
+          "title": "Cash Flow Trend Deteriorating Despite Claimed Expansion",
+          "targetField": "Affordability.CashFlow",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "Net cash flow and working capital trend deteriorating; high volatility in recent months.",
+          "expectedValue": "Stable cash flow supporting expansion (proposal narrative)",
+          "description": "Bank statements show deteriorating cash flow, which contradicts the proposal's claim of stability and readiness for expansion.",
+          "recommendation": "Require updated business plan and cash flow projections that address recent volatility and declining trend.",
+          "reasoning": "The bank statement analysis notes a deteriorating cash flow trend and high volatility, especially in the last three months. This undermines the proposal's assertion of stability and readiness for expansion, and raises questions about the timing and prudence of additional borrowing."
+        }
+      ],
+      "reasoning": "While the applicant meets technical affordability and DSCR requirements, the critical overstatement of income, misrepresentation of cash flow seasonality, and unexplained client retainer reductions raise significant concerns about the accuracy and reliability of the proposal. These issues must be fully addressed and substantiated before any positive underwriting decision can be made.",
+      "summary": "The proposal for Brightside Digital Solutions Ltd demonstrates technical affordability but contains critical discrepancies: income is overstated by 33%, cash flow seasonality is misrepresented, and major client income drops are not disclosed. Bank statements reveal deteriorating cash flow trends, contradicting the stable and expansion-ready narrative.",
+      "recommendation": "Proceed with caution: require full clarification and supporting evidence for income, cash flow seasonality, and client retainer changes before considering approval.",
+      "riskLevel": "Critical"
+    },
+    "creditReport": {
+      "reportHeader": {
+        "reportId": "EXP-2024-BDS-001",
+        "bureauName": "Experian",
+        "reportGeneratedDate": "2024-06-15T10:30:00Z"
+      },
+      "applicantDetails": {
+        "name": {
+          "title": "Ms",
+          "firstName": "Sarah",
+          "lastName": "Mitchell"
+        },
+        "dateOfBirth": "1985-03-15",
+        "isElectoralRollRegistered": true,
+        "currentAddress": {
+          "street": "24 Oakwood Gardens",
+          "town": "Bristol",
+          "postcode": "BS8 3PQ",
+          "residentSince": "2018-09-15",
+          "residentFrom": "2018-09-15",
+          "residentTo": "Present"
+        },
+        "previousAddresses": [
+          {
+            "street": "12 Mill Lane",
+            "town": "Bath",
+            "postcode": "BA2 4RT",
+            "residentSince": "2015-03-01",
+            "residentFrom": "",
+            "residentTo": "2018-09-14"
+          }
+        ]
+      },
+      "creditScoreSummary": {
+        "score": 745,
+        "scoreBand": "Excellent",
+        "positiveFactors": [
+          "Long credit history",
+          "Low credit utilisation",
+          "Consistent payment history"
+        ],
+        "negativeFactors": []
+      },
+      "publicRecords": {
+        "ccjs": [],
+        "bankruptcies": [],
+        "ivas": []
+      },
+      "creditAccountSummary": {
+        "totalBalance": 12000.0,
+        "totalCreditLimit": 25000.0,
+        "totalMonthlyPayment": 450.0,
+        "creditUtilisationPercentage": 48.0
+      },
+      "creditAccounts": [
+        {
+          "accountType": "Credit Card",
+          "lenderName": "Barclaycard",
+          "accountNumber": "****7845",
+          "status": "Active",
+          "openedDate": "2019-04-20",
+          "currentBalance": 5800.0,
+          "creditLimit": 12000.0,
+          "monthlyPayment": 250.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2024-06-01",
+          "defaultDate": null,
+          "defaultBalance": null
+        },
+        {
+          "accountType": "Car Finance",
+          "lenderName": "Black Horse Finance",
+          "accountNumber": "****9023",
+          "status": "Active",
+          "openedDate": "2022-08-10",
+          "currentBalance": 6200.0,
+          "creditLimit": null,
+          "monthlyPayment": 200.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2024-06-01",
+          "defaultDate": null,
+          "defaultBalance": null
+        }
+      ],
+      "searchHistory": [
+        {
+          "searchDate": "2024-05-20",
+          "lenderName": "Oakwood Business Finance",
+          "searchType": "Credit Application"
+        },
+        {
+          "searchDate": "2024-03-15",
+          "lenderName": "NatWest Business Banking",
+          "searchType": "Business Account Application"
+        }
+      ],
+      "fraudWarnings": {
+        "markers": []
+      },
+      "financialAssociations": []
+    },
+    "files": [
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/10/BankStatement/07-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A23%3A02Z&sr=b&sp=r&sig=YmAVdqvaEzkStUS2BRqduRel0fpkdnMECDThtJMyrIU%3D",
+        "fileName": "07-25.pdf",
+        "blobName": "10/BankStatement/07-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:10:55.548088"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/10/BankStatement/08-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A23%3A02Z&sr=b&sp=r&sig=grOMwUsulhzxNnj4D375whS2CkeUah%2BBqc08EONnF%2BM%3D",
+        "fileName": "08-25.pdf",
+        "blobName": "10/BankStatement/08-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:10:55.6078656"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/10/BankStatement/09-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A23%3A02Z&sr=b&sp=r&sig=cAatRrn%2BENLASB%2F%2BvyCLoLir5ScOAeNix0MjxRrUBoQ%3D",
+        "fileName": "09-25.pdf",
+        "blobName": "10/BankStatement/09-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:10:55.6752401"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/10/BankStatement/10-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A23%3A02Z&sr=b&sp=r&sig=H7Rxt6sgKBo1oNCp3RParbtIvzXR8ca4e4hptIfyS0M%3D",
+        "fileName": "10-25.pdf",
+        "blobName": "10/BankStatement/10-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:10:55.708204"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/10/BankStatement/11-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A23%3A02Z&sr=b&sp=r&sig=7zIkLqVozw1GeJ40U3BegFXTxB8QtUki%2FA74OL7l%2F1Q%3D",
+        "fileName": "11-25.pdf",
+        "blobName": "10/BankStatement/11-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:10:55.8887421"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/10/BankStatement/12-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A23%3A02Z&sr=b&sp=r&sig=tRZK%2B%2F8I9S0oAf8H3craZ08VyZPRm%2Boq6vuy3hpWFsI%3D",
+        "fileName": "12-25.pdf",
+        "blobName": "10/BankStatement/12-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:10:55.9272256"
+      }
+    ]
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}

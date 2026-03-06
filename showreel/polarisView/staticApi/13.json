@@ -1,0 +1,277 @@
+{
+  "content": {
+    "id": 13,
+    "proposalNumber": "PROP-0009",
+    "status": 1,
+    "createdAt": "2026-02-11T17:12:40.6312374",
+    "companyName": "SmartX Digital Ltd",
+    "companyStatus": "Active",
+    "industrySector": "Professional Services / Digital Marketing",
+    "timeInBusinessYears": 3,
+    "requestedAmount": 45000.0,
+    "proposedTermMonths": 36,
+    "interestRatio": 0.085,
+    "fees": 1800.0,
+    "feesRiskAdjustedRatio": 0.04,
+    "purposeOfLoan": "Equipment & Infrastructure",
+    "fundsUsageStatement": "Purchase of high-performance workstations, design software licenses, and server infrastructure to support expansion of our video production and 3D design services. This will enable us to take on larger clients and increase capacity by 40%.",
+    "loan": {},
+    "guarantor": {
+      "title": "Ms",
+      "firstName": "Sarah",
+      "middleName": "Elizabeth",
+      "lastName": "Mitchell",
+      "dateOfBirth": "1985-03-15",
+      "role": "Director & Founder",
+      "ownershipRatio": 100.0,
+      "ninoLast4Digits": 4521,
+      "ficoScore": 745,
+      "annualIncome": 85000.0,
+      "housingStatus": "Homeowner - Mortgaged",
+      "monthlyHousingCosts": 1200.0,
+      "personalLiquidity": 18500.0,
+      "totalPersonalDebt": 12000.0,
+      "totalPersonalDebtNote": "Low utilisation, all payments current. Car finance and credit card in good standing.",
+      "derogatoryMarks": "None",
+      "addresses": [
+        {
+          "street": "24 Oakwood Gardens",
+          "city": "Bristol",
+          "postcode": "BS8 3PQ",
+          "movingInDate": "2018-09-15",
+          "movingOutDate": null
+        }
+      ],
+      "employments": [
+        {
+          "employerName": "SmartX Digital Ltd",
+          "jobTitle": "Director & Founder",
+          "startDate": "2023-01-15T09:00:00",
+          "endDate": null
+        }
+      ],
+      "directorships": [
+        {
+          "companyName": "SmartX Digital Ltd",
+          "isActive": true,
+          "investmentAmount": 50000.0,
+          "investmentType": "Equity",
+          "isFlagged": false,
+          "riskReason": null
+        }
+      ]
+    },
+    "financials": {
+      "grossProfitMarginRatio": 0.68,
+      "netProfitMarginRatio": 0.22,
+      "leverageRatio": 0.35,
+      "liquidityRatio": 2.1,
+      "workingCapitalCycleDays": 28
+    },
+    "affordability": {
+      "averageDailyBalance": 22500.0,
+      "overdraftFrequencyLast12Months": 2,
+      "largestMonthlyDeposit": 28500.0,
+      "workingCapital": 35000.0,
+      "cashFlow": "Stable with seasonal peaks in Q4",
+      "averageMonthlyTurnover": 31000.0,
+      "existingDebtToServiceMonthly": 850.0,
+      "operatingExpensesMonthly": 8000.0,
+      "debtServiceCoverageRatio": 2.15
+    },
+    "dealer": {
+      "name": "Default Dealer",
+      "code": "Dealer-01",
+      "phone": "07123456789",
+      "email": "default@dealer.com"
+    },
+    "triage": {
+      "flags": [
+        {
+          "severity": "High",
+          "title": "Stated Average Monthly Turnover Overstated by 21.7%",
+          "targetField": "Affordability.AverageMonthlyTurnover",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "£24,283.33 average monthly deposits (bank statements)",
+          "expectedValue": "£31,000 stated average monthly turnover (proposal)",
+          "description": "The stated average monthly turnover is overstated by £6,716.67 (21.7%) compared to actual bank statement evidence.",
+          "recommendation": "Request explanation and supporting evidence for the discrepancy; consider recalculating affordability and loan sizing based on actual income.",
+          "reasoning": "Bank statement analysis over the 6-month period shows an average monthly deposit of £24,283.33, while the proposal claims £31,000. This is a significant variance exceeding typical policy tolerance (15%), raising concerns about the accuracy of the financial representation and requiring clarification."
+        },
+        {
+          "severity": "Medium",
+          "title": "Operating Expenses Understated in Proposal",
+          "targetField": "Affordability.OperatingExpensesMonthly",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "£9,836.78 average monthly expenses (bank statements)",
+          "expectedValue": "£8,000 stated operating expenses (proposal)",
+          "description": "Actual operating expenses are £1,836.78 (23%) higher than stated in the proposal.",
+          "recommendation": "Request clarification for the understatement of expenses and update affordability calculations accordingly.",
+          "reasoning": "Bank statement evidence shows average monthly expenses of £9,836.78, while the proposal states only £8,000. Understating expenses can materially affect affordability and risk assessment."
+        },
+        {
+          "severity": "Medium",
+          "title": "Recurring Round-Number Client Deposits May Indicate Artificial Transactions",
+          "targetField": "Affordability.AverageMonthlyTurnover",
+          "documentSource": "Documents.BankStatements",
+          "currentValue": "Monthly client retainer deposits for 'Northlane Dental' (£7,250) and 'GreenRoof Builders' (£6,900) are always round numbers",
+          "expectedValue": "Deposits should reflect typical business variability",
+          "description": "Consistently round-number client deposits are unusual and may indicate fabricated or non-market-based entries.",
+          "recommendation": "Request supporting invoices/contracts for these clients to verify authenticity of income.",
+          "reasoning": "Bank statement analysis highlights that these recurring deposits are always round numbers, which is atypical for genuine business income and warrants further verification to rule out misrepresentation."
+        }
+      ],
+      "reasoning": "The analysis identified a major overstatement of turnover and understatement of expenses in the proposal compared to bank statement evidence, both of which are material to the risk assessment and require explanation. Additionally, the presence of recurring round-number client deposits is atypical and warrants further verification to rule out misrepresentation. Despite these issues, the actual cash flow and DSCR are strong, indicating the business can afford the loan if the income is genuine. The recommendation is to proceed only after satisfactory clarification and evidence are provided.",
+      "summary": "The proposal for SmartX Digital Ltd demonstrates strong affordability and cash flow, but contains significant discrepancies between stated and actual turnover and expenses, as well as unusual recurring round-number client deposits that require further verification. While the business can afford the loan, the accuracy of the financial representation is questionable and must be clarified before proceeding.",
+      "recommendation": "Proceed with caution; request full clarification and supporting evidence for income and expense discrepancies, and verify authenticity of major client deposits before approval.",
+      "riskLevel": "High"
+    },
+    "creditReport": {
+      "reportHeader": {
+        "reportId": "EXP-2024-BDS-001",
+        "bureauName": "Experian",
+        "reportGeneratedDate": "2024-06-15T10:30:00Z"
+      },
+      "applicantDetails": {
+        "name": {
+          "title": "Ms",
+          "firstName": "Sarah",
+          "lastName": "Mitchell"
+        },
+        "dateOfBirth": "1985-03-15",
+        "isElectoralRollRegistered": true,
+        "currentAddress": {
+          "street": "24 Oakwood Gardens",
+          "town": "Bristol",
+          "postcode": "BS8 3PQ",
+          "residentSince": "2018-09-15",
+          "residentFrom": "2018-09-15",
+          "residentTo": "Present"
+        },
+        "previousAddresses": [
+          {
+            "street": "12 Mill Lane",
+            "town": "Bath",
+            "postcode": "BA2 4RT",
+            "residentSince": "2015-03-01",
+            "residentFrom": "",
+            "residentTo": "2018-09-14"
+          }
+        ]
+      },
+      "creditScoreSummary": {
+        "score": 745,
+        "scoreBand": "Excellent",
+        "positiveFactors": [
+          "Long credit history",
+          "Low credit utilisation",
+          "Consistent payment history"
+        ],
+        "negativeFactors": []
+      },
+      "publicRecords": {
+        "ccjs": [],
+        "bankruptcies": [],
+        "ivas": []
+      },
+      "creditAccountSummary": {
+        "totalBalance": 12000.0,
+        "totalCreditLimit": 25000.0,
+        "totalMonthlyPayment": 450.0,
+        "creditUtilisationPercentage": 48.0
+      },
+      "creditAccounts": [
+        {
+          "accountType": "Credit Card",
+          "lenderName": "Barclaycard",
+          "accountNumber": "****7845",
+          "status": "Active",
+          "openedDate": "2019-04-20",
+          "currentBalance": 5800.0,
+          "creditLimit": 12000.0,
+          "monthlyPayment": 250.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2024-06-01",
+          "defaultDate": null,
+          "defaultBalance": null
+        },
+        {
+          "accountType": "Car Finance",
+          "lenderName": "Black Horse Finance",
+          "accountNumber": "****9023",
+          "status": "Active",
+          "openedDate": "2022-08-10",
+          "currentBalance": 6200.0,
+          "creditLimit": null,
+          "monthlyPayment": 200.0,
+          "paymentHistory24m": "000000000000000000000000",
+          "lastUpdatedDate": "2024-06-01",
+          "defaultDate": null,
+          "defaultBalance": null
+        }
+      ],
+      "searchHistory": [
+        {
+          "searchDate": "2024-05-20",
+          "lenderName": "Oakwood Business Finance",
+          "searchType": "Credit Application"
+        },
+        {
+          "searchDate": "2024-03-15",
+          "lenderName": "NatWest Business Banking",
+          "searchType": "Business Account Application"
+        }
+      ],
+      "fraudWarnings": {
+        "markers": []
+      },
+      "financialAssociations": []
+    },
+    "files": [
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/13/BankStatement/07-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A24%3A15Z&sr=b&sp=r&sig=q9kdMQY7wq%2BlDZOCK5OMjQOVBkJYCG2gIqUg4fGxDC4%3D",
+        "fileName": "07-25.pdf",
+        "blobName": "13/BankStatement/07-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:12:40.7924445"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/13/BankStatement/08-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A24%3A15Z&sr=b&sp=r&sig=3hGIjLrd3A%2FntK%2BNx%2FusDpXxCVd6j8pn3rQ%2FTf1uAXA%3D",
+        "fileName": "08-25.pdf",
+        "blobName": "13/BankStatement/08-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:12:40.8389491"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/13/BankStatement/09-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A24%3A15Z&sr=b&sp=r&sig=XsPu6XpfuvNGU9QXU6r9Y63MbVYsrc6V33HwUuh50aw%3D",
+        "fileName": "09-25.pdf",
+        "blobName": "13/BankStatement/09-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:12:40.8913015"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/13/BankStatement/10-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A24%3A15Z&sr=b&sp=r&sig=l0fdt5ImNSqGchUl8pt%2Fs8hDpnpd01GsQYP7gQZWhqM%3D",
+        "fileName": "10-25.pdf",
+        "blobName": "13/BankStatement/10-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:12:40.9188674"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/13/BankStatement/11-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A24%3A15Z&sr=b&sp=r&sig=DP862uVrvBblK7d7AT9qtpiPDSv4DrQA8za3NQgpZJA%3D",
+        "fileName": "11-25.pdf",
+        "blobName": "13/BankStatement/11-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:12:40.9326707"
+      },
+      {
+        "uri": "https://staiuwbldemo.blob.core.windows.net/proposal-files/13/BankStatement/12-25.pdf?sv=2026-02-06&se=2026-03-05T15%3A24%3A15Z&sr=b&sp=r&sig=jD1KEPytFHPwrH9pK6CeaNWghjqSEhZ2IaNOXJXe%2Fr0%3D",
+        "fileName": "12-25.pdf",
+        "blobName": "13/BankStatement/12-25.pdf",
+        "type": 1,
+        "uploadedAt": "2026-02-11T17:12:40.9496328"
+      }
+    ]
+  },
+  "message": "",
+  "isSuccessStatusCode": true
+}
