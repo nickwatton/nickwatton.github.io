@@ -303,6 +303,7 @@ footer {
     content: "Details:";
     font-weight: 700;
 }
+.job.training details section::before {content: ""}
 .tech-stack::before {
     content: "Tech stack:";
 }
@@ -420,4 +421,11 @@ section[role="navigation"]{
     position: sticky;
     top: 0;
     z-index: 9;
+}
+
+.pb_small{
+    padding-bottom: .5rem;
+}
+.pt_small{
+    padding-top: .5rem;
 }
