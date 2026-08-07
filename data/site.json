@@ -1,0 +1,594 @@
+{
+	"testimonials": [
+		{
+			"quote": "You've brought curiosity, dedication, and a willingness to jump into any challenge. Since joining, your drive to learn, improve, and help the team grow has made a real impact.",
+			"name": "Tony Goncalves",
+			"role": "Senior Product Manager",
+			"company": "ClearSky",
+			"mobileHighlight": false
+		},
+		{
+			"quote": "A talented developer and key team member on significant projects for some of Storm's highest profile clients, demonstrating strong core front end competencies and an appetite for personal growth and skill development.",
+			"name": "Mick Perkins",
+			"role": "Technical Lead",
+			"company": "Storm ID",
+			"mobileHighlight": true
+		},
+		{
+			"quote": "A fantastic coder, a brilliant mixture of skill and experience, plus has an insanely curious mind which makes him a fantastic addition to any project.",
+			"name": "Chris Jefford",
+			"role": "Founder/CEO",
+			"company": "Truant",
+			"mobileHighlight": false
+		},
+		{
+			"quote": "A true wizard at using code and maths to create the most amazing visual animations and experiences. Honestly, look him up on <a href=\"https://codepen.io/2Mogs\">CodePen</a>.",
+			"name": "David Storey",
+			"role": "Head of web development",
+			"company": "AmazeRealise",
+			"mobileHighlight": false
+		}
+	],
+
+	"navigation": {
+		"employers": [
+			{ "label": "ClearSky",    "anchor": "clearsky_logic" },
+			{ "label": "Storm ID",    "anchor": "storm_id" },
+			{ "label": "Secureworks", "anchor": "secureworks" },
+			{ "label": "Realise",     "anchor": "realise" }
+		],
+		"personal": [
+			{ "label": "Training",   "anchor": "training" },
+			{ "label": "Playground", "anchor": "playground" }
+		]
+	},
+
+	"employers": [
+		{
+			"id":       "clearsky_logic",
+			"company":  "ClearSky",
+			"role":     "Senior Front End Developer",
+			"logo":     "/images/thumb/csl_03.webp",
+			"logoAlt":  "ClearSky logo",
+			"dateRange": "11.2024 - current",
+			"summary": [
+				"Working across a range of clients, creating both admin and public facing interfaces.",
+				"Projects to date have been developed either in React (with Typescript and Jest testing), or custom Shopify templates.",
+				"Having recently delivered a React built front end for an AI prototype project, I am currently working on a mobile app - learning Dart and Flutter in the wild!."
+			],
+			"projects": [
+				{
+					"client":   "Indigo Sun",
+					"title":    "Head Office wages and reporting system",
+					"thumb":    "/images/thumb/indigoSun_01.avif",
+					"thumbAlt": "news icon",
+					"desktopOnly": false,
+					"dateRange": "05.2026 - present",
+					"description": [
+						"A back-office platform for a multi-site salon chain, built around a Head Office System that allows users with different permission levels, such as senior management, payroll or area managers, to review, edit and submit staff wage sheets across their assigned locations. The application talks to a .Net API which coordinates with the EPOS system the salons run in-house.",
+						"A bespoke feature enjoyed is a salon performance map on the leadership dashboard. I created a custom dot-style illustration of the UK, then wrote a coordinate projection method that converts real latitude and longitude values into pixel positions on the graphic - effectively calibrating the image to a geographic bounding box. The result is an interactive SVG component that plots each salon as a pin, highlights top performers, and responds to hover state with an animated marker, all without reaching for a mapping library.",
+						"The project is being developed on a tight schedule, and I've been deliberate about leveraging Claude AI to keep momentum up. Strong upfront context setting - architecture documents, conventions, and a living project status file — means the AI can contribute meaningfully to implementation while I focus on review, verification, and the decisions that require real judgement. It's given me a sharper sense of where AI genuinely accelerates a build and where careful human oversight remains essential."
+					],
+					"techStack": "React, TypeScript, Tailwind, Claude",
+					"links": []
+				},
+				{
+					"client":   "Inizio",
+					"title":    "Inizio Ignite",
+					"thumb":    "/images/thumb/inizio_ignite_01.webp",
+					"thumbAlt": "news icon",
+					"desktopOnly": false,
+					"dateRange": "02.2026 - 04.2026",
+					"description": [
+						"Whilst the project details are under NDA wraps, I am allowed to say that I am working on a mobile app for the healthcare sector.",
+						"So I'm starting the year learning Dart and Flutter.",
+						"In my ancient history I made iOS press release apps for Jaguar Land Rover and Bentley - fast performance, very heavy on imagery and video. Developed using ActionScript, amazingly.",
+						"This will have shades of the familiar, but mostly be completely different. An exciting journey!"
+					],
+					"techStack": "Dart, Flutter",
+					"links": []
+				},
+				{
+					"client":   "ClearSky",
+					"title":    "\"Polaris View\" - AI underwriting tool",
+					"thumb":    "/images/thumb/csl_02.webp",
+					"thumbAlt": "Polaris logo",
+					"desktopOnly": false,
+					"dateRange": "11.2025 - 02.2026",
+					"description": [
+						"Front end developer in a crack squad, building the interface for a human-in-the-loop AI project.",
+						"This started as a rapid development prototype, required to meet a tight demonstration deadline but has moved into a client-facing product. For the prototype, I roughed out a functioning interface with vanilla JSX, then leveraged Claude to refine the build, including proper TypeScript interfaces, and accessibility features.",
+						"This met the original speed requirements, and also created a more solid base for further development with little additional overhead.",
+						"This approach also gave me space to consider the position and value of AI in my workflow, getting a clearer understanding of the values it can bring.",
+						"The codebase is now in production with a pre-existing dedicated client team, so I've handed over development responsibilities while continuing to support and guide the team as required."
+					],
+					"techStack": "React (Vite), TypeScript, Tailwind CSS, CSS Modules, Claude",
+					"links": [
+						{ "label": "Polaris View update on LinkedIn",  "url": "https://www.linkedin.com/posts/polaris-view-ugcPost-7467166352433139712-SIqd/" },
+						{ "label": "Polaris View reveal on LinkedIn",   "url": "https://www.linkedin.com/posts/clearskylogic_our-team-doesnt-just-deliver-value-and-projects-activity-7397275530934403072-hklq/" }
+					]
+				},
+				{
+					"client":   "Wolfson Brands",
+					"title":    "Multiple Shopify stores",
+					"thumb":    "/images/thumb/wolfsonbrands_01.png",
+					"thumbAlt": "Wolfson Brands logo",
+					"desktopOnly": false,
+					"dateRange": "03.2025 - 10.2025",
+					"description": [
+						"Wolfson Brands run multiple Shopify stores, with European and global markets. I have been working across their range, introducing new features and maintaining existing ones.",
+						"I developed my role in the squad to include elements of team support both for the squad manager and team colleagues, covering elements of backlog refinement and sprint planning, general team support and code reviews, in addition to my front end development."
+					],
+					"techStack": "JS, Shopify Liquid, CSS, Tailwind CSS",
+					"links": [
+						{ "label": "Wolfson Brands", "url": "https://www.wolfsonbrands.com/" }
+					]
+				},
+				{
+					"client":   "ClearSky",
+					"title":    "Neon effect SVG. Internal branding",
+					"thumb":    "/images/thumb/csl_01.webp",
+					"thumbAlt": "ClearSky branding",
+					"desktopOnly": true,
+					"dateRange": "05.2025",
+					"description": [
+						"Following a chat with the marketing team, I grabbed a quiet moment to create a small series of internal branding animations based on the neon identity ClearSky have around the office.",
+						"Following up on the intrigue created by the animation, in a second quiet moment I repurposed the code to create a Neon drawing tool as part of a demonstration of the flexibility and power of SVGs for an internal Brown Bag Lunch session."
+					],
+					"techStack": "CSS, hand-crafted SVG",
+					"links": [
+						{ "label": "\"Neon: Unicorn\" on CodePen",    "url": "https://codepen.io/2Mogs/full/ByyBNRX" },
+						{ "label": "\"Neon: Power Flash\" on CodePen", "url": "https://codepen.io/2Mogs/full/PwwBeZY" },
+						{ "label": "\"Neon: Target\" on CodePen",      "url": "https://codepen.io/2Mogs/full/myyGaOo" },
+						{ "label": "Drawing tool on CodePen",          "url": "https://codepen.io/2Mogs/full/bNNOjdq" }
+					]
+				},
+				{
+					"client":   "Zonal",
+					"title":    "Zonal admin SaaS",
+					"thumb":    "/images/thumb/zonal_01.png",
+					"thumbAlt": "Zonal logo",
+					"desktopOnly": false,
+					"dateRange": "11.2024 - 03.2025",
+					"description": [
+						"Zonal are the market leaders in point of sale services for the hospitality industry.",
+						"They have an established client side offering, but were in the process of moving their services to the cloud. CSL stepped in to help crunch on some back- and front-end processes in their admin interface."
+					],
+					"techStack": "React, TypeScript, Jest testing",
+					"links": [
+						{ "label": "As this is an admin interface there are no links I can share." }
+					]
+				}
+			]
+		},
+
+		{
+			"id":       "storm_id",
+			"company":  "Storm ID",
+			"role":     "Senior Front End Developer",
+			"logo":     "/images/thumb/stormid_01.png",
+			"logoAlt":  "Storm ID logo",
+			"dateRange": "10.2021 - 10.2024",
+			"summary": [
+				"Working primarily on government and public sector websites, with a focus on clear UX and accessibility.",
+				"Projects generally involved JSX prototyping within a Preact framework and subsequently working with the .Net or Umbraco teams to realise the final build.",
+				"Sometimes rapid prototyping was required, for example exploring charting libraries, the OpenSystemsLab geo-data mapping API, or creating bespoke JS/SVG tools. Where these moved into production, I managed the integration, produced documentation and provided training as required."
+			],
+			"projects": [
+				{
+					"client":   "Internal / Scottish Government",
+					"title":    "AI Dynamic Forms",
+					"thumb":    "/images/thumb/dynamicforms_02.png",
+					"thumbAlt": "Colourful flow chart diagram with dummy data",
+					"desktopOnly": false,
+					"dateRange": "03.2024 - 07.2024",
+					"description": [
+						"Building on a long-term understanding of Scot.Gov requirements, Storm undertook a project to use AI to auto-generate forms from a variety of sources.",
+						"As the lead front end developer my primary role was to ensure a coherent front end design, and provide any DOM manipulation JavaScript. In addition, throughout the project daily stand-ups provided the space for me to reflect on the UI, UX and accessibility directions the (backend driven) build was taking, and keeping it honest!",
+						"A small UX discussion about visual representations of a user's journey through a complex chart led to me implementing the Mermaid charting library which swiftly became a central pillar of the project's UI."
+					],
+					"techStack": "JS, Mermaid, CSS, .Net Razor template integration",
+					"links": [
+						{ "label": "Implementations are not currently public." },
+						{ "label": "Mermaid prototype on CodePen", "url": "https://codepen.io/2Mogs/full/wvLMKaG" }
+					]
+				},
+				{
+					"client":   "Scottish Government",
+					"title":    "Smart Apps - Planning and Payments",
+					"thumb":    "/images/thumb/smartapps_02.jpg",
+					"thumbAlt": "Map with highlighted building boundary",
+					"desktopOnly": false,
+					"dateRange": "03.2022",
+					"description": [
+						"A large scale Scot.Gov project to review the existing online planning permission process.",
+						"As the lead front end developer on the project I implemented the Scot.Gov design system, integrated with Storm's own design agnostic scaffold. I was responsible for ensuring that during the process of .Net implementation WCAG 2.2 accessibility standards were maintained, and providing any DOM manipulation or forms related JavaScript as required.",
+						"One such custom element was a tool for accurately mapping the boundaries of a property. For this we used the OpenSystemsLab geo-data mapping API, and you can see a test implementation via the link below.",
+						"The project is not yet live, but the Scot.Gov Digital Planning team intends to take the alpha service prototypes forward to beta and live, in line with its digital strategy."
+					],
+					"techStack": "JSX, JS, CSS, .Net Razor template integration",
+					"links": [
+						{ "label": "Implementations are not currently public." },
+						{ "label": "OpenSystemsLab API prototype on CodePen", "url": "https://codepen.io/2Mogs/full/KKoBRZy" }
+					]
+				},
+				{
+					"client":   "Glasgow Life",
+					"title":    "Glasgow Club website",
+					"thumb":    "/images/thumb/glasgowclub_01.png",
+					"thumbAlt": "Glasgow Club logo",
+					"desktopOnly": true,
+					"dateRange": "08.2023",
+					"description": [
+						"Following the Glasgow Life transformation, Storm was tasked with a similar overhaul of the sister site, Glasgow Club.",
+						"Glasgow Club has a distinct design language from other sites in the group, so whilst the underlying scaffold is largely shared across the estate, as lead front end developer on the project, I needed to take care that all details of their design were implemented correctly.",
+						"Whilst many of the challenges from Glasgow Life had been solved for this build, the scale of tabular data presented for venues and activities proved an issue. Smaller tables (opening times) maintained visual structure and only changed width responsively. Larger tables required a visual collapsing of <code>&lt;td&gt;</code> elements, whilst maintaining DOM structure and coherence for keyboard users."
+					],
+					"techStack": "JS, CSS, .Net Razor template integration",
+					"links": [
+						{ "label": "Visit Glasgow Club", "url": "https://glasgowclub.org/" }
+					]
+				},
+				{
+					"client":   "Glasgow Life",
+					"title":    "Glasgow Life website",
+					"thumb":    "/images/thumb/glasgowlife_01.png",
+					"thumbAlt": "Glasgow Life logo",
+					"desktopOnly": false,
+					"dateRange": "04.2022",
+					"description": [
+						"Storm took Glasgow Life through a complete digital transformation programme, redeveloping their main web portal, and dedicated venue and event sites.",
+						"As the lead front end developer on the project I ensured the design was faithfully implemented, and ensured accessibility standards were maintained.",
+						"Interesting challenges included the map view for the venue finder, bespoke Swiper carousel conflicts, and much longer than expected horizontal in-page navigations. However, working closely with the design, UX, and testing teams, all issues were resolved to the client's satisfaction."
+					],
+					"techStack": "JS, CSS, .Net Razor template integration",
+					"links": [
+						{ "label": "Visit Glasgow Life", "url": "https://www.glasgowlife.org.uk/" }
+					]
+				},
+				{
+					"client":   "Historic Environment Scotland",
+					"title":    "Full estate cookie banner update",
+					"thumb":    "/images/thumb/hescookies_01.png",
+					"thumbAlt": "Historic Environment Scotland webpage, showing cookie consent banner",
+					"desktopOnly": true,
+					"dateRange": "05.2023 - 11.2023",
+					"description": [
+						"The Historic Environment Scotland (HES) estate comprises some 30+ separately maintained websites, built over many years with multiple technologies. And they all needed to have their cookie banner updated and WCAG 2.2 compliant.",
+						"My role was to adapt their existing cookie banner code for compliance (specifically ensuring no interactive elements are obscured), to be standardised for all sites, with configuration options, but without the need for an implementing developer to customise the JavaScript.",
+						"Final delivery was with a <code>.umd</code> JavaScript bundle with a configuration object in a <code>&lt;script&gt;</code> tag. I provided extensive documentation for HES developers to use, and was available for support when some implementations were less straightforward and the HES developer needed assistance."
+					],
+					"techStack": "JS, CSS, Markdown (for documentation)",
+					"links": [
+						{ "label": "Historic Environment Scotland", "url": "https://www.historicenvironment.scot/" },
+						{ "label": "Edinburgh Castle",              "url": "https://www.edinburghcastle.scot/" }
+					]
+				},
+				{
+					"client":   "Crown Office and Procurator Fiscal",
+					"title":    "Desktop booking app",
+					"thumb":    "/images/thumb/copfs_02.png",
+					"thumbAlt": "Crown Office and Procurator Fiscal logo and a schematic of a few desks",
+					"desktopOnly": false,
+					"dateRange": "03.2022",
+					"description": [
+						"When the COPFS started to return to office work after lockdown, they needed a tool to allow staff to book desk space. I converted paper office layout charts into data, in JSON format, which allowed all offices and desks to be dynamically drawn and interacted with. Booking data was submitted to their existing SharePoint intranet."
+					],
+					"techStack": "JS, SVG, JSON, CSS",
+					"links": [
+						{ "label": "As the full application is an intranet, there is no public URL." },
+						{ "label": "View WiP on CodePen", "url": "https://codepen.io/2Mogs/full/rNpOORQ" }
+					]
+				}
+			]
+		},
+
+		{
+			"id":       "secureworks",
+			"company":  "Secureworks",
+			"role":     "Senior Front End Developer",
+			"logo":     "/images/thumb/secureworks_01.png",
+			"logoAlt":  "Secureworks logo",
+			"dateRange": "06.2020 - 09.2021",
+			"summary": [
+				"My role was to enhance the Secureworks Client Portal, both through conversion of elements to the React framework, and extending existing Backbone elements.",
+				"I developed a number of features through to production, leveraging Material-UI, Formik (+Yup), Axios and Redux, as well as native JavaScript."
+			],
+			"techStack": "React, Backbone, JS, Material-UI, Formik (+Yup), Axios and Redux",
+			"links": [
+				{ "label": "Secureworks", "url": "https://www.secureworks.com/" }
+			],
+			"projects": []
+		},
+
+		{
+			"id":       "realise",
+			"company":  "Realise",
+			"role":     "Senior Front End Developer",
+			"logo":     "/images/thumb/realise_kc_01.png",
+			"logoAlt":  "Realise and Kin+Carta logos",
+			"dateRange": "04.2014 - 03.2020",
+			"summary": [
+				"I first approached Realise as a Flash/ActionScript developer looking to transition into HTML5 work. I had a little JS / CSS / HTML experience, and although I had 14 years Flash experience I was wet behind my HTML5 ears.",
+				"However, Realise had a few banner clients which needed to be transitioned to HTML5 builds, and I had made a lot of banners at Wunderman and Saint (RKCR/Y&R), and the deal was struck.",
+				"I made a build pipeline in Gulp, set guides and processes, and arranged training so other team members could join the fun.",
+				"Banners production sat in Support, so I also worked on (amongst others) Standard Life Investments and Lloyds Banking Group CMS sites, using Teamsite and Ektron. In addition, I helped in development teams for multiple smaller projects, and championed team learning through skill share exercises and addressed topics like Imposter Syndrome and general mental health."
+			],
+			"projects": [
+				{
+					"client":   "Standard Life Investments",
+					"title":    "British and Irish Lions: Game",
+					"thumb":    "/images/thumb/sli_droneGame_01.jpg",
+					"thumbAlt": "Game image of drone exploding as it is hit with a rugby ball",
+					"desktopOnly": false,
+					"dateRange": "06.2017",
+					"description": [
+						"Drone Kick game.",
+						"Part of the \"One Team. One Standard.\" British and Irish Lions tour sponsorship campaign.",
+						"Written with vanilla JavaScript, this is a simple target shoot game. Gameplay needed to be the same on mobile and desktop so the interaction is necessarily simple: automatic missile direction control and one click to fire.",
+						"The game can work in a standalone configuration for conferences, with a leaderboard mode to display the top ten scores on a separate screen.",
+						"Over 64,500 plays in a month, with an average 44 plays per person.",
+						"The campaign (game and banners) was awarded BT Sport Industry Award: Best Ambassador, Influencer or Partnership of the Year."
+					],
+					"techStack": "HTML, JavaScript, GSAP-js, CSS",
+					"links": [
+						{ "label": "Drone Kick - Play an archive of the Game", "url": "/showreel/sli-game/" }
+					]
+				},
+				{
+					"client":   "Standard Life Investments",
+					"title":    "British and Irish Lions: Banners",
+					"thumb":    "/images/thumb/SLI_lions_01.jpg",
+					"thumbAlt": "Game image of drone exploding as it is hit with a rugby ball",
+					"desktopOnly": false,
+					"dateRange": "06.2017",
+					"description": [
+						"Part of the \"One Team. One Standard.\" campaign, these banners run video content to showcase SLI's sponsorship of the 2017 Lions tour.",
+						"The campaign (banners and game) was awarded BT Sport Industry Award: Best Ambassador, Influencer or Partnership of the Year.",
+						"Served through DoubleClick."
+					],
+					"techStack": "HTML, JavaScript, GSAP-js, CSS",
+					"links": [
+						{ "label": "Video banners - DoubleClick preview", "url": "https://www.google.com/doubleclick/studio/externalpreview/#/mU5rr3xpThi86BO-kiKbeQ" }
+					]
+				},
+				{
+					"client":   "Sunlife",
+					"title":    "Funeral Song Generator",
+					"thumb":    "/images/thumb/sunlife_02.png",
+					"thumbAlt": "Sunlife logo and old fashioned radio",
+					"desktopOnly": true,
+					"dateRange": "09.2019",
+					"description": [
+						"A quiz that selects your funeral song, embedded as a standalone tool within the main Sunlife site.",
+						"I include this project not for its scale or technical merit, but rather because it casts a fun light on a can-be dark subject.",
+						"It was a quick and enjoyable project which is still alive on the client site 5 years later. Now that's something to sing about!"
+					],
+					"techStack": "HTML, JavaScript, CSS",
+					"links": [
+						{ "label": "Take the quiz", "strikethrough": true, "note": "Sadly no longer live" },
+						{ "label": "CodePen prototype", "url": "https://codepen.io/2Mogs/pen/YzKwZgK?editors=0010" }
+					]
+				},
+				{
+					"client":   "Heathrow",
+					"title":    "Display banners",
+					"thumb":    "./images/thumb/heathrowCP_17q1_01.png",
+					"thumbAlt": "Still image from Heathrow parking banner ad",
+					"desktopOnly": false,
+					"dateRange": "01.2017",
+					"description": [
+						"At Realise I built 10s of campaigns (each with 10-14 individually sized units) for Heathrow. I really enjoy the specific challenges of making banners work. They must be lightweight, and the design and animation immediately engaging. It looks easy but it needs a fine eye for detail and a high level of trust between designer and developer.",
+						{ "image": "./images/thumb/heathrow_17WoP_01.png", "alt": "Still image from Heathrow banner ad showing a family walking in woods on holiday" },
+						"These campaigns saw very high engagement, and presented a clean design in a very lightweight package.",
+						{ "image": "./images/thumb/heathrowXmas18.jpg", "alt": "Still image from Heathrow Boutique banner ad showing a woman with lots of showing bags" },
+						"I even saved enough filesize to be able to include a subtle particle system in their Christmas campaign to add movement and sparkle."
+					],
+					"techStack": "HTML, JavaScript, GSAP-js, CSS, DoubleClick with dynamic feed",
+					"links": [
+						{ "label": "Heathrow Christmas MPU banner, with added sparkle", "url": "/showreel/banners/heathrow/christmas/300x250/" }
+					]
+				},
+				{
+					"client":   "Various clients",
+					"title":    "Display banners",
+					"thumb":    "./images/thumb/noths_01.jpg",
+					"thumbAlt": "Still image from Not on the High Street banner ad",
+					"desktopOnly": false,
+					"description": [
+						"Whilst at Realise I made probably hundreds of banners for clients like Not on the High Street, Forza Racing, Channel 4, Heathrow, Standard Life, Sun Life... All fun and unique.",
+						{ "image": "./images/thumb/asi_mps.jpg", "alt": "Blue image with abstract Delaunay pattern of shaded triangles" },
+						"Some were simple image and text; there were several with videos, and a few exciting ones where I could get interactive, add particle sparkles or even dynamically create Delaunay triangles in the background. One of my favourites (sadly now lost without trace) was for Channel 4 and had a washing machine with a spinning drum, served under their strict 55kb size limit.",
+						{ "image": "./images/thumb/heathrowU25_16q1_01.jpg", "alt": "Still image from Heathrow banner ad showing people throwing colourful powder towards the camera" },
+						"Mostly served through DoubleClick, but also via FlashTalking."
+					],
+					"techStack": "HTML, JavaScript, CSS, DoubleClick / FlashTalking with dynamic feed",
+					"links": [
+						{ "label": "C4 MPU XBox One Forza Racing 7. Coded venetian blind (?!) image transition", "url": "/showreel/banners/c4/xbox-forza7-mpu/" },
+						{ "label": "SLI MPU banner with scenic parallax and plane flight",                        "url": "/showreel/banners/sli/unconstrained/300x250/" },
+						{ "label": "Lightweight animation sequencing engine demo, on CodePen",                    "url": "https://codepen.io/2Mogs/pen/RwXZvGb?editors=0010" }
+					]
+				},
+				{
+					"client":   "Brompton",
+					"title":    "Interactive folding Brompton",
+					"thumb":    "/images/thumb/brompton_01.png",
+					"thumbAlt": "Graphic of folding Brompton bike",
+					"desktopOnly": true,
+					"dateRange": "05.2019",
+					"description": [
+						"I am a huge Brompton bike fanboy, so when I heard AmazeRealise was pitching to them I had to butt in, and quickly knocked up this responsively animated, interactive Brompton bike banner.",
+						"Moving through the three main steps in the bike's amazing fold, the user can also customise the paint, just like ordering the real thing (used to be).",
+						"Born out of personal passion, whilst the pitch wasn't successful, this illustrates how all parts of a team can pull together and produce something unexpected."
+					],
+					"techStack": "SVG, CSS, JavaScript",
+					"links": [
+						{ "label": "View on CodePen", "url": "https://codepen.io/2Mogs/full/eoVJGr" }
+					]
+				}
+			]
+		}
+	],
+
+	"training": {
+		"intro": "Learning is a life-long thing. In addition to extended <b>Josh Comeau</b> courses, recently I've been snacking short courses at <b>Frontend&nbsp;Masters</b> to refresh and extend 25+ years of experience.",
+		"providers": [
+			{
+				"provider": "Frontend Masters courses",
+				"thumb":    "./images/thumb/feMasters_01.jpg",
+				"thumbAlt": "Frontend Masters Training",
+				"courses": [
+					{
+						"title": "Engineering Management 101 & 102",
+						"description": "I actively enjoy my development work, but within squads I find myself taking on mentoring and somewhat-management roles. I took these courses to gain greater understanding of this area, and to build some foundational skills. The second course delved deeper into the principles of effective engineering management and probably took me past where I project myself being for now. However, it was really useful in helping me understand the breadth of management tasks, and will certainly be useful for my skills as a senior team member.",
+						"links": [
+							{ "label": "101: Course overview and curriculum", "url": "https://frontendmasters.com/courses/intro-management/" },
+							{ "label": "102: Course overview and curriculum", "url": "https://frontendmasters.com/courses/engineering-management/" }
+						]
+					},
+					{
+						"title": "TypeScript Fundamentals 5+ / TypeScript: From First Steps to Professional",
+						"description": "Whilst I had brushed up against TypeScript, I never really needed to apply it until I joined ClearSky. I wanted more than a passing understanding based on code picking, so I enrolled in these courses to underpin and grow my understanding.",
+						"links": [
+							{ "label": "Fundamentals course overview and curriculum",   "url": "https://frontendmasters.com/courses/typescript-v4/" },
+							{ "label": "First Steps... course overview and curriculum", "url": "https://frontendmasters.com/courses/typescript-first-steps/" }
+						]
+					},
+					{
+						"title": "Tailwind CSS 4+",
+						"description": "I'd been using Tailwind CSS somewhat reluctantly for a while, and wanted to better understand the beast. The course, which covers Tailwind's utility-first approach and advanced techniques, gifted me with a much more positive appreciation, and deeper understanding, of the framework.",
+						"links": [
+							{ "label": "Course overview and curriculum", "url": "https://frontendmasters.com/courses/tailwind-css-v2/" }
+						]
+					},
+					{
+						"title": "Design for Developers",
+						"description": "A very engaging course covering design fundamentals and patterns, then exploring the pathways to implement them in website builds. Largely a refresher, but worthwhile nevertheless.",
+						"links": [
+							{ "label": "Course overview and curriculum", "url": "https://frontendmasters.com/courses/design-for-developers/" }
+						]
+					},
+					{
+						"title": "Mastering Chrome Dev Tools",
+						"description": "DevTools are such a part of daily life, and a prime target for the saying \"familiarity breeds contempt\". I learned new features, saw old ones with fresh eyes, and felt my debugging confidence grow. A great course.",
+						"links": [
+							{ "label": "Course overview and curriculum", "url": "https://frontendmasters.com/courses/dev-tools-v4/" }
+						]
+					}
+				]
+			},
+			{
+				"provider": "Josh Comeau",
+				"thumb":    "./images/thumb/joshComeau_01.jpg",
+				"thumbAlt": "Josh Comeau courses",
+				"courses": [
+					{
+						"title":       "The Joy of React",
+						"image":       "/images/thumb/joy-of-react-mascot-hd.jpg",
+						"imageAlt":    "A happy particle system cartoon, as the Joy of React training icon",
+						"description": "I took this React course to refresh and deepen my understanding of the framework. It was super interesting and great fun.",
+						"links": [
+							{ "label": "Course overview and curriculum", "url": "https://courses.joshwcomeau.com/joy-of-react" }
+						]
+					},
+					{
+						"title":       "CSS for JavaScript Developers",
+						"image":       "./images/thumb/CSSforJSdevs.webp",
+						"imageAlt":    "A happy particle system cartoon, as the CSS for JavaScript Developers training icon",
+						"description": "As a self-taught developer on CSS through practice not study, I wanted to develop a deeper understanding of the principles that underlie CSS. This course has been instrumental in filling gaps, and enhancing my skills.",
+						"links": [
+							{ "label": "Course overview and curriculum", "url": "https://courses.joshwcomeau.com/css-for-js" }
+						]
+					},
+					{
+						"title":       "Whimsical Animations",
+						"image":       "./images/thumb/wham_01.webp",
+						"imageAlt":    "A happy particle system cartoon, as the Whimsical Animations training icon",
+						"description": "I've been making web-based animations for years, and when this course popped up I thought it would be good to shake myself up and learn some new techniques. The course has confirmed my growing love of SVGs, and greatly deepened my understanding of CSS animation.",
+						"links": [
+							{ "label": "Course overview and curriculum", "url": "https://courses.joshwcomeau.com/wham" }
+						]
+					}
+				]
+			}
+		]
+	},
+
+	"playground": {
+		"intro": [
+			"A small selection of the games, tools, and experiments I've made in my own time.",
+			"Visit my <a href=\"https://codepen.io/2Mogs\">CodePen</a> for more."
+		],
+		"projects": [
+			{
+				"client":   "Wolsey Hall Oxford",
+				"title":    "Dyslexia alphabet learning tool",
+				"thumb":    "/images/thumb/dyslexia_01.jpg",
+				"thumbAlt": "A board of scrambled letters for dyslexia game",
+				"desktopOnly": false,
+				"dateRange": "07.2022",
+				"description": [
+					"When the application my dyslexic son's learning support teacher used was closed down, I remade it for her and her colleagues.",
+					"Free to use."
+				],
+				"techStack": "JS, Canvas",
+				"links": [
+					{ "label": "View on CodePen", "url": "https://codepen.io/2Mogs/full/rNYjWOO" }
+				]
+			},
+			{
+				"client":   "Secureworks / 2022 JS13K Games",
+				"title":    "Death's Hand",
+				"thumb":    "/images/thumb/spacegame_01.jpg",
+				"thumbAlt": "Game image of a hand drawn spaceship flying into enemies over a planet",
+				"desktopOnly": false,
+				"dateRange": "09.2021",
+				"description": [
+					"Made during a hack week at Secureworks, with an idea that it could be an easter egg on a 404 page.",
+					"A horizontal scrolling invaders game, with hand-drawn graphics. Vanilla JavaScript, using ES6 modules. The first two waves of invaders are hand coded to spell a message (originally relevant as a 404), then afterwards we fall back to an endless random enemy pattern generator.",
+					"I revisited this to make a JS13K Games entry. I managed to keep it hand-drawn, and although I did need to cut the parallax environment layers I was able to add light-speed star effects."
+				],
+				"techStack": "JavaScript, HTML audio",
+				"links": [
+					{ "label": "The original game on CodePen", "url": "https://codepen.io/2Mogs/full/poWbzwo" },
+					{ "label": "JS13K entry",                  "url": "https://js13kgames.com/2022/games/deaths-hand" }
+				]
+			},
+			{
+				"client":   "Oscilloscope Music",
+				"title":    "Stereo audio visualisation",
+				"thumb":    "/images/thumb/oscilliscope_01.png",
+				"thumbAlt": "Graphic of oscilloscope screens displaying patterns made by special music",
+				"desktopOnly": false,
+				"dateRange": "10.2019",
+				"description": [
+					"The sound artist <a href=\"https://oscilloscopemusic.com/\">Jerobeam Fenderson</a> creates music that can be visualised through an oscilloscope. I don't have an oscilloscope, so I wrote a JavaScript player that does the same thing.",
+					"This is not an animation.",
+					"The graphics are the visual output of specially created music, produced by combining the stereo waveforms.",
+					"Featured in Steve Gardner's Tiny Web Animation Newsletter."
+				],
+				"techStack": "JavaScript, Audio API",
+				"links": [
+					{ "label": "Listen and watch", "url": "/showreel/oscilloscope_audio" }
+				]
+			},
+			{
+				"client":   "Team skills development project",
+				"title":    "3D Easter Egg Painter",
+				"thumb":    "/images/thumb/eggPainter_01.png",
+				"thumbAlt": "Painting tool interface next to a 3D egg with the result displayed as a texture",
+				"desktopOnly": false,
+				"dateRange": "01.2020",
+				"description": [
+					"I co-ran a team building challenge, to paint 3D Easter Eggs, then create a game or interface to use the resultant images.",
+					"My primary role was creating the initial paint application, using canvas for the main painting app, and live rendering the result onto an interactive 3D egg.",
+					"I also took responsibility for encouraging colleagues to contribute to the project, helping with the egg API."
+				],
+				"techStack": "JS, Three.js, Canvas, SVG",
+				"links": [
+					{ "label": "Paint an Egg", "url": "/showreel/eggPainter", "note": "No instructions, but you'll work it out!" }
+				]
+			}
+		]
+	}
+}
