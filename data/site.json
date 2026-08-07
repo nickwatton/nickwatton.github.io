@@ -54,7 +54,7 @@
 			"summary": [
 				"Working across a range of clients, creating both admin and public facing interfaces.",
 				"Projects to date have been developed either in React (with Typescript and Jest testing), or custom Shopify templates.",
-				"Having recently delivered a React built front end for an AI prototype project, I am currently working on a mobile app - learning Dart and Flutter in the wild!."
+				"Having recently delivered a React built front end for an AI prototype project, then taken a side quest helping out on a mobile app, I am back with a chunky React project integrating with a .NET backend."
 			],
 			"projects": [
 				{
