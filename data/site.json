@@ -53,7 +53,7 @@
 			"dateRange": "11.2024 - current",
 			"summary": [
 				"Working across a range of clients, creating both admin and public facing interfaces.",
-				"Projects to date have been developed either in React (with Typescript and Jest testing), or custom Shopify templates.",
+				"ClearSky is an official <b>OpenAI Select Partner</b>, qualifying in no small part through the <i>Polaris View</i> project I worked on.",
 				"Having recently delivered a React built front end for an AI prototype project, then taken a side quest helping out on a mobile app, I am back with a chunky React project integrating with a .NET backend."
 			],
 			"projects": [
@@ -66,8 +66,8 @@
 					"dateRange": "05.2026 - present",
 					"description": [
 						"A back-office platform for a multi-site salon chain, built around a Head Office System that allows users with different permission levels, such as senior management, payroll or area managers, to review, edit and submit staff wage sheets across their assigned locations. The application talks to a .Net API which coordinates with the EPOS system the salons run in-house.",
-						"A bespoke feature enjoyed is a salon performance map on the leadership dashboard. I created a custom dot-style illustration of the UK, then wrote a coordinate projection method that converts real latitude and longitude values into pixel positions on the graphic - effectively calibrating the image to a geographic bounding box. The result is an interactive SVG component that plots each salon as a pin, highlights top performers, and responds to hover state with an animated marker, all without reaching for a mapping library.",
-						"The project is being developed on a tight schedule, and I've been deliberate about leveraging Claude AI to keep momentum up. Strong upfront context setting - architecture documents, conventions, and a living project status file — means the AI can contribute meaningfully to implementation while I focus on review, verification, and the decisions that require real judgement. It's given me a sharper sense of where AI genuinely accelerates a build and where careful human oversight remains essential."
+						"A bespoke feature I enjoyed is a salon performance map on the leadership dashboard. I created a custom dot-style illustration of the UK, then wrote a coordinate projection method that converts real latitude and longitude values into pixel positions on the graphic - effectively calibrating the image to a geographic bounding box. The result is an interactive SVG component that plots each salon as a pin, highlights top performers, and responds to hover state with an animated marker, all without reaching for a mapping library.",
+						"The project is being developed on a tight schedule, and I've been deliberate about leveraging Claude AI to keep momentum up. Strong upfront context setting - architecture documents, conventions, and a living project status file - means the AI can contribute meaningfully to implementation while I focus on review, verification, and the decisions that require real judgement. It's given me a sharper sense of where AI genuinely accelerates a build and where careful human oversight remains essential."
 					],
 					"techStack": "React, TypeScript, Tailwind, Claude",
 					"links": []
