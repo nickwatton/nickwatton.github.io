@@ -239,7 +239,7 @@
 					"description": [
 						"Storm took Glasgow Life through a complete digital transformation programme, redeveloping their main web portal, and dedicated venue and event sites.",
 						"As the lead front end developer on the project I ensured the design was faithfully implemented, and ensured accessibility standards were maintained.",
-						"Interesting challenges included the map view for the venue finder, bespoke Swiper carousel conflicts, and much longer than expected horizontal in-page navigations. However, working closely with the design, UX, and testing teams, all issues were resolved to the client's satisfaction."
+						"Interesting challenges included the map view for the venue finder, bespoke Swiper carousel conflicts, and much longer than expected horizontal in-page navigation elements. However, working closely with the design, UX, and testing teams, all issues were resolved to the client's satisfaction."
 					],
 					"techStack": "JS, CSS, .Net Razor template integration",
 					"links": [

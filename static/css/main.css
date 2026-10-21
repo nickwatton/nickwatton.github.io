@@ -429,3 +429,29 @@ section[role="navigation"]{
 .pt_small{
     padding-top: .5rem;
 }
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    @supports (
+    interpolate-size: allow-keywords
+    ) {
+        details {
+            overflow: hidden;
+
+            &::details-content {
+                height: 0;
+                transition:
+                    height 300ms,
+                    content-visibility 300ms;
+                transition-behavior: allow-discrete;
+            }
+            &:open::details-content {
+                height: auto;
+            }
+        }
+    }
+}
