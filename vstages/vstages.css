@@ -36,6 +36,7 @@ main {
 }
 
 h1 { font-size: 1.8rem; line-height: 1.2; text-align: center; margin: 1rem 0 2rem; font-weight: 600; text-wrap: balance; }
+h1 span { font-size: 1.4rem; }
 h2 { font-size: 1.4rem; text-align: center; margin: 2.5rem 0 1rem; font-weight: 600; text-wrap: balance; }
 p { margin: 0 0 1.1em; hanging-punctuation: first; text-wrap: pretty; }
 cite { font-style: italic; }
