@@ -1,0 +1,36 @@
+{
+  "site": "Virtual Stages",
+  "author": "Nicholas Watton",
+  "order": ["front", "preface", "intro", "appia", "ejd", "cage", "cunningham", "wilson", "hypertext", "vr", "conclusion", "cover", "design", "process", "notes", "bibliography"],
+  "pages": {
+    "front": { "title": "Virtual Stages", "menu": "Cover" },
+    "preface": { "title": "Preface", "menu": "Preface" },
+    "intro": { "title": "Introduction", "menu": "Introduction" },
+    "appia": { "title": "Adolphe Appia", "menu": "Adolphe Appia" },
+    "ejd": { "title": "Appia, Jaques-Dalcroze and Eurythmics", "menu": "& Jaques-Dalcroze" },
+    "cage": { "title": "John Cage", "menu": "Cage" },
+    "cunningham": { "title": "Cage and Merce Cunningham", "menu": "& Cunningham" },
+    "wilson": { "title": "Robert Wilson", "menu": "Wilson" },
+    "hypertext": { "title": "Hypertext", "menu": "Hypertext" },
+    "vr": { "title": "Virtual reality", "menu": "VR" },
+    "conclusion": { "title": "Conclusion", "menu": "Conclusion" },
+    "cover": { "title": "Cover note", "menu": "Cover note" },
+    "design": { "title": "The design", "menu": "The design …" },
+    "process": { "title": "Its creation", "menu": "… its creation" },
+    "notes": { "title": "Video notes", "menu": "Video notes" },
+    "bibliography": { "title": "Bibliography", "menu": "Bibliography" }
+  },
+  "menu": [
+    { "page": "front" },
+    { "page": "preface" },
+    { "group": "Part One", "items": [
+      { "page": "intro" },
+      { "group": "Stage One", "sub": "Beginning", "items": [{ "page": "appia" }, { "page": "ejd" }] },
+      { "group": "Stage Two", "sub": "Middle", "items": [{ "page": "cage" }, { "page": "cunningham" }, { "page": "wilson" }] },
+      { "group": "Stage Three", "sub": "End", "items": [{ "page": "hypertext" }, { "page": "vr" }] },
+      { "page": "conclusion" }
+    ] },
+    { "group": "Part Two", "items": [{ "page": "cover" }, { "page": "design" }, { "page": "process" }, { "page": "notes" }] },
+    { "page": "bibliography" }
+  ]
+}

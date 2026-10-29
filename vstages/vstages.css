@@ -1,0 +1,201 @@
+/* Virtual Stages – native HTML/CSS only: popovers, anchor positioning, view transitions. */
+
+:root {
+  color-scheme: light dark;
+  --paper: light-dark(#f3f1ed, #1b1b1d);
+  --panel: light-dark(#e4e1db, #26262a);
+  --ink: light-dark(#222, #e4e2de);
+  --muted: light-dark(#666, #a09d98);
+  --rule: light-dark(#c9c5bd, #3a3a40);
+  --accent: light-dark(#8a2b1d, #e08a76);
+  --measure: 38rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+@view-transition { navigation: auto; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a { color: var(--accent); text-underline-offset: .15em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---- Reading column ---- */
+main {
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding: 5rem 1.25rem 4rem;
+  view-transition-name: content;
+}
+
+h1 { font-size: 1.8rem; line-height: 1.2; text-align: center; margin: 1rem 0 2rem; font-weight: 600; text-wrap: balance; }
+h2 { font-size: 1.4rem; text-align: center; margin: 2.5rem 0 1rem; font-weight: 600; text-wrap: balance; }
+p { margin: 0 0 1.1em; hanging-punctuation: first; text-wrap: pretty; }
+cite { font-style: italic; }
+.centre { text-align: center; }
+
+.kicker {
+  margin: 0;
+  text-align: center;
+  font: 600 .8rem/1 system-ui, sans-serif;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.lede { text-align: center; color: var(--muted); font-style: italic; margin-top: .75rem; }
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-inline-start: 1.25rem;
+  border-inline-start: 3px solid var(--rule);
+  color: var(--muted);
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+.page-front main { min-height: 100dvh; display: grid; align-content: center; text-align: center; }
+.page-front p { margin-inline: auto; }
+
+.biblio { list-style: none; padding: 0; line-height: 1.5; }
+.biblio li { margin: 0 0 .7rem; padding-inline-start: 1.5rem; text-indent: -1.5rem; }
+
+/* ---- Previous / next ---- */
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+.pager a { text-decoration: none; }
+.pager a[rel="next"] { margin-inline-start: auto; text-align: end; }
+.pager span { display: block; font: 600 .7rem/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+/* ---- Contents panel (popover) ---- */
+.menu-toggle {
+  position: fixed;
+  inset: 1rem auto auto 1rem;
+  z-index: 1;
+  padding: .45rem .9rem;
+  font: 600 .8rem/1 system-ui, sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 2rem;
+  cursor: pointer;
+  view-transition-name: menu-toggle;
+}
+.menu-toggle:hover { border-color: var(--accent); }
+
+#menu {
+  font: .95rem/1.4 system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--panel);
+  padding: 1.25rem 1.5rem 2rem;
+  border: 0;
+  border-inline-end: 1px solid var(--rule);
+}
+#menu ul { list-style: none; margin: 0; padding: 0; }
+#menu li > a, .group-label { display: block; padding: .3rem 0; }
+#menu a { color: var(--ink); text-decoration: none; }
+#menu a:hover { color: var(--accent); }
+#menu a[aria-current="page"] { color: var(--accent); font-weight: 700; }
+.group { margin-top: .9rem; }
+.group-label { font-weight: 700; color: var(--muted); }
+.group-label .sub { font-weight: 400; font-style: italic; }
+.group ul ul { padding-inline-start: 1rem; }
+.menu-title { margin: 0 0 1rem; font-weight: 700; font-size: 1.2rem; }
+
+@supports selector(:popover-open) {
+  #menu {
+    position: fixed;
+    inset: 0 auto 0 0;
+    margin: 0;
+    width: min(20rem, 85vw);
+    height: 100dvh;
+    overflow-y: auto;
+    translate: -100% 0;
+    transition: translate .3s ease, overlay .3s allow-discrete, display .3s allow-discrete;
+    view-transition-name: menu;
+  }
+  #menu:popover-open { translate: 0 0; }
+  @starting-style { #menu:popover-open { translate: -100% 0; } }
+
+  #menu::backdrop { background: rgb(0 0 0 / 0); transition: background-color .3s, overlay .3s allow-discrete, display .3s allow-discrete; }
+  #menu:popover-open::backdrop { background: rgb(0 0 0 / .35); }
+  @starting-style { #menu:popover-open::backdrop { background: rgb(0 0 0 / 0); } }
+}
+
+/* Without popover support the menu is simply an inline list above the text. */
+@supports not selector(:popover-open) {
+  .menu-toggle { display: none; }
+  #menu { max-width: var(--measure); margin: 1rem auto 0; padding: 1rem; }
+}
+
+/* ---- Notes: popovers anchored to their marker ---- */
+.fn {
+  font: inherit;
+  padding: .05em .2em;
+  margin-inline: 0;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  cursor: help;
+  line-height: 1;
+}
+.fn sup { line-height: 0; }
+.fn:hover, .fn:has(+ .note:popover-open) { background: color-mix(in srgb, var(--accent) 15%, transparent); border-radius: .2em; }
+
+.note {
+  inset: auto;
+  margin: .5rem auto;
+  width: min(26rem, calc(100vw - 2rem));
+  max-height: min(60vh, 22rem);
+  overflow-y: auto;
+  padding: .75rem 1rem;
+  font: .85rem/1.5 system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: .4rem;
+  box-shadow: 0 .5rem 1.5rem rgb(0 0 0 / .25);
+  text-align: start;
+}
+.note-n { color: var(--accent); margin-inline-end: .25em; }
+
+@supports (position-area: bottom) {
+  .note {
+    position-area: bottom;
+    justify-self: anchor-center;
+    position-try-fallbacks: flip-block;
+    margin: .5rem 0;
+  }
+  @media (max-width: 40rem) { .note { justify-self: center; } }
+}
+
+/* Footnote list: only needed when popovers/anchoring aren't available, and for print. */
+.notes { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); line-height: 1.5; color: var(--muted); }
+.notes h2 { text-align: start; margin: 0 0 .5rem; }
+.notes ol { padding-inline-start: 1.5rem; }
+.notes li { margin-bottom: .4rem; }
+@supports (position-area: bottom) and selector(:popover-open) {
+  .notes { display: none; }
+  @media print { .notes { display: block; } .fn, .menu-toggle { display: none; } }
+}
+
+/* ---- Page transition: content slides/fades, chrome stays put ---- */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(content) { animation: .2s ease-in both fade-out; }
+  ::view-transition-new(content) { animation: .35s ease-out .1s both fade-in; }
+}
+@keyframes fade-out { to { opacity: 0; translate: -1.5rem 0; } }
+@keyframes fade-in { from { opacity: 0; translate: 1.5rem 0; } }
