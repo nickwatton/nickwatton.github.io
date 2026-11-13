@@ -57,6 +57,14 @@
         </nav>`;
   }
 
+  // Projects with "exclude": true stay in the data but are not rendered
+  function buildProjectCards(projects) {
+    return projects
+      .filter(project => !project.exclude)
+      .map(buildProjectCard)
+      .join('\n        ');
+  }
+
   function buildProjectCard(project) {
     const classes = project.desktopOnly ? 'job dt_only' : 'job';
     const dateHtml = project.dateRange ? `<p class="job-date">${project.dateRange}</p>` : '';
@@ -99,7 +107,7 @@
             </div>
           </div>
         </div>
-        ${employer.projects.map(buildProjectCard).join('\n        ')}`;
+        ${buildProjectCards(employer.projects)}`;
   }
 
   function buildTraining(training) {
@@ -145,7 +153,7 @@
 
   function buildPlayground(playground) {
     const introHtml = playground.intro.map(p => `<p>${p}</p>`).join('\n          ');
-    const projectsHtml = playground.projects.map(buildProjectCard).join('\n        ');
+    const projectsHtml = buildProjectCards(playground.projects);
 
     return `<section id="playground">
         <header>Playground</header>
